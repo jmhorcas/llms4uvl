@@ -1,0 +1,89 @@
+Subject,Predicate,Object
+UVL language,isA,variability modeling language
+UVL language,typeOf,domain specific language
+UVL language,supports,feature modeling
+UVL language,usedIn,software product lines
+UVL language,designedFor,variability specification
+UVL language,developedBy,SPL community
+UVL language,provides,textual syntax
+UVL language,enables,hierarchical feature structures
+UVL language,supports,feature constraints
+UVL language,supports,boolean constraints
+UVL language,supports,group cardinalities
+UVL language,supports,mandatory features
+UVL language,supports,optional features
+UVL language,supports,alternative groups
+UVL language,supports,or groups
+UVL language,allows,attribute definitions
+UVL language,allows,feature references
+UVL language,supports,modularization
+UVL language,supports,imports between models
+UVL language,designedFor,tool interoperability
+UVL language,influencedBy,feature modeling research
+UVL language,compatibleWith,automated analysis tools
+UVL language,standsFor,Universal Variability Language
+UVL language,usedFor,feature modeling
+UVL language,usedFor,software product line engineering
+UVL language,supports,variability specification
+UVL language,supports,constraint specification
+UVL language,syntaxStyle,textual syntax
+UVL language,supports,hierarchical feature structures
+UVL language,supports,feature groups
+UVL language,supports,cross tree constraints
+UVL language,constraintType,requires constraint
+UVL language,constraintType,excludes constraint
+UVL language,designedBy,research community
+UVL language,supports,attributes
+UVL language,supports,cardinalities
+UVL language,supports,feature types
+UVL language,aimsFor,standardization of variability models
+UVL language,compatibleWith,feature model analysis tools
+UVL language,usedIn,domain specific language engineering
+UVL language,isA,domain specific language
+UVL language,typeOf,variability modeling language
+UVL language,designedTo,represent variability
+UVL language,developedBy,research community
+UVL language,influencedBy,feature modeling notations
+UVL language,supports,textual syntax
+UVL language,supports,alternative feature groups
+UVL language,supports,or feature groups
+UVL language,provides,human readable syntax
+UVL language,provides,machine processable representation
+UVL language,aimsFor,unified variability representation
+UVL language,canBeIntegratedWith,analysis tools
+UVL language,canBeIntegratedWith,configuration tools
+UVL language,partOf,variability modeling ecosystem
+UVL language,isUsedFor,feature modeling
+UVL language,isUsedFor,variability specification
+UVL language,supports,software product lines
+UVL language,supports,product configuration
+UVL language,contrastsWith,graphical feature models
+UVL language,isDesignedFor,human readability
+UVL language,isDesignedFor,machine processing
+UVL language,supports,cardinality constraints
+UVL language,enables,tool interoperability
+UVL language,aimsFor,standardization of variability modeling
+UVL language,isExtensible,TRUE
+UVL language,isPartOf,variability engineering ecosystem
+UVL language,isUsedIn,automated analysis
+UVL language,isUsedIn,configuration validation
+UVL language,canBeTransformedTo,SAT representations
+UVL language,canBeTransformedTo,constraint models
+UVL language,usedFor,variability specification
+UVL language,supports,constraints specification
+UVL language,designedFor,software product lines
+UVL language,enables,feature configuration
+UVL language,enables,automated analysis
+UVL language,defines,features
+UVL language,defines,feature attributes
+UVL language,defines,group relations
+UVL language,defines,cross tree constraints
+UVL language,compatibleWith,feature model tools
+UVL language,supports,imports of other models
+UVL language,aimsFor,interoperability
+UVL language,hasSyntaxStyle,human readable textual notation
+UVL language,influencedBy,feature oriented domain analysis
+UVL language,allows,boolean constraints
+UVL language,allows,arithmetic constraints
+UVL language,usedIn,variability management
+UVL language,supports,cardinality definitions

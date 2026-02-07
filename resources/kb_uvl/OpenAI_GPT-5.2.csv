@@ -1,0 +1,223 @@
+Iteration,Seed,Run,Subject,Predicate,Object
+1,UVL language,1,UVL language,isA,variability modeling language
+1,UVL language,1,UVL language,typeOf,domain specific language
+1,UVL language,1,UVL language,supports,feature modeling
+1,UVL language,1,UVL language,usedIn,software product lines
+1,UVL language,1,UVL language,designedFor,variability specification
+1,UVL language,1,UVL language,developedBy,SPL community
+1,UVL language,1,UVL language,provides,textual syntax
+1,UVL language,1,UVL language,enables,hierarchical feature structures
+1,UVL language,1,UVL language,supports,feature constraints
+1,UVL language,1,UVL language,supports,boolean constraints
+1,UVL language,1,UVL language,supports,group cardinalities
+1,UVL language,1,UVL language,supports,mandatory features
+1,UVL language,1,UVL language,supports,optional features
+1,UVL language,1,UVL language,supports,alternative groups
+1,UVL language,1,UVL language,supports,or groups
+1,UVL language,1,UVL language,allows,attribute definitions
+1,UVL language,1,UVL language,allows,feature references
+1,UVL language,1,UVL language,supports,modularization
+1,UVL language,1,UVL language,supports,imports between models
+1,UVL language,1,UVL language,designedFor,tool interoperability
+1,UVL language,1,UVL language,influencedBy,feature modeling research
+1,UVL language,1,UVL language,compatibleWith,automated analysis tools
+1,UVL language,2,UVL language,isA,variability modeling language
+1,UVL language,2,UVL language,standsFor,Universal Variability Language
+1,UVL language,2,UVL language,usedFor,feature modeling
+1,UVL language,2,UVL language,usedFor,software product line engineering
+1,UVL language,2,UVL language,supports,variability specification
+1,UVL language,2,UVL language,supports,constraint specification
+1,UVL language,2,UVL language,designedFor,tool interoperability
+1,UVL language,2,UVL language,syntaxStyle,textual syntax
+1,UVL language,2,UVL language,supports,hierarchical feature structures
+1,UVL language,2,UVL language,supports,feature groups
+1,UVL language,2,UVL language,supports,mandatory features
+1,UVL language,2,UVL language,supports,optional features
+1,UVL language,2,UVL language,supports,alternative groups
+1,UVL language,2,UVL language,supports,or groups
+1,UVL language,2,UVL language,supports,cross tree constraints
+1,UVL language,2,UVL language,constraintType,requires constraint
+1,UVL language,2,UVL language,constraintType,excludes constraint
+1,UVL language,2,UVL language,designedBy,research community
+1,UVL language,2,UVL language,supports,attributes
+1,UVL language,2,UVL language,supports,cardinalities
+1,UVL language,2,UVL language,supports,feature types
+1,UVL language,2,UVL language,aimsFor,standardization of variability models
+1,UVL language,2,UVL language,compatibleWith,feature model analysis tools
+1,UVL language,2,UVL language,usedIn,domain specific language engineering
+1,UVL language,3,UVL language,isA,domain specific language
+1,UVL language,3,UVL language,typeOf,variability modeling language
+1,UVL language,3,UVL language,supports,feature modeling
+1,UVL language,3,UVL language,usedFor,software product line engineering
+1,UVL language,3,UVL language,designedTo,represent variability
+1,UVL language,3,UVL language,developedBy,research community
+1,UVL language,3,UVL language,influencedBy,feature modeling notations
+1,UVL language,3,UVL language,supports,textual syntax
+1,UVL language,3,UVL language,supports,hierarchical feature structures
+1,UVL language,3,UVL language,supports,feature constraints
+1,UVL language,3,UVL language,supports,cross tree constraints
+1,UVL language,3,UVL language,supports,mandatory features
+1,UVL language,3,UVL language,supports,optional features
+1,UVL language,3,UVL language,supports,alternative feature groups
+1,UVL language,3,UVL language,supports,or feature groups
+1,UVL language,3,UVL language,allows,attribute definitions
+1,UVL language,3,UVL language,supports,cardinalities
+1,UVL language,3,UVL language,designedFor,tool interoperability
+1,UVL language,3,UVL language,provides,human readable syntax
+1,UVL language,3,UVL language,provides,machine processable representation
+1,UVL language,3,UVL language,aimsFor,unified variability representation
+1,UVL language,3,UVL language,canBeIntegratedWith,analysis tools
+1,UVL language,3,UVL language,canBeIntegratedWith,configuration tools
+1,UVL language,3,UVL language,partOf,variability modeling ecosystem
+1,UVL language,4,UVL language,isA,variability modeling language
+1,UVL language,4,UVL language,standsFor,Universal Variability Language
+1,UVL language,4,UVL language,isUsedFor,feature modeling
+1,UVL language,4,UVL language,isUsedFor,variability specification
+1,UVL language,4,UVL language,supports,software product lines
+1,UVL language,4,UVL language,supports,product configuration
+1,UVL language,4,UVL language,provides,textual syntax
+1,UVL language,4,UVL language,contrastsWith,graphical feature models
+1,UVL language,4,UVL language,isDesignedFor,human readability
+1,UVL language,4,UVL language,isDesignedFor,machine processing
+1,UVL language,4,UVL language,supports,hierarchical feature structures
+1,UVL language,4,UVL language,supports,feature constraints
+1,UVL language,4,UVL language,supports,cross tree constraints
+1,UVL language,4,UVL language,supports,cardinality constraints
+1,UVL language,4,UVL language,supports,attributes
+1,UVL language,4,UVL language,enables,tool interoperability
+1,UVL language,4,UVL language,aimsFor,standardization of variability modeling
+1,UVL language,4,UVL language,isExtensible,TRUE
+1,UVL language,4,UVL language,isPartOf,variability engineering ecosystem
+1,UVL language,4,UVL language,isUsedIn,automated analysis
+1,UVL language,4,UVL language,isUsedIn,configuration validation
+1,UVL language,4,UVL language,canBeTransformedTo,SAT representations
+1,UVL language,4,UVL language,canBeTransformedTo,constraint models
+1,UVL language,4,UVL language,supports,modularization
+1,UVL language,4,UVL language,supports,imports between models
+1,UVL language,5,UVL language,isA,variability modeling language
+1,UVL language,5,UVL language,standsFor,Universal Variability Language
+1,UVL language,5,UVL language,usedFor,feature modeling
+1,UVL language,5,UVL language,usedFor,variability specification
+1,UVL language,5,UVL language,supports,textual syntax
+1,UVL language,5,UVL language,supports,hierarchical feature structures
+1,UVL language,5,UVL language,supports,constraints specification
+1,UVL language,5,UVL language,designedFor,software product lines
+1,UVL language,5,UVL language,enables,feature configuration
+1,UVL language,5,UVL language,enables,automated analysis
+1,UVL language,5,UVL language,defines,features
+1,UVL language,5,UVL language,defines,feature attributes
+1,UVL language,5,UVL language,defines,group relations
+1,UVL language,5,UVL language,defines,cross tree constraints
+1,UVL language,5,UVL language,compatibleWith,feature model tools
+1,UVL language,5,UVL language,supports,imports of other models
+1,UVL language,5,UVL language,supports,modularization
+1,UVL language,5,UVL language,aimsFor,interoperability
+1,UVL language,5,UVL language,hasSyntaxStyle,human readable textual notation
+1,UVL language,5,UVL language,influencedBy,feature oriented domain analysis
+1,UVL language,5,UVL language,allows,boolean constraints
+1,UVL language,5,UVL language,allows,arithmetic constraints
+1,UVL language,5,UVL language,usedIn,variability management
+1,UVL language,5,UVL language,supports,cardinality definitions
+2,variability specification,1,variability specification,isA,software artifact
+2,variability specification,1,variability specification,typeOf,model
+2,variability specification,1,variability specification,usedIn,software product lines
+2,variability specification,1,variability specification,defines,feature configurations
+2,variability specification,1,variability specification,describes,variability
+2,variability specification,1,variability specification,includes,features
+2,variability specification,1,variability specification,includes,constraints
+2,variability specification,1,variability specification,expressedIn,UVL
+2,variability specification,1,variability specification,supports,feature hierarchy
+2,variability specification,1,variability specification,supports,optional features
+2,variability specification,1,variability specification,supports,mandatory features
+2,variability specification,1,variability specification,supports,alternative groups
+2,variability specification,1,variability specification,supports,or groups
+2,variability specification,1,variability specification,encodes,cross tree constraints
+2,variability specification,1,variability specification,enables,product derivation
+2,variability specification,1,variability specification,usedFor,configuration validation
+2,variability specification,1,variability specification,represents,domain variability
+2,variability specification,1,variability specification,canBeProcessedBy,variability analysis tools
+2,variability specification,1,variability specification,canBeTransformedInto,solver representation
+2,variability specification,1,variability specification,provides,configuration space definition
+2,variability specification,2,variability specification,isA,UVL concept
+2,variability specification,2,variability specification,defines,variability model
+2,variability specification,2,variability specification,describes,feature structure
+2,variability specification,2,variability specification,represents,product line variability
+2,variability specification,2,variability specification,includes,feature declarations
+2,variability specification,2,variability specification,includes,constraints
+2,variability specification,2,variability specification,supports,hierarchical decomposition
+2,variability specification,2,variability specification,supports,feature relationships
+2,variability specification,2,variability specification,expresses,mandatory features
+2,variability specification,2,variability specification,expresses,optional features
+2,variability specification,2,variability specification,expresses,alternative groups
+2,variability specification,2,variability specification,expresses,or groups
+2,variability specification,2,variability specification,enables,product configuration
+2,variability specification,2,variability specification,usedIn,software product lines
+2,variability specification,2,variability specification,encodedUsing,UVL syntax
+2,variability specification,2,variability specification,supports,cross tree constraints
+2,variability specification,2,variability specification,mayContain,attributes
+2,variability specification,2,variability specification,mayContain,cardinalities
+2,variability specification,2,variability specification,processedBy,variability analysis tools
+2,variability specification,2,variability specification,facilitates,automated reasoning
+2,variability specification,2,variability specification,provides,configuration space definition
+2,variability specification,3,variability specification,isA,software product line artifact
+2,variability specification,3,variability specification,describes,variation points
+2,variability specification,3,variability specification,describes,variants
+2,variability specification,3,variability specification,defines,constraints
+2,variability specification,3,variability specification,defines,dependencies
+2,variability specification,3,variability specification,supports,configuration derivation
+2,variability specification,3,variability specification,usedIn,software product lines
+2,variability specification,3,variability specification,usedIn,feature modeling
+2,variability specification,3,variability specification,canBeExpressedIn,Universal Variability Language
+2,variability specification,3,variability specification,canBeExpressedIn,feature models
+2,variability specification,3,variability specification,captures,commonality
+2,variability specification,3,variability specification,captures,variability
+2,variability specification,3,variability specification,enables,automated analysis
+2,variability specification,3,variability specification,enables,product configuration
+2,variability specification,3,variability specification,contains,hierarchical relationships
+2,variability specification,3,variability specification,contains,cross tree constraints
+2,variability specification,3,variability specification,formalizes,selectable options
+2,variability specification,3,variability specification,represents,system variability
+2,variability specification,3,variability specification,supports,validation
+2,variability specification,3,variability specification,supports,consistency checking
+2,variability specification,4,variability specification,isA,UVL artifact
+2,variability specification,4,variability specification,typeOf,variability model description
+2,variability specification,4,variability specification,defines,features
+2,variability specification,4,variability specification,defines,feature hierarchy
+2,variability specification,4,variability specification,defines,constraints
+2,variability specification,4,variability specification,represents,variability of software systems
+2,variability specification,4,variability specification,supports,software product line engineering
+2,variability specification,4,variability specification,writtenIn,Universal Variability Language
+2,variability specification,4,variability specification,contains,root feature
+2,variability specification,4,variability specification,contains,mandatory features
+2,variability specification,4,variability specification,contains,optional features
+2,variability specification,4,variability specification,contains,alternative groups
+2,variability specification,4,variability specification,contains,or groups
+2,variability specification,4,variability specification,includes,cross tree constraints
+2,variability specification,4,variability specification,uses,feature relationships
+2,variability specification,4,variability specification,usedFor,product configuration
+2,variability specification,4,variability specification,enables,automated analysis
+2,variability specification,4,variability specification,supports,variability validation
+2,variability specification,4,variability specification,supports,variability reasoning
+2,variability specification,4,variability specification,canDefine,feature attributes
+2,variability specification,5,variability specification,isA,software artifact
+2,variability specification,5,variability specification,defines,variation points
+2,variability specification,5,variability specification,defines,variants
+2,variability specification,5,variability specification,usedIn,software product lines
+2,variability specification,5,variability specification,usedIn,domain engineering
+2,variability specification,5,variability specification,models,feature relationships
+2,variability specification,5,variability specification,models,configuration constraints
+2,variability specification,5,variability specification,expressedUsing,Universal Variability Language
+2,variability specification,5,variability specification,supports,product derivation
+2,variability specification,5,variability specification,supports,automated configuration
+2,variability specification,5,variability specification,contains,features
+2,variability specification,5,variability specification,contains,constraints
+2,variability specification,5,variability specification,describes,valid product combinations
+2,variability specification,5,variability specification,enables,reuse
+2,variability specification,5,variability specification,enables,systematic variation
+2,variability specification,5,variability specification,mayInclude,cardinality information
+2,variability specification,5,variability specification,mayInclude,cross tree constraints
+2,variability specification,5,variability specification,formalizes,variability knowledge
+2,variability specification,5,variability specification,guides,product configuration
+2,variability specification,5,variability specification,analyzedBy,variability analysis tools
+2,variability specification,5,variability specification,representedAs,hierarchical structure
+2,variability specification,5,variability specification,ensures,configuration consistency

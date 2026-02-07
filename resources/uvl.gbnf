@@ -1,0 +1,57 @@
+root ::= (namespace "\n")? (includes "\n")? (imports "\n")? (features "\n")? (constraints "\n")?
+
+# --- SECCIÓN FEATURES ---
+features ::= "features" "\n" indent feature
+feature  ::= feature_type? reference feature_cardinality? attributes? "\n" (indent_more group+ dedent)?
+
+group ::= group_type group_spec
+group_type ::= "or" | "alternative" | "optional" | "mandatory" | cardinality
+group_spec ::= "\n" indent_more feature+ dedent
+
+feature_type ::= "String" | "Integer" | "Boolean" | "Real"
+feature_cardinality ::= " cardinality " cardinality
+
+# --- SECCIÓN CONSTRAINTS ---
+constraints ::= "constraints" "\n" indent constraint_line*
+constraint_line ::= constraint "\n" indent
+
+constraint ::= binary_constraint | unary_constraint | primary_constraint
+
+binary_constraint ::= constraint ( " & " | " | " | " => " | " <=> " ) constraint
+unary_constraint  ::= "!" constraint
+primary_constraint ::= "(" constraint ")" | equation | reference
+
+equation ::= expression ( " == " | " < " | " <= " | " > " | " >= " | " != " ) expression
+
+# --- EXPRESIONES ARITMÉTICAS ---
+expression ::= additive
+additive   ::= multiplicative ( ( " + " | " - " ) multiplicative )*
+multiplicative ::= primary ( ( " * " | " / " ) primary )*
+primary    ::= float | integer | string | reference | "(" expression ")" | aggregate_func
+
+# --- ATRIBUTOS ---
+attributes ::= " {" (attribute (", " attribute)*)? "}"
+attribute  ::= key ( " " value )?
+key        ::= identifier
+value      ::= boolean | float | integer | string | attributes | vector
+vector     ::= "[" (value (", " value)*)? "]"
+
+# --- TERMINALES Y TIPOS ---
+namespace ::= "namespace " reference
+includes  ::= "include" "\n" indent_more language_level "\n" dedent
+imports   ::= "imports" "\n" indent_more import_line* dedent
+import_line ::= reference (" as " reference)? "\n" indent_more
+
+reference  ::= identifier ("." identifier)*
+identifier ::= [a-zA-Z][a-zA-Z0-9_]* | "\"" [^\r\n" ]+ "\""
+cardinality ::= "[" [0-9]+ ".." ([0-9]+ | "*") "]"
+
+boolean ::= "true" | "false"
+integer ::= "-"? [0-9]+
+float   ::= "-"? [0-9]* "." [0-9]+
+string  ::= "'" [^\r\n']+ "'"
+
+# --- CONTROL DE INDENTACIÓN (Simulado para LLM) ---
+indent      ::= "    "
+indent_more ::= "        "
+dedent      ::= ""

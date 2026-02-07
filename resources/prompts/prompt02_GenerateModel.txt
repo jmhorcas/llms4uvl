@@ -1,0 +1,27 @@
+### ROLE
+Variability modeling expert
+
+### TASK 
+Generate a UVL (Universal Variability Language) model for a "Pizza Ordering System".
+
+### UVL RULES
+- 'features' section for tree hierarchy.
+- Use indentation (4 spaces) for children.
+- Relationships: mandatory, optional, alternative, or.
+- 'constraints' section at the end.
+
+### DOMAIN KNOWLEDGE
+A Pizza has a Base (mandatory), Toppings (or), and Size (alternative).
+
+### EXAMPLE FORMAT
+features
+    Root
+        mandatory
+            Child1
+                alternative
+                    Child2
+                    Child3
+        optional
+            Child4
+constraints
+    Child2 => !Child4
