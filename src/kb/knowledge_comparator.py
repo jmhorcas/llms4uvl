@@ -13,7 +13,6 @@ class KnowledgeComparator:
 
     TRANSFORMER_LANGUAGE_MODEL = 'all-MiniLM-L6-v2'  # Modelo ligero y gratuito (aprox 80MB)
     
-
     def __init__(self, ground_truth_kb: KnowledgeBase, llm_kb: KnowledgeBase) -> None:
         self.ground_truth_kb = ground_truth_kb
         self.llm_kb = llm_kb

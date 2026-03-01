@@ -125,8 +125,8 @@ def get_similarity(text1: str,
     return float(final_score)
 
 
-def get_atomic_similarity(triple1: tuple[str, str, str], 
-                          triple2: tuple[str, str, str],
+def get_atomic_similarity(triplet1: tuple[str, str, str], 
+                          triplet2: tuple[str, str, str],
                           weight_subject: float = 0.4, 
                           weight_predicate: float = 0.2, 
                           weight_object: float = 0.4) -> float:
@@ -141,8 +141,8 @@ def get_atomic_similarity(triple1: tuple[str, str, str],
         weight_object: Weight given to the similarity of the objects (0.0 to 1.0).
     """
     # Split the triplets into their components
-    s1, p1, o1 = triple1
-    s2, p2, o2 = triple2
+    s1, p1, o1 = triplet1
+    s2, p2, o2 = triplet2
 
     # Generate embeddings for each component separately
     embs = language_model.encode([s1, s2, p1, p2, o1, o2])

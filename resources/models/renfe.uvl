@@ -1,0 +1,60 @@
+features
+    "Train Trip"
+        mandatory
+            String Departure
+            String Arrival
+            Date 
+                mandatory
+                    Day
+                    Month
+                    Year
+            Journey
+                or
+                    "Outward journey"
+                    "Return journey"
+            Route
+                Stops cardinality [0..*]
+                    mandatory
+                        String City
+            "Ticket type"
+                alternative
+                    Basic
+                    Standard
+                    Confort
+                    Premium
+        optional
+            Options
+                mandatory
+                    "Type of seat"
+                        alternative
+                            "Standard seat"
+                            "XL Confort seat"
+                    Changes {ToDo}
+                    Integer "Luggage items" {constrain "Luggage items" == 3}
+                    WiFi
+                optional
+                    Cancellation
+                        mandatory
+                            Real Refund {constraint Refund >= 0.00 & Refund <= 1.00}
+                    "Change ticket holder" {cost 0}
+                    "Changes due to missed trains" {ToDo}
+                    "Access to Club Lounges"
+                    "Seat selection"
+                    "Pets up to 10kg" {cost 0}
+                    "Dogs up to 40kg" {cost 0}
+                    "Silent carriage"
+constraints
+    Basic | Standard => "Standard seat"
+    Confort | Premium => "XL Confort seat"
+    Basic => !Cancellation
+    Standard | Confort => Refund == 0.70
+    Premium => Refund = 1.00
+    Basic => "Change ticket holder".cost = 40
+    Standard | Confort => "Change ticket holder.cost = 20
+    Premium => "Change ticket holder".cost = 0
+    Basic | Standard | Confort => !"Access to Club Lounges"
+    Premium => "Access to Club Lounges"
+    Basic | Standard | Confort => "Pets up to 10kg".cost == 10
+    Premium => "Pets up to 10kg".cost == 0
+    Basic | Confort | Premium => !"Dogs up to 40kg"
+    Standard => "Dogs up to 40kg".cost == 35

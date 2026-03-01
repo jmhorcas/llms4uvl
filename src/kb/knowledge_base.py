@@ -4,10 +4,6 @@ import csv
 from kb import utils
 
 
-
-
-
-
 @dataclass(frozen=True)
 class Triplet:
     subject: str
@@ -37,6 +33,10 @@ class KnowledgeBase:
 
     def add_triplet(self, triplet: Triplet) -> None:
         self.triplets.append(triplet)
+    
+    def size(self) -> int:
+        """Return the number of triplets."""
+        return len(self.triplets)
     
     def load_from_csv(self, file_path: str) -> None:
         """Load triplets from a CSV file that contains the columns named Subject, Predicate, and Object."""
@@ -71,3 +71,21 @@ class KnowledgeBase:
             for triplet in self.triplets:
                 writer.writerow([triplet.subject, triplet.predicate, triplet.object])
 
+    def deduplicate(self, threshold: float = 0.85) -> 'KnowledgeBase':
+        """Remove those triplets that are equals or similar to other triplets."""
+        kb = KnowledgeBase()
+        for triplet1 in self.triplets:
+            for triplet2 in self.triplets:
+                pass
+        pass
+
+    def get_leafs(self) -> list[Triplet]:
+        """Return those triplets whose Object do not appear in any Subject."""
+        pass
+
+    def get_possible_seeds(self, n: int = 2) -> list[Triplet]:
+        """Return those Subject that appear in more at least n triplets."""
+        pass
+
+    # def combine(self, other_kb: 'KnowledgeBase') -> None:
+    #     self.triplets.extend(other_kb.triplets)

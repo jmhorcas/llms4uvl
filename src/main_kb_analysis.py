@@ -1,7 +1,8 @@
 from kb import KnowledgeBase, KnowledgeComparator
 
 
-CSV_FILEPATH = '../resources/raw_data/uvl_groundtruth.csv'
+#CSV_FILEPATH = '../resources/raw_data/uvl_groundtruth.csv'
+CSV_FILEPATH = '../resources/raw_data/uvl_manualKB.csv'
 
 
 def main() -> None:
@@ -21,7 +22,8 @@ def main() -> None:
     #llm_kb_normalized.save_to_csv('../uvl_ll
 
     # Hay que eliminar tripletas repetidas antes de comparar.
-    kb_comparator = KnowledgeComparator(kb_groundtruth_normalized, llm_kb_normalized)
+    #kb_comparator = KnowledgeComparator(kb_groundtruth_normalized, llm_kb_normalized)
+    kb_comparator = KnowledgeComparator(kb_groundtruth, llm_kb)
     results = kb_comparator.compare(threshold=0.75)
     precision = kb_comparator.calculate_precision(results)
     recall = kb_comparator.calculate_recall(results)

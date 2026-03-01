@@ -8,10 +8,6 @@ Based ONLY on the provided article "UVL: Feature modelling with the Universal Va
 ### INSTRUCTIONS
 - Source Fidelity: Only include facts explicitly stated or directly Murphy-implied by the text.
 - Format: Return a plain list of comma-separated triples (Subject, Predicate, Object), one per line.
-- Structure: 
-    * (Subject, isA, Object) or (Subject, typeOf, Object) for classification.
-    * (Subject, partOf, Object) for hierarchical or grammar components.
-    * (Subject, defines, Object) for language capabilities.
 - Atomicity: Separate several objects into multiple triples with one object each.
 - Conciseness: Do not get wordy. Do not include headers, intro, or any text other than the triples.
 - Do not use commas inside the Subject, Predicate, or Object strings.

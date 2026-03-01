@@ -1,0 +1,124 @@
+Iteration,Seed,Run,Subject,Predicate,Object
+UVL language, isA, textual language
+UVL language, isA, pivot language
+UVL language, isA, human-readable language
+UVL language, isA, community-driven initiative
+UVL language, fullName, Universal Variability Language
+UVL language, launchedIn, 2018
+UVL language, authoredBy, David Benavides
+UVL language, authoredBy, Chico Sundermann
+UVL language, authoredBy, Kevin Feichtinger
+UVL language, authoredBy, Jose A Galindo
+UVL language, authoredBy, Rick Rabiser
+UVL language, authoredBy, Thomas Thüm
+UVL language, maintainedBy, consortium of institutions
+UVL language, supportedBy, Universidad de Sevilla
+UVL language, supportedBy, University of Ulm
+UVL language, supportedBy, Karlsruhe Institute of Technology
+UVL language, supportedBy, Johannes Kepler University Linz
+UVL language, supportedBy, TU Braunschweig
+UVL language, defines, Boolean level
+UVL language, defines, Arithmetic level
+UVL language, defines, Type level
+UVL language, defines, language extensions
+UVL language, defines, conversion strategies
+UVL language, defines, import mechanism
+UVL language, defines, extension mechanism
+UVL language, defines, feature tree
+UVL language, defines, cross-tree constraints
+UVL language, defines, feature attributes
+UVL language, hasParserFor, Python
+UVL language, hasParserFor, Java
+UVL language, parserBasedOn, ANTLR
+UVL language, integratedIn, FeatureIDE
+UVL language, integratedIn, flamapy
+UVL language, integratedIn, pure::variants
+UVL language, integratedIn, TRAVART
+UVL language, integratedIn, UVLS
+UVL language, integratedIn, variability.dev
+UVL language, integratedIn, ddueruem
+UVL language, integratedIn, Nemo
+UVL language, integratedIn, FM Fact Label
+UVL language, integratedIn, V4rdiac
+UVL language, allows, knowledge sharing
+UVL language, allows, educational instruction
+UVL language, allows, tool integration
+UVL language, allows, tool interoperability
+UVL language, allows, model decomposition
+UVL language, keyword, features
+UVL language, keyword, constraints
+UVL language, keyword, imports
+UVL language, keyword, include
+UVL language, keyword, mandatory
+UVL language, keyword, optional
+UVL language, keyword, alternative
+UVL language, keyword, or
+UVL language, keyword, cardinality
+UVL language, keyword, as
+UVL language, keyword, constraint
+UVL language, keyword, constraints
+
+UVL language, isA, textual language
+UVL language, isA, pivot language
+UVL language, isA, human-readable language
+UVL language, isA, community-driven initiative
+UVL language, fullName, Universal Variability Language
+UVL language, launchedIn, 2018
+UVL language, authoredBy, David Benavides
+UVL language, authoredBy, Chico Sundermann
+UVL language, authoredBy, Kevin Feichtinger
+UVL language, authoredBy, Jose A Galindo
+UVL language, authoredBy, Rick Rabiser
+UVL language, authoredBy, Thomas Thum
+UVL language, maintainedBy, consortium of institutions
+UVL language, supportedBy, Universidad de Sevilla
+UVL language, supportedBy, University of Ulm
+UVL language, supportedBy, Karlsruhe Institute of Technology
+UVL language, supportedBy, Johannes Kepler University Linz
+UVL language, supportedBy, TU Braunschweig
+UVL language, defines, Boolean level
+UVL language, defines, Arithmetic level
+UVL language, defines, Type level
+UVL language, defines, minor language levels
+UVL language, defines, language extensions
+UVL language, defines, conversion strategies
+UVL language, defines, import mechanism
+UVL language, defines, feature tree
+UVL language, defines, cross-tree constraints
+UVL language, defines, feature attributes
+UVL language, hasParserFor, Python
+UVL language, hasParserFor, Java
+UVL language, parserBasedOn, ANTLR
+UVL language, integratedIn, FeatureIDE
+UVL language, integratedIn, flamapy
+UVL language, integratedIn, pure::variants
+UVL language, integratedIn, TRAVART
+UVL language, integratedIn, UVLS
+UVL language, integratedIn, variability.dev
+UVL language, integratedIn, ddueruem
+UVL language, integratedIn, Nemo
+UVL language, integratedIn, FM Fact Label
+UVL language, integratedIn, V4rdiac
+UVL language, integratedIn, UVLHub
+UVL language, allows, knowledge sharing
+UVL language, allows, educational instruction
+UVL language, allows, tool integration
+UVL language, allows, tool interoperability
+UVL language, allows, model decomposition
+UVL language, allows, representation of software variability
+UVL language, allows, graphical editing
+UVL language, allows, textual editing
+UVL language, allows, analysis
+UVL language, allows, configuration
+UVL language, allows, transformation
+UVL language, keyword, features
+UVL language, keyword, constraints
+UVL language, keyword, imports
+UVL language, keyword, include
+UVL language, keyword, mandatory
+UVL language, keyword, optional
+UVL language, keyword, alternative
+UVL language, keyword, or
+UVL language, keyword, cardinality
+UVL language, keyword, as
+UVL language, keyword, constraint

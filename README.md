@@ -2,6 +2,9 @@
 LLMs for UVL
 
 
+# Descripción
+1. Obtenemos el conocimiento que tiene el LLM sobre UVL.
+
 # How to
 1. Install ollama in Linux:
 `curl -fsSL https://ollama.com/install.sh | sh`
