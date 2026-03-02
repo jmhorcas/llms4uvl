@@ -1,0 +1,1049 @@
+Iteration,Seed,Run,Subject,Predicate,Object
+1,UVL language,1,UVL language,stands for,Universal Variability Language
+1,UVL language,1,UVL language,is,human-readable
+1,UVL language,1,UVL language,serves as,pivot language
+1,UVL language,1,UVL language,development started in,2018
+1,UVL language,1,UVL language,is,community-driven
+1,UVL language,1,UVL language,is structured into,Boolean level
+1,UVL language,1,UVL language,is structured into,Arithmetic level
+1,UVL language,1,UVL language,is structured into,Type level
+1,UVL language,1,UVL language,allows,language extensions
+1,UVL language,1,UVL language,is maintained by,consortium of institutions
+1,UVL language,1,UVL language,has open-source support tools,
+1,UVL language,1,UVL language,has parser implementation for,Python
+1,UVL language,1,UVL language,has parser implementation for,Java
+1,UVL language,1,UVL language,uses,ANTLR for parser implementations
+1,UVL language,1,UVL language,is used for,knowledge sharing
+1,UVL language,1,UVL language,is used for,educational instruction
+1,UVL language,1,UVL language,is used for,tool integration
+1,UVL language,1,UVL language,is used for,tool interoperability
+1,UVL language,1,UVL language,contains,feature tree
+1,UVL language,1,UVL language,contains,cross-tree constraints
+1,UVL language,1,UVL language,represents hierarchy with,indentation
+1,UVL language,1,UVL language,supports,mandatory relationship
+1,UVL language,1,UVL language,supports,optional relationship
+1,UVL language,1,UVL language,supports,alternative relationship
+1,UVL language,1,UVL language,supports,or relationship
+1,UVL language,1,UVL language,supports,group cardinality
+1,UVL language,1,UVL language,supports,feature cardinality
+1,UVL language,1,UVL language,supports,aggregate functions
+1,UVL language,1,UVL language,supports,string constraints
+1,UVL language,1,UVL language,supports,typed features
+1,UVL language,1,UVL language,supports,feature attributes
+1,UVL language,1,UVL language,provides,import mechanism
+1,UVL language,1,UVL language,enables,decomposition of large models
+1,UVL language,1,UVL language,has,formal semantics
+1,UVL language,1,UVL language,is integrated into,FeatureIDE
+1,UVL language,1,UVL language,is integrated into,flamapy
+1,UVL language,1,UVL language,is integrated into,UVLS
+1,UVL language,1,UVL language,is integrated into,pure::variants
+1,UVL language,1,UVL language,is pivot model for,TRAVART
+1,UVL language,2,UVL language,stands for,Universal Variability Language
+1,UVL language,2,UVL language,is,a textual language
+1,UVL language,2,UVL language,represents,feature models
+1,UVL language,2,UVL language,is,human-readable
+1,UVL language,2,UVL language,serves as,a pivot language
+1,UVL language,2,UVL language,development started in,2018
+1,UVL language,2,UVL language,is,community-driven
+1,UVL language,2,UVL language,is structured into,a Boolean level
+1,UVL language,2,UVL language,is structured into,an Arithmetic level
+1,UVL language,2,UVL language,is structured into,a Type level
+1,UVL language,2,UVL language,allows,language extensions
+1,UVL language,2,UVL language,is maintained by,a consortium of institutions
+1,UVL language,2,UVL language,has parser implementations for,Python
+1,UVL language,2,UVL language,has parser implementations for,Java
+1,UVL language,2,UVL language,uses,ANTLR for parser implementations
+1,UVL language,2,UVL language,is used for,knowledge sharing
+1,UVL language,2,UVL language,is used for,educational instruction
+1,UVL language,2,UVL language,is used for,tool integration
+1,UVL language,2,UVL language,is used for,tool interoperability
+1,UVL language,2,UVL language,contains,a feature tree
+1,UVL language,2,UVL language,contains,cross-tree constraints
+1,UVL language,2,UVL language,represents hierarchy with,indentation
+1,UVL language,2,UVL language,supports,mandatory relationship
+1,UVL language,2,UVL language,supports,optional relationship
+1,UVL language,2,UVL language,supports,alternative relationship
+1,UVL language,2,UVL language,supports,or relationship
+1,UVL language,2,UVL language,supports,group cardinality
+1,UVL language,2,UVL language,supports,feature cardinality
+1,UVL language,2,UVL language,supports,feature attributes
+1,UVL language,2,UVL language,provides,an import mechanism
+1,UVL language,2,UVL language,has,formal semantics
+1,UVL language,2,UVL language,has,a formal syntax
+1,UVL language,2,UVL language,is integrated into,FeatureIDE
+1,UVL language,2,UVL language,is integrated into,flamapy
+1,UVL language,2,UVL language,is integrated into,pure::variants
+1,UVL language,2,UVL language,is integrated into,TRAVART
+1,UVL language,2,UVL language,is integrated into,UVLS
+1,UVL language,2,UVL language,is integrated into,V4rdiac
+1,UVL language,2,UVL language,design goal is,simplicity
+1,UVL language,2,UVL language,design goal is,expressiveness
+1,UVL language,2,UVL language,design goal is,extensibility
+1,UVL language,2,UVL language,design goal is,exchangeability
+1,UVL language,2,UVL language,design goal is,information hiding
+1,UVL language,2,UVL language,supports,typed features
+1,UVL language,2,UVL language,uses,conversion strategies
+1,UVL language,2,UVL language,dataset repository is,UVLHub
+1,UVL language,3,UVL language,stands for,Universal Variability Language
+1,UVL language,3,UVL language,is,a textual language
+1,UVL language,3,UVL language,represents,feature models
+1,UVL language,3,UVL language,is,human-readable
+1,UVL language,3,UVL language,serves as,a pivot language
+1,UVL language,3,UVL language,development started in,2018
+1,UVL language,3,UVL language,is,community-driven
+1,UVL language,3,UVL language,is structured into,a Boolean level
+1,UVL language,3,UVL language,is structured into,an Arithmetic level
+1,UVL language,3,UVL language,is structured into,a Type level
+1,UVL language,3,UVL language,allows,language extensions
+1,UVL language,3,UVL language,is maintained by,a consortium of institutions
+1,UVL language,3,UVL language,has open-source,support tools
+1,UVL language,3,UVL language,has parser implementations for,Python
+1,UVL language,3,UVL language,has parser implementations for,Java
+1,UVL language,3,UVL language,uses,ANTLR for parser implementations
+1,UVL language,3,UVL language,is used for,knowledge sharing
+1,UVL language,3,UVL language,is used for,educational instruction
+1,UVL language,3,UVL language,is used for,tool integration
+1,UVL language,3,UVL language,is used for,tool interoperability
+1,UVL language,3,UVL language,contains,a feature tree
+1,UVL language,3,UVL language,contains,cross-tree constraints
+1,UVL language,3,UVL language,represents hierarchy with,indentation
+1,UVL language,3,UVL language,supports,mandatory relationship
+1,UVL language,3,UVL language,supports,optional relationship
+1,UVL language,3,UVL language,supports,alternative relationship
+1,UVL language,3,UVL language,supports,or relationship
+1,UVL language,3,UVL language,supports,group cardinality
+1,UVL language,3,UVL language,supports,feature cardinality
+1,UVL language,3,UVL language,supports,feature attributes
+1,UVL language,3,UVL language,supports,typed features
+1,UVL language,3,UVL language,supports,aggregate functions
+1,UVL language,3,UVL language,supports,string constraints
+1,UVL language,3,UVL language,provides,an import mechanism
+1,UVL language,3,UVL language,has,formal semantics
+1,UVL language,3,UVL language,has,a formal syntax
+1,UVL language,3,UVL language,is integrated into,FeatureIDE
+1,UVL language,3,UVL language,is integrated into,flamapy
+1,UVL language,3,UVL language,is integrated into,UVLS
+1,UVL language,3,UVL language,is integrated into,pure::variants
+1,UVL language,3,UVL language,is integrated into,TRAVART
+1,UVL language,3,UVL language,is integrated into,V4rdiac
+1,UVL language,3,UVL language,design goal is,simplicity
+1,UVL language,3,UVL language,design goal is,expressiveness
+1,UVL language,3,UVL language,design goal is,extensibility
+1,UVL language,3,UVL language,design goal is,exchangeability
+1,UVL language,3,UVL language,design goal is,information hiding
+1,UVL language,3,UVL language,uses,conversion strategies between levels
+1,UVL language,3,UVL language,dataset repository is,UVLHub
+1,UVL language,4,UVL language,stands for,Universal Variability Language
+1,UVL language,4,UVL language,is,a textual language
+1,UVL language,4,UVL language,represents,feature models
+1,UVL language,4,UVL language,is,human-readable
+1,UVL language,4,UVL language,serves as,a pivot language
+1,UVL language,4,UVL language,development started in,2018
+1,UVL language,4,UVL language,is,community-driven
+1,UVL language,4,UVL language,is structured into,a Boolean level
+1,UVL language,4,UVL language,is structured into,an Arithmetic level
+1,UVL language,4,UVL language,is structured into,a Type level
+1,UVL language,4,UVL language,allows,language extensions
+1,UVL language,4,UVL language,is maintained by,a consortium of institutions
+1,UVL language,4,UVL language,has parser implementations for,Python
+1,UVL language,4,UVL language,has parser implementations for,Java
+1,UVL language,4,UVL language,uses,ANTLR for parser implementations
+1,UVL language,4,UVL language,is used for,knowledge sharing
+1,UVL language,4,UVL language,is used for,educational instruction
+1,UVL language,4,UVL language,is used for,tool integration
+1,UVL language,4,UVL language,is used for,tool interoperability
+1,UVL language,4,UVL language,consists of,a feature tree
+1,UVL language,4,UVL language,consists of,cross-tree constraints
+1,UVL language,4,UVL language,represents hierarchy with,indentation
+1,UVL language,4,UVL language,supports,mandatory relationships
+1,UVL language,4,UVL language,supports,optional relationships
+1,UVL language,4,UVL language,supports,alternative relationships
+1,UVL language,4,UVL language,supports,or relationships
+1,UVL language,4,UVL language,supports,group cardinality
+1,UVL language,4,UVL language,supports,feature cardinality
+1,UVL language,4,UVL language,supports,feature attributes
+1,UVL language,4,UVL language,supports,typed features
+1,UVL language,4,UVL language,supports,aggregate functions
+1,UVL language,4,UVL language,supports,string constraints
+1,UVL language,4,UVL language,provides,an import mechanism
+1,UVL language,4,UVL language,has,formal semantics
+1,UVL language,4,UVL language,has,a formal syntax
+1,UVL language,4,UVL language,is integrated into,FeatureIDE
+1,UVL language,4,UVL language,is integrated into,flamapy
+1,UVL language,4,UVL language,is integrated into,pure::variants
+1,UVL language,4,UVL language,is integrated into,TRAVART
+1,UVL language,4,UVL language,is integrated into,UVLS
+1,UVL language,4,UVL language,is integrated into,V4rdiac
+1,UVL language,4,UVL language,is integrated into,variability.dev
+1,UVL language,4,UVL language,design goal is,simplicity
+1,UVL language,4,UVL language,design goal is,expressiveness
+1,UVL language,4,UVL language,design goal is,extensibility
+1,UVL language,4,UVL language,design goal is,exchangeability
+1,UVL language,4,UVL language,design goal is,information hiding
+1,UVL language,4,UVL language,uses,conversion strategies between levels
+1,UVL language,4,UVL language,dataset repository is,UVLHub
+1,UVL language,4,UVL language,is,an open-source format
+1,UVL language,5,UVL language,stands for,Universal Variability Language
+1,UVL language,5,UVL language,is,a textual language
+1,UVL language,5,UVL language,represents,feature models
+1,UVL language,5,UVL language,is,human-readable
+1,UVL language,5,UVL language,serves as,a pivot language
+1,UVL language,5,UVL language,development started in,2018
+1,UVL language,5,UVL language,is,community-driven
+1,UVL language,5,UVL language,is structured into,a Boolean level
+1,UVL language,5,UVL language,is structured into,an Arithmetic level
+1,UVL language,5,UVL language,is structured into,a Type level
+1,UVL language,5,UVL language,allows,language extensions
+1,UVL language,5,UVL language,is maintained by,a consortium of institutions
+1,UVL language,5,UVL language,has parser implementations for,Python
+1,UVL language,5,UVL language,has parser implementations for,Java
+1,UVL language,5,UVL language,uses,ANTLR for parser implementations
+1,UVL language,5,UVL language,is used for,knowledge sharing
+1,UVL language,5,UVL language,is used for,educational instruction
+1,UVL language,5,UVL language,is used for,tool integration
+1,UVL language,5,UVL language,is used for,tool interoperability
+1,UVL language,5,UVL language,consists of,a feature tree
+1,UVL language,5,UVL language,consists of,cross-tree constraints
+1,UVL language,5,UVL language,represents hierarchy with,indentation
+1,UVL language,5,UVL language,supports,mandatory relationships
+1,UVL language,5,UVL language,supports,optional relationships
+1,UVL language,5,UVL language,supports,alternative relationships
+1,UVL language,5,UVL language,supports,or relationships
+1,UVL language,5,UVL language,supports,group cardinality
+1,UVL language,5,UVL language,supports,feature cardinality
+1,UVL language,5,UVL language,supports,feature attributes
+1,UVL language,5,UVL language,supports,typed features
+1,UVL language,5,UVL language,supports,aggregate functions
+1,UVL language,5,UVL language,supports,string constraints
+1,UVL language,5,UVL language,provides,an import mechanism
+1,UVL language,5,UVL language,has,formal semantics
+1,UVL language,5,UVL language,has,a formal syntax
+1,UVL language,5,UVL language,is integrated into,FeatureIDE
+1,UVL language,5,UVL language,is integrated into,flamapy
+1,UVL language,5,UVL language,is integrated into,pure::variants
+1,UVL language,5,UVL language,is integrated into,TRAVART
+1,UVL language,5,UVL language,is integrated into,UVLS
+1,UVL language,5,UVL language,is integrated into,V4rdiac
+1,UVL language,5,UVL language,is integrated into,Nemo
+1,UVL language,5,UVL language,is integrated into,variability.dev
+1,UVL language,5,UVL language,design goal is,simplicity
+1,UVL language,5,UVL language,design goal is,expressiveness
+1,UVL language,5,UVL language,design goal is,extensibility
+1,UVL language,5,UVL language,design goal is,exchangeability
+1,UVL language,5,UVL language,design goal is,information hiding
+1,UVL language,5,UVL language,uses,conversion strategies between levels
+1,UVL language,5,UVL language,dataset repository is,UVLHub
+1,UVL language,5,UVL language,is,an open-source format
+1,UVL language,5,UVL language,enables,decomposition of large models
+2,Language extensions,1,Language extensions,introduce,additional constructs
+2,Language extensions,1,Language extensions,enhance,expressiveness
+2,Language extensions,1,Language extensions,accommodate,diverse modelling needs
+2,Language extensions,1,Language extensions,are implemented as,language levels
+2,Language extensions,1,Minor levels,are,optional extensions of major levels
+2,Language extensions,1,Group Cardinality,is,an extension of the boolean level
+2,Language extensions,1,Feature Cardinality,is,an optional extension of the arithmetic level
+2,Language extensions,1,Aggregate Functions,is,an optional extension of the arithmetic level
+2,Language extensions,1,Language extensions,are enabled,if more expressiveness is needed
+2,Language extensions,1,Include mechanism,allows users to specify,supported language extensions
+2,Language extensions,1,Language extensions,preserve,a simple core language
+2,Language extensions,1,Language extensions,allow users to tailor models to,use cases
+2,Language extensions,1,Language extensions,allow users to tailor models to,tool limitations
+2,Language extensions,2,Language extensions,introduce,additional constructs
+2,Language extensions,2,Language extensions,enhance,expressiveness
+2,Language extensions,2,Language extensions,accommodate,diverse modelling needs
+2,Language extensions,2,Language extensions,are implemented as,language levels
+2,Language extensions,2,Language extensions,preserve,a simple core language
+2,Language extensions,2,Language extensions,allow users to tailor models to,use cases
+2,Language extensions,2,Language extensions,allow users to tailor models to,tool limitations
+2,Language extensions,2,Language extensions,can be enabled,if more expressiveness is needed
+2,Language extensions,2,Language extensions,allow,representation of different features
+2,Language extensions,2,Language extensions,allow,varying types of relationships
+2,Language extensions,2,Language extensions,include,major levels
+2,Language extensions,2,Language extensions,include,minor levels
+2,Language extensions,2,Minor levels,are,optional extensions of major levels
+2,Language extensions,2,Group Cardinality,is,an extension of the boolean level
+2,Language extensions,2,Feature Cardinality,is,an optional extension of the arithmetic level
+2,Language extensions,2,Aggregate Functions,is,an optional extension of the arithmetic level
+2,Language extensions,2,Include mechanism,allows users to specify,supported language extensions
+2,Language extensions,2,Include mechanism,ensures,tool compatibility
+2,Language extensions,2,Include mechanism,provides information on,language level contents
+2,Language extensions,3,Language extensions,introduce,additional constructs
+2,Language extensions,3,Language extensions,enhance,expressiveness
+2,Language extensions,3,Language extensions,accommodate,diverse modelling needs
+2,Language extensions,3,Language extensions,are implemented as,language levels
+2,Language extensions,3,Language extensions,preserve,a simple core language
+2,Language extensions,3,Language extensions,allow users to tailor models to,use cases
+2,Language extensions,3,Language extensions,allow users to tailor models to,tool limitations
+2,Language extensions,3,Language extensions,can be enabled,if more expressiveness is needed
+2,Language extensions,3,Language extensions,allow representation of,different features
+2,Language extensions,3,Language extensions,allow representation of,varying types of relationships
+2,Language extensions,3,Language extensions,include,major levels
+2,Language extensions,3,Language extensions,include,minor levels
+2,Language extensions,3,Minor levels,are,optional extensions of major levels
+2,Language extensions,3,Group Cardinality,is,an extension of the Boolean level
+2,Language extensions,3,Feature Cardinality,is,an optional extension of the Arithmetic level
+2,Language extensions,3,Aggregate Functions,is,an optional extension of the Arithmetic level
+2,Language extensions,3,String Constraints,is,an optional extension of the Type level
+2,Language extensions,3,Include mechanism,allows users to specify,supported language extensions
+2,Language extensions,3,Include mechanism,ensures,tool compatibility
+2,Language extensions,3,Include mechanism,provides information on,language level contents
+2,Language extensions,4,Language extensions,introduce,additional constructs
+2,Language extensions,4,Language extensions,enhance,expressiveness
+2,Language extensions,4,Language extensions,accommodate,diverse modelling needs
+2,Language extensions,4,Language extensions,allow representation of,different features
+2,Language extensions,4,Language extensions,allow representation of,varying types of relationships
+2,Language extensions,4,Language extensions,are implemented as,language levels
+2,Language extensions,4,Language extensions,are called,language levels
+2,Language extensions,4,Language extensions,extend,the UVL core language
+2,Language extensions,4,Language extensions,consist of,major levels
+2,Language extensions,4,Language extensions,consist of,minor levels
+2,Language extensions,4,Language extensions,preserve,a simple core language
+2,Language extensions,4,Minor levels,are,optional extensions of major levels
+2,Language extensions,4,Group Cardinality,is,an extension of the Boolean level
+2,Language extensions,4,Feature Cardinality,is,an optional extension of the Arithmetic level
+2,Language extensions,4,Aggregate Functions,is,an optional extension of the Arithmetic level
+2,Language extensions,4,String Constraints,is,an optional extension of the Type level
+2,Language extensions,4,Language extensions,provide,constructs for cardinalities
+2,Language extensions,4,Language extensions,provide,constructs for numeric constraints
+2,Language extensions,4,Language extensions,provide,constructs for typed features
+2,Language extensions,4,Language extensions,provide,constructs for string constraints
+2,Language extensions,4,Language extensions,allow users to tailor models to,tool limitations
+2,Language extensions,4,Language extensions,allow users to tailor models to,use cases
+2,Language extensions,4,Language extensions,are specified with,the include keyword
+2,Language extensions,4,Language extensions,ensure,tool compatibility
+2,Language extensions,4,Language extensions,provide information on,language level contents
+2,Language extensions,4,Language extensions,use,conversion strategies between levels
+2,Language extensions,4,Language extensions,translate,higher level constructs into lower levels
+2,Language extensions,4,Language extensions,follow,a hierarchical order
+2,Language extensions,4,Language extensions,encapsulate,language constructs
+2,Language extensions,5,Language extensions,introduce,additional constructs
+2,Language extensions,5,Language extensions,enhance,expressiveness
+2,Language extensions,5,Language extensions,accommodate,diverse modelling needs
+2,Language extensions,5,Language extensions,allow representation of,different features
+2,Language extensions,5,Language extensions,allow representation of,varying types of relationships
+2,Language extensions,5,Language extensions,are implemented as,language levels
+2,Language extensions,5,Language extensions,extend,the UVL core language
+2,Language extensions,5,Language extensions,consist of,major levels
+2,Language extensions,5,Language extensions,consist of,minor levels
+2,Language extensions,5,Language extensions,preserve,a simple core language
+2,Language extensions,5,Minor levels,are,optional extensions of major levels
+2,Language extensions,5,Group Cardinality,is,an extension of the Boolean level
+2,Language extensions,5,Feature Cardinality,is,an optional extension of the Arithmetic level
+2,Language extensions,5,Aggregate Functions,is,an optional extension of the Arithmetic level
+2,Language extensions,5,String Constraints,is,an optional extension of the Type level
+2,Language extensions,5,Language extensions,allow users to tailor models to,use cases
+2,Language extensions,5,Language extensions,allow users to tailor models to,tool limitations
+2,Language extensions,5,Language extensions,are specified with,the include keyword
+2,Language extensions,5,Language extensions,ensure,tool compatibility
+2,Language extensions,5,Language extensions,provide information on,language level contents
+2,Language extensions,5,Language extensions,use,conversion strategies between levels
+2,Language extensions,5,Conversion strategies,translate,higher level constructs into lower levels
+3,Feature tree,1,Feature tree,is,a hierarchically arranged set of features
+3,Feature tree,1,Feature tree,is also known as,feature diagram
+3,Feature tree,1,Feature tree,is,a main part of a UVL model
+3,Feature tree,1,Feature tree,consists of,features
+3,Feature tree,1,Feature tree,consists of,groups
+3,Feature tree,1,Feature tree,requires,exactly one root feature
+3,Feature tree,1,Feature tree,represents hierarchy with,indentation
+3,Feature tree,1,Feature tree,uses keywords to specify,parent-child relationships
+3,Feature tree,1,Feature tree,allows features to have,an arbitrary number of groups
+3,Feature tree,1,Feature tree,allows groups to have,an arbitrary number of features
+3,Feature tree,1,Feature tree,denotes relationship between features and groups with,indentation
+3,Feature tree,1,Feature tree,has features with,unique identifiers
+3,Feature tree,1,Feature tree,has features with,feature cardinality
+3,Feature tree,1,Feature tree,has features with,attributes
+3,Feature tree,1,Feature tree,root feature is included in,all configurations
+3,Feature tree,1,Feature tree,can exist,without cross-tree constraints
+3,Feature tree,2,Feature tree,is also known as,feature diagram
+3,Feature tree,2,Feature tree,is,a hierarchically arranged set of features
+3,Feature tree,2,Feature tree,is,a main part of a UVL model
+3,Feature tree,2,Feature tree,is,a main component of a feature model
+3,Feature tree,2,Feature tree,consists of,features
+3,Feature tree,2,Feature tree,consists of,groups
+3,Feature tree,2,Feature tree,requires,exactly one root feature
+3,Feature tree,2,Feature tree,represents hierarchy with,indentation
+3,Feature tree,2,Feature tree,uses keywords to specify,parent-child relationships
+3,Feature tree,2,Feature tree,allows features to have,an arbitrary number of groups
+3,Feature tree,2,Feature tree,allows groups to have,an arbitrary number of features
+3,Feature tree,2,Feature tree,denotes relationship between features and groups with,indentation
+3,Feature tree,2,Feature tree,has features with,unique identifiers
+3,Feature tree,2,Feature tree,has features with,feature cardinality
+3,Feature tree,2,Feature tree,has features with,attributes
+3,Feature tree,2,Feature tree,root feature is included in,all configurations
+3,Feature tree,2,Feature tree,can exist,without cross-tree constraints
+3,Feature tree,2,Feature tree,can be decomposed into,subparts
+3,Feature tree,2,Feature tree,can be decomposed into,submodels
+3,Feature tree,2,Feature tree,can import,subtrees
+3,Feature tree,3,Feature tree,is also known as,feature diagram
+3,Feature tree,3,Feature tree,is,a hierarchically arranged set of features
+3,Feature tree,3,Feature tree,is,a main part of a UVL model
+3,Feature tree,3,Feature tree,consists of,features
+3,Feature tree,3,Feature tree,consists of,groups
+3,Feature tree,3,Feature tree,requires,exactly one root feature
+3,Feature tree,3,Feature tree,represents hierarchy with,indentation
+3,Feature tree,3,Feature tree,uses keywords to specify,parent-child relationships
+3,Feature tree,3,Feature tree,allows features to have,an arbitrary number of groups
+3,Feature tree,3,Feature tree,allows groups to have,an arbitrary number of features
+3,Feature tree,3,Feature tree,denotes relationship between features and groups with,indentation
+3,Feature tree,3,Feature tree,has features with,unique identifiers
+3,Feature tree,3,Feature tree,has features with,feature cardinality
+3,Feature tree,3,Feature tree,has features with,attributes
+3,Feature tree,3,Feature tree,root feature is included in,all configurations
+3,Feature tree,3,Feature tree,can exist,without cross-tree constraints
+3,Feature tree,3,Feature tree,can be decomposed into,subparts
+3,Feature tree,3,Feature tree,can be decomposed into,submodels
+3,Feature tree,3,Feature tree,allows composition via,an import mechanism
+3,Feature tree,3,Feature tree,can contain,thousands of features
+3,Feature tree,4,Feature tree,is also known as,feature diagram
+3,Feature tree,4,Feature tree,is,a hierarchically arranged set of features
+3,Feature tree,4,Feature tree,is,a main part of a UVL model
+3,Feature tree,4,Feature tree,consists of,features
+3,Feature tree,4,Feature tree,consists of,groups
+3,Feature tree,4,Feature tree,requires,exactly one root feature
+3,Feature tree,4,Feature tree,represents hierarchy with,indentation
+3,Feature tree,4,Feature tree,uses keywords to specify,parent-child relationships
+3,Feature tree,4,Feature tree,allows features to have,an arbitrary number of groups
+3,Feature tree,4,Feature tree,allows groups to have,an arbitrary number of features
+3,Feature tree,4,Feature tree,denotes relationship between features and groups with,indentation
+3,Feature tree,4,Feature tree,has features with,unique identifiers
+3,Feature tree,4,Feature tree,has features with,feature cardinality
+3,Feature tree,4,Feature tree,has features with,attributes
+3,Feature tree,4,Feature tree,root feature is included in,all configurations
+3,Feature tree,4,Feature tree,can exist,without cross-tree constraints
+3,Feature tree,4,Feature tree,can be decomposed into,subparts
+3,Feature tree,4,Feature tree,can be decomposed into,submodels
+3,Feature tree,4,Feature tree,allows composition via,an import mechanism
+3,Feature tree,4,Feature tree,can contain,thousands of features
+3,Feature tree,4,Feature tree,supports,mandatory groups
+3,Feature tree,4,Feature tree,supports,optional groups
+3,Feature tree,4,Feature tree,supports,alternative groups
+3,Feature tree,4,Feature tree,supports,or groups
+3,Feature tree,4,Feature tree,supports,group cardinality groups
+3,Feature tree,5,Feature tree,is also known as,feature diagram
+3,Feature tree,5,Feature tree,is,a hierarchically arranged set of features
+3,Feature tree,5,Feature tree,is,a main part of a UVL model
+3,Feature tree,5,Feature tree,consists of,features
+3,Feature tree,5,Feature tree,consists of,groups
+3,Feature tree,5,Feature tree,requires,exactly one root feature
+3,Feature tree,5,Feature tree,represents hierarchy with,indentation
+3,Feature tree,5,Feature tree,uses keywords to specify,parent-child relationships
+3,Feature tree,5,Feature tree,allows features to have,an arbitrary number of groups
+3,Feature tree,5,Feature tree,allows groups to have,an arbitrary number of features
+3,Feature tree,5,Feature tree,denotes relationship between features and groups with,indentation
+3,Feature tree,5,Feature tree,has features with,unique identifiers
+3,Feature tree,5,Feature tree,has features with,feature cardinality
+3,Feature tree,5,Feature tree,has features with,attributes
+3,Feature tree,5,Feature tree,root feature is included in,all configurations
+3,Feature tree,5,Feature tree,can exist,without cross-tree constraints
+3,Feature tree,5,Feature tree,can be decomposed into,subparts
+3,Feature tree,5,Feature tree,can be decomposed into,submodels
+3,Feature tree,5,Feature tree,allows composition via,an import mechanism
+3,Feature tree,5,Feature tree,can contain,thousands of features
+3,Feature tree,5,Feature tree,supports,mandatory groups
+3,Feature tree,5,Feature tree,supports,optional groups
+3,Feature tree,5,Feature tree,supports,alternative groups
+3,Feature tree,5,Feature tree,supports,or groups
+3,Feature tree,5,Feature tree,supports,group cardinality groups
+4,Cross-tree constraints,1,Cross-tree constraints,are,a main part of a UVL model
+4,Cross-tree constraints,1,Cross-tree constraints,represent,feature relationships
+4,Cross-tree constraints,1,Cross-tree constraints,are,inclusion statements
+4,Cross-tree constraints,1,Cross-tree constraints,are,exclusion statements
+4,Cross-tree constraints,1,Cross-tree constraints,are,arbitrary propositional formulae
+4,Cross-tree constraints,1,Cross-tree constraints,include,Requires
+4,Cross-tree constraints,1,Cross-tree constraints,include,Excludes
+4,Cross-tree constraints,1,Cross-tree constraints,impact,the configuration space
+4,Cross-tree constraints,1,Cross-tree constraints,must be satisfied by,valid configurations
+4,Cross-tree constraints,1,Cross-tree constraints,use,propositional logic operators
+4,Cross-tree constraints,1,Cross-tree constraints,use operator,!
+4,Cross-tree constraints,1,Cross-tree constraints,use operator,&
+4,Cross-tree constraints,1,Cross-tree constraints,use operator,|
+4,Cross-tree constraints,1,Cross-tree constraints,use operator,=>
+4,Cross-tree constraints,1,Cross-tree constraints,use operator,<=>
+4,Cross-tree constraints,1,Cross-tree constraints,use,brackets
+4,Cross-tree constraints,1,Cross-tree constraints,combine,Boolean variables
+4,Cross-tree constraints,1,Cross-tree constraints,combine,Boolean constants
+4,Cross-tree constraints,1,Cross-tree constraints,combine,predicates
+4,Cross-tree constraints,1,Cross-tree constraints,Boolean variables refer to,a feature name
+4,Cross-tree constraints,1,Cross-tree constraints,Boolean variables refer to,a Boolean-attribute key
+4,Cross-tree constraints,1,Cross-tree constraints,specify dependencies based on,string and numerical values
+4,Cross-tree constraints,1,Cross-tree constraints,predicates use operator,==
+4,Cross-tree constraints,1,Cross-tree constraints,predicates use operator,>
+4,Cross-tree constraints,1,Cross-tree constraints,predicates use operator,<
+4,Cross-tree constraints,1,Cross-tree constraints,predicates use operator,!=
+4,Cross-tree constraints,1,Cross-tree constraints,predicates use operator,>=
+4,Cross-tree constraints,1,Cross-tree constraints,predicates use operator,<=
+4,Cross-tree constraints,1,Cross-tree constraints,predicates connect,two terms
+4,Cross-tree constraints,1,Cross-tree constraints,terms include,variable references
+4,Cross-tree constraints,1,Cross-tree constraints,terms include,constants
+4,Cross-tree constraints,1,Cross-tree constraints,terms include,functions
+4,Cross-tree constraints,1,Cross-tree constraints,terms include,binary expressions
+4,Cross-tree constraints,1,Cross-tree constraints,function include,sum
+4,Cross-tree constraints,1,Cross-tree constraints,function include,average
+4,Cross-tree constraints,1,Cross-tree constraints,function include,length
+4,Cross-tree constraints,1,Cross-tree constraints,binary expression include,+
+4,Cross-tree constraints,1,Cross-tree constraints,binary expression include,-
+4,Cross-tree constraints,1,Cross-tree constraints,binary expression include,*
+4,Cross-tree constraints,1,Cross-tree constraints,binary expression include,/
+4,Cross-tree constraints,1,Cross-tree constraints,in imported submodels,apply to the composed model
+4,Cross-tree constraints,1,Cross-tree constraints,in composed models,reference features using namespaces
+4,Cross-tree constraints,1,Cross-tree constraints,in the core language,are limited to propositional logic
+4,Cross-tree constraints,1,Cross-tree constraints,in the core language,exclude constraints over attributes
+4,Cross-tree constraints,1,Cross-tree constraints,interact with feature cardinality via,contextual clone constraints
+4,Cross-tree constraints,2,Cross-tree constraints,are,a main part of a UVL model
+4,Cross-tree constraints,2,Cross-tree constraints,represent,feature relationships
+4,Cross-tree constraints,2,Cross-tree constraints,are,inclusion statements
+4,Cross-tree constraints,2,Cross-tree constraints,are,exclusion statements
+4,Cross-tree constraints,2,Cross-tree constraints,are,arbitrary propositional formulae
+4,Cross-tree constraints,2,Cross-tree constraints,include,Requires
+4,Cross-tree constraints,2,Cross-tree constraints,include,Excludes
+4,Cross-tree constraints,2,Cross-tree constraints,impact,the configuration space
+4,Cross-tree constraints,2,Cross-tree constraints,must be satisfied by,valid configurations
+4,Cross-tree constraints,2,Cross-tree constraints,use,propositional logic operators
+4,Cross-tree constraints,2,Cross-tree constraints,use operator,!
+4,Cross-tree constraints,2,Cross-tree constraints,use operator,&
+4,Cross-tree constraints,2,Cross-tree constraints,use operator,|
+4,Cross-tree constraints,2,Cross-tree constraints,use operator,=>
+4,Cross-tree constraints,2,Cross-tree constraints,use operator,<=>
+4,Cross-tree constraints,2,Cross-tree constraints,use,brackets
+4,Cross-tree constraints,2,Cross-tree constraints,combine,Boolean variables
+4,Cross-tree constraints,2,Cross-tree constraints,combine,Boolean constants
+4,Cross-tree constraints,2,Cross-tree constraints,combine,predicates
+4,Cross-tree constraints,2,Cross-tree constraints,Boolean variables refer to,a feature name
+4,Cross-tree constraints,2,Cross-tree constraints,Boolean variables refer to,a Boolean-attribute key
+4,Cross-tree constraints,2,Cross-tree constraints,specify dependencies based on,string values
+4,Cross-tree constraints,2,Cross-tree constraints,specify dependencies based on,numerical values
+4,Cross-tree constraints,2,Cross-tree constraints,predicates use operator,==
+4,Cross-tree constraints,2,Cross-tree constraints,predicates use operator,>
+4,Cross-tree constraints,2,Cross-tree constraints,predicates use operator,<
+4,Cross-tree constraints,2,Cross-tree constraints,predicates use operator,!=
+4,Cross-tree constraints,2,Cross-tree constraints,predicates use operator,>=
+4,Cross-tree constraints,2,Cross-tree constraints,predicates use operator,<=
+4,Cross-tree constraints,2,Cross-tree constraints,predicates connect,two terms
+4,Cross-tree constraints,2,Cross-tree constraints,terms include,variable references
+4,Cross-tree constraints,2,Cross-tree constraints,terms include,constants
+4,Cross-tree constraints,2,Cross-tree constraints,terms include,functions
+4,Cross-tree constraints,2,Cross-tree constraints,terms include,binary expressions
+4,Cross-tree constraints,2,Cross-tree constraints,function include,sum
+4,Cross-tree constraints,2,Cross-tree constraints,function include,average
+4,Cross-tree constraints,2,Cross-tree constraints,function include,length
+4,Cross-tree constraints,2,Cross-tree constraints,binary expression include,+
+4,Cross-tree constraints,2,Cross-tree constraints,binary expression include,-
+4,Cross-tree constraints,2,Cross-tree constraints,binary expression include,*
+4,Cross-tree constraints,2,Cross-tree constraints,binary expression include,/
+4,Cross-tree constraints,2,Cross-tree constraints,in imported submodels,apply to the composed model
+4,Cross-tree constraints,2,Cross-tree constraints,in composed models,reference features using namespaces
+4,Cross-tree constraints,2,Cross-tree constraints,in the core language,are limited to propositional logic
+4,Cross-tree constraints,2,Cross-tree constraints,in the core language,exclude constraints over attributes
+4,Cross-tree constraints,2,Cross-tree constraints,interact with feature cardinality via,contextual clone constraints
+4,Cross-tree constraints,3,Cross-tree constraints,are,a main part of a UVL model
+4,Cross-tree constraints,3,Cross-tree constraints,represent,feature relationships
+4,Cross-tree constraints,3,Cross-tree constraints,are typically,inclusion statements
+4,Cross-tree constraints,3,Cross-tree constraints,are typically,exclusion statements
+4,Cross-tree constraints,3,Cross-tree constraints,can be,arbitrary propositional formulae
+4,Cross-tree constraints,3,Cross-tree constraints,include,Requires
+4,Cross-tree constraints,3,Cross-tree constraints,include,Excludes
+4,Cross-tree constraints,3,Cross-tree constraints,in UVL core language are limited to,propositional logic
+4,Cross-tree constraints,3,Cross-tree constraints,in UVL core language exclude,constraints over attributes
+4,Cross-tree constraints,3,Cross-tree constraints,in Arithmetic level include,numeric constraints over feature attributes
+4,Cross-tree constraints,3,Cross-tree constraints,in Type level include,string comparisons
+4,Cross-tree constraints,3,Cross-tree constraints,in Type level include,string length comparisons
+4,Cross-tree constraints,3,Cross-tree constraints,from imported submodels,apply to the composed model
+4,Cross-tree constraints,3,Cross-tree constraints,in composed models can reference features using,namespaces
+4,Cross-tree constraints,3,Cross-tree constraints,in composed models can reference features using,aliases
+4,Cross-tree constraints,3,Cross-tree constraints,must be satisfied by,valid configurations
+4,Cross-tree constraints,3,Cross-tree constraints,use operator,!
+4,Cross-tree constraints,3,Cross-tree constraints,use operator,&
+4,Cross-tree constraints,3,Cross-tree constraints,use operator,|
+4,Cross-tree constraints,3,Cross-tree constraints,use operator,=>
+4,Cross-tree constraints,3,Cross-tree constraints,use operator,<=>
+4,Cross-tree constraints,3,Cross-tree constraints,combine,Boolean variables
+4,Cross-tree constraints,3,Cross-tree constraints,combine,Boolean constants
+4,Cross-tree constraints,3,Cross-tree constraints,combine,predicates
+4,Cross-tree constraints,3,Cross-tree constraints,Boolean variables refer to,feature names
+4,Cross-tree constraints,3,Cross-tree constraints,Boolean variables refer to,Boolean-attribute keys
+4,Cross-tree constraints,3,Cross-tree constraints,predicates use operator,==
+4,Cross-tree constraints,3,Cross-tree constraints,predicates use operator,>
+4,Cross-tree constraints,3,Cross-tree constraints,predicates use operator,<
+4,Cross-tree constraints,3,Cross-tree constraints,predicates use operator,!=
+4,Cross-tree constraints,3,Cross-tree constraints,predicates use operator,>=
+4,Cross-tree constraints,3,Cross-tree constraints,predicates use operator,<=
+4,Cross-tree constraints,3,Cross-tree constraints,predicates connect,two terms
+4,Cross-tree constraints,3,Cross-tree constraints,terms include,variable references
+4,Cross-tree constraints,3,Cross-tree constraints,terms include,constants
+4,Cross-tree constraints,3,Cross-tree constraints,terms include,functions
+4,Cross-tree constraints,3,Cross-tree constraints,terms include,binary expressions
+4,Cross-tree constraints,3,Cross-tree constraints,functions include,sum
+4,Cross-tree constraints,3,Cross-tree constraints,functions include,average
+4,Cross-tree constraints,3,Cross-tree constraints,functions include,length
+4,Cross-tree constraints,3,Cross-tree constraints,binary expression operators include,+
+4,Cross-tree constraints,3,Cross-tree constraints,binary expression operators include,-
+4,Cross-tree constraints,3,Cross-tree constraints,binary expression operators include,*
+4,Cross-tree constraints,3,Cross-tree constraints,binary expression operators include,/
+4,Cross-tree constraints,3,Cross-tree constraints,interact with feature cardinality via,contextual clone constraints
+4,Cross-tree constraints,4,Cross-tree constraints,are,a main part of a UVL model
+4,Cross-tree constraints,4,Cross-tree constraints,represent,feature relationships
+4,Cross-tree constraints,4,Cross-tree constraints,are typically,inclusion statements
+4,Cross-tree constraints,4,Cross-tree constraints,are typically,exclusion statements
+4,Cross-tree constraints,4,Cross-tree constraints,can be,arbitrary propositional formulae
+4,Cross-tree constraints,4,Cross-tree constraints,include,Requires
+4,Cross-tree constraints,4,Cross-tree constraints,include,Excludes
+4,Cross-tree constraints,4,Cross-tree constraints,evaluate to,true or false
+4,Cross-tree constraints,4,Valid configurations,must satisfy,every attached cross-tree constraint
+4,Cross-tree constraints,4,Cross-tree constraints,use,propositional logic operators
+4,Cross-tree constraints,4,Propositional logic operators,include,!
+4,Cross-tree constraints,4,Propositional logic operators,include,&
+4,Cross-tree constraints,4,Propositional logic operators,include,|
+4,Cross-tree constraints,4,Propositional logic operators,include,=>
+4,Cross-tree constraints,4,Propositional logic operators,include,<=>
+4,Cross-tree constraints,4,Cross-tree constraints,use,brackets
+4,Cross-tree constraints,4,Cross-tree constraints,combine,Boolean variables
+4,Cross-tree constraints,4,Cross-tree constraints,combine,Boolean constants
+4,Cross-tree constraints,4,Cross-tree constraints,combine,predicates
+4,Cross-tree constraints,4,Boolean variables,refer to,feature names
+4,Cross-tree constraints,4,Boolean variables,refer to,Boolean-attribute keys
+4,Cross-tree constraints,4,UVL core language constraints,are limited to,propositional logic
+4,Cross-tree constraints,4,UVL core language constraints,exclude,constraints over attributes
+4,Cross-tree constraints,4,Arithmetic level constraints,include,numeric constraints over feature attributes
+4,Cross-tree constraints,4,Arithmetic level constraints,support,arithmetic operators
+4,Cross-tree constraints,4,Arithmetic operators,include,+
+4,Cross-tree constraints,4,Arithmetic operators,include,-
+4,Cross-tree constraints,4,Arithmetic operators,include,*
+4,Cross-tree constraints,4,Arithmetic operators,include,/
+4,Cross-tree constraints,4,Arithmetic operators,include,==
+4,Cross-tree constraints,4,Arithmetic operators,include,<
+4,Cross-tree constraints,4,Arithmetic operators,include,>
+4,Cross-tree constraints,4,Arithmetic operators,include,<=
+4,Cross-tree constraints,4,Arithmetic operators,include,>=
+4,Cross-tree constraints,4,Cross-tree constraints,support,aggregate functions
+4,Cross-tree constraints,4,Aggregate functions,include,sum
+4,Cross-tree constraints,4,Aggregate functions,include,average
+4,Cross-tree constraints,4,Type-level constraints,include,string comparisons
+4,Cross-tree constraints,4,Type-level constraints,include,string length checks
+4,Cross-tree constraints,4,Type-level constraints,support,len function
+4,Cross-tree constraints,4,Submodel cross-tree constraints,apply to,the composed model
+4,Cross-tree constraints,4,Composed model constraints,reference features using,namespaces
+4,Cross-tree constraints,4,Composed model constraints,reference features using,aliases
+4,Cross-tree constraints,4,Predicates,specify dependencies based on,string values
+4,Cross-tree constraints,4,Predicates,specify dependencies based on,numerical values
+4,Cross-tree constraints,4,Predicates,use,operators
+4,Cross-tree constraints,4,Predicate operators,include,==
+4,Cross-tree constraints,4,Predicate operators,include,>
+4,Cross-tree constraints,4,Predicate operators,include,<
+4,Cross-tree constraints,4,Predicate operators,include,!=
+4,Cross-tree constraints,4,Predicate operators,include,>=
+4,Cross-tree constraints,4,Predicate operators,include,<=
+4,Cross-tree constraints,4,Predicate operators,connect,two terms
+4,Cross-tree constraints,4,Terms,include,variable references
+4,Cross-tree constraints,4,Terms,include,constants
+4,Cross-tree constraints,4,Terms,include,functions
+4,Cross-tree constraints,4,Terms,include,binary expressions
+4,Cross-tree constraints,4,Cross-tree constraints,interact with,feature cardinality
+4,Cross-tree constraints,4,Contextual clone constraints,are created for,feature cardinality interactions
+4,Cross-tree constraints,4,Contextual clone constraints,ensure,configurability of clones
+4,Cross-tree constraints,4,Cross-tree constraints for cloned features,replace occurrences with,an or over clone features
+4,Cross-tree constraints,5,Cross-tree constraints,are,a main part of a UVL model
+4,Cross-tree constraints,5,Cross-tree constraints,represent,feature relationships
+4,Cross-tree constraints,5,Cross-tree constraints,are typically,inclusion statements
+4,Cross-tree constraints,5,Cross-tree constraints,are typically,exclusion statements
+4,Cross-tree constraints,5,Cross-tree constraints,can be,arbitrary propositional formulae
+4,Cross-tree constraints,5,Cross-tree constraints,evaluate to,true or false
+4,Cross-tree constraints,5,Cross-tree constraints,include,Requires
+4,Cross-tree constraints,5,Cross-tree constraints,include,Excludes
+4,Cross-tree constraints,5,Cross-tree constraints,must be satisfied by,valid configurations
+4,Cross-tree constraints,5,Cross-tree constraints,use,propositional logic operators
+4,Cross-tree constraints,5,Cross-tree constraints,use,brackets
+4,Cross-tree constraints,5,Cross-tree constraints,combine,Boolean variables
+4,Cross-tree constraints,5,Cross-tree constraints,combine,Boolean constants
+4,Cross-tree constraints,5,Cross-tree constraints,combine,predicates
+4,Cross-tree constraints,5,Cross-tree constraints,Boolean variables refer to,feature names
+4,Cross-tree constraints,5,Cross-tree constraints,Boolean variables refer to,Boolean-attribute keys
+4,Cross-tree constraints,5,Cross-tree constraints,in the core language,are limited to propositional logic
+4,Cross-tree constraints,5,Cross-tree constraints,in the core language,exclude constraints over attributes
+4,Cross-tree constraints,5,Cross-tree constraints,in the Arithmetic level,include numeric constraints over feature attributes
+4,Cross-tree constraints,5,Cross-tree constraints,in the Arithmetic level,support arithmetic operators
+4,Cross-tree constraints,5,Cross-tree constraints,in the Arithmetic level,support aggregate functions
+4,Cross-tree constraints,5,Cross-tree constraints,in the Type level,include string comparisons
+4,Cross-tree constraints,5,Cross-tree constraints,in the Type level,include string length checks
+4,Cross-tree constraints,5,Cross-tree constraints,in the Type level,support len function
+4,Cross-tree constraints,5,Cross-tree constraints,from imported submodels,apply to the composed model
+4,Cross-tree constraints,5,Cross-tree constraints,in composed models,reference features using namespaces
+4,Cross-tree constraints,5,Cross-tree constraints,in composed models,reference features using aliases
+4,Cross-tree constraints,5,Cross-tree constraints,predicates use,operators
+4,Cross-tree constraints,5,Cross-tree constraints,predicates connect,two terms
+4,Cross-tree constraints,5,Cross-tree constraints,terms include,variable references
+4,Cross-tree constraints,5,Cross-tree constraints,terms include,constants
+4,Cross-tree constraints,5,Cross-tree constraints,terms include,functions
+4,Cross-tree constraints,5,Cross-tree constraints,terms include,binary expressions
+4,Cross-tree constraints,5,Cross-tree constraints,functions include,sum
+4,Cross-tree constraints,5,Cross-tree constraints,functions include,average
+4,Cross-tree constraints,5,Cross-tree constraints,functions include,length
+4,Cross-tree constraints,5,Cross-tree constraints,binary expression operators include,+
+4,Cross-tree constraints,5,Cross-tree constraints,binary expression operators include,-
+4,Cross-tree constraints,5,Cross-tree constraints,binary expression operators include,*
+4,Cross-tree constraints,5,Cross-tree constraints,binary expression operators include,/
+4,Cross-tree constraints,5,Cross-tree constraints,interact with,feature cardinality
+4,Cross-tree constraints,5,Cross-tree constraints,involve,contextual clone constraints
+4,Cross-tree constraints,5,Cross-tree constraints for cloned features,replace feature occurrences with,an or over clone features
+5,Boolean level,1,Boolean level,is,a major language level
+5,Boolean level,1,Boolean level,is,the core language of UVL
+5,Boolean level,1,Boolean level,is,the base language level
+5,Boolean level,1,Boolean level,can be encoded as,a SAT problem
+5,Boolean level,1,Boolean level,can be represented as,a CNF instance
+5,Boolean level,1,Boolean level,encapsulates,specific language constructs
+5,Boolean level,1,Boolean level,includes,the mandatory relationship
+5,Boolean level,1,Boolean level,includes,the optional relationship
+5,Boolean level,1,Boolean level,includes,the alternative relationship
+5,Boolean level,1,Boolean level,includes,the or relationship
+5,Boolean level,1,Boolean level,includes,feature trees
+5,Boolean level,1,Boolean level,includes,cross-tree constraints
+5,Boolean level,1,Boolean level cross-tree constraints,are limited to,propositional logic
+5,Boolean level,1,Boolean level cross-tree constraints,exclude,constraints over attributes
+5,Boolean level,1,Boolean level attributes,store,feature information
+5,Boolean level,1,Boolean level attributes,do not influence,configuration validity
+5,Boolean level,1,Boolean level,has a minor level,Group Cardinality
+5,Boolean level,1,Boolean level minor levels,are,optional extensions
+5,Boolean level,1,Boolean level,is automatically included by,its minor levels
+5,Boolean level,1,Boolean level,is supported by,FeatureIDE
+5,Boolean level,1,Boolean level,is supported by,flamapy
+5,Boolean level,1,Boolean level,is supported by,Nemo
+5,Boolean level,1,Boolean level,is supported by,ddueruem
+5,Boolean level,1,Boolean level,is supported by,FM Fact Level
+5,Boolean level,1,Boolean level,is supported by,pure::variants
+5,Boolean level,1,Boolean level,is supported by,variability.dev
+5,Boolean level,2,Boolean level,is,a major language level
+5,Boolean level,2,Boolean level,is,the core language of UVL
+5,Boolean level,2,Boolean level,is,the base language level
+5,Boolean level,2,Boolean level,can be encoded as,a SAT problem
+5,Boolean level,2,Boolean level,can be represented as,a CNF instance
+5,Boolean level,2,Boolean level,encapsulates,specific language constructs
+5,Boolean level,2,Boolean level,includes,the mandatory relationship
+5,Boolean level,2,Boolean level,includes,the optional relationship
+5,Boolean level,2,Boolean level,includes,the alternative relationship
+5,Boolean level,2,Boolean level,includes,the or relationship
+5,Boolean level,2,Boolean level,includes,feature trees
+5,Boolean level,2,Boolean level,includes,cross-tree constraints
+5,Boolean level,2,Boolean level cross-tree constraints,are limited to,propositional logic
+5,Boolean level,2,Boolean level cross-tree constraints,exclude,constraints over attributes
+5,Boolean level,2,Boolean level attributes,store,feature information
+5,Boolean level,2,Boolean level attributes,do not influence,configuration validity
+5,Boolean level,2,Boolean level,has a minor level,Group Cardinality
+5,Boolean level,2,Boolean level,is automatically included by,its minor levels
+5,Boolean level,2,Boolean level,is supported by,FeatureIDE
+5,Boolean level,2,Boolean level,is supported by,flamapy
+5,Boolean level,2,Boolean level,is supported by,Nemo
+5,Boolean level,2,Boolean level,is supported by,ddueruem
+5,Boolean level,2,Boolean level,is supported by,FM Fact Level
+5,Boolean level,2,Boolean level,is supported by,pure::variants
+5,Boolean level,2,Boolean level,is supported by,variability.dev
+5,Boolean level,3,Boolean level,is,a major language level
+5,Boolean level,3,Boolean level,is,the core language of UVL
+5,Boolean level,3,Boolean level,is,the base language level
+5,Boolean level,3,Boolean level,can be encoded as,a SAT problem
+5,Boolean level,3,Boolean level,can be represented as,a CNF instance
+5,Boolean level,3,Boolean level,encapsulates,specific language constructs
+5,Boolean level,3,Boolean level,includes,the mandatory relationship
+5,Boolean level,3,Boolean level,includes,the optional relationship
+5,Boolean level,3,Boolean level,includes,the alternative relationship
+5,Boolean level,3,Boolean level,includes,the or relationship
+5,Boolean level,3,Boolean level,includes,feature trees
+5,Boolean level,3,Boolean level,includes,cross-tree constraints
+5,Boolean level,3,Boolean level cross-tree constraints,are limited to,propositional logic
+5,Boolean level,3,Boolean level cross-tree constraints,exclude,constraints over attributes
+5,Boolean level,3,Boolean level attributes,store,feature information
+5,Boolean level,3,Boolean level attributes,do not influence,configuration validity
+5,Boolean level,3,Boolean level,has a minor level,Group Cardinality
+5,Boolean level,3,Boolean level,is automatically included by,its minor levels
+5,Boolean level,3,Boolean level,is supported by,FeatureIDE
+5,Boolean level,3,Boolean level,is supported by,flamapy
+5,Boolean level,3,Boolean level,is supported by,Nemo
+5,Boolean level,3,Boolean level,is supported by,ddueruem
+5,Boolean level,3,Boolean level,is supported by,FM Fact Level
+5,Boolean level,3,Boolean level,is supported by,pure::variants
+5,Boolean level,3,Boolean level,is supported by,variability.dev
+5,Boolean level,4,Boolean level,is,major language level
+5,Boolean level,4,Boolean level,is,core language of UVL
+5,Boolean level,4,Boolean level,is,base language level
+5,Boolean level,4,Boolean level,encapsulates,specific language constructs
+5,Boolean level,4,Boolean level,includes,mandatory relationship
+5,Boolean level,4,Boolean level,includes,optional relationship
+5,Boolean level,4,Boolean level,includes,alternative relationship
+5,Boolean level,4,Boolean level,includes,or relationship
+5,Boolean level,4,Boolean level,includes,feature trees
+5,Boolean level,4,Boolean level,includes,cross-tree constraints
+5,Boolean level,4,Boolean level cross-tree constraints,are limited to,propositional logic
+5,Boolean level,4,Boolean level cross-tree constraints,exclude,constraints over attributes
+5,Boolean level,4,Boolean level attributes,store,feature information
+5,Boolean level,4,Boolean level attributes,do not influence,configuration validity
+5,Boolean level,4,Boolean level,can be encoded as,SAT problem
+5,Boolean level,4,Boolean level,can be represented as,CNF instance
+5,Boolean level,4,Boolean level,has minor level,Group Cardinality
+5,Boolean level,4,Boolean level minor levels,are,optional extensions
+5,Boolean level,4,Boolean level,is automatically included by,its minor levels
+5,Boolean level,4,Boolean level,is supported by,FeatureIDE
+5,Boolean level,4,Boolean level,is supported by,flamapy
+5,Boolean level,4,Boolean level,is supported by,Nemo
+5,Boolean level,4,Boolean level,is supported by,ddueruem
+5,Boolean level,4,Boolean level,is supported by,variability.dev
+5,Boolean level,4,Boolean level,is supported by,pure::variants
+5,Boolean level,4,Boolean level,is supported by,FM Fact Level
+5,Boolean level,5,Boolean level,is,a major language level
+5,Boolean level,5,Boolean level,is,the core language of UVL
+5,Boolean level,5,Boolean level,is,the base language level
+5,Boolean level,5,Boolean level,encapsulates,specific language constructs
+5,Boolean level,5,Boolean level,includes,the mandatory relationship
+5,Boolean level,5,Boolean level,includes,the optional relationship
+5,Boolean level,5,Boolean level,includes,the alternative relationship
+5,Boolean level,5,Boolean level,includes,the or relationship
+5,Boolean level,5,Boolean level,includes,feature trees
+5,Boolean level,5,Boolean level,includes,cross-tree constraints
+5,Boolean level,5,Boolean level cross-tree constraints,are limited to,propositional logic
+5,Boolean level,5,Boolean level cross-tree constraints,exclude,constraints over attributes
+5,Boolean level,5,Boolean level attributes,store,feature information
+5,Boolean level,5,Boolean level attributes,do not influence,configuration validity
+5,Boolean level,5,Boolean level,can be encoded as,a SAT problem
+5,Boolean level,5,Boolean level,can be represented as,a CNF instance
+5,Boolean level,5,Boolean level,has a minor level,Group Cardinality
+5,Boolean level,5,Boolean level,is automatically included by,its minor levels
+5,Boolean level,5,Boolean level,is fully included in,the Arithmetic-level
+5,Boolean level,5,Boolean level,is supported by,FeatureIDE
+5,Boolean level,5,Boolean level,is supported by,flamapy
+5,Boolean level,5,Boolean level,is supported by,Nemo
+5,Boolean level,5,Boolean level,is supported by,ddueruem
+5,Boolean level,5,Boolean level,is supported by,variability.dev
+5,Boolean level,5,Boolean level,is supported by,FM Fact Level
+5,Boolean level,5,Boolean level,is supported by,pure::variants
+6,Arithmetic level,1,Arithmetic level,is,a major language level
+6,Arithmetic level,1,Arithmetic level,fully includes,the Boolean level
+6,Arithmetic level,1,Arithmetic level,extends,the Boolean level
+6,Arithmetic level,1,Arithmetic level,introduces,numeric constraints over feature attributes
+6,Arithmetic level,1,Arithmetic level,can be directly represented as,SMT problems
+6,Arithmetic level,1,Arithmetic level,can be directly represented as,CP problems
+6,Arithmetic level,1,Arithmetic level,requires further processing for,SAT encoding
+6,Arithmetic level,1,Arithmetic level,supports operator,+
+6,Arithmetic level,1,Arithmetic level,supports operator,-
+6,Arithmetic level,1,Arithmetic level,supports operator,*
+6,Arithmetic level,1,Arithmetic level,supports operator,/
+6,Arithmetic level,1,Arithmetic level,supports operator,==
+6,Arithmetic level,1,Arithmetic level,supports operator,<
+6,Arithmetic level,1,Arithmetic level,supports operator,>
+6,Arithmetic level,1,Arithmetic level,supports operator,<=
+6,Arithmetic level,1,Arithmetic level,supports operator,>=
+6,Arithmetic level,1,Arithmetic level,has minor level,Feature Cardinality
+6,Arithmetic level,1,Arithmetic level,has minor level,Aggregate Functions
+6,Arithmetic level,1,Feature Cardinality,is,an optional extension of the Arithmetic level
+6,Arithmetic level,1,Aggregate Functions,is,an optional extension of the Arithmetic level
+6,Arithmetic level,1,Arithmetic level,is extended by,the Type level
+6,Arithmetic level,1,Arithmetic level,can be converted to,the Boolean level
+6,Arithmetic level,1,Arithmetic level,can be included using,wildcards
+6,Arithmetic level,2,Arithmetic level,is,a major language level
+6,Arithmetic level,2,Arithmetic level,extends,the Boolean level
+6,Arithmetic level,2,Arithmetic level,fully includes,the Boolean level
+6,Arithmetic level,2,Arithmetic level,introduces,numeric constraints over feature attributes
+6,Arithmetic level,2,Arithmetic level,can be represented as,SMT problems
+6,Arithmetic level,2,Arithmetic level,can be represented as,CP problems
+6,Arithmetic level,2,Arithmetic level,requires further processing for,SAT encoding
+6,Arithmetic level,2,Arithmetic level,encapsulates,language constructs
+6,Arithmetic level,2,Arithmetic level,supports operator,+
+6,Arithmetic level,2,Arithmetic level,supports operator,-
+6,Arithmetic level,2,Arithmetic level,supports operator,*
+6,Arithmetic level,2,Arithmetic level,supports operator,/
+6,Arithmetic level,2,Arithmetic level,supports operator,==
+6,Arithmetic level,2,Arithmetic level,supports operator,<
+6,Arithmetic level,2,Arithmetic level,supports operator,>
+6,Arithmetic level,2,Arithmetic level,supports operator,<=
+6,Arithmetic level,2,Arithmetic level,supports operator,>=
+6,Arithmetic level,2,Arithmetic level,has minor level,Feature Cardinality
+6,Arithmetic level,2,Arithmetic level,has minor level,Aggregate Functions
+6,Arithmetic level,2,Feature Cardinality,is,an optional extension of the Arithmetic level
+6,Arithmetic level,2,Aggregate Functions,is,an optional extension of the Arithmetic level
+6,Arithmetic level,2,Aggregate Functions,include,sum
+6,Arithmetic level,2,Aggregate Functions,include,avg
+6,Arithmetic level,2,Arithmetic level,is extended by,the Type level
+6,Arithmetic level,2,Arithmetic level,can be converted to,the Boolean level
+6,Arithmetic level,2,Arithmetic level,can be included using,wildcards
+6,Arithmetic level,2,Arithmetic level,can be included using,Arithmetic.*
+6,Arithmetic level,3,Arithmetic level,is,a major language level
+6,Arithmetic level,3,Arithmetic level,extends,the Boolean level
+6,Arithmetic level,3,Arithmetic level,fully includes,the Boolean level
+6,Arithmetic level,3,Arithmetic level,introduces,numeric constraints over feature attributes
+6,Arithmetic level,3,Arithmetic level,can be represented as,SMT problems
+6,Arithmetic level,3,Arithmetic level,can be represented as,CP problems
+6,Arithmetic level,3,Arithmetic level,requires further processing for,SAT encoding
+6,Arithmetic level,3,Arithmetic level,encapsulates,language constructs
+6,Arithmetic level,3,Arithmetic level,supports operator,+
+6,Arithmetic level,3,Arithmetic level,supports operator,-
+6,Arithmetic level,3,Arithmetic level,supports operator,*
+6,Arithmetic level,3,Arithmetic level,supports operator,/
+6,Arithmetic level,3,Arithmetic level,supports operator,==
+6,Arithmetic level,3,Arithmetic level,supports operator,<
+6,Arithmetic level,3,Arithmetic level,supports operator,>
+6,Arithmetic level,3,Arithmetic level,supports operator,<=
+6,Arithmetic level,3,Arithmetic level,supports operator,>=
+6,Arithmetic level,3,Arithmetic level,has minor level,Feature Cardinality
+6,Arithmetic level,3,Arithmetic level,has minor level,Aggregate Functions
+6,Arithmetic level,3,Feature Cardinality,is,an optional extension of the Arithmetic level
+6,Arithmetic level,3,Aggregate Functions,is,an optional extension of the Arithmetic level
+6,Arithmetic level,3,Aggregate Functions,include,sum
+6,Arithmetic level,3,Aggregate Functions,include,avg
+6,Arithmetic level,3,Arithmetic level,is extended by,the Type level
+6,Arithmetic level,3,Arithmetic level,can be converted to,the Boolean level
+6,Arithmetic level,3,Arithmetic level,can be included using,wildcards
+6,Arithmetic level,3,Arithmetic level,can be included using,Arithmetic.*
+6,Arithmetic level,3,Arithmetic level,is supported by,TraVarT
+6,Arithmetic level,3,Arithmetic level,is supported by,UVLS
+6,Arithmetic level,3,Arithmetic level,is supported by,V4rdiac
+6,Arithmetic level,4,Arithmetic level,is,a major language level
+6,Arithmetic level,4,Arithmetic level,fully includes,the Boolean level
+6,Arithmetic level,4,Arithmetic level,extends,the Boolean level
+6,Arithmetic level,4,Arithmetic level,introduces,numeric constraints over feature attributes
+6,Arithmetic level,4,Arithmetic level,can be directly represented as,SMT problems
+6,Arithmetic level,4,Arithmetic level,can be directly represented as,CP problems
+6,Arithmetic level,4,Arithmetic level,requires further processing for,SAT encoding
+6,Arithmetic level,4,Arithmetic level,supports operator,+
+6,Arithmetic level,4,Arithmetic level,supports operator,-
+6,Arithmetic level,4,Arithmetic level,supports operator,*
+6,Arithmetic level,4,Arithmetic level,supports operator,/
+6,Arithmetic level,4,Arithmetic level,supports operator,==
+6,Arithmetic level,4,Arithmetic level,supports operator,<
+6,Arithmetic level,4,Arithmetic level,supports operator,>
+6,Arithmetic level,4,Arithmetic level,supports operator,<=
+6,Arithmetic level,4,Arithmetic level,supports operator,>=
+6,Arithmetic level,4,Arithmetic level,has minor level,Feature Cardinality
+6,Arithmetic level,4,Arithmetic level,has minor level,Aggregate Functions
+6,Arithmetic level,4,Arithmetic level,can be included using,wildcards
+6,Arithmetic level,4,Arithmetic level,can be included using,Arithmetic.*
+6,Arithmetic level,4,Arithmetic level,can be converted to,the Boolean level
+6,Arithmetic level,4,Arithmetic level models,can grow exponentially in size,when converted to the Boolean level
+6,Arithmetic level,4,Arithmetic level,is extended by,the Type level
+6,Arithmetic level,4,Arithmetic level,is supported by,TRAVART
+6,Arithmetic level,4,Arithmetic level,is supported by,UVLS
+6,Arithmetic level,4,Arithmetic level,is supported by,V4rdiac
+6,Arithmetic level,5,Arithmetic level,is,a major language level
+6,Arithmetic level,5,Arithmetic level,fully includes,the Boolean level
+6,Arithmetic level,5,Arithmetic level,extends,the Boolean level
+6,Arithmetic level,5,Arithmetic level,introduces,numeric constraints over feature attributes
+6,Arithmetic level,5,Arithmetic level,can be directly represented as,SMT problems
+6,Arithmetic level,5,Arithmetic level,can be directly represented as,CP problems
+6,Arithmetic level,5,Arithmetic level,requires further processing for,SAT encoding
+6,Arithmetic level,5,Arithmetic level,supports operator,+
+6,Arithmetic level,5,Arithmetic level,supports operator,-
+6,Arithmetic level,5,Arithmetic level,supports operator,*
+6,Arithmetic level,5,Arithmetic level,supports operator,/
+6,Arithmetic level,5,Arithmetic level,supports operator,==
+6,Arithmetic level,5,Arithmetic level,supports operator,<
+6,Arithmetic level,5,Arithmetic level,supports operator,>
+6,Arithmetic level,5,Arithmetic level,supports operator,<=
+6,Arithmetic level,5,Arithmetic level,supports operator,>=
+6,Arithmetic level,5,Arithmetic level,has minor level,Feature Cardinality
+6,Arithmetic level,5,Arithmetic level,has minor level,Aggregate Functions
+6,Arithmetic level,5,Arithmetic level,supports,sum
+6,Arithmetic level,5,Arithmetic level,supports,avg
+6,Arithmetic level,5,Arithmetic level,is extended by,the Type level
+6,Arithmetic level,5,Arithmetic level,can be converted to,the Boolean level
+6,Arithmetic level,5,Arithmetic level models,can grow exponentially in size,when converted to the Boolean level
+6,Arithmetic level,5,Arithmetic level,can be included using,wildcards
+6,Arithmetic level,5,Arithmetic level,can be included using,Arithmetic.*
+6,Arithmetic level,5,Arithmetic level,is supported by,TRAVART
+6,Arithmetic level,5,Arithmetic level,is supported by,UVLS
+6,Arithmetic level,5,Arithmetic level,is supported by,V4rdiac
+7,Type level,1,Type level,is,a major language level
+7,Type level,1,Type level,extends,the Boolean level
+7,Type level,1,Type level,extends,the Arithmetic level
+7,Type level,1,Type level,introduces,typed features
+7,Type level,1,Type level,introduces,integer features
+7,Type level,1,Type level,introduces,float features
+7,Type level,1,Type level,introduces,string features
+7,Type level,1,Type level,allows features to be,deselected
+7,Type level,1,Type level,supports,string comparisons
+7,Type level,1,Type level,supports,string length checks
+7,Type level,1,Type level,supports,the len function
+7,Type level,1,Type level,supports,equality checks between strings
+7,Type level,1,Type level,has minor level,String Constraints
+7,Type level,1,Type level,is,the most expressive major language level
+7,Type level,1,Type level,has,the highest hierarchy
+7,Type level,1,Type level,converts to,the Arithmetic level
+7,Type level,1,Type level,transforms typed features to,boolean features with attributes
+7,Type level,1,Type level,drops string constraints during,conversion
+7,Type level,1,Type level,is supported by,TraVarT
+7,Type level,1,Type level,is supported by,UVLS
+7,Type level,1,Type level,is supported by,V4rdiac
+7,Type level,2,Type level,is,a major language level
+7,Type level,2,Type level,extends,the Boolean level
+7,Type level,2,Type level,extends,the Arithmetic level
+7,Type level,2,Type level,introduces,typed features
+7,Type level,2,Type level,introduces,integer features
+7,Type level,2,Type level,introduces,float features
+7,Type level,2,Type level,introduces,string features
+7,Type level,2,Type level,allows features to be,deselected
+7,Type level,2,Type level,has minor level,String Constraints
+7,Type level,2,Type level,supports,string comparisons
+7,Type level,2,Type level,supports,string length checks
+7,Type level,2,Type level,supports,the len function
+7,Type level,2,Type level,is,the most expressive major language level
+7,Type level,2,Type level,has,the highest hierarchy
+7,Type level,2,Type level,can be converted to,the Arithmetic level
+7,Type level,2,Type level conversion,transforms typed features to,boolean features with attributes
+7,Type level,2,Type level conversion,drops,string constraints
+7,Type level,2,Type level,is supported by,TRAVART
+7,Type level,2,Type level,is supported by,UVLS
+7,Type level,2,Type level,is supported by,V4rdiac
+7,Type level,3,Type level,is,a major language level
+7,Type level,3,Type level,extends,the Boolean level
+7,Type level,3,Type level,extends,the Arithmetic level
+7,Type level,3,Type level,introduces,typed features
+7,Type level,3,Type level,introduces,integer features
+7,Type level,3,Type level,introduces,float features
+7,Type level,3,Type level,introduces,string features
+7,Type level,3,Type level,allows features to be,deselected
+7,Type level,3,Type level,has minor level,String Constraints
+7,Type level,3,Type level,supports,string comparisons
+7,Type level,3,Type level,supports,string length checks
+7,Type level,3,Type level,supports,len function
+7,Type level,3,Type level,is,the most expressive major language level
+7,Type level,3,Type level,has,the highest hierarchy
+7,Type level,3,Type level,converts to,the Arithmetic level
+7,Type level,3,Type level conversion,transforms typed features to,boolean features with attributes
+7,Type level,3,Type level conversion,drops,string constraints
+7,Type level,3,Type level,is supported by,TRAVART
+7,Type level,3,Type level,is supported by,UVLS
+7,Type level,3,Type level,is supported by,V4rdiac
+7,Type level,4,Type level,is,a major language level
+7,Type level,4,Type level,extends,the Boolean level
+7,Type level,4,Type level,extends,the Arithmetic level
+7,Type level,4,Type level,introduces,typed features
+7,Type level,4,Type level,introduces,integer features
+7,Type level,4,Type level,introduces,float features
+7,Type level,4,Type level,introduces,string features
+7,Type level,4,Type level,allows features to be,deselected
+7,Type level,4,Type level,supports,string comparisons
+7,Type level,4,Type level,supports,string length checks
+7,Type level,4,Type level,supports,the len function
+7,Type level,4,Type level,has minor level,String Constraints
+7,Type level,4,Type level,is,the most expressive major language level
+7,Type level,4,Type level,has,the highest hierarchy
+7,Type level,4,Type level,can be converted to,the Arithmetic level
+7,Type level,4,Type level conversion,transforms typed features to,boolean features with attributes
+7,Type level,4,Type level conversion,drops,string constraints
+7,Type level,4,Type level,is supported by,TraVarT
+7,Type level,4,Type level,is supported by,UVLS
+7,Type level,4,Type level,is supported by,V4rdiac
+7,Type level,5,Type level,is,a major language level
+7,Type level,5,Type level,extends,the Boolean level
+7,Type level,5,Type level,extends,the Arithmetic level
+7,Type level,5,Type level,introduces,typed features
+7,Type level,5,Type level,introduces,integer features
+7,Type level,5,Type level,introduces,float features
+7,Type level,5,Type level,introduces,string features
+7,Type level,5,Type level,allows features to be,deselected
+7,Type level,5,Type level,supports,string comparisons
+7,Type level,5,Type level,supports,string length checks
+7,Type level,5,Type level,supports,the len function
+7,Type level,5,Type level,has minor level,String Constraints
+7,Type level,5,Type level,is,the most expressive major language level
+7,Type level,5,Type level,has,the highest hierarchy
+7,Type level,5,Type level,can be converted to,the Arithmetic level
+7,Type level,5,Type level conversion,transforms typed features to,boolean features with attributes
+7,Type level,5,Type level conversion,drops,string constraints
+7,Type level,5,Type level,is supported by,TRAVART
+7,Type level,5,Type level,is supported by,UVLS
+7,Type level,5,Type level,is supported by,V4rdiac

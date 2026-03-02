@@ -1,8 +1,8 @@
 from kb import KnowledgeBase, KnowledgeComparator
 
 
-#CSV_FILEPATH = '../resources/raw_data/uvl_groundtruth.csv'
-CSV_FILEPATH = '../resources/raw_data/uvl_manualKB.csv'
+CSV_FILEPATH = '../resources/raw_data/UVL_KB_GroundTruth-NotebookLLM-PaperUVL.csv'
+#CSV_FILEPATH = '../resources/raw_data/uvl_manualKB.csv'
 
 
 def main() -> None:
@@ -13,7 +13,14 @@ def main() -> None:
 
     kb_groundtruth_normalized = kb_groundtruth.normalize()
     print(f'Total normalized triplets: {len(kb_groundtruth_normalized.triplets)}')
-    #kb_groundtruth_normalized.save_to_csv('../uvl_groundtruth_normalized.csv')
+
+    kb_cleaned = kb_groundtruth_normalized.remove_exact_duplicates()
+    print(f'Total normalized triplets after removing duplicates: {len(kb_cleaned.triplets)}')
+    kb_cleaned.save_to_csv('../UVL_KB_GroundTruth-NotebookLLM-PaperUVL_cleaned.csv')
+    kb_cleaned2 = kb_cleaned.remove_semantic_duplicates(threshold=0.92)
+    print(f'Total normalized triplets after deduplication: {len(kb_cleaned2.triplets)}')
+    kb_cleaned2.save_to_csv('../UVL_KB_GroundTruth-NotebookLLM-PaperUVL_deduplicated.csv')
+    raise Exception("Stop execution after processing ground truth. Comment this line to continue with LLM comparison.")
 
     llm_kb = KnowledgeBase()
     llm_kb.load_from_csv('../resources/kb_uvl/OpenAI_GPT-5.2.csv')
@@ -23,7 +30,7 @@ def main() -> None:
 
     # Hay que eliminar tripletas repetidas antes de comparar.
     #kb_comparator = KnowledgeComparator(kb_groundtruth_normalized, llm_kb_normalized)
-    kb_comparator = KnowledgeComparator(kb_groundtruth, llm_kb)
+    kb_comparator = KnowledgeComparator(kb_groundtruth_normalized, llm_kb_normalized)
     results = kb_comparator.compare(threshold=0.75)
     precision = kb_comparator.calculate_precision(results)
     recall = kb_comparator.calculate_recall(results)

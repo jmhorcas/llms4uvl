@@ -34,10 +34,9 @@ class KnowledgeBase:
     def add_triplet(self, triplet: Triplet) -> None:
         self.triplets.append(triplet)
     
-    def size(self) -> int:
-        """Return the number of triplets."""
+    def __len__(self):
         return len(self.triplets)
-    
+
     def load_from_csv(self, file_path: str) -> None:
         """Load triplets from a CSV file that contains the columns named Subject, Predicate, and Object."""
         with open(file_path, mode='r', encoding='utf-8') as f:
@@ -78,6 +77,53 @@ class KnowledgeBase:
             for triplet2 in self.triplets:
                 pass
         pass
+
+    def remove_exact_duplicates(self) -> 'KnowledgeBase':
+        """Remove those triplets that are exactly the same as other triplets."""
+        kb = KnowledgeBase()
+        seen = set()
+        for triplet in self.triplets:
+            if triplet not in seen:
+                kb.add_triplet(triplet)
+                seen.add(triplet)
+        return kb
+    
+    # def remove_semantic_duplicates(self, threshold=0.92) -> 'KnowledgeBase':
+    #     """Remove those triplets that are semantically similar to other triplets based on a similarity threshold."""
+    #     triples = self.triplets
+    #     if not triples: 
+    #         return KnowledgeBase()
+        
+    #     unique = {triples[0]}
+        
+    #     for i in range(1, len(triples)):
+    #         is_duplicate = False
+    #         for u in unique:
+    #             # Usamos tu función de similitud (la del máximo entre global y atómica)
+    #             score = utils.get_hybrid_similarity(triples[i].to_tuple(), u.to_tuple()) 
+                
+    #             if score >= threshold:
+    #                 is_duplicate = True
+    #                 break
+            
+    #         if not is_duplicate:
+    #             unique.add(triples[i])
+                
+    #     kb = KnowledgeBase()
+    #     for t in unique:
+    #         kb.add_triplet(t)
+    #     return kb
+    
+    def remove_semantic_duplicates(self, threshold=0.92) -> 'KnowledgeBase':
+        """Remove those triplets that are semantically similar to other triplets based on a similarity threshold."""
+        unique_triples = utils.fast_semantic_deduplication(
+            triples=[t.to_tuple() for t in self.triplets],
+            threshold=threshold
+        )
+        kb = KnowledgeBase()
+        for t in unique_triples:
+            kb.add_triplet(Triplet(*t))
+        return kb
 
     def get_leafs(self) -> list[Triplet]:
         """Return those triplets whose Object do not appear in any Subject."""
