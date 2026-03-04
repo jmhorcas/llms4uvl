@@ -33,16 +33,25 @@ class KnowledgeComparator:
         similarity_matrix = cosine_similarity(this_vecs, other_vecs)
 
         results = []
+        # Para controlar qué tripletas del LLM ya han sido "usadas"
+        used_llm_indices = set()
+
         for i, row in enumerate(similarity_matrix):
             best_match_idx = numpy.argmax(row)
             best_score = row[best_match_idx]
             
             if best_score >= threshold:
+                # Marcamos que esta tripleta del LLM es válida
+                is_first_time_used = best_match_idx not in used_llm_indices
+                used_llm_indices.add(best_match_idx)
+                
                 results.append({
                     "real": self.ground_truth_kb.triplets[i],
                     "llm": self.llm_kb.triplets[best_match_idx],
                     "score": best_score,
-                    "match": True
+                    "match": True,
+                    "llm_index": best_match_idx, # Guardamos el índice para deduplicar luego
+                    "is_unique_hit": is_first_time_used # Flag clave para Precision
                 })
             else:
                 results.append({
@@ -63,9 +72,8 @@ class KnowledgeComparator:
             return 0.0
         
         # Count how many of the LLM-generated triplets had a match
-        matches = sum(1 for res in batch_results if res.get("match") is True)
-        
-        precision = matches / total_llm_triples
+        unique_matches = sum(1 for res in batch_results if res.get("match") and res.get("is_unique_hit"))        
+        precision = unique_matches / total_llm_triples
         return precision
 
     def calculate_recall(self, batch_results: list[tuple[Triplet, Triplet, float]]) -> float:
@@ -82,7 +90,7 @@ class KnowledgeComparator:
         matches = sum(1 for res in batch_results if res.get("match") is True)
         
         recall = matches / total_triples_in_ground_truth
-        return recall
+        return float(recall)
 
     def calculate_f1_score(self, precision: float, recall: float) -> float:
         """F1 Score: The harmonic mean of precision and recall, providing a single metric that balances both aspects of performance.
@@ -94,3 +102,26 @@ class KnowledgeComparator:
         
         f1_score = 2 * (precision * recall) / (precision + recall)
         return f1_score
+    
+    def calculate_hallucination_rate(self, batch_results: list[dict]) -> float:
+        """
+        Devuelve el % de tripletas que el LLM generó pero que no 
+        tienen sustento en el Ground Truth.
+        """
+        return 1.0 - self.calculate_precision(batch_results)
+
+    def get_hallucinations(self, batch_results: list[dict]) -> list[Triplet]:
+        """
+        Retorna la lista de tripletas que el LLM 'alucinó' 
+        (las que no hicieron match con nada del GT).
+        """
+        # 1. Obtenemos los índices de las tripletas del LLM que sí fueron correctas
+        matched_indices = {res["llm_index"] for res in batch_results if res.get("match")}
+        
+        # 2. Las alucinaciones son todas las que NO están en ese conjunto de índices
+        hallucinations = [
+            triplet for i, triplet in enumerate(self.llm_kb.triplets)
+            if i not in matched_indices
+        ]
+        
+        return hallucinations

@@ -34,6 +34,9 @@ class KnowledgeBase:
     def add_triplet(self, triplet: Triplet) -> None:
         self.triplets.append(triplet)
     
+    def join_kb(self, other_kb: 'KnowledgeBase') -> None:
+        self.triplets.extend(other_kb.triplets)
+        
     def __len__(self):
         return len(self.triplets)
 
