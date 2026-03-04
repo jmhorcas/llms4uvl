@@ -20,7 +20,7 @@ def main() -> None:
     kb_cleaned2 = kb_cleaned.remove_semantic_duplicates(threshold=0.92)
     print(f'Total normalized triplets after deduplication: {len(kb_cleaned2.triplets)}')
     kb_cleaned2.save_to_csv('../UVL_KB_GroundTruth-NotebookLLM-PaperUVL_deduplicated.csv')
-    raise Exception("Stop execution after processing ground truth. Comment this line to continue with LLM comparison.")
+    #raise Exception("Stop execution after processing ground truth. Comment this line to continue with LLM comparison.")
 
     llm_kb = KnowledgeBase()
     llm_kb.load_from_csv('../resources/kb_uvl/OpenAI_GPT-5.2.csv')
@@ -30,7 +30,7 @@ def main() -> None:
 
     # Hay que eliminar tripletas repetidas antes de comparar.
     #kb_comparator = KnowledgeComparator(kb_groundtruth_normalized, llm_kb_normalized)
-    kb_comparator = KnowledgeComparator(kb_groundtruth_normalized, llm_kb_normalized)
+    kb_comparator = KnowledgeComparator(kb_cleaned, llm_kb_normalized)
     results = kb_comparator.compare(threshold=0.75)
     precision = kb_comparator.calculate_precision(results)
     recall = kb_comparator.calculate_recall(results)
