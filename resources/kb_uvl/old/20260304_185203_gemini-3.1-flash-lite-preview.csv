@@ -1,0 +1,200 @@
+Iteration,Seed,Run,Subject,Predicate,Object
+1,UVL language,0,UVL,is,Variability Modeling Language
+1,UVL language,0,UVL,is,Standardized Language
+1,UVL language,0,UVL,supports,Feature Models
+1,UVL language,0,UVL,supports,Cross-tree Constraints
+1,UVL language,0,UVL,supports,Attributes
+1,UVL language,0,UVL,supports,Group Cardinalities
+1,UVL language,0,UVL,supports,Mandatory Features
+1,UVL language,0,UVL,supports,Optional Features
+1,UVL language,0,UVL,supports,Alternative Groups
+1,UVL language,0,UVL,supports,Or Groups
+1,UVL language,0,UVL,uses,Textual Syntax
+1,UVL language,0,UVL,is,Human Readable
+1,UVL language,0,UVL,is,Machine Readable
+1,UVL language,0,UVL,promotes,Interoperability
+1,UVL language,0,UVL,is,Domain Specific Language
+1,UVL language,0,UVL,replaces,Proprietary Variability Formats
+1,UVL language,1,UVL language,is,Variability Modeling Language
+1,UVL language,1,UVL language,supports,Feature Models
+1,UVL language,1,UVL language,supports,Cross-tree Constraints
+1,UVL language,1,UVL language,is,Human-readable
+1,UVL language,1,UVL language,is,Machine-readable
+1,UVL language,1,UVL language,uses,Textual Syntax
+1,UVL language,1,UVL language,supports,Hierarchical Structure
+1,UVL language,1,UVL language,supports,Mandatory Features
+1,UVL language,1,UVL language,supports,Optional Features
+1,UVL language,1,UVL language,supports,Alternative Groups
+1,UVL language,1,UVL language,supports,Or Groups
+1,UVL language,1,UVL language,supports,Boolean Constraints
+1,UVL language,1,UVL language,supports,Arithmetic Constraints
+1,UVL language,1,UVL language,is,Platform Independent
+1,UVL language,1,UVL language,is,Tool Agnostic
+1,UVL language,2,UVL,is,Variability Modeling Language
+1,UVL language,2,UVL,is,Human Readable
+1,UVL language,2,UVL,supports,Feature Models
+1,UVL language,2,UVL,supports,Cross Tree Constraints
+1,UVL language,2,UVL,supports,Attributes
+1,UVL language,2,UVL,supports,Cardinalities
+1,UVL language,2,UVL,uses,Indentation for Hierarchy
+1,UVL language,2,UVL,is,Platform Independent
+1,UVL language,2,UVL,is,Tool Agnostic
+1,UVL language,2,UVL,replaces,TVL
+1,UVL language,2,UVL,replaces,SXFM
+1,UVL language,2,UVL,is,Domain Specific Language
+2,Language extensions,0,UVL language,supports,language extensions
+2,Language extensions,0,Language extensions,enable,custom variability constraints
+2,Language extensions,0,Language extensions,allow,domain specific syntax
+2,Language extensions,0,Language extensions,improve,model expressiveness
+2,Language extensions,0,Language extensions,facilitate,integration with external tools
+2,Language extensions,0,Language extensions,are,optional features
+2,Language extensions,0,Language extensions,extend,core UVL grammar
+2,Language extensions,1,UVL language,supports,language extensions
+2,Language extensions,1,Language extensions,enable,custom variability constraints
+2,Language extensions,1,Language extensions,allow,domain specific syntax
+2,Language extensions,1,Language extensions,improve,model expressiveness
+2,Language extensions,1,Language extensions,facilitate,integration with external tools
+2,Language extensions,1,Language extensions,are,optional features
+2,Language extensions,1,Language extensions,extend,core UVL grammar
+2,Language extensions,2,UVL language,supports,language extensions
+2,Language extensions,2,UVL language,enables,custom constraints
+2,Language extensions,2,UVL language,allows,domain specific attributes
+2,Language extensions,2,UVL language,supports,modular variability modeling
+2,Language extensions,2,UVL language,facilitates,cross tree constraints
+2,Language extensions,2,UVL language,permits,extension mechanisms
+2,Language extensions,2,UVL language,integrates,external variability models
+3,Feature Tree,0,Feature Tree,is part of,UVL model
+3,Feature Tree,0,Feature Tree,defines,hierarchical structure
+3,Feature Tree,0,Feature Tree,contains,Features
+3,Feature Tree,0,Feature Tree,contains,Constraints
+3,Feature Tree,0,Feature Tree,supports,Mandatory relationship
+3,Feature Tree,0,Feature Tree,supports,Optional relationship
+3,Feature Tree,0,Feature Tree,supports,Alternative group
+3,Feature Tree,0,Feature Tree,supports,Or group
+3,Feature Tree,0,Feature Tree,represents,Variability
+3,Feature Tree,0,Feature Tree,is root of,UVL model
+3,Feature Tree,1,Feature Tree,is part of,UVL model
+3,Feature Tree,1,Feature Tree,defines,hierarchical structure
+3,Feature Tree,1,Feature Tree,contains,Features
+3,Feature Tree,1,Feature Tree,contains,Constraints
+3,Feature Tree,1,Feature Tree,supports,Mandatory relationship
+3,Feature Tree,1,Feature Tree,supports,Optional relationship
+3,Feature Tree,1,Feature Tree,supports,Alternative group
+3,Feature Tree,1,Feature Tree,supports,Or group
+3,Feature Tree,1,Feature Tree,represents,Variability
+3,Feature Tree,1,Feature Tree,defines,Product Line scope
+3,Feature Tree,2,Feature Tree,is part of,UVL model
+3,Feature Tree,2,Feature Tree,defines,hierarchical structure
+3,Feature Tree,2,Feature Tree,contains,Features
+3,Feature Tree,2,Feature Tree,contains,Constraints
+3,Feature Tree,2,Feature Tree,represents,variability
+3,Feature Tree,2,Feature Tree,supports,mandatory relationships
+3,Feature Tree,2,Feature Tree,supports,optional relationships
+3,Feature Tree,2,Feature Tree,supports,alternative groups
+3,Feature Tree,2,Feature Tree,supports,or groups
+3,Feature Tree,2,Feature Tree,defines,parent-child relationships
+3,Feature Tree,2,Feature Tree,is root of,UVL model
+4,Cross-tree constraints,0,Cross-tree constraints,is a,UVL feature
+4,Cross-tree constraints,0,Cross-tree constraints,restrict,feature selection
+4,Cross-tree constraints,0,Cross-tree constraints,are defined in,constraints block
+4,Cross-tree constraints,0,Cross-tree constraints,support,logical expressions
+4,Cross-tree constraints,0,Cross-tree constraints,support,arithmetic expressions
+4,Cross-tree constraints,0,Cross-tree constraints,use,propositional logic
+4,Cross-tree constraints,0,Cross-tree constraints,use,Boolean operators
+4,Cross-tree constraints,0,Cross-tree constraints,use,comparison operators
+4,Cross-tree constraints,0,Cross-tree constraints,are,non-hierarchical relationships
+4,Cross-tree constraints,0,Cross-tree constraints,impact,valid configuration space
+4,Cross-tree constraints,1,Cross-tree constraint,is a,UVL feature
+4,Cross-tree constraints,1,Cross-tree constraint,restricts,feature selection
+4,Cross-tree constraints,1,Cross-tree constraint,uses,Boolean logic
+4,Cross-tree constraints,1,Cross-tree constraint,uses,arithmetic expressions
+4,Cross-tree constraints,1,Cross-tree constraint,is defined,in constraints block
+4,Cross-tree constraints,1,Cross-tree constraint,supports,implication
+4,Cross-tree constraints,1,Cross-tree constraint,supports,exclusion
+4,Cross-tree constraints,1,Cross-tree constraint,supports,equivalence
+4,Cross-tree constraints,1,Cross-tree constraint,supports,conjunction
+4,Cross-tree constraints,1,Cross-tree constraint,supports,disjunction
+4,Cross-tree constraints,1,Cross-tree constraint,supports,negation
+4,Cross-tree constraints,2,Cross-tree constraints,is a,UVL feature
+4,Cross-tree constraints,2,Cross-tree constraints,enable,non-hierarchical relationships
+4,Cross-tree constraints,2,Cross-tree constraints,support,logical expressions
+4,Cross-tree constraints,2,Cross-tree constraints,allow,requires relationship
+4,Cross-tree constraints,2,Cross-tree constraints,allow,excludes relationship
+4,Cross-tree constraints,2,Cross-tree constraints,are defined,in the constraints block
+4,Cross-tree constraints,2,Cross-tree constraints,use,propositional logic
+4,Cross-tree constraints,2,Cross-tree constraints,constrain,feature selection
+4,Cross-tree constraints,2,Cross-tree constraints,impact,product validity
+5,Boolean Level,0,Boolean Level,is a,Constraint type
+5,Boolean Level,0,Boolean Level,is part of,UVL
+5,Boolean Level,0,Boolean Level,supports,Logical operators
+5,Boolean Level,0,Boolean Level,supports,AND operator
+5,Boolean Level,0,Boolean Level,supports,OR operator
+5,Boolean Level,0,Boolean Level,supports,NOT operator
+5,Boolean Level,0,Boolean Level,supports,Implication operator
+5,Boolean Level,0,Boolean Level,supports,Equivalence operator
+5,Boolean Level,0,Boolean Level,defines,Feature selection constraints
+5,Boolean Level,0,Boolean Level,is used in,Cross-tree constraints
+5,Boolean Level,1,Boolean Level,is a,Constraint type
+5,Boolean Level,1,Boolean Level,is part of,UVL
+5,Boolean Level,1,Boolean Level,supports,Logical expressions
+5,Boolean Level,1,Boolean Level,supports,Propositional logic
+5,Boolean Level,1,Boolean Level,allows,Conjunction
+5,Boolean Level,1,Boolean Level,allows,Disjunction
+5,Boolean Level,1,Boolean Level,allows,Negation
+5,Boolean Level,1,Boolean Level,allows,Implication
+5,Boolean Level,1,Boolean Level,allows,Equivalence
+5,Boolean Level,1,Boolean Level,defines,Feature constraints
+5,Boolean Level,1,Boolean Level,is used for,Variability modeling
+5,Boolean Level,2,Boolean Level,is a,Constraint type
+5,Boolean Level,2,Boolean Level,belongs to,UVL
+5,Boolean Level,2,Boolean Level,supports,Logical expressions
+5,Boolean Level,2,Boolean Level,supports,Propositional logic
+5,Boolean Level,2,Boolean Level,allows,Boolean operators
+5,Boolean Level,2,Boolean Level,uses,AND operator
+5,Boolean Level,2,Boolean Level,uses,OR operator
+5,Boolean Level,2,Boolean Level,uses,NOT operator
+5,Boolean Level,2,Boolean Level,uses,IMPLIES operator
+5,Boolean Level,2,Boolean Level,uses,EQUIVALENCE operator
+5,Boolean Level,2,Boolean Level,defines,Feature constraints
+5,Boolean Level,2,Boolean Level,is part of,UVL specification
+6,Arithmetic Level,0,Arithmetic Level,is a,UVL feature
+6,Arithmetic Level,0,Arithmetic Level,supports,numeric constraints
+6,Arithmetic Level,0,Arithmetic Level,enables,attribute modeling
+6,Arithmetic Level,0,Arithmetic Level,allows,range definitions
+6,Arithmetic Level,0,Arithmetic Level,facilitates,quantitative variability
+6,Arithmetic Level,0,Arithmetic Level,is part of,UVL specification
+6,Arithmetic Level,1,Arithmetic Level,is a,UVL feature
+6,Arithmetic Level,1,Arithmetic Level,supports,numeric constraints
+6,Arithmetic Level,1,Arithmetic Level,enables,range definitions
+6,Arithmetic Level,1,Arithmetic Level,allows,integer attributes
+6,Arithmetic Level,1,Arithmetic Level,permits,real attributes
+6,Arithmetic Level,1,Arithmetic Level,facilitates,mathematical expressions
+6,Arithmetic Level,1,Arithmetic Level,integrates with,UVL constraints
+6,Arithmetic Level,2,Arithmetic Level,is a,UVL feature
+6,Arithmetic Level,2,Arithmetic Level,supports,numeric constraints
+6,Arithmetic Level,2,Arithmetic Level,enables,range definitions
+6,Arithmetic Level,2,Arithmetic Level,allows,integer attributes
+6,Arithmetic Level,2,Arithmetic Level,permits,real attributes
+6,Arithmetic Level,2,Arithmetic Level,facilitates,mathematical expressions
+6,Arithmetic Level,2,Arithmetic Level,is part of,UVL language specification
+7,Type Level,0,Type Level,is a,UVL feature
+7,Type Level,0,Type Level,defines,data types for attributes
+7,Type Level,0,Type Level,supports,Boolean
+7,Type Level,0,Type Level,supports,Integer
+7,Type Level,0,Type Level,supports,Real
+7,Type Level,0,Type Level,supports,String
+7,Type Level,0,Type Level,constrains,attribute values
+7,Type Level,0,Type Level,enables,type checking
+7,Type Level,0,Type Level,is part of,UVL attribute specification
+7,Type Level,1,Type Level,is a,UVL feature
+7,Type Level,1,Type Level,defines,variability constraints
+7,Type Level,1,Type Level,categorizes,feature types
+7,Type Level,1,Type Level,supports,data types
+7,Type Level,1,Type Level,enables,attribute typing
+7,Type Level,1,Type Level,is part of,UVL specification
+7,Type Level,2,Type Level,is a,UVL feature
+7,Type Level,2,Type Level,defines,variability constraints
+7,Type Level,2,Type Level,categorizes,feature types
+7,Type Level,2,Type Level,supports,data types
+7,Type Level,2,Type Level,enables,attribute typing
+7,Type Level,2,Type Level,is part of,UVL specification

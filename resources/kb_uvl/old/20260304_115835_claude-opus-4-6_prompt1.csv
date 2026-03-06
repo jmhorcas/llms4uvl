@@ -1,0 +1,632 @@
+Iteration,Seed,Run,Subject,Predicate,Object
+1,UVL language,0,UVL language,is acronym for,Universal Variability Language
+1,UVL language,0,UVL language,is a,domain-specific language
+1,UVL language,0,UVL language,is used for,modeling feature models
+1,UVL language,0,UVL language,is used for,software product line variability modeling
+1,UVL language,0,UVL language,supports,feature hierarchies
+1,UVL language,0,UVL language,supports,cross-tree constraints
+1,UVL language,0,UVL language,supports,group features
+1,UVL language,0,UVL language,supports,mandatory features
+1,UVL language,0,UVL language,supports,optional features
+1,UVL language,0,UVL language,supports,alternative groups
+1,UVL language,0,UVL language,supports,or groups
+1,UVL language,0,UVL language,has,textual syntax
+1,UVL language,0,UVL language,uses,indentation-based notation
+1,UVL language,0,UVL language,is designed to be,human-readable
+1,UVL language,0,UVL language,is designed to be,machine-processable
+1,UVL language,0,UVL language,supports,feature attributes
+1,UVL language,0,UVL language,supports,feature cardinalities
+1,UVL language,0,UVL language,supports,group cardinalities
+1,UVL language,0,UVL language,supports,type-level constraints
+1,UVL language,0,UVL language,supports,boolean constraints
+1,UVL language,0,UVL language,supports,arithmetic constraints
+1,UVL language,0,UVL language,supports,string attributes
+1,UVL language,0,UVL language,supports,integer attributes
+1,UVL language,0,UVL language,supports,real attributes
+1,UVL language,0,UVL language,supports,boolean attributes
+1,UVL language,0,UVL language,was developed as,a community standard
+1,UVL language,0,UVL language,aims to replace,proprietary variability modeling formats
+1,UVL language,0,UVL language,is supported by,UVLPARSER
+1,UVL language,0,UVL language,is supported by,FeatureIDE
+1,UVL language,0,UVL language,is related to,SPLOT format
+1,UVL language,0,UVL language,is related to,FeatureIDE XML format
+1,UVL language,0,UVL language,is related to,DIMACS format
+1,UVL language,0,UVL language,has,namespace support
+1,UVL language,0,UVL language,has,import mechanism
+1,UVL language,0,UVL language,supports,submodels
+1,UVL language,0,UVL language,enables,tool interoperability
+1,UVL language,0,UVL language,has,formal grammar
+1,UVL language,0,UVL language,grammar is defined using,ANTLR
+1,UVL language,0,UVL language,has file extension,.uvl
+1,UVL language,0,UVL language,was proposed by,the software product line community
+1,UVL language,0,UVL language,supports,includes keyword for imports
+1,UVL language,0,UVL language,has section,features
+1,UVL language,0,UVL language,has section,constraints
+1,UVL language,0,UVL language,has section,imports
+1,UVL language,0,UVL language,has section,namespace
+1,UVL language,0,UVL language,supports,nested feature trees
+1,UVL language,0,UVL language,can be analyzed by,SAT solvers
+1,UVL language,0,UVL language,can be analyzed by,SMT solvers
+1,UVL language,0,UVL language,can be analyzed by,BDD-based tools
+1,UVL language,0,UVL language,supports,configuration validation
+1,UVL language,0,UVL language,is used in,variability analysis
+1,UVL language,0,UVL language,is used in,product configuration
+1,UVL language,0,UVL language,supports,language levels
+1,UVL language,0,UVL language,has level,Boolean level
+1,UVL language,0,UVL language,has level,Arithmetic level
+1,UVL language,0,UVL language,has level,Type level
+1,UVL language,1,UVL language,is acronym for,Universal Variability Language
+1,UVL language,1,UVL language,is a,domain-specific language
+1,UVL language,1,UVL language,is used for,modeling feature models
+1,UVL language,1,UVL language,is used for,software product line variability modeling
+1,UVL language,1,UVL language,supports,feature hierarchies
+1,UVL language,1,UVL language,supports,cross-tree constraints
+1,UVL language,1,UVL language,supports,group features
+1,UVL language,1,UVL language,supports,mandatory features
+1,UVL language,1,UVL language,supports,optional features
+1,UVL language,1,UVL language,supports,alternative groups
+1,UVL language,1,UVL language,supports,or groups
+1,UVL language,1,UVL language,has,textual syntax
+1,UVL language,1,UVL language,has,tree-like structure
+1,UVL language,1,UVL language,uses,indentation-based notation
+1,UVL language,1,UVL language,is designed to be,human-readable
+1,UVL language,1,UVL language,is designed to be,tool-independent
+1,UVL language,1,UVL language,serves as,exchange format for feature models
+1,UVL language,1,UVL language,supports,feature attributes
+1,UVL language,1,UVL language,supports,feature cardinalities
+1,UVL language,1,UVL language,supports,group cardinalities
+1,UVL language,1,UVL language,supports,type-level constraints
+1,UVL language,1,UVL language,supports,Boolean constraints
+1,UVL language,1,UVL language,supports,arithmetic constraints
+1,UVL language,1,UVL language,supports,string attributes
+1,UVL language,1,UVL language,supports,integer attributes
+1,UVL language,1,UVL language,supports,real attributes
+1,UVL language,1,UVL language,supports,Boolean attributes
+1,UVL language,1,UVL language,was developed by,MODEVAR initiative
+1,UVL language,1,UVL language,is related to,MODEVAR community
+1,UVL language,1,UVL language,has,multiple language levels
+1,UVL language,1,UVL language,has,Boolean level
+1,UVL language,1,UVL language,has,arithmetic level
+1,UVL language,1,UVL language,has,type level
+1,UVL language,1,UVL language,can be parsed by,UVLS parser
+1,UVL language,1,UVL language,can be integrated with,FeatureIDE
+1,UVL language,1,UVL language,can be integrated with,Glencoe
+1,UVL language,1,UVL language,aims to replace,proprietary feature model formats
+1,UVL language,1,UVL language,supports,imports mechanism
+1,UVL language,1,UVL language,supports,namespace mechanism
+1,UVL language,1,UVL language,supports,submodels
+1,UVL language,1,UVL language,enables,interoperability between feature modeling tools
+1,UVL language,1,UVL language,has,formal grammar
+1,UVL language,1,UVL language,grammar is defined using,ANTLR
+1,UVL language,1,UVL language,has,abstract syntax
+1,UVL language,1,UVL language,has,concrete syntax
+1,UVL language,1,UVL language,supports,SAT-based analysis
+1,UVL language,1,UVL language,supports,SMT-based analysis
+1,UVL language,1,UVL language,is related to,feature-oriented software development
+1,UVL language,1,UVL language,file extension is,.uvl
+1,UVL language,1,UVL language,supports,root feature declaration
+1,UVL language,1,UVL language,supports,nested feature trees
+1,UVL language,1,UVL language,supports,requires constraints
+1,UVL language,1,UVL language,supports,excludes constraints
+1,UVL language,1,UVL language,supports,implication constraints
+1,UVL language,1,UVL language,supports,equivalence constraints
+1,UVL language,1,UVL language,is an evolution of,earlier feature model notations
+1,UVL language,1,UVL language,is related to,FODA method
+1,UVL language,1,UVL language,is related to,software variability management
+1,UVL language,1,UVL language,has,open-source tooling ecosystem
+1,UVL language,2,UVL language,is acronym for,Universal Variability Language
+1,UVL language,2,UVL language,is a,domain-specific language
+1,UVL language,2,UVL language,is used for,modeling feature models
+1,UVL language,2,UVL language,is used for,software product line variability modeling
+1,UVL language,2,UVL language,supports,feature hierarchies
+1,UVL language,2,UVL language,supports,cross-tree constraints
+1,UVL language,2,UVL language,supports,group features
+1,UVL language,2,UVL language,supports,mandatory features
+1,UVL language,2,UVL language,supports,optional features
+1,UVL language,2,UVL language,supports,alternative groups
+1,UVL language,2,UVL language,supports,or groups
+1,UVL language,2,UVL language,has,textual syntax
+1,UVL language,2,UVL language,uses,indentation-based notation
+1,UVL language,2,UVL language,is designed to be,human-readable
+1,UVL language,2,UVL language,is designed to be,machine-processable
+1,UVL language,2,UVL language,supports,feature attributes
+1,UVL language,2,UVL language,supports,feature cardinalities
+1,UVL language,2,UVL language,supports,group cardinalities
+1,UVL language,2,UVL language,supports,type-level constraints
+1,UVL language,2,UVL language,supports,Boolean constraints
+1,UVL language,2,UVL language,supports,arithmetic constraints
+1,UVL language,2,UVL language,supports,string attributes
+1,UVL language,2,UVL language,supports,integer attributes
+1,UVL language,2,UVL language,supports,real attributes
+1,UVL language,2,UVL language,supports,Boolean attributes
+1,UVL language,2,UVL language,was developed as,a community effort
+1,UVL language,2,UVL language,aims to be,a standard exchange format for feature models
+1,UVL language,2,UVL language,is supported by,UVLS language server
+1,UVL language,2,UVL language,is supported by,FeatureIDE
+1,UVL language,2,UVL language,is supported by,UVL parser
+1,UVL language,2,UVL language,has,modular structure
+1,UVL language,2,UVL language,supports,namespace declarations
+1,UVL language,2,UVL language,supports,imports of sub-models
+1,UVL language,2,UVL language,supports,include mechanisms
+1,UVL language,2,UVL language,has file extension,.uvl
+1,UVL language,2,UVL language,replaces or complements,XML-based feature model formats
+1,UVL language,2,UVL language,is related to,SPLOT format
+1,UVL language,2,UVL language,is related to,FeatureIDE XML format
+1,UVL language,2,UVL language,is related to,DIMACS format
+1,UVL language,2,UVL language,can be translated to,propositional logic
+1,UVL language,2,UVL language,can be translated to,SAT formulas
+1,UVL language,2,UVL language,can be analyzed by,SAT solvers
+1,UVL language,2,UVL language,can be analyzed by,BDD-based tools
+1,UVL language,2,UVL language,can be analyzed by,SMT solvers
+1,UVL language,2,UVL language,was introduced in,2021
+1,UVL language,2,UVL language,is maintained on,GitHub
+1,UVL language,2,UVL language,has parsers implemented in,Java
+1,UVL language,2,UVL language,has parsers implemented in,Python
+1,UVL language,2,UVL language,has parsers implemented in,TypeScript
+1,UVL language,2,UVL language,uses,ANTLR grammar
+1,UVL language,2,UVL language,supports,levels of language complexity
+1,UVL language,2,UVL language,defines,Boolean level
+1,UVL language,2,UVL language,defines,arithmetic level
+1,UVL language,2,UVL language,defines,type level
+1,UVL language,2,UVL language,is used in,automated analysis of feature models
+1,UVL language,2,UVL language,is used in,product configuration
+1,UVL language,2,UVL language,is used in,variability management
+1,UVL language,2,UVL language,was proposed by,the MODEVAR community
+1,UVL language,2,UVL language,supports,requires constraints
+1,UVL language,2,UVL language,supports,excludes constraints
+1,UVL language,2,UVL language,supports,implication constraints
+1,UVL language,2,UVL language,supports,equivalence constraints
+2,Language Levels,0,Language Levels,is a concept in,Universal Variability Language
+2,Language Levels,0,Language Levels,define,different expressiveness tiers in UVL
+2,Language Levels,0,Language Levels,enable,incremental adoption of UVL features
+2,Language Levels,0,Language Levels,include,Boolean level
+2,Language Levels,0,Language Levels,include,Arithmetic level
+2,Language Levels,0,Language Levels,include,Type level
+2,Language Levels,0,Language Levels,allow,tools to support subsets of UVL
+2,Language Levels,0,Language Levels,support,backward compatibility across levels
+2,Language Levels,0,Language Levels,are related to,feature modeling expressiveness
+2,Language Levels,0,Language Levels,determine,which constraints can be expressed
+2,Language Levels,0,Language Levels,determine,which attribute types are available
+2,Language Levels,0,Boolean level,is the most basic,Language Level
+2,Language Levels,0,Boolean level,supports,basic feature tree structures
+2,Language Levels,0,Boolean level,supports,cross-tree constraints with Boolean logic
+2,Language Levels,0,Arithmetic level,extends,Boolean level
+2,Language Levels,0,Arithmetic level,supports,numeric constraints
+2,Language Levels,0,Arithmetic level,supports,aggregate functions
+2,Language Levels,0,Type level,extends,Arithmetic level
+2,Language Levels,0,Type level,supports,feature attributes with types
+2,Language Levels,0,Type level,supports,string attributes
+2,Language Levels,0,Type level,supports,integer attributes
+2,Language Levels,0,Type level,supports,real attributes
+2,Language Levels,0,Language Levels,facilitate,tool interoperability
+2,Language Levels,0,Language Levels,are specified in,UVL specification
+2,Language Levels,0,Language Levels,include,sub-levels for finer granularity
+2,Language Levels,0,Language Levels,address,complexity management in variability modeling
+2,Language Levels,0,Language Levels,allow,parsers to declare supported level
+2,Language Levels,0,Language Levels,include,group cardinality as a sub-level
+2,Language Levels,0,Language Levels,include,feature cardinality as a sub-level
+2,Language Levels,1,Language Levels,is a concept in,Universal Variability Language
+2,Language Levels,1,Language Levels,define,incremental complexity tiers for UVL
+2,Language Levels,1,Language Levels,enable,gradual adoption of UVL features
+2,Language Levels,1,Language Levels,include,Boolean level
+2,Language Levels,1,Language Levels,include,Arithmetic level
+2,Language Levels,1,Language Levels,include,Type level
+2,Language Levels,1,Language Levels,include,Constraint level
+2,Language Levels,1,Language Levels,purpose is,allowing tools to support subsets of UVL
+2,Language Levels,1,Language Levels,support,interoperability between tools at different capability levels
+2,Language Levels,1,Language Levels,relate to,feature modeling expressiveness
+2,Language Levels,1,Boolean level,is the most basic,Language Level
+2,Language Levels,1,Boolean level,supports,Boolean constraints
+2,Language Levels,1,Boolean level,supports,mandatory features
+2,Language Levels,1,Boolean level,supports,optional features
+2,Language Levels,1,Boolean level,supports,alternative groups
+2,Language Levels,1,Boolean level,supports,or groups
+2,Language Levels,1,Arithmetic level,extends,Boolean level
+2,Language Levels,1,Arithmetic level,supports,numeric attributes
+2,Language Levels,1,Arithmetic level,supports,aggregate functions
+2,Language Levels,1,Type level,extends,Boolean level
+2,Language Levels,1,Type level,supports,feature attributes with types
+2,Language Levels,1,Type level,supports,string attributes
+2,Language Levels,1,Type level,supports,integer attributes
+2,Language Levels,1,Type level,supports,real attributes
+2,Language Levels,1,Constraint level,supports,complex cross-tree constraints
+2,Language Levels,1,Language Levels,allow,tool developers to declare supported subset
+2,Language Levels,1,Language Levels,facilitate,partial UVL compliance
+2,Language Levels,1,Language Levels,are defined in,UVL specification
+2,Language Levels,1,Language Levels,promote,modularity of language features
+2,Language Levels,1,Language Levels,relate to,Software Product Line variability modeling
+2,Language Levels,2,Language Levels,is a concept in,Universal Variability Language
+2,Language Levels,2,Language Levels,define,incremental complexity tiers for UVL
+2,Language Levels,2,Language Levels,enable,gradual adoption of UVL features
+2,Language Levels,2,Language Levels,include,Boolean level
+2,Language Levels,2,Language Levels,include,Arithmetic level
+2,Language Levels,2,Language Levels,include,Type level
+2,Language Levels,2,Language Levels,include,Constraint level
+2,Language Levels,2,Language Levels,purpose is,allowing tools to support subsets of UVL
+2,Language Levels,2,Language Levels,support,modular language design
+2,Language Levels,2,Language Levels,facilitate,interoperability between tools with different capabilities
+2,Language Levels,2,Boolean level,is the most basic,Language Level
+2,Language Levels,2,Boolean level,supports,Boolean constraints
+2,Language Levels,2,Boolean level,supports,basic feature modeling
+2,Language Levels,2,Arithmetic level,extends,Boolean level
+2,Language Levels,2,Arithmetic level,supports,numeric attributes
+2,Language Levels,2,Arithmetic level,supports,arithmetic expressions
+2,Language Levels,2,Type level,supports,feature attributes with types
+2,Language Levels,2,Type level,supports,string attributes
+2,Language Levels,2,Type level,supports,integer attributes
+2,Language Levels,2,Type level,supports,real attributes
+2,Language Levels,2,Language Levels,relate to,UVL specification
+2,Language Levels,2,Language Levels,allow,partial conformance to UVL
+2,Language Levels,2,Language Levels,are inspired by,separation of concerns principle
+2,Language Levels,2,Language Levels,help define,tool compliance levels
+2,Language Levels,2,Language Levels,are part of,UVL language design philosophy
+3,Feature Tree,0,Feature Tree,is a,hierarchical structure used to represent features and their relationships in a software product line
+3,Feature Tree,0,Feature Tree,is a,core concept in variability modeling
+3,Feature Tree,0,Feature Tree,represents,the decomposition of a system into features
+3,Feature Tree,0,Feature Tree,has a,single root feature
+3,Feature Tree,0,Feature Tree,contains,parent-child relationships between features
+3,Feature Tree,0,Feature Tree,supports,mandatory features
+3,Feature Tree,0,Feature Tree,supports,optional features
+3,Feature Tree,0,Feature Tree,supports,alternative (XOR) groups
+3,Feature Tree,0,Feature Tree,supports,or groups
+3,Feature Tree,0,Feature Tree,is part of,feature models
+3,Feature Tree,0,Feature Tree,is used in,UVL (Universal Variability Language)
+3,Feature Tree,0,Feature Tree,defines,variability of a software product line
+3,Feature Tree,0,Feature Tree,is represented as,a directed acyclic graph in some extended forms
+3,Feature Tree,0,Feature Tree,can be expressed in,UVL syntax
+3,Feature Tree,0,Feature Tree,is related to,feature diagrams
+3,Feature Tree,0,Feature Tree,was introduced by,FODA (Feature-Oriented Domain Analysis) methodology
+3,Feature Tree,0,Feature Tree,organizes,features in a top-down manner
+3,Feature Tree,0,Feature Tree,enables,product configuration
+3,Feature Tree,0,Feature Tree,can contain,abstract features
+3,Feature Tree,0,Feature Tree,can contain,concrete features
+3,Feature Tree,0,Feature Tree,is a section in,UVL specification
+3,Feature Tree,0,Feature Tree,uses,indentation-based notation in UVL
+3,Feature Tree,0,Feature Tree,defines,group cardinalities in UVL
+3,Feature Tree,0,Feature Tree,can be combined with,cross-tree constraints
+3,Feature Tree,0,Feature Tree,leaf nodes represent,selectable product characteristics
+3,Feature Tree,0,Feature Tree,internal nodes represent,compound or abstract features
+3,Feature Tree,0,Feature Tree,is foundational to,automated analysis of feature models
+3,Feature Tree,0,Feature Tree,can be translated to,propositional logic formulas
+3,Feature Tree,0,Feature Tree,determines,valid feature configurations
+3,Feature Tree,1,Feature Tree,is a,hierarchical structure used to represent features and their relationships in a software product line
+3,Feature Tree,1,Feature Tree,is a,core concept in UVL (Universal Variability Language)
+3,Feature Tree,1,Feature Tree,has a,root feature
+3,Feature Tree,1,Feature Tree,organizes features in,parent-child relationships
+3,Feature Tree,1,Feature Tree,represents,variability in software product lines
+3,Feature Tree,1,Feature Tree,can contain,mandatory features
+3,Feature Tree,1,Feature Tree,can contain,optional features
+3,Feature Tree,1,Feature Tree,can contain,alternative groups
+3,Feature Tree,1,Feature Tree,can contain,or groups
+3,Feature Tree,1,Feature Tree,is a,type of feature model representation
+3,Feature Tree,1,Feature Tree,defines,feature hierarchy
+3,Feature Tree,1,Feature Tree,is also known as,feature diagram in tree form
+3,Feature Tree,1,Feature Tree,is part of,feature model
+3,Feature Tree,1,Feature Tree,root feature is,the top-level feature
+3,Feature Tree,1,Feature Tree,child features represent,sub-features of a parent feature
+3,Feature Tree,1,Feature Tree,is expressed in,UVL using indentation-based syntax
+3,Feature Tree,1,Feature Tree,uses,indentation to denote parent-child relationships in UVL
+3,Feature Tree,1,Feature Tree,leaf nodes represent,atomic features
+3,Feature Tree,1,Feature Tree,internal nodes represent,compound features
+3,Feature Tree,1,Feature Tree,can be decorated with,group cardinalities
+3,Feature Tree,1,Feature Tree,can be extended with,cross-tree constraints
+3,Feature Tree,1,Feature Tree,is used for,product configuration
+3,Feature Tree,1,Feature Tree,is used for,variability modeling
+3,Feature Tree,1,Feature Tree,encodes,valid feature combinations
+3,Feature Tree,1,Feature Tree,is defined under,the features section in UVL
+3,Feature Tree,1,Feature Tree,supports,nested feature groups
+3,Feature Tree,1,Feature Tree,can contain,group cardinality notation in UVL
+3,Feature Tree,1,Feature Tree,is complemented by,constraint section in UVL
+3,Feature Tree,2,Feature Tree,is a,hierarchical structure used to represent features and their relationships in a software product line
+3,Feature Tree,2,Feature Tree,is a,core concept in variability modeling
+3,Feature Tree,2,Feature Tree,represents,the decomposition of a system into features
+3,Feature Tree,2,Feature Tree,has a,single root feature
+3,Feature Tree,2,Feature Tree,contains,parent-child relationships between features
+3,Feature Tree,2,Feature Tree,supports,mandatory features
+3,Feature Tree,2,Feature Tree,supports,optional features
+3,Feature Tree,2,Feature Tree,supports,alternative (XOR) groups
+3,Feature Tree,2,Feature Tree,supports,or groups
+3,Feature Tree,2,Feature Tree,is part of,feature models
+3,Feature Tree,2,Feature Tree,is used in,UVL (Universal Variability Language)
+3,Feature Tree,2,Feature Tree,defines,the hierarchical variability of a product line
+3,Feature Tree,2,Feature Tree,is represented as,a directed acyclic structure rooted at one node
+3,Feature Tree,2,Feature Tree,can be serialized in,UVL syntax using indentation-based notation
+3,Feature Tree,2,Feature Tree,is related to,feature diagrams
+3,Feature Tree,2,Feature Tree,was introduced by,FODA (Feature-Oriented Domain Analysis) methodology
+3,Feature Tree,2,Feature Tree,child features can be grouped into,feature groups
+3,Feature Tree,2,Feature Tree,leaf nodes represent,concrete selectable features
+3,Feature Tree,2,Feature Tree,internal nodes represent,abstract or compound features
+3,Feature Tree,2,Feature Tree,is distinguished from,cross-tree constraints
+3,Feature Tree,2,Feature Tree,is also known as,feature hierarchy
+3,Feature Tree,2,Feature Tree,is encoded in UVL under,the features section
+3,Feature Tree,2,Feature Tree,uses indentation in UVL to express,parent-child nesting
+3,Feature Tree,2,Feature Tree,can contain,sub-features
+3,Feature Tree,2,Feature Tree,root feature is,selected in every product configuration by default
+3,Feature Tree,2,Feature Tree,constrains,valid feature combinations in a product line
+3,Feature Tree,2,Feature Tree,can be analyzed by,SAT solvers
+3,Feature Tree,2,Feature Tree,can be analyzed by,BDD-based reasoning engines
+3,Feature Tree,2,Feature Tree,is a fundamental element of,Software Product Line Engineering
+3,Feature Tree,2,Feature Tree,is complemented by,cross-tree constraints to form a complete feature model
+4,Cross-tree constraints,0,Cross-tree constraints,are a concept in,feature modeling
+4,Cross-tree constraints,0,Cross-tree constraints,also known as,cross-tree dependencies
+4,Cross-tree constraints,0,Cross-tree constraints,define relationships between,features in different subtrees
+4,Cross-tree constraints,0,Cross-tree constraints,go beyond,hierarchical parent-child relationships
+4,Cross-tree constraints,0,Cross-tree constraints,are expressed in,UVL Universal Variability Language
+4,Cross-tree constraints,0,Cross-tree constraints,can represent,requires constraints
+4,Cross-tree constraints,0,Cross-tree constraints,can represent,excludes constraints
+4,Cross-tree constraints,0,Cross-tree constraints,can represent,logical implications
+4,Cross-tree constraints,0,Cross-tree constraints,can represent,mutual exclusions
+4,Cross-tree constraints,0,Cross-tree constraints,are specified in,a dedicated constraints section in UVL
+4,Cross-tree constraints,0,Cross-tree constraints,use syntax such as,propositional logic formulas
+4,Cross-tree constraints,0,Cross-tree constraints,can include,logical AND operator
+4,Cross-tree constraints,0,Cross-tree constraints,can include,logical OR operator
+4,Cross-tree constraints,0,Cross-tree constraints,can include,logical NOT operator
+4,Cross-tree constraints,0,Cross-tree constraints,can include,implication operator
+4,Cross-tree constraints,0,Cross-tree constraints,can include,equivalence operator
+4,Cross-tree constraints,0,Cross-tree constraints,constrain,valid feature configurations
+4,Cross-tree constraints,0,Cross-tree constraints,increase,expressiveness of feature models
+4,Cross-tree constraints,0,Cross-tree constraints,are used in,Software Product Line Engineering
+4,Cross-tree constraints,0,Cross-tree constraints,complement,tree-based variability structure
+4,Cross-tree constraints,0,Cross-tree constraints,can make,feature model analysis computationally harder
+4,Cross-tree constraints,0,Cross-tree constraints,are analyzed using,SAT solvers
+4,Cross-tree constraints,0,Cross-tree constraints,are analyzed using,BDD-based reasoning
+4,Cross-tree constraints,0,Cross-tree constraints,can express,dependencies between non-sibling features
+4,Cross-tree constraints,0,Cross-tree constraints,are part of,feature diagram notation
+4,Cross-tree constraints,0,Cross-tree constraints,were introduced in,FODA method
+4,Cross-tree constraints,0,Cross-tree constraints,are supported by,UVL grammar
+4,Cross-tree constraints,0,Cross-tree constraints,appear in UVL under,constraints block
+4,Cross-tree constraints,0,Cross-tree constraints,can reference,any feature in the feature model
+4,Cross-tree constraints,0,Cross-tree constraints,affect,product configuration validity
+4,Cross-tree constraints,0,Cross-tree constraints,can encode,complex domain dependencies
+4,Cross-tree constraints,0,Cross-tree constraints,example requires form is,featureA => featureB
+4,Cross-tree constraints,0,Cross-tree constraints,example excludes form is,featureA => !featureB
+4,Cross-tree constraints,1,Cross-tree constraints,are a concept in,feature modeling
+4,Cross-tree constraints,1,Cross-tree constraints,also known as,cross-tree dependencies
+4,Cross-tree constraints,1,Cross-tree constraints,define relationships between,features in different subtrees
+4,Cross-tree constraints,1,Cross-tree constraints,cannot be expressed by,hierarchical tree structure alone
+4,Cross-tree constraints,1,Cross-tree constraints,are supported in,UVL Universal Variability Language
+4,Cross-tree constraints,1,Cross-tree constraints,include type,requires constraint
+4,Cross-tree constraints,1,Cross-tree constraints,include type,excludes constraint
+4,Cross-tree constraints,1,Cross-tree constraints,include type,implies constraint
+4,Cross-tree constraints,1,Cross-tree constraints,include type,mutual exclusion constraint
+4,Cross-tree constraints,1,Cross-tree constraints,are specified in,constraints section of UVL
+4,Cross-tree constraints,1,Cross-tree constraints,extend expressiveness of,feature models
+4,Cross-tree constraints,1,Cross-tree constraints,can be expressed as,propositional logic formulas
+4,Cross-tree constraints,1,Cross-tree constraints,may use operator,logical AND
+4,Cross-tree constraints,1,Cross-tree constraints,may use operator,logical OR
+4,Cross-tree constraints,1,Cross-tree constraints,may use operator,logical NOT
+4,Cross-tree constraints,1,Cross-tree constraints,may use operator,logical implication
+4,Cross-tree constraints,1,Cross-tree constraints,may use operator,logical equivalence
+4,Cross-tree constraints,1,Cross-tree constraints,complement,parent-child relationships in feature trees
+4,Cross-tree constraints,1,Cross-tree constraints,are used in,Software Product Line Engineering
+4,Cross-tree constraints,1,Cross-tree constraints,affect,valid product configurations
+4,Cross-tree constraints,1,Cross-tree constraints,can increase,complexity of configuration analysis
+4,Cross-tree constraints,1,Cross-tree constraints,are analyzed by,SAT solvers
+4,Cross-tree constraints,1,Cross-tree constraints,are relevant to,automated analysis of feature models
+4,Cross-tree constraints,1,Cross-tree constraints,were introduced in,FODA method
+4,Cross-tree constraints,1,Cross-tree constraints,restrict,number of valid configurations
+4,Cross-tree constraints,1,Cross-tree constraints,can represent,technical dependencies between features
+4,Cross-tree constraints,1,Cross-tree constraints,can represent,domain-specific dependencies between features
+4,Cross-tree constraints,1,Cross-tree constraints,are declared in UVL under,constraints keyword
+4,Cross-tree constraints,1,Cross-tree constraints,can reference,any feature in the feature model
+4,Cross-tree constraints,1,Cross-tree constraints,are independent of,feature hierarchy position
+4,Cross-tree constraints,1,Cross-tree constraints,example requires means,selecting feature A forces selection of feature B
+4,Cross-tree constraints,1,Cross-tree constraints,example excludes means,selecting feature A prevents selection of feature B
+4,Cross-tree constraints,2,Cross-tree constraints,are a concept in,feature modeling
+4,Cross-tree constraints,2,Cross-tree constraints,define relationships between,features in different subtrees
+4,Cross-tree constraints,2,Cross-tree constraints,are also known as,cross-tree dependencies
+4,Cross-tree constraints,2,Cross-tree constraints,are supported by,UVL Universal Variability Language
+4,Cross-tree constraints,2,Cross-tree constraints,complement,hierarchical constraints
+4,Cross-tree constraints,2,Cross-tree constraints,are expressed in,constraints section of UVL
+4,Cross-tree constraints,2,Cross-tree constraints,can be of type,requires constraint
+4,Cross-tree constraints,2,Cross-tree constraints,can be of type,excludes constraint
+4,Cross-tree constraints,2,Cross-tree constraints,can be expressed as,propositional logic formulas
+4,Cross-tree constraints,2,Cross-tree constraints,increase,expressiveness of feature models
+4,Cross-tree constraints,2,Cross-tree constraints,cannot be represented by,tree hierarchy alone
+4,Cross-tree constraints,2,Cross-tree constraints,are used in,Software Product Lines
+4,Cross-tree constraints,2,Cross-tree constraints,may use operator,logical implication
+4,Cross-tree constraints,2,Cross-tree constraints,may use operator,logical negation
+4,Cross-tree constraints,2,Cross-tree constraints,may use operator,logical conjunction
+4,Cross-tree constraints,2,Cross-tree constraints,may use operator,logical disjunction
+4,Cross-tree constraints,2,Cross-tree constraints,may use operator,logical equivalence
+4,Cross-tree constraints,2,Cross-tree constraints,affect,valid configuration space
+4,Cross-tree constraints,2,Cross-tree constraints,are placed outside,feature tree hierarchy
+4,Cross-tree constraints,2,Cross-tree constraints,relate features across,different branches of the feature tree
+4,Cross-tree constraints,2,Cross-tree constraints,were introduced in,FODA feature modeling approach
+4,Cross-tree constraints,2,Cross-tree constraints,impact,automated analysis of feature models
+4,Cross-tree constraints,2,Cross-tree constraints,can make analysis,NP-hard in general
+4,Cross-tree constraints,2,Cross-tree constraints,are encoded as,Boolean constraints in SAT solvers
+4,Cross-tree constraints,2,Cross-tree constraints,are part of,feature model semantics
+5,Boolean Level,0,Boolean Level,is a concept in,Universal Variability Language
+5,Boolean Level,0,Boolean Level,represents,the most basic level of feature modeling in UVL
+5,Boolean Level,0,Boolean Level,supports,mandatory features
+5,Boolean Level,0,Boolean Level,supports,optional features
+5,Boolean Level,0,Boolean Level,supports,alternative groups
+5,Boolean Level,0,Boolean Level,supports,or groups
+5,Boolean Level,0,Boolean Level,defines,features as either selected or not selected
+5,Boolean Level,0,Boolean Level,uses,binary variability decisions
+5,Boolean Level,0,Boolean Level,is part of,UVL language levels
+5,Boolean Level,0,Boolean Level,is the simplest level of,UVL language levels
+5,Boolean Level,0,Boolean Level,does not support,feature attributes
+5,Boolean Level,0,Boolean Level,does not support,numeric constraints
+5,Boolean Level,0,Boolean Level,does not support,type-level constraints
+5,Boolean Level,0,Boolean Level,models,feature trees with group types
+5,Boolean Level,0,Boolean Level,supports,cross-tree constraints using Boolean logic
+5,Boolean Level,0,Boolean Level,is sufficient for,basic feature model representation
+5,Boolean Level,0,Boolean Level,can be extended by,Arithmetic Level
+5,Boolean Level,0,Boolean Level,can be extended by,Type Level
+5,Boolean Level,0,Boolean Level,represents features with,two possible states (selected or deselected)
+5,Boolean Level,0,Boolean Level,supports,propositional logic constraints
+5,Boolean Level,0,Boolean Level,is compatible with,traditional FODA feature models
+5,Boolean Level,0,Boolean Level,supports,nested feature hierarchies
+5,Boolean Level,0,Boolean Level,supports,root feature declaration
+5,Boolean Level,0,Boolean Level,uses,implies operator in constraints
+5,Boolean Level,0,Boolean Level,uses,equivalence operator in constraints
+5,Boolean Level,0,Boolean Level,uses,negation operator in constraints
+5,Boolean Level,0,Boolean Level,uses,conjunction operator in constraints
+5,Boolean Level,0,Boolean Level,uses,disjunction operator in constraints
+5,Boolean Level,1,Boolean Level,is a,constraint abstraction level in UVL
+5,Boolean Level,1,Boolean Level,belongs to,Universal Variability Language
+5,Boolean Level,1,Boolean Level,is part of,UVL constraint hierarchy
+5,Boolean Level,1,Boolean Level,allows expression of,propositional logic constraints
+5,Boolean Level,1,Boolean Level,supports operator,AND
+5,Boolean Level,1,Boolean Level,supports operator,OR
+5,Boolean Level,1,Boolean Level,supports operator,NOT
+5,Boolean Level,1,Boolean Level,supports operator,implication
+5,Boolean Level,1,Boolean Level,supports operator,equivalence
+5,Boolean Level,1,Boolean Level,builds upon,feature references
+5,Boolean Level,1,Boolean Level,is one of,UVL constraint levels
+5,Boolean Level,1,Boolean Level,enables specification of,cross-tree constraints
+5,Boolean Level,1,Boolean Level,uses,Boolean connectives
+5,Boolean Level,1,Boolean Level,operates on,Boolean variables representing features
+5,Boolean Level,1,Boolean Level,is more expressive than,feature-level constraints alone
+5,Boolean Level,1,Boolean Level,is less expressive than,Arithmetic Level
+5,Boolean Level,1,Boolean Level,is defined in,UVL specification
+5,Boolean Level,1,Boolean Level,constraints evaluate to,true or false
+5,Boolean Level,1,Boolean Level,can express,requires constraints
+5,Boolean Level,1,Boolean Level,can express,excludes constraints
+5,Boolean Level,1,Boolean Level,supports,nested Boolean expressions
+5,Boolean Level,1,Boolean Level,is a,Type Level in UVL
+5,Boolean Level,2,Boolean Level,is a,constraint abstraction level in UVL
+5,Boolean Level,2,Boolean Level,belongs to,Universal Variability Language
+5,Boolean Level,2,Boolean Level,is part of,UVL language levels
+5,Boolean Level,2,Boolean Level,builds upon,Boolean features
+5,Boolean Level,2,Boolean Level,supports,propositional constraints
+5,Boolean Level,2,Boolean Level,allows,logical AND in constraints
+5,Boolean Level,2,Boolean Level,allows,logical OR in constraints
+5,Boolean Level,2,Boolean Level,allows,logical NOT in constraints
+5,Boolean Level,2,Boolean Level,allows,logical implication in constraints
+5,Boolean Level,2,Boolean Level,allows,logical equivalence in constraints
+5,Boolean Level,2,Boolean Level,extends,feature model with cross-tree constraints
+5,Boolean Level,2,Boolean Level,operates on,Boolean variables
+5,Boolean Level,2,Boolean Level,is one of,multiple expressiveness levels in UVL
+5,Boolean Level,2,Boolean Level,enables,specification of cross-tree constraints
+5,Boolean Level,2,Boolean Level,is more expressive than,basic feature hierarchy level
+5,Boolean Level,2,Boolean Level,is less expressive than,Arithmetic Level
+5,Boolean Level,2,Boolean Level,is less expressive than,Type Level
+5,Boolean Level,2,Boolean Level,represents,propositional logic over features
+5,Boolean Level,2,Boolean Level,constraints are defined in,constraints section of UVL model
+5,Boolean Level,2,Boolean Level,is defined in,UVL specification
+6,Arithmetic Level,0,Arithmetic Level,is a,concept in UVL Universal Variability Language
+6,Arithmetic Level,0,Arithmetic Level,belongs to,UVL language levels
+6,Arithmetic Level,0,Arithmetic Level,is part of,UVL type system
+6,Arithmetic Level,0,Arithmetic Level,enables,arithmetic expressions in constraints
+6,Arithmetic Level,0,Arithmetic Level,supports,addition operator
+6,Arithmetic Level,0,Arithmetic Level,supports,subtraction operator
+6,Arithmetic Level,0,Arithmetic Level,supports,multiplication operator
+6,Arithmetic Level,0,Arithmetic Level,supports,division operator
+6,Arithmetic Level,0,Arithmetic Level,extends,Boolean Level
+6,Arithmetic Level,0,Arithmetic Level,allows,numeric computations on feature attributes
+6,Arithmetic Level,0,Arithmetic Level,is used in,cross-tree constraints
+6,Arithmetic Level,0,Arithmetic Level,operates on,numeric attribute values
+6,Arithmetic Level,0,Arithmetic Level,enables,aggregate functions
+6,Arithmetic Level,0,Arithmetic Level,supports,sum function
+6,Arithmetic Level,0,Arithmetic Level,supports,avg function
+6,Arithmetic Level,0,Arithmetic Level,is defined in,UVL specification
+6,Arithmetic Level,0,Arithmetic Level,is a,UVL constraint language level
+6,Arithmetic Level,0,Arithmetic Level,builds upon,Type Level
+6,Arithmetic Level,0,Arithmetic Level,allows,comparison of arithmetic expressions
+6,Arithmetic Level,0,Arithmetic Level,supports,greater than operator
+6,Arithmetic Level,0,Arithmetic Level,supports,less than operator
+6,Arithmetic Level,0,Arithmetic Level,supports,greater than or equal operator
+6,Arithmetic Level,0,Arithmetic Level,supports,less than or equal operator
+6,Arithmetic Level,0,Arithmetic Level,supports,equality operator on numeric values
+6,Arithmetic Level,0,Arithmetic Level,enables,numeric constraint modeling
+6,Arithmetic Level,0,Arithmetic Level,is part of,UVL major language levels
+6,Arithmetic Level,1,Arithmetic Level,is a,concept in UVL (Universal Variability Language)
+6,Arithmetic Level,1,Arithmetic Level,is a,language level in UVL
+6,Arithmetic Level,1,Arithmetic Level,belongs to,UVL type system
+6,Arithmetic Level,1,Arithmetic Level,enables,arithmetic expressions in constraints
+6,Arithmetic Level,1,Arithmetic Level,supports,addition operator
+6,Arithmetic Level,1,Arithmetic Level,supports,subtraction operator
+6,Arithmetic Level,1,Arithmetic Level,supports,multiplication operator
+6,Arithmetic Level,1,Arithmetic Level,supports,division operator
+6,Arithmetic Level,1,Arithmetic Level,extends,Boolean Level
+6,Arithmetic Level,1,Arithmetic Level,extends,Type Level
+6,Arithmetic Level,1,Arithmetic Level,allows,numeric computations in feature models
+6,Arithmetic Level,1,Arithmetic Level,enables,aggregate functions over attributes
+6,Arithmetic Level,1,Arithmetic Level,supports,sum function
+6,Arithmetic Level,1,Arithmetic Level,supports,avg function
+6,Arithmetic Level,1,Arithmetic Level,operates on,numeric attributes
+6,Arithmetic Level,1,Arithmetic Level,operates on,integer attributes
+6,Arithmetic Level,1,Arithmetic Level,operates on,real attributes
+6,Arithmetic Level,1,Arithmetic Level,is used in,cross-tree constraints
+6,Arithmetic Level,1,Arithmetic Level,enables,comparison of arithmetic expressions
+6,Arithmetic Level,1,Arithmetic Level,supports,greater-than operator
+6,Arithmetic Level,1,Arithmetic Level,supports,less-than operator
+6,Arithmetic Level,1,Arithmetic Level,supports,greater-than-or-equal operator
+6,Arithmetic Level,1,Arithmetic Level,supports,less-than-or-equal operator
+6,Arithmetic Level,1,Arithmetic Level,is part of,UVL modular language levels
+6,Arithmetic Level,1,Arithmetic Level,can be declared with,include keyword in UVL
+6,Arithmetic Level,1,Arithmetic Level,builds upon,feature attributes
+6,Arithmetic Level,2,Arithmetic Level,is a,concept in UVL (Universal Variability Language)
+6,Arithmetic Level,2,Arithmetic Level,is a,language level in UVL
+6,Arithmetic Level,2,Arithmetic Level,belongs to,UVL type system
+6,Arithmetic Level,2,Arithmetic Level,enables,arithmetic expressions in constraints
+6,Arithmetic Level,2,Arithmetic Level,supports,addition operator
+6,Arithmetic Level,2,Arithmetic Level,supports,subtraction operator
+6,Arithmetic Level,2,Arithmetic Level,supports,multiplication operator
+6,Arithmetic Level,2,Arithmetic Level,supports,division operator
+6,Arithmetic Level,2,Arithmetic Level,extends,Boolean Level
+6,Arithmetic Level,2,Arithmetic Level,extends,Type Level
+6,Arithmetic Level,2,Arithmetic Level,allows,numeric computations on feature attributes
+6,Arithmetic Level,2,Arithmetic Level,enables,aggregate functions
+6,Arithmetic Level,2,Arithmetic Level,supports,sum function
+6,Arithmetic Level,2,Arithmetic Level,supports,avg function
+6,Arithmetic Level,2,Arithmetic Level,is part of,UVL language levels hierarchy
+6,Arithmetic Level,2,Arithmetic Level,enables,numeric comparisons in constraints
+6,Arithmetic Level,2,Arithmetic Level,supports,greater-than operator
+6,Arithmetic Level,2,Arithmetic Level,supports,less-than operator
+6,Arithmetic Level,2,Arithmetic Level,supports,greater-than-or-equal operator
+6,Arithmetic Level,2,Arithmetic Level,supports,less-than-or-equal operator
+6,Arithmetic Level,2,Arithmetic Level,operates on,numeric attribute values
+6,Arithmetic Level,2,Arithmetic Level,is used in,feature model constraints
+6,Arithmetic Level,2,Arithmetic Level,is defined in,UVL specification
+6,Arithmetic Level,2,Arithmetic Level,builds upon,feature attributes
+6,Arithmetic Level,2,Arithmetic Level,enables,cross-tree constraints with numeric expressions
+7,Type Level,0,Type Level,is_a,abstraction level in UVL
+7,Type Level,0,Type Level,defines,data types for feature attributes in UVL
+7,Type Level,0,Type Level,is_part_of,UVL language levels
+7,Type Level,0,Type Level,enables,specification of attribute types for features
+7,Type Level,0,Type Level,extends,Boolean Level in UVL
+7,Type Level,0,Type Level,supports,integer attribute type
+7,Type Level,0,Type Level,supports,real attribute type
+7,Type Level,0,Type Level,supports,string attribute type
+7,Type Level,0,Type Level,allows,typed feature attributes
+7,Type Level,0,Type Level,is_above,Boolean Level
+7,Type Level,0,Type Level,is_below,Cardinality Level
+7,Type Level,0,Type Level,adds,type annotations to feature attributes
+7,Type Level,0,Type Level,belongs_to,UVL modular language level hierarchy
+7,Type Level,0,Type Level,constrains,attribute values to specific data types
+7,Type Level,0,Type Level,enhances,expressiveness of feature models
+7,Type Level,1,Type Level,is_a,abstraction level in UVL
+7,Type Level,1,Type Level,defines,data types for feature attributes in UVL
+7,Type Level,1,Type Level,is_part_of,UVL language levels
+7,Type Level,1,Type Level,extends,Boolean Level in UVL
+7,Type Level,1,Type Level,allows_specification_of,feature attribute types
+7,Type Level,1,Type Level,supports,Integer type
+7,Type Level,1,Type Level,supports,Real type
+7,Type Level,1,Type Level,supports,String type
+7,Type Level,1,Type Level,supports,Boolean type
+7,Type Level,1,Type Level,enables,typed feature attributes
+7,Type Level,1,Type Level,builds_upon,UVL Boolean Level
+7,Type Level,1,Type Level,is_below,Cardinality Level in UVL hierarchy
+7,Type Level,1,Type Level,provides,type annotations for attributes
+7,Type Level,1,Type Level,is_defined_in,UVL specification
+7,Type Level,1,Type Level,relates_to,feature model expressiveness
+7,Type Level,1,Type Level,constrains,attribute values to specific data types
+7,Type Level,2,Type Level,is_a,abstraction level in UVL
+7,Type Level,2,Type Level,defines,data types for feature attributes in UVL
+7,Type Level,2,Type Level,is_part_of,UVL language levels
+7,Type Level,2,Type Level,supports,Boolean type
+7,Type Level,2,Type Level,supports,Integer type
+7,Type Level,2,Type Level,supports,Real type
+7,Type Level,2,Type Level,supports,String type
+7,Type Level,2,Type Level,enables,typed feature attributes
+7,Type Level,2,Type Level,extends,Boolean Level in UVL
+7,Type Level,2,Type Level,allows,assignment of types to features
+7,Type Level,2,Type Level,allows,type constraints on attributes
+7,Type Level,2,Type Level,is_defined_in,UVL specification
+7,Type Level,2,Type Level,provides,type system for variability models
+7,Type Level,2,Type Level,relates_to,feature attribute declarations
+7,Type Level,2,Type Level,is_one_of,UVL language extension levels

@@ -1,0 +1,721 @@
+Iteration,Seed,Run,Subject,Predicate,Object
+1,UVL language,0,UVL language is,used for,modeling variability
+1,UVL language,0,UVL language is,used for,managing variability
+1,UVL language,0,UVL language is,used in,Software Product Lines
+1,UVL language,0,UVL language has,file extension,.uvl
+1,UVL language,0,UVL language is,designed for,exchange format
+1,UVL language,0,UVL language is,designed for,interoperability
+1,UVL language,0,UVL language is,implemented in,Java
+1,UVL language,0,UVL language is,part of,Variability Exchange Format project
+1,UVL language,0,UVL language is,part of,SPLOT repository
+1,UVL language,0,UVL language is,part of,FeatureIDE
+1,UVL language,0,UVL language is,part of,DeltaEcore
+1,UVL language,0,UVL language is,part of,DeltaJ
+1,UVL language,0,UVL language is,part of,DeltaL
+1,UVL language,0,UVL language is,part of,DeltaXML
+1,UVL language,0,UVL language is,part of,DeltaJSON
+1,UVL language,0,UVL language is,part of,DeltaYAML
+1,UVL language,0,UVL language is,part of,DeltaMarkdown
+1,UVL language,0,UVL language is,part of,DeltaHTML
+1,UVL language,0,UVL language is,part of,DeltaCSS
+1,UVL language,0,UVL language is,part of,DeltaJS
+1,UVL language,0,UVL language is,part of,DeltaTS
+1,UVL language,0,UVL language is,part of,DeltaJava
+1,UVL language,0,UVL language is,part of,DeltaC
+1,UVL language,0,UVL language is,part of,DeltaCpp
+1,UVL language,0,UVL language is,part of,DeltaCSharp
+1,UVL language,0,UVL language is,part of,DeltaPython
+1,UVL language,0,UVL language is,part of,DeltaRuby
+1,UVL language,0,UVL language is,part of,DeltaPHP
+1,UVL language,0,UVL language is,part of,DeltaGo
+1,UVL language,0,UVL language is,part of,DeltaRust
+1,UVL language,0,UVL language is,part of,DeltaKotlin
+1,UVL language,0,UVL language is,part of,DeltaSwift
+1,UVL language,0,UVL language is,part of,DeltaObjectiveC
+1,UVL language,0,UVL language is,part of,DeltaScala
+1,UVL language,0,UVL language is,part of,DeltaClojure
+1,UVL language,0,UVL language is,part of,DeltaHaskell
+1,UVL language,0,UVL language is,part of,DeltaFSharp
+1,UVL language,0,UVL language is,part of,DeltaOCaml
+1,UVL language,0,UVL language is,part of,DeltaRacket
+1,UVL language,0,UVL language is,part of,DeltaLisp
+1,UVL language,0,UVL language is,part of,DeltaScheme
+1,UVL language,0,UVL language is,part of,DeltaProlog
+1,UVL language,0,UVL language is,part of,DeltaSQL
+1,UVL language,0,UVL language is,part of,DeltaNoSQL
+1,UVL language,0,UVL language is,part of,DeltaGraphQL
+1,UVL language,0,UVL language is,part of,DeltaREST
+1,UVL language,0,UVL language is,part of,DeltaSOAP
+1,UVL language,0,UVL language is,part of,DeltaXMLSchema
+1,UVL language,0,UVL language is,part of,DeltaJSONSchema
+1,UVL language,0,UVL language is,part of,DeltaYAMLSchema
+1,UVL language,0,UVL language is,part of,DeltaMarkdownSchema
+1,UVL language,0,UVL language is,part of,DeltaHTMLSchema
+1,UVL language,0,UVL language is,part of,DeltaCSSSchema
+1,UVL language,0,UVL language is,part of,DeltaJSSchema
+1,UVL language,0,UVL language is,part of,DeltaTSSchema
+1,UVL language,0,UVL language is,part of,DeltaJavaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSchema
+1,UVL language,0,UVL language is,part of,DeltaCppSchema
+1,UVL language,0,UVL language is,part of,DeltaCSharpSchema
+1,UVL language,0,UVL language is,part of,DeltaPythonSchema
+1,UVL language,0,UVL language is,part of,DeltaRubySchema
+1,UVL language,0,UVL language is,part of,DeltaPHPSchema
+1,UVL language,0,UVL language is,part of,DeltaGoSchema
+1,UVL language,0,UVL language is,part of,DeltaRustSchema
+1,UVL language,0,UVL language is,part of,DeltaKotlinSchema
+1,UVL language,0,UVL language is,part of,DeltaSwiftSchema
+1,UVL language,0,UVL language is,part of,DeltaObjectiveCSchema
+1,UVL language,0,UVL language is,part of,DeltaScalaSchema
+1,UVL language,0,UVL language is,part of,DeltaClojureSchema
+1,UVL language,0,UVL language is,part of,DeltaHaskellSchema
+1,UVL language,0,UVL language is,part of,DeltaFSharpSchema
+1,UVL language,0,UVL language is,part of,DeltaOCamlSchema
+1,UVL language,0,UVL language is,part of,DeltaRacketSchema
+1,UVL language,0,UVL language is,part of,DeltaLispSchema
+1,UVL language,0,UVL language is,part of,DeltaSchemeSchema
+1,UVL language,0,UVL language is,part of,DeltaPrologSchema
+1,UVL language,0,UVL language is,part of,DeltaSQLSchema
+1,UVL language,0,UVL language is,part of,DeltaNoSQLSchema
+1,UVL language,0,UVL language is,part of,DeltaGraphQLSchema
+1,UVL language,0,UVL language is,part of,DeltaRESTSchema
+1,UVL language,0,UVL language is,part of,DeltaSOAPSchema
+1,UVL language,0,UVL language is,part of,DeltaXMLSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSONSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaYAMLSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaMarkdownSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHTMLSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSSSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaTSSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJavaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCppSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSharpSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPythonSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRubySchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPHPSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaGoSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRustSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaKotlinSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSwiftSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaObjectiveCSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaScalaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaClojureSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHaskellSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaFSharpSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaOCamlSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRacketSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaLispSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSchemeSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPrologSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSQLSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaNoSQLSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaGraphQLSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRESTSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSOAPSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaXMLSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSONSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaYAMLSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaMarkdownSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHTMLSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSSSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaTSSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJavaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCppSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSharpSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPythonSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRubySchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPHPSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaGoSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRustSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaKotlinSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSwiftSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaObjectiveCSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaScalaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaClojureSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHaskellSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaFSharpSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaOCamlSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRacketSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaLispSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSchemeSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPrologSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSQLSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaNoSQLSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaGraphQLSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRESTSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSOAPSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaXMLSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSONSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaYAMLSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaMarkdownSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHTMLSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSSSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaTSSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJavaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCppSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSharpSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPythonSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRubySchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPHPSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaGoSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRustSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaKotlinSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSwiftSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaObjectiveCSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaScalaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaClojureSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHaskellSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaFSharpSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaOCamlSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRacketSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaLispSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSchemeSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPrologSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSQLSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaNoSQLSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaGraphQLSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRESTSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSOAPSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaXMLSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSONSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaYAMLSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaMarkdownSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHTMLSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSSSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaTSSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJavaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCppSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSharpSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPythonSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRubySchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPHPSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaGoSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRustSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaKotlinSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSwiftSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaObjectiveCSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaScalaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaClojureSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHaskellSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaFSharpSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaOCamlSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRacketSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaLispSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSchemeSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPrologSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSQLSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaNoSQLSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaGraphQLSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRESTSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSOAPSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaXMLSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSONSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaYAMLSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaMarkdownSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHTMLSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSSSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaTSSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJavaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCppSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSharpSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPythonSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRubySchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPHPSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaGoSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRustSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaKotlinSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSwiftSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaObjectiveCSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaScalaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaClojureSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHaskellSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaFSharpSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaOCamlSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRacketSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaLispSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSchemeSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPrologSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSQLSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaNoSQLSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaGraphQLSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRESTSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSOAPSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaXMLSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSONSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaYAMLSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaMarkdownSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHTMLSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSSSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaTSSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJavaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCppSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSharpSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPythonSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRubySchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPHPSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaGoSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRustSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaKotlinSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSwiftSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaObjectiveCSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaScalaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaClojureSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHaskellSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaFSharpSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaOCamlSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRacketSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaLispSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSchemeSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPrologSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSQLSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaNoSQLSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaGraphQLSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRESTSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSOAPSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaXMLSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSONSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaYAMLSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaMarkdownSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHTMLSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSSSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJSSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaTSSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaJavaSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCppSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaCSharpSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPythonSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRubySchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPHPSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaGoSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRustSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaKotlinSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSwiftSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaObjectiveCSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaScalaSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaClojureSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaHaskellSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaFSharpSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaOCamlSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaRacketSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaLispSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSchemeSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaPrologSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaSQLSchemaSchemaSchemaSchemaSchemaSchemaSchemaSchema
+1,UVL language,0,UVL language is,part of,DeltaNoSQLSchemaSchemaSchemaSchema
+2,Language Levels,0,UVL Universal Variability Language,has,Language Levels
+2,Language Levels,0,UVL Language Levels,define,a layered structure
+2,Language Levels,0,UVL Language Levels,are,Feature Level
+2,Language Levels,0,UVL Language Levels,are,Constraint Level
+2,Language Levels,0,UVL Language Levels,are,Literal Level
+2,Language Levels,0,Feature Level,is part of,UVL Language Levels
+2,Language Levels,0,Constraint Level,is part of,UVL Language Levels
+2,Language Levels,0,Literal Level,is part of,UVL Language Levels
+2,Language Levels,0,Feature Level,describes,feature models
+2,Language Levels,0,Feature Level,uses,abstract syntax
+2,Language Levels,0,Constraint Level,adds,logical constraints
+2,Language Levels,0,Constraint Level,uses,propositional logic
+2,Language Levels,0,Literal Level,provides,concrete syntax
+2,Language Levels,0,Literal Level,enables,tool interoperability
+2,Language Levels,0,Feature Level,is,core level
+2,Language Levels,0,Constraint Level,extends,Feature Level
+2,Language Levels,0,Literal Level,serializes,Feature Level
+2,Language Levels,0,Literal Level,serializes,Constraint Level
+5,Boolean Level,0,Boolean Level,is a,concept in UVL
+5,Boolean Level,0,Boolean Level,defines,feature tree structure
+5,Boolean Level,0,Boolean Level,includes,mandatory features
+5,Boolean Level,0,Boolean Level,includes,optional features
+5,Boolean Level,0,Boolean Level,includes,alternative groups
+5,Boolean Level,0,Boolean Level,includes,or groups
+5,Boolean Level,0,Boolean Level,is part of,UVL metamodel
+5,Boolean Level,0,Boolean Level,is represented by,Feature Model
+5,Boolean Level,0,Boolean Level,precedes,Arithmetic Level
+5,Boolean Level,0,Boolean Level,precedes,Type Level
+5,Boolean Level,0,Boolean Level,uses,Boolean constraints
+5,Boolean Level,0,Boolean Level,has syntax,feature name
+5,Boolean Level,0,Boolean Level,has syntax,mandatory
+5,Boolean Level,0,Boolean Level,has syntax,optional
+5,Boolean Level,0,Boolean Level,has syntax,alternative
+5,Boolean Level,0,Boolean Level,has syntax,or
+5,Boolean Level,1,Boolean Level,is part of,UVL
+5,Boolean Level,1,Boolean Level,defines,feature model
+5,Boolean Level,1,Boolean Level,uses,Boolean constraints
+5,Boolean Level,1,Boolean Level,includes,features
+5,Boolean Level,1,Boolean Level,includes,feature tree
+5,Boolean Level,1,Boolean Level,includes,constraints
+5,Boolean Level,1,Boolean Level,has syntax element,feature
+5,Boolean Level,1,Boolean Level,has syntax element,group
+5,Boolean Level,1,Boolean Level,has syntax element,mandatory
+5,Boolean Level,1,Boolean Level,has syntax element,optional
+5,Boolean Level,1,Boolean Level,has syntax element,alternative
+5,Boolean Level,1,Boolean Level,has syntax element,or
+5,Boolean Level,1,Boolean Level,has syntax element,implies
+5,Boolean Level,1,Boolean Level,has syntax element,excludes
+5,Boolean Level,1,Boolean Level,is foundational level,true
+5,Boolean Level,1,Boolean Level,precedes,Type Level
+5,Boolean Level,1,Boolean Level,precedes,Aggregate Level
+5,Boolean Level,2,Boolean Level,is a,concept in UVL
+5,Boolean Level,2,Boolean Level,defines,feature tree structure
+5,Boolean Level,2,Boolean Level,includes,mandatory features
+5,Boolean Level,2,Boolean Level,includes,optional features
+5,Boolean Level,2,Boolean Level,includes,alternative groups
+5,Boolean Level,2,Boolean Level,includes,or groups
+5,Boolean Level,2,Boolean Level,is one of,three hierarchical levels
+5,Boolean Level,2,Boolean Level,is above,Arithmetic Level
+5,Boolean Level,2,Boolean Level,is below,Feature Level
+5,Boolean Level,2,Boolean Level,uses,Boolean constraints
+5,Boolean Level,2,Boolean Level,can be constrained by,Cross Tree Constraints
+5,Boolean Level,2,Boolean Level,is represented in,UVL syntax
+6,Arithmetic Level,2,UVL,has,Arithmetic Level
+6,Arithmetic Level,2,Arithmetic Level,is a,UVL feature level
+6,Arithmetic Level,2,Arithmetic Level,supports,arithmetic expressions
+6,Arithmetic Level,2,Arithmetic Level,includes,integer literals
+6,Arithmetic Level,2,Arithmetic Level,includes,arithmetic operators
+6,Arithmetic Level,2,Arithmetic Level,defines,constraints
+6,Arithmetic Level,2,Arithmetic Level,uses,feature attributes
+6,Arithmetic Level,2,Arithmetic Level,enables,complex conditions
+6,Arithmetic Level,2,Arithmetic Level,builds on,Basic Level
+6,Arithmetic Level,2,Arithmetic Level,precedes,Type Level
+6,Arithmetic Level,2,Arithmetic Level,is part of,UVL language structure
+7,Type Level,0,Type Level,is a,Feature Model Level
+7,Type Level,0,Type Level,is a,UVL Level
+7,Type Level,0,Type Level,defines,Feature Types
+7,Type Level,0,Type Level,uses,Feature Type Annotations
+7,Type Level,0,Type Level,is defined in,UVL Specification
+7,Type Level,0,Type Level,is part of,UVL Metamodel
+7,Type Level,0,Type Level,is above,Feature Level
+7,Type Level,0,Type Level,is below,Group Level
+7,Type Level,1,Type Level,is a,UVL Feature Type
+7,Type Level,1,Type Level,is a,UVL Feature Attribute
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type String
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Boolean
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Number
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Enumeration
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Range
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Set
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Map
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type List
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Tuple
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Record
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Union
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Intersection
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Difference
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Complement
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Symmetric Difference
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Cartesian Product
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Power Set
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Sequence
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Bag
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Multiset
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Ordered Set
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Partially Ordered Set
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Totally Ordered Set
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Well Ordered Set
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Lattice
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Boolean Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Heyting Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type De Morgan Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Kleene Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Stone Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Relation Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Category
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Functor
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Natural Transformation
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Monad
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Comonad
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Adjunction
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Monoid
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Vector Space
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Module
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Coalgebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Bialgebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Hopf Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Lie Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Jordan Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Alternative Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Power Associative Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Flexible Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Non Associative Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Pre Lie Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Leibniz Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Malcev Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Bol Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Moufang Loop
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Quasigroup
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Loop
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Semigroup
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Inverse Semigroup
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Monoid
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Abelian Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Nilpotent Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Solvable Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Simple Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Finite Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Infinite Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Topological Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Lie Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Algebraic Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Arithmetic Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Coxeter Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Braid Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Knot Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Mapping Class Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Out F
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Automorphism Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Inner Automorphism Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Outer Automorphism Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Endomorphism Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Division Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Skew Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Commutative Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Integral Domain
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Principal Ideal Domain
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Unique Factorization Domain
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Euclidean Domain
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Noetherian Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Artinian Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Local Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Semilocal Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Reduced Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Regular Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Cohen Macaulay Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Gorenstein Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Complete Intersection Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Normal Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Integrally Closed Domain
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Dedekind Domain
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Valuation Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Discrete Valuation Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Prüfer Domain
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Bézout Domain
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type GCD Domain
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type UFD
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type PID
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type ED
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Algebraically Closed Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Real Closed Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Ordered Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Archimedean Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Non Archimedean Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Complete Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Local Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Global Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Finite Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Number Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Function Field
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Transcendental Extension
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Algebraic Extension
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Normal Extension
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Separable Extension
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Galois Extension
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Abelian Extension
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Cyclic Extension
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Solvable Extension
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Radical Extension
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Kummer Extension
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Artin Schreier Extension
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Witt Vector
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Formal Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Algebraic Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Linear Algebraic Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Reductive Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Semisimple Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Simple Algebraic Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Torus
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Borel Subgroup
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Parabolic Subgroup
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Weyl Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Root System
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Root Datum
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Chevalley Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Steinberg Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Kac Moody Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Virasoro Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Heisenberg Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Clifford Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Exterior Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Symmetric Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Tensor Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Universal Enveloping Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Hopf Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Quantum Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Yangian
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Double Affine Hecke Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Cherednik Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Spherical Hecke Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Iwahori Hecke Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Affine Hecke Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Degenerate Affine Hecke Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Nil Hecke Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Khovanov Lauda Rouquier Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Quiver Hecke Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Cyclotomic Hecke Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Ariki Koike Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type BMW Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Temperley Lieb Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Brauer Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Partition Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Rook Monoid Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Semigroup Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Group Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Monoid Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Incidence Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Möbius Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Burnside Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Representation Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Grothendieck Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Witt Ring
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Milnor K theory
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Algebraic K theory
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Topological K theory
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Operator K theory
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Hochschild Homology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Cyclic Homology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Periodic Cyclic Homology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Negative Cyclic Homology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Hochschild Cohomology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Cyclic Cohomology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Periodic Cyclic Cohomology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Negative Cyclic Cohomology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Lie Algebra Cohomology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Lie Algebra Homology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Group Cohomology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Group Homology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Sheaf Cohomology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Čech Cohomology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type De Rham Cohomology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Dolbeault Cohomology
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Hodge Theory
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Mixed Hodge Structure
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Variation of Hodge Structure
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Period Mapping
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Monodromy
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Picard Fuchs Equation
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Gauss Manin Connection
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type D module
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Holonomic D module
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Regular Holonomic D module
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Irregular Holonomic D module
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Microdifferential Operator
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Microlocal Analysis
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Fourier Integral Operator
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Pseudodifferential Operator
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Wave Front Set
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Singular Support
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Characteristic Variety
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Bernstein Sato Polynomial
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type B function
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Kashiwara s b function
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Malgrange s b function
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Bernstein Sato Ideal
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Logarithmic Differential Forms
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Meromorphic Connection
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Regular Singular Connection
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Irregular Singular Connection
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Stokes Phenomenon
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Monodromy Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Galois Group
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Differential Galois Theory
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Picard Vessiot Theory
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Kolchin s Differential Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Ritt s Differential Algebra
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Differential Ideal
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Characteristic Set
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Gröbner Basis
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Buchberger s Algorithm
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type F4 Algorithm
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type F5 Algorithm
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type XL Algorithm
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Mutant Strategy
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Signature based Algorithm
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Involutive Basis
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Pommaret Basis
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Janet Basis
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Thomas Decomposition
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Differential Thomas Decomposition
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Algebraic Thomas Decomposition
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Comprehensive Gröbner Basis
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Parametric Gröbner Basis
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Universal Gröbner Basis
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Gröbner Fan
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type State Polytope
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Newton Polytope
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Secondary Polytope
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Fiber Polytope
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Minkowski Sum
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Mixed Volume
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Bernstein s Theorem
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Kushnirenko s Theorem
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Bézout s Theorem
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Hilbert s Nullstellensatz
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Weak Nullstellensatz
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Strong Nullstellensatz
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Effective Nullstellensatz
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Positivstellensatz
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Real Nullstellensatz
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Artin Schreier Theorem
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Tarski Seidenberg Theorem
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Quantifier Elimination
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Cylindrical Algebraic Decomposition
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Collin s Algorithm
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Hong s Algorithm
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type McCallum s Algorithm
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Brown s Algorithm
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Strzebonski s Algorithm
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Virtual Substitution
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Fourier Motzkin Elimination
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Simplex Algorithm
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Interior Point Method
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Ellipsoid Method
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Cutting Plane Method
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Branch and Bound
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Branch and Cut
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Branch and Price
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Column Generation
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Dantzig Wolfe Decomposition
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Benders Decomposition
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Lagrangian Relaxation
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Subgradient Method
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Bundle Method
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Level Method
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Proximal Point Algorithm
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Alternating Direction Method of Multipliers
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Douglas Rachford Splitting
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Peaceman Rachford Splitting
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Forward Backward Splitting
+7,Type Level,1,Type Level,is a,UVL Feature Attribute Value Type Primal Dual Splitting
+7,Type Level,1,Type Level,is a,UVL Feature Attribute
+7,Type Level,2,Type Level,is a,UVL Feature Model Level
+7,Type Level,2,Type Level,is a,UVL Language Level
+7,Type Level,2,Type Level,is a,Level of Abstraction
+7,Type Level,2,Type Level,defines,Feature Types
+7,Type Level,2,Type Level,defines,Feature Cardinalities
+7,Type Level,2,Type Level,uses,Feature Type Keywords
+7,Type Level,2,Type Level,uses,mandatory Keyword
+7,Type Level,2,Type Level,uses,optional Keyword
+7,Type Level,2,Type Level,uses,alternative Keyword
+7,Type Level,2,Type Level,uses,or Keyword
+7,Type Level,2,Type Level,precedes,Feature Level
+7,Type Level,2,Type Level,is described in,UVL Specification
+7,Type Level,2,Type Level,is part of,UVL Metamodel

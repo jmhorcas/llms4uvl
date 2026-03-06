@@ -1,0 +1,142 @@
+Iteration,Seed,Run,Subject,Predicate,Object
+1,UVL language,0,UVL language,is a,domain-specific language
+1,UVL language,0,UVL language,stands for,Universal Variability Language
+1,UVL language,0,UVL language,is used for,feature modeling
+1,UVL language,0,UVL language,supports,hierarchical features
+1,UVL language,0,UVL language,supports,cross-tree constraints
+1,UVL language,0,UVL language,supports,feature attributes
+1,UVL language,0,UVL language,defines,mandatory features
+1,UVL language,0,UVL language,defines,optional features
+1,UVL language,0,UVL language,defines,alternative groups
+1,UVL language,0,UVL language,defines,or groups
+1,UVL language,0,UVL language,has,textual syntax
+1,UVL language,0,UVL language,promotes,tool interoperability
+1,UVL language,0,UVL language,is used in,software product line engineering
+1,UVL language,0,UVL language,allows,cardinality constraints
+1,UVL language,0,UVL language,is maintained by,MODEVAR community
+1,UVL language,0,UVL language,facilitates,variability exchange
+1,UVL language,0,UVL language,uses,indentation-based nesting
+1,UVL language,1,UVL language,is a,Domain Specific Language
+1,UVL language,1,UVL language,is used for,Software Product Line engineering
+1,UVL language,1,UVL language,models,variability
+1,UVL language,1,UVL language,represents,feature models
+1,UVL language,1,UVL language,supports,mandatory features
+1,UVL language,1,UVL language,supports,optional features
+1,UVL language,1,UVL language,supports,alternative groups
+1,UVL language,1,UVL language,supports,or groups
+1,UVL language,1,UVL language,supports,cross-tree constraints
+1,UVL language,1,UVL language,supports,attributes
+1,UVL language,1,UVL language,supports,cardinalities
+1,UVL language,1,UVL language,has,textual syntax
+1,UVL language,1,UVL language,provides,modularity
+1,UVL language,1,UVL language,includes,imports
+1,UVL language,1,UVL language,was created by,MODEVAR community
+1,UVL language,1,UVL language,is,extensible
+1,UVL language,1,UVL language,serves as,exchange format
+1,UVL language,1,UVL language,uses,indentation-based nesting
+1,UVL language,1,UVL language,supports,boolean constraints
+1,UVL language,1,UVL language,supports,arithmetic constraints
+1,UVL language,2,UVL language,is a,domain-specific language
+1,UVL language,2,UVL language,models,feature models
+1,UVL language,2,UVL language,supports,hierarchical structures
+1,UVL language,2,UVL language,supports,cross-tree constraints
+1,UVL language,2,UVL language,supports,attributes
+1,UVL language,2,UVL language,supports,group types
+1,UVL language,2,UVL language,has syntax,textual
+1,UVL language,2,UVL language,is used in,software product lines
+1,UVL language,2,UVL language,provides,interoperability
+1,UVL language,2,UVL language,defines,mandatory features
+1,UVL language,2,UVL language,defines,optional features
+1,UVL language,2,UVL language,defines,alternative groups
+1,UVL language,2,UVL language,defines,or groups
+1,UVL language,2,UVL language,allows,imports
+1,UVL language,2,UVL language,is supported by,FeatureIDE
+1,UVL language,2,UVL language,is a,community standard
+1,UVL language,3,UVL language,is a,domain-specific language
+1,UVL language,3,UVL language,is used for,variability modeling
+1,UVL language,3,UVL language,supports,feature models
+1,UVL language,3,UVL language,provides,text-based syntax
+1,UVL language,3,UVL language,enables,model exchange
+1,UVL language,3,UVL language,represents,software product lines
+1,UVL language,3,UVL language,includes,cross-tree constraints
+1,UVL language,3,UVL language,supports,feature attributes
+1,UVL language,3,UVL language,defines,mandatory features
+1,UVL language,3,UVL language,defines,optional features
+1,UVL language,3,UVL language,defines,alternative groups
+1,UVL language,3,UVL language,defines,or groups
+1,UVL language,3,UVL language,is developed by,MODEVAR community
+1,UVL language,3,UVL language,stands for,Universal Variability Language
+1,UVL language,3,UVL language,facilitates,interoperability between tools
+1,UVL language,4,UVL language,is a,domain-specific language
+1,UVL language,4,UVL language,stands for,Universal Variability Language
+1,UVL language,4,UVL language,models,software variability
+1,UVL language,4,UVL language,represents,feature models
+1,UVL language,4,UVL language,supports,cross-tree constraints
+1,UVL language,4,UVL language,supports,feature attributes
+1,UVL language,4,UVL language,uses,indentation-based syntax
+1,UVL language,4,UVL language,enables,tool interoperability
+1,UVL language,4,UVL language,defines,mandatory features
+1,UVL language,4,UVL language,defines,optional features
+1,UVL language,4,UVL language,defines,alternative groups
+1,UVL language,4,UVL language,defines,or groups
+1,UVL language,4,UVL language,is used in,software product line engineering
+1,UVL language,4,UVL language,supports,modularity
+1,UVL language,4,UVL language,supports,group cardinalities
+1,UVL language,4,UVL language,allows,feature nesting
+1,UVL language,4,UVL language,provides,a common exchange format
+1,UVL language,4,UVL language,supports,boolean constraints
+1,UVL language,4,UVL language,supports,arithmetic constraints
+2,Language extensions,0,Language extensions,are part of,Universal Variability Language
+2,Language extensions,0,Language extensions,enable,modularity
+2,Language extensions,0,Language extensions,support,custom attributes
+2,Language extensions,0,Language extensions,allow,domain-specific annotations
+2,Language extensions,0,Language extensions,enhance,core language
+2,Language extensions,0,Language extensions,define,new syntax elements
+2,Language extensions,0,Language extensions,provide,additional semantics
+2,Language extensions,0,Language extensions,facilitate,interoperability
+2,Language extensions,0,Language extensions,extend,UVL core
+2,Language extensions,0,Language extensions,include,attribute definitions
+2,Language extensions,0,Language extensions,include,group types
+2,Language extensions,0,Language extensions,include,constraint types
+2,Language extensions,1,Language extensions,are part of,UVL
+2,Language extensions,1,Language extensions,enable,modularity
+2,Language extensions,1,Language extensions,support,domain-specific requirements
+2,Language extensions,1,Language extensions,allow,custom attributes
+2,Language extensions,1,Language extensions,allow,custom group types
+2,Language extensions,1,Language extensions,facilitate,interoperability
+2,Language extensions,1,Language extensions,enhance,expressiveness
+2,Language extensions,1,Language extensions,define,new syntax elements
+2,Language extensions,1,Language extensions,provide,flexibility
+2,Language extensions,1,Language extensions,extend,core language features
+2,Language extensions,1,Language extensions,incorporate,additional semantics
+2,Language extensions,1,Language extensions,permit,annotation of features
+2,Language extensions,2,Language extensions,are part of,Universal Variability Language
+2,Language extensions,2,Language extensions,enable,modularity
+2,Language extensions,2,Language extensions,support,attributes
+2,Language extensions,2,Language extensions,support,cardinalities
+2,Language extensions,2,Language extensions,support,group cardinalities
+2,Language extensions,2,Language extensions,allow,custom metadata
+2,Language extensions,2,Language extensions,enhance,expressiveness
+2,Language extensions,2,Language extensions,include,numeric constraints
+2,Language extensions,2,Language extensions,include,string constraints
+2,Language extensions,2,Language extensions,provide,flexibility
+2,Language extensions,2,Language extensions,facilitate,domain-specific requirements
+2,Language extensions,2,Language extensions,extend,core language features
+2,Language extensions,3,Language extensions,are part of,UVL
+2,Language extensions,3,Language extensions,provide,extensibility
+2,Language extensions,3,Language extensions,support,custom attributes
+2,Language extensions,3,Language extensions,enable,domain-specific features
+2,Language extensions,3,Language extensions,allow,new constraints
+2,Language extensions,3,Language extensions,enhance,feature modeling
+2,Language extensions,3,Language extensions,are defined in,UVL header
+2,Language extensions,3,Language extensions,facilitate,modularity
+2,Language extensions,3,Language extensions,allow,multi-valued features
+2,Language extensions,3,Language extensions,support,complex constraints
+2,Language extensions,4,Language extensions,are part of,Universal Variability Language
+2,Language extensions,4,Language extensions,enable,custom attributes
+2,Language extensions,4,Language extensions,support,domain-specific annotations
+2,Language extensions,4,Language extensions,allow,modularity
+2,Language extensions,4,Language extensions,enhance,core language
+2,Language extensions,4,Language extensions,define,new constraint types
+2,Language extensions,4,Language extensions,provide,flexibility
+2,Language extensions,4,Language extensions,facilitate,interoperability

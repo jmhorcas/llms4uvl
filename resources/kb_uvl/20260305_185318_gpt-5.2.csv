@@ -1,0 +1,318 @@
+Iteration,Seed,Run,Subject,Predicate,Object
+1,UVL language,0,UVL language,full name,Universal Variability Language
+1,UVL language,0,UVL language,domain,software product line engineering
+1,UVL language,0,UVL language,purpose,modeling variability
+1,UVL language,0,UVL language,model type,feature model
+1,UVL language,0,UVL language,represents,features
+1,UVL language,0,UVL language,represents,attributes
+1,UVL language,0,UVL language,represents,constraints
+1,UVL language,0,UVL language,represents,feature hierarchy
+1,UVL language,0,UVL language,represents,feature groups
+1,UVL language,0,UVL language,represents,cross tree constraints
+1,UVL language,0,UVL language,syntax type,textual DSL
+1,UVL language,0,UVL language,file extension,uvl
+1,UVL language,0,UVL language,supports,mandatory feature
+1,UVL language,0,UVL language,supports,optional feature
+1,UVL language,0,UVL language,supports,alternative group
+1,UVL language,0,UVL language,supports,or group
+1,UVL language,0,UVL language,supports,cardinality based groups
+1,UVL language,0,UVL language,supports,requires constraint
+1,UVL language,0,UVL language,supports,excludes constraint
+1,UVL language,0,UVL language,supports,boolean attributes
+1,UVL language,0,UVL language,supports,integer attributes
+1,UVL language,0,UVL language,supports,string attributes
+1,UVL language,0,UVL language,supports,enumeration attributes
+1,UVL language,1,UVL language,full name,Universal Variability Language
+1,UVL language,1,UVL language,type,variability modeling language
+1,UVL language,1,UVL language,domain,software product lines
+1,UVL language,1,UVL language,used for,feature modeling
+1,UVL language,1,UVL language,used for,variability modeling
+1,UVL language,1,UVL language,provides,textual syntax
+1,UVL language,1,UVL language,represents,feature models
+1,UVL language,1,UVL language,supports,feature hierarchy
+1,UVL language,1,UVL language,supports,mandatory feature
+1,UVL language,1,UVL language,supports,optional feature
+1,UVL language,1,UVL language,supports,feature groups
+1,UVL language,1,UVL language,supports,alternative group
+1,UVL language,1,UVL language,supports,or group
+1,UVL language,1,UVL language,supports,cross tree constraints
+1,UVL language,1,UVL language,supports,requires constraint
+1,UVL language,1,UVL language,supports,excludes constraint
+1,UVL language,1,UVL language,supports,attributes
+1,UVL language,1,UVL language,supports,attribute types
+1,UVL language,1,UVL language,supports,integer attribute
+1,UVL language,1,UVL language,supports,boolean attribute
+1,UVL language,1,UVL language,supports,string attribute
+1,UVL language,1,UVL language,supports,enumeration attribute
+1,UVL language,1,UVL language,supports,cardinality based groups
+1,UVL language,1,UVL language,can be parsed by,UVL parser
+1,UVL language,1,UVL language,goal,tool interoperability
+1,UVL language,1,UVL language,goal,standardized exchange format
+1,UVL language,2,UVL language,full name,Universal Variability Language
+1,UVL language,2,UVL language,abbreviation,UVL
+1,UVL language,2,UVL language,domain,software product line engineering
+1,UVL language,2,UVL language,domain,variability modeling
+1,UVL language,2,UVL language,used for,feature modeling
+1,UVL language,2,UVL language,used for,product line variability specification
+1,UVL language,2,UVL language,supports,feature hierarchies
+1,UVL language,2,UVL language,supports,mandatory features
+1,UVL language,2,UVL language,supports,optional features
+1,UVL language,2,UVL language,supports,alternative groups
+1,UVL language,2,UVL language,supports,or groups
+1,UVL language,2,UVL language,supports,cross tree constraints
+1,UVL language,2,UVL language,supports,requires constraints
+1,UVL language,2,UVL language,supports,excludes constraints
+1,UVL language,2,UVL language,supports,attributes
+1,UVL language,2,UVL language,supports,cardinality based feature groups
+1,UVL language,2,UVL language,representation,textual language
+1,UVL language,2,UVL language,goal,tool independent variability exchange
+1,UVL language,2,UVL language,goal,standardized variability modeling notation
+1,UVL language,3,UVL language,full name,Universal Variability Language
+1,UVL language,3,UVL language,type,variability modeling language
+1,UVL language,3,UVL language,domain,software product lines
+1,UVL language,3,UVL language,purpose,modeling feature models
+1,UVL language,3,UVL language,artifact type,textual DSL
+1,UVL language,3,UVL language,supports,feature hierarchies
+1,UVL language,3,UVL language,supports,mandatory features
+1,UVL language,3,UVL language,supports,optional features
+1,UVL language,3,UVL language,supports,alternative groups
+1,UVL language,3,UVL language,supports,or groups
+1,UVL language,3,UVL language,supports,cross tree constraints
+1,UVL language,3,UVL language,uses,boolean constraints
+1,UVL language,3,UVL language,integrates with,FeatureIDE
+1,UVL language,4,UVL language,full name,Universal Variability Language
+1,UVL language,4,UVL language,abbreviation,UVL
+1,UVL language,4,UVL language,domain,software product line variability modeling
+1,UVL language,4,UVL language,purpose,define variability models
+1,UVL language,4,UVL language,modeling construct,feature
+1,UVL language,4,UVL language,modeling construct,feature group
+1,UVL language,4,UVL language,modeling construct,attribute
+1,UVL language,4,UVL language,modeling construct,constraint
+1,UVL language,4,UVL language,modeling construct,cardinality
+1,UVL language,4,UVL language,supports,feature models
+1,UVL language,4,UVL language,supports,cross tree constraints
+1,UVL language,4,UVL language,syntax type,textual
+1,UVL language,4,UVL language,designed for,tool interoperability
+1,UVL language,4,UVL language,designed for,exchange format for variability models
+2,Language extensions,0,UVL Universal Variability Language,has concept,language extensions
+2,Language extensions,0,language extensions,extends,UVL Universal Variability Language
+2,Language extensions,0,language extensions,adds,additional syntax
+2,Language extensions,0,language extensions,adds,additional semantics
+2,Language extensions,0,language extensions,used for,domain specific constructs
+2,Language extensions,0,language extensions,used for,tool specific constructs
+2,Language extensions,1,Language extensions,related to,UVL Universal Variability Language
+2,Language extensions,1,Language extensions,enable,extending UVL syntax
+2,Language extensions,1,Language extensions,enable,extending UVL semantics
+2,Language extensions,1,Language extensions,used for,domain specific variability constructs
+2,Language extensions,2,UVL Universal Variability Language,supports,language extensions
+2,Language extensions,2,language extensions,enable,additional syntax constructs
+2,Language extensions,2,language extensions,enable,additional semantics
+2,Language extensions,2,language extensions,can be used for,domain specific variability modeling
+2,Language extensions,2,language extensions,can be used for,tool specific annotations
+2,Language extensions,3,Language extensions,related to,UVL Universal Variability Language
+2,Language extensions,3,Language extensions,category,UVL feature
+2,Language extensions,3,Language extensions,used for,extending UVL syntax
+2,Language extensions,3,Language extensions,used for,extending UVL semantics
+2,Language extensions,4,UVL Universal Variability Language,supports,language extensions
+2,Language extensions,4,Language extensions,extend,UVL Universal Variability Language
+2,Language extensions,4,Language extensions,add,additional syntax
+2,Language extensions,4,Language extensions,add,additional semantics
+2,Language extensions,4,Language extensions,enable,custom constructs
+3,Feature Tree,0,Feature Tree,is a,hierarchical representation of features
+3,Feature Tree,0,Feature Tree,is used in,feature modeling
+3,Feature Tree,0,Feature Tree,represents,variability in a software product line
+3,Feature Tree,0,Feature Tree,consists of,features
+3,Feature Tree,0,Feature Tree,has root,root feature
+3,Feature Tree,0,Feature Tree,defines,parent child relationships between features
+3,Feature Tree,0,Feature Tree,supports,mandatory features
+3,Feature Tree,0,Feature Tree,supports,optional features
+3,Feature Tree,0,Feature Tree,supports,alternative groups
+3,Feature Tree,0,Feature Tree,supports,or groups
+3,Feature Tree,0,Feature Tree,is constrained by,cross tree constraints
+3,Feature Tree,1,Feature Tree,is a,variability model structure
+3,Feature Tree,1,Feature Tree,represents,features
+3,Feature Tree,1,Feature Tree,represents,feature hierarchy
+3,Feature Tree,1,Feature Tree,uses,parent child relationships
+3,Feature Tree,1,Feature Tree,includes,root feature
+3,Feature Tree,1,Feature Tree,includes,mandatory feature
+3,Feature Tree,1,Feature Tree,includes,optional feature
+3,Feature Tree,1,Feature Tree,includes,feature group
+3,Feature Tree,1,Feature Tree,includes,alternative group
+3,Feature Tree,1,Feature Tree,includes,or group
+3,Feature Tree,1,Feature Tree,supports,feature selection
+3,Feature Tree,1,Feature Tree,supports,configuration derivation
+3,Feature Tree,1,Feature Tree,is used in,software product lines
+3,Feature Tree,1,Feature Tree,is related to,feature model
+3,Feature Tree,1,Feature Tree,can be extended with,cross tree constraints
+3,Feature Tree,1,Feature Tree,can be encoded in,UVL
+3,Feature Tree,2,Feature Tree,is a,hierarchical model
+3,Feature Tree,2,Feature Tree,represents,features
+3,Feature Tree,2,Feature Tree,represents,feature relationships
+3,Feature Tree,2,Feature Tree,is used in,software product line engineering
+3,Feature Tree,2,Feature Tree,is used in,variability modeling
+3,Feature Tree,2,Feature Tree,has,root feature
+3,Feature Tree,2,Feature Tree,has,child features
+3,Feature Tree,2,Feature Tree,encodes,mandatory relationships
+3,Feature Tree,2,Feature Tree,encodes,optional relationships
+3,Feature Tree,2,Feature Tree,encodes,alternative relationships
+3,Feature Tree,2,Feature Tree,encodes,or relationships
+3,Feature Tree,2,Feature Tree,can include,feature attributes
+3,Feature Tree,2,Feature Tree,can include,cross tree constraints
+3,Feature Tree,2,Feature Tree,is related to,feature model
+3,Feature Tree,3,Feature Tree,is a,hierarchical representation of features
+3,Feature Tree,3,Feature Tree,is used in,software product line engineering
+3,Feature Tree,3,Feature Tree,is used in,feature modeling
+3,Feature Tree,3,Feature Tree,represents,variability
+3,Feature Tree,3,Feature Tree,consists of,features
+3,Feature Tree,3,Feature Tree,has,root feature
+3,Feature Tree,3,Feature Tree,has,parent child relationships
+3,Feature Tree,3,Feature Tree,encodes,feature selection structure
+3,Feature Tree,3,Feature Tree,supports,mandatory features
+3,Feature Tree,3,Feature Tree,supports,optional features
+3,Feature Tree,3,Feature Tree,supports,alternative groups
+3,Feature Tree,3,Feature Tree,supports,or groups
+3,Feature Tree,3,Feature Tree,is constrained by,cross tree constraints
+3,Feature Tree,4,Feature Tree,is a,hierarchical model
+3,Feature Tree,4,Feature Tree,represents,features
+3,Feature Tree,4,Feature Tree,represents,feature relationships
+3,Feature Tree,4,Feature Tree,used in,software product lines
+3,Feature Tree,4,Feature Tree,used in,variability modeling
+3,Feature Tree,4,Feature Tree,includes,root feature
+3,Feature Tree,4,Feature Tree,includes,child feature
+3,Feature Tree,4,Feature Tree,organizes,features into a hierarchy
+3,Feature Tree,4,Feature Tree,captures,mandatory relationship
+3,Feature Tree,4,Feature Tree,captures,optional relationship
+3,Feature Tree,4,Feature Tree,captures,alternative group
+3,Feature Tree,4,Feature Tree,captures,or group
+3,Feature Tree,4,Feature Tree,can be extended with,cross tree constraint
+3,Feature Tree,4,Feature Tree,corresponds to,feature model structure
+4,Cross-tree constraints,0,Cross-tree constraints,also known as,feature model constraints
+4,Cross-tree constraints,0,Cross-tree constraints,also known as,requires constraints
+4,Cross-tree constraints,0,Cross-tree constraints,also known as,excludes constraints
+4,Cross-tree constraints,0,Cross-tree constraints,relate,features in different branches
+4,Cross-tree constraints,0,Cross-tree constraints,restrict,valid configurations
+4,Cross-tree constraints,0,Cross-tree constraints,express,dependencies between features
+4,Cross-tree constraints,0,Cross-tree constraints,express,incompatibilities between features
+4,Cross-tree constraints,0,Cross-tree constraints,are used in,software product line engineering
+4,Cross-tree constraints,0,Cross-tree constraints,are part of,variability modeling
+4,Cross-tree constraints,0,Cross-tree constraints,can be represented as,propositional logic formulas
+4,Cross-tree constraints,0,Cross-tree constraints,can be represented as,boolean constraints
+4,Cross-tree constraints,0,Cross-tree constraints,are evaluated over,feature selections
+4,Cross-tree constraints,0,Cross-tree constraints,are checked by,feature model analysis
+4,Cross-tree constraints,0,Cross-tree constraints,can cause,unsatisfiable feature models
+4,Cross-tree constraints,0,Cross-tree constraints,can cause,dead features
+4,Cross-tree constraints,0,Cross-tree constraints,can cause,false optional features
+4,Cross-tree constraints,0,Cross-tree constraints,are supported by,UVL
+4,Cross-tree constraints,0,Cross-tree constraints,are written in,UVL constraints section
+4,Cross-tree constraints,1,Cross-tree constraints,also known as,feature model constraints
+4,Cross-tree constraints,1,Cross-tree constraints,relate,features
+4,Cross-tree constraints,1,Cross-tree constraints,are expressed as,logical constraints
+4,Cross-tree constraints,1,Cross-tree constraints,are used to,restrict valid configurations
+4,Cross-tree constraints,1,Cross-tree constraints,are used to,express dependencies
+4,Cross-tree constraints,1,Cross-tree constraints,are used to,express exclusions
+4,Cross-tree constraints,1,Cross-tree constraints,include,requires constraints
+4,Cross-tree constraints,1,Cross-tree constraints,include,excludes constraints
+4,Cross-tree constraints,1,Cross-tree constraints,can be represented as,propositional logic formulas
+4,Cross-tree constraints,1,Cross-tree constraints,are evaluated over,feature selections
+4,Cross-tree constraints,1,Cross-tree constraints,are part of,variability models
+4,Cross-tree constraints,1,Cross-tree constraints,in UVL,are supported
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,Cross-tree constraints,can cause,unsatisfiable models
+4,Cross-tree constraints,1,Cross-tree constraints,can be checked by,satisfiability solving
+4,Cross-tree constraints,1,Cross-tree constraints,affect,configuration validity
+4,Cross-tree constraints,2,Cross-tree constraints,also known as,feature model constraints
+4,Cross-tree constraints,2,Cross-tree constraints,relate,features
+4,Cross-tree constraints,2,Cross-tree constraints,express,dependencies
+4,Cross-tree constraints,2,Cross-tree constraints,express,exclusions
+4,Cross-tree constraints,2,Cross-tree constraints,are distinct from,tree structure relations
+4,Cross-tree constraints,2,Cross-tree constraints,are used in,feature models
+4,Cross-tree constraints,2,Cross-tree constraints,are used in,software product lines
+4,Cross-tree constraints,2,Cross-tree constraints,can be represented as,propositional logic
+4,Cross-tree constraints,2,Cross-tree constraints,include,requires constraints
+4,Cross-tree constraints,2,Cross-tree constraints,include,excludes constraints
+4,Cross-tree constraints,2,Cross-tree constraints,restrict,valid configurations
+4,Cross-tree constraints,2,Cross-tree constraints,affect,configuration validity
+4,Cross-tree constraints,2,Cross-tree constraints,in UVL are written as,constraints block
+4,Cross-tree constraints,2,Cross-tree constraints,in UVL can use,requires
+4,Cross-tree constraints,2,Cross-tree constraints,in UVL can use,excludes
+4,Cross-tree constraints,2,Cross-tree constraints,in UVL can use,boolean expressions
+4,Cross-tree constraints,2,Cross-tree constraints,in UVL can reference,feature names
+4,Cross-tree constraints,2,Cross-tree constraints,are evaluated over,feature selections
+4,Cross-tree constraints,3,Cross-tree constraints,also known as,feature model constraints
+4,Cross-tree constraints,3,Cross-tree constraints,expresses,dependencies between features
+4,Cross-tree constraints,3,Cross-tree constraints,relates,features in different branches
+4,Cross-tree constraints,3,Cross-tree constraints,complements,tree structure constraints
+4,Cross-tree constraints,3,Cross-tree constraints,common forms,requires constraint
+4,Cross-tree constraints,3,Cross-tree constraints,common forms,excludes constraint
+4,Cross-tree constraints,3,Cross-tree constraints,also called,requires
+4,Cross-tree constraints,3,Cross-tree constraints,also called,excludes
+4,Cross-tree constraints,3,Cross-tree constraints,used to,restrict valid configurations
+4,Cross-tree constraints,3,Cross-tree constraints,used to,encode domain knowledge
+4,Cross-tree constraints,3,Cross-tree constraints,represented in UVL as,constraints block
+4,Cross-tree constraints,3,Cross-tree constraints,expressed in UVL using,Boolean expressions
+4,Cross-tree constraints,3,Cross-tree constraints,can reference,feature names
+4,Cross-tree constraints,3,Cross-tree constraints,can include,logical operators
+4,Cross-tree constraints,3,Cross-tree constraints,logical operators include,and
+4,Cross-tree constraints,3,Cross-tree constraints,logical operators include,or
+4,Cross-tree constraints,3,Cross-tree constraints,logical operators include,not
+4,Cross-tree constraints,3,Cross-tree constraints,logical operators include,implies
+4,Cross-tree constraints,3,Cross-tree constraints,logical operators include,equivalence
+4,Cross-tree constraints,3,Cross-tree constraints,checked by,variability solvers
+4,Cross-tree constraints,3,Cross-tree constraints,affects,configuration validity
+4,Cross-tree constraints,3,Cross-tree constraints,can cause,unsatisfiable models
+4,Cross-tree constraints,3,Cross-tree constraints,can be analyzed for,consistency
+4,Cross-tree constraints,3,Cross-tree constraints,can be analyzed for,dead features
+4,Cross-tree constraints,3,Cross-tree constraints,can be analyzed for,false optional features
+4,Cross-tree constraints,4,Cross-tree constraints,also known as,feature model constraints
+4,Cross-tree constraints,4,Cross-tree constraints,relate,features
+4,Cross-tree constraints,4,Cross-tree constraints,express,dependencies between features
+4,Cross-tree constraints,4,Cross-tree constraints,express,exclusions between features
+4,Cross-tree constraints,4,Cross-tree constraints,are not part of,feature hierarchy
+4,Cross-tree constraints,4,Cross-tree constraints,are used in,variability modeling
+4,Cross-tree constraints,4,Cross-tree constraints,are used in,software product lines
+4,Cross-tree constraints,4,Cross-tree constraints,common forms,requires constraint
+4,Cross-tree constraints,4,Cross-tree constraints,common forms,excludes constraint
+4,Cross-tree constraints,4,Cross-tree constraints,can be expressed as,propositional logic
+4,Cross-tree constraints,4,Cross-tree constraints,restrict,valid configurations
+4,Cross-tree constraints,4,Cross-tree constraints,affect,configuration validity
+4,Cross-tree constraints,4,Cross-tree constraints,are supported by,UVL
+4,Cross-tree constraints,4,Cross-tree constraints,are written in,UVL constraint section
+7,Type Level,0,Type Level,relatedTo,UVL Universal Variability Language
+7,Type Level,0,Type Level,relatedTo,feature model typing
+7,Type Level,0,Type Level,relatedTo,type system
+7,Type Level,0,Type Level,usedFor,defining the type of a feature attribute
+7,Type Level,0,Type Level,usedFor,defining the type of a variable
+7,Type Level,0,Type Level,usedFor,defining the type of an expression
+7,Type Level,0,Type Level,exampleType,Boolean
+7,Type Level,0,Type Level,exampleType,Integer
+7,Type Level,0,Type Level,exampleType,Real
+7,Type Level,0,Type Level,exampleType,String
+7,Type Level,1,Type Level,isA,UVL type system concept
+7,Type Level,1,Type Level,relatesTo,type checking
+7,Type Level,1,Type Level,relatesTo,type inference
+7,Type Level,1,Type Level,relatesTo,type hierarchy
+7,Type Level,1,Type Level,relatesTo,type constraints
+7,Type Level,2,Type Level,related to,UVL Universal Variability Language
+7,Type Level,2,Type Level,used for,typing in UVL models
+7,Type Level,2,Type Level,applies to,features
+7,Type Level,2,Type Level,applies to,attributes
+7,Type Level,2,Type Level,defines,attribute types
+7,Type Level,2,Type Level,includes,primitive types
+7,Type Level,2,Type Level,includes,enumeration types
+7,Type Level,2,Type Level,includes,composite types
+7,Type Level,3,Type Level,isA,UVL type system concept
+7,Type Level,3,Type Level,relatesTo,UVL types
+7,Type Level,3,Type Level,usedFor,typing variability models
+7,Type Level,3,Type Level,distinguishes,type information from feature structure
+7,Type Level,4,Type Level,isA,UVL type system concept
+7,Type Level,4,Type Level,relatedTo,UVL type
+7,Type Level,4,Type Level,relatedTo,UVL attribute
+7,Type Level,4,Type Level,relatedTo,UVL constraint

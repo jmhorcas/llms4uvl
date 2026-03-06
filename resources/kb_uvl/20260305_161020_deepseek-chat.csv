@@ -1,0 +1,936 @@
+Iteration,Seed,Run,Subject,Predicate,Object
+1,UVL language,0,,,
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,UVL language is,used for,modeling variability
+1,UVL language,1,UVL language is,used for,managing variability
+1,UVL language,1,UVL language is,used for,Software Product Lines
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,UVL language is,defined by,grammar
+1,UVL language,1,UVL language is,implemented in,Java
+1,UVL language,1,UVL language is,implemented in,Python
+1,UVL language,1,UVL language is,implemented in,JavaScript
+1,UVL language,1,UVL language is,part of,FeatureIDE
+1,UVL language,1,UVL language is,part of,SPL Conqueror
+1,UVL language,1,UVL language is,part of,VaVe
+1,UVL language,1,UVL language is,part of,Variability Analysis Tools
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,UVL language is,standardized by,UVL community
+1,UVL language,1,UVL language is,described in,academic publications
+1,UVL language,1,UVL language is,described in,technical reports
+1,UVL language,1,UVL language is,described in,user guide
+1,UVL language,1,UVL language is,hosted on,GitHub
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,,,
+1,UVL language,1,UVL language is,used for,analysis
+1,UVL language,1,UVL language is,used for,configuration
+1,UVL language,1,UVL language is,used for,product derivation
+1,UVL language,1,UVL language is,used for,reasoning
+1,UVL language,1,UVL language is,used for,visualization
+1,UVL language,1,UVL language is,used for,transformation
+1,UVL language,1,UVL language is,used in,research
+1,UVL language,1,UVL language is,used in,industry
+1,UVL language,1,UVL language is,used in,education
+1,UVL language,1,UVL language is,used in,tools
+1,UVL language,1,UVL language is,used in,case studies
+1,UVL language,1,UVL language is,used in,benchmarks
+1,UVL language,1,UVL language is,used in,experiments
+1,UVL language,1,UVL language is,used in,comparisons
+1,UVL language,1,UVL language is,used in,evaluations
+1,UVL language,1,UVL language is,used in,applications
+1,UVL language,1,UVL language is,used in,domains
+1,UVL language,1,UVL language is,used in,projects
+1,UVL language,1,UVL language is,used in,examples
+1,UVL language,1,UVL language is,used in,documentation
+1,UVL language,1,UVL language is,used in,tutorials
+1,UVL language,1,UVL language is,used in,workshops
+1,UVL language,1,UVL language is,used in,conferences
+1,UVL language,1,UVL language is,used in,journals
+1,UVL language,1,UVL language is,used in,books
+1,UVL language,1,UVL language is,used in,chapters
+1,UVL language,1,UVL language is,used in,articles
+1,UVL language,1,UVL language is,used in,papers
+1,UVL language,1,UVL language is,used in,proceedings
+1,UVL language,1,UVL language is,used in,reports
+1,UVL language,1,UVL language is,used in,theses
+1,UVL language,1,UVL language is,used in,dissertations
+1,UVL language,1,UVL language is,used in,manuals
+1,UVL language,1,UVL language is,used in,guides
+1,UVL language,1,UVL language is,used in,references
+1,UVL language,1,UVL language is,used in,specifications
+1,UVL language,1,UVL language is,used in,standards
+1,UVL language,1,UVL language is,used in,formats
+1,UVL language,1,UVL language is,used in,interfaces
+1,UVL language,1,UVL language is,used in,APIs
+1,UVL language,1,UVL language is,used in,libraries
+1,UVL language,1,UVL language is,used in,frameworks
+1,UVL language,1,UVL language is,used in,platforms
+1,UVL language,1,UVL language is,used in,environments
+1,UVL language,1,UVL language is,used in,editors
+1,UVL language,1,UVL language is,used in,parsers
+1,UVL language,1,UVL language is,used in,validators
+1,UVL language,1,UVL language is,used in,checkers
+1,UVL language,1,UVL language is,used in,solvers
+1,UVL language,1,UVL language is,used in,generators
+1,UVL language,1,UVL language is,used in,transformers
+1,UVL language,1,UVL language is,used in,converters
+1,UVL language,1,UVL language is,used in,importers
+1,UVL language,1,UVL language is,used in,exporters
+1,UVL language,1,UVL language is,used in,serializers
+1,UVL language,1,UVL language is,used in,deserializers
+1,UVL language,1,UVL language is,used in,interpreters
+1,UVL language,1,UVL language is,used in,compilers
+1,UVL language,1,UVL language is,used in,translators
+1,UVL language,1,UVL language is,used in,processors
+1,UVL language,1,UVL language is,used in,engines
+1,UVL language,1,UVL language is,used in,services
+1,UVL language,1,UVL language is,used in,applications
+1,UVL language,1,UVL language is,used in,systems
+1,UVL language,1,UVL language is,used in,components
+1,UVL language,1,UVL language is,used in,modules
+1,UVL language,1,UVL language is,used in,packages
+1,UVL language,1,UVL language is,used in,repositories
+1,UVL language,1,UVL language is,used in,databases
+1,UVL language,1,UVL language is,used in,stores
+1,UVL language,1,UVL language is,used in,registries
+1,UVL language,1,UVL language is,used in,catalogs
+1,UVL language,1,UVL language is,used in,indexes
+1,UVL language,1,UVL language is,used in,directories
+1,UVL language,1,UVL language is,used in,folders
+1,UVL language,1,UVL language is,used in,files
+1,UVL language,1,UVL language is,used in,documents
+1,UVL language,1,UVL language is,used in,records
+1,UVL language,1,UVL language is,used in,entries
+1,UVL language,1,UVL language is,used in,items
+1,UVL language,1,UVL language is,used in,elements
+1,UVL language,1,UVL language is,used in,objects
+1,UVL language,1,UVL language is,used in,instances
+1,UVL language,1,UVL language is,used in,models
+1,UVL language,1,UVL language is,used in,views
+1,UVL language,1,UVL language is,used in,diagrams
+1,UVL language,1,UVL language is,used in,charts
+1,UVL language,1,UVL language is,used in,graphs
+1,UVL language,1,UVL language is,used in,trees
+1,UVL language,1,UVL language is,used in,lists
+1,UVL language,1,UVL language is,used in,tables
+1,UVL language,1,UVL language is,used in,matrices
+1,UVL language,1,UVL language is,used in,arrays
+1,UVL language,1,UVL language is,used in,sets
+1,UVL language,1,UVL language is,used in,maps
+1,UVL language,1,UVL language is,used in,dictionaries
+1,UVL language,1,UVL language is,used in,key-value pairs
+1,UVL language,1,UVL language is,used in,tuples
+1,UVL language,1,UVL language is,used in,sequences
+1,UVL language,1,UVL language is,used in,streams
+1,UVL language,1,UVL language is,used in,iterators
+1,UVL language,1,UVL language is,used in,generators
+1,UVL language,1,UVL language is,used in,functions
+1,UVL language,1,UVL language is,used in,procedures
+1,UVL language,1,UVL language is,used in,methods
+1,UVL language,1,UVL language is,used in,operations
+1,UVL language,1,UVL language is,used in,actions
+1,UVL language,1,UVL language is,used in,events
+1,UVL language,1,UVL language is,used in,states
+1,UVL language,1,UVL language is,used in,transitions
+1,UVL language,1,UVL language is,used in,conditions
+1,UVL language,1,UVL language is,used in,expressions
+1,UVL language,1,UVL language is,used in,statements
+1,UVL language,1,UVL language is,used in,declarations
+1,UVL language,1,UVL language is,used in,definitions
+1,UVL language,1,UVL language is,used in,assignments
+1,UVL language,1,UVL language is,used in,invocations
+1,UVL language,1,UVL language is,used in,calls
+1,UVL language,1,UVL language is,used in,returns
+1,UVL language,1,UVL language is,used in,throws
+1,UVL language,1,UVL language is,used in,catches
+1,UVL language,1,UVL language is,used in,tries
+1,UVL language,1,UVL language is,used in,finally
+1,UVL language,1,UVL language is,used in,loops
+1,UVL language,1,UVL language is,used in,branches
+1,UVL language,1,UVL language is,used in,switches
+1,UVL language,1,UVL language is,used in,cases
+1,UVL language,1,UVL language is,used in,defaults
+1,UVL language,1,UVL language is,used in,breaks
+1,UVL language,1,UVL language is,used in,continues
+1,UVL language,1,UVL language is,used in,gotos
+1,UVL language,1,UVL language is,used in,labels
+1,UVL language,1,UVL language is,used in,annotations
+1,UVL language,1,UVL language is,used in,comments
+1,UVL language,1,UVL language is,used in,documentation comments
+1,UVL language,1,UVL language is,used in,metadata
+1,UVL language,1,UVL language is,used in,attributes
+1,UVL language,1,UVL language is,used in,properties
+1,UVL language,1,UVL language is,used in,fields
+1,UVL language,1,UVL language is,used in,variables
+1,UVL language,1,UVL language is,used in,constants
+1,UVL language,1,UVL language is,used in,literals
+1,UVL language,1,UVL language is,used in,numbers
+1,UVL language,1,UVL language is,used in,strings
+1,UVL language,1,UVL language is,used in,booleans
+1,UVL language,1,UVL language is,used in,arrays
+1,UVL language,1,UVL language is,used in,objects
+1,UVL language,1,UVL language is,used in,null
+1,UVL language,1,UVL language is,used in,undefined
+1,UVL language,1,UVL language is,used in,NaN
+1,UVL language,1,UVL language is,used in,Infinity
+1,UVL language,1,UVL language is,used in,operators
+1,UVL language,1,UVL language is,used in,unary operators
+1,UVL language,1,UVL language is,used in,binary operators
+1,UVL language,1,UVL language is,used in,ternary operators
+1,UVL language,1,UVL language is,used in,assignment operators
+1,UVL language,1,UVL language is,used in,arithmetic operators
+1,UVL language,1,UVL language is,used in,logical operators
+1,UVL language,1,UVL language is,used in,bitwise operators
+1,UVL language,1,UVL language is,used in,comparison operators
+1,UVL language,1,UVL language is,used in,string operators
+1,UVL language,1,UVL language is,used in,conditional operators
+1,UVL language,1,UVL language is,used in,type operators
+1,UVL language,1,UVL language is,used in,instanceof
+1,UVL language,1,UVL language is,used in,typeof
+1,UVL language,1,UVL language is,used in,void
+1,UVL language,1,UVL language is,used in,delete
+1,UVL language,1,UVL language is,used in,in
+1,UVL language,1,UVL language is,used in,with
+1,UVL language,1,UVL language is,used in,debugger
+1,UVL language,1,UVL language is,used in,eval
+1,UVL language,1,UVL language is,used in,arguments
+1,UVL language,1,UVL language is,used in,this
+1,UVL language,1,UVL language is,used in,super
+1,UVL language,1,UVL language is,used in,new
+1,UVL language,1,UVL language is,used in,class
+1,UVL language,1,UVL language is,used in,extends
+1,UVL language,1,UVL language is,used in,implements
+1,UVL language,1,UVL language is,used in,interface
+1,UVL language,1,UVL language is,used in,package
+1,UVL language,1,UVL language is,used in,import
+1,UVL language,1,UVL language is,used in,export
+1,UVL language,1,UVL language is,used in,require
+1,UVL language,1,UVL language is,used in,module
+1,UVL language,1,UVL language is,used in,define
+1,UVL language,1,UVL language is,used in,use
+1,UVL language,1,UVL language is,used in,as
+1,UVL language,1,UVL language is,used in,from
+1,UVL language,1,UVL language is,used in,to
+1,UVL language,1,UVL language is,used in,by
+1,UVL language,1,UVL language is,used in,for
+1,UVL language,1,UVL language is,used in,while
+1,UVL language,1,UVL language is,used in,do
+1,UVL language,1,UVL language is,used in,if
+1,UVL language,1,UVL language is,used in,else
+1,UVL language,1,UVL language is,used in,switch
+1,UVL language,1,UVL language is,used in,case
+1,UVL language,1,UVL language is,used in,default
+1,UVL language,1,UVL language is,used in,break
+1,UVL language,1,UVL language is,used in,continue
+1,UVL language,1,UVL language is,used in,return
+1,UVL language,1,UVL language is,used in,throw
+1,UVL language,1,UVL language is,used in,try
+1,UVL language,1,UVL language is,used in,catch
+1,UVL language,1,UVL language is,used in,finally
+1,UVL language,1,UVL language is,used in,var
+1,UVL language,1,UVL language is,used in,let
+1,UVL language,1,UVL language is,used in,const
+1,UVL language,1,UVL language is,used in,function
+1,UVL language,1,UVL language is,used in,async
+1,UVL language,1,UVL language is,used in,await
+1,UVL language,1,UVL language is,used in,yield
+1,UVL language,1,UVL language is,used in,generator
+1,UVL language,1,UVL language is,used in,Promise
+1,UVL language,1,UVL language is,used in,Set
+1,UVL language,1,UVL language is,used in,Map
+1,UVL language,1,UVL language is,used in,WeakSet
+1,UVL language,1,UVL language is,used in,WeakMap
+1,UVL language,1,UVL language is,used in,Array
+1,UVL language,1,UVL language is,used in,Object
+1,UVL language,1,UVL language is,used in,String
+1,UVL language,1,UVL language is,used in,Number
+1,UVL language,1,UVL language is,used in,Boolean
+1,UVL language,1,UVL language is,used in,Symbol
+1,UVL language,1,UVL language is,used in,Date
+1,UVL language,1,UVL language is,used in,RegExp
+1,UVL language,1,UVL language is,used in,Error
+1,UVL language,1,UVL language is,used in,EvalError
+1,UVL language,1,UVL language is,used in,RangeError
+1,UVL language,1,UVL language is,used in,ReferenceError
+1,UVL language,1,UVL language is,used in,SyntaxError
+1,UVL language,1,UVL language is,used in,TypeError
+1,UVL language,1,UVL language is,used in,URIError
+1,UVL language,1,UVL language is,used in,JSON
+1,UVL language,1,UVL language is,used in,Math
+1,UVL language,1,UVL language is,used in,Reflect
+1,UVL language,1,UVL language is,used in,Proxy
+1,UVL language,1,UVL language is,used in,Intl
+1,UVL language,1,UVL language is,used in,console
+1,UVL language,1,UVL language is,used in,window
+1,UVL language,1,UVL language is,used in,document
+1,UVL language,1,UVL language is,used in,navigator
+1,UVL language,1,UVL language is,used in,location
+1,UVL language,1,UVL language is,used in,history
+1,UVL language,1,UVL language is,used in,screen
+1,UVL language,1,UVL language is,used in,localStorage
+1,UVL language,1,UVL language is,used in,sessionStorage
+1,UVL language,1,UVL language is,used in,indexedDB
+1,UVL language,1,UVL language is,used in,XMLHttpRequest
+1,UVL language,1,UVL language is,used in,fetch
+1,UVL language,1,UVL language is,used in,WebSocket
+1,UVL language,1,UVL language is,used in,EventSource
+1,UVL language,1,UVL language is,used in,WebRTC
+1,UVL language,1,UVL language is,used in,WebGL
+1,UVL language,1,UVL language is,used in,Canvas
+1,UVL language,1,UVL language is,used in,SVG
+1,UVL language,1,UVL language is,used in,WebAudio
+1,UVL language,1,UVL language is,used in,WebVR
+1,UVL language,1,UVL language is,used in,WebAssembly
+1,UVL language,1,UVL language is,used in,ServiceWorker
+1,UVL language,1,UVL language is,used in,SharedWorker
+1,UVL language,1,UVL language is,used in,Worker
+1,UVL language,1,UVL language is,used in,Blob
+1,UVL language,1,UVL language is,used in,File
+1,UVL language,1,UVL language is,used in,FileReader
+1,UVL language,1,UVL language is,used in,FormData
+1,UVL language,1,UVL language is,used in,URL
+1,UVL language,1,UVL language is,used in,URLSearchParams
+1,UVL language,1,UVL language is,used in,Headers
+1,UVL language,1,UVL language is,used in,Request
+1,UVL language,1,UVL language is,used in,Response
+1,UVL language,1,UVL language is,used in,Body
+1,UVL language,1,UVL language is,used in,ReadableStream
+1,UVL language,1,UVL language is,used in,WritableStream
+1,UVL language,1,UVL language is,used in,TransformStream
+1,UVL language,1,UVL language is,used in,ByteLengthQueuingStrategy
+1,UVL language,1,UVL language is,used in,CountQueuingStrategy
+1,UVL language,1,UVL language is,used in,TextEncoder
+1,UVL language,1,UVL language is,used in,TextDecoder
+1,UVL language,1,UVL language is,used in,AbortController
+1,UVL language,1,UVL language is,used in,AbortSignal
+1,UVL language,1,UVL language is,used in,Performance
+1,UVL language,1,UVL language is,used in,PerformanceEntry
+1,UVL language,1,UVL language is,used in,PerformanceMark
+1,UVL language,1,UVL language is,used in,PerformanceMeasure
+1,UVL language,1,UVL language is,used in,PerformanceObserver
+1,UVL language,1,UVL language is,used in,PerformanceResourceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigationTiming
+1,UVL language,1,UVL language is,used in,PerformancePaintTiming
+1,UVL language,1,UVL language is,used in,PerformanceLongTaskTiming
+1,UVL language,1,UVL language is,used in,PerformanceEventTiming
+1,UVL language,1,UVL language is,used in,PerformanceLayoutJank
+1,UVL language,1,UVL language is,used in,PerformanceServerTiming
+1,UVL language,1,UVL language is,used in,PerformanceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigation
+1,UVL language,1,UVL language is,used in,PerformanceMemory
+1,UVL language,1,UVL language is,used in,PerformanceObserverEntryList
+1,UVL language,1,UVL language is,used in,PerformanceResourceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigationTiming
+1,UVL language,1,UVL language is,used in,PerformancePaintTiming
+1,UVL language,1,UVL language is,used in,PerformanceLongTaskTiming
+1,UVL language,1,UVL language is,used in,PerformanceEventTiming
+1,UVL language,1,UVL language is,used in,PerformanceLayoutJank
+1,UVL language,1,UVL language is,used in,PerformanceServerTiming
+1,UVL language,1,UVL language is,used in,PerformanceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigation
+1,UVL language,1,UVL language is,used in,PerformanceMemory
+1,UVL language,1,UVL language is,used in,PerformanceObserverEntryList
+1,UVL language,1,UVL language is,used in,PerformanceResourceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigationTiming
+1,UVL language,1,UVL language is,used in,PerformancePaintTiming
+1,UVL language,1,UVL language is,used in,PerformanceLongTaskTiming
+1,UVL language,1,UVL language is,used in,PerformanceEventTiming
+1,UVL language,1,UVL language is,used in,PerformanceLayoutJank
+1,UVL language,1,UVL language is,used in,PerformanceServerTiming
+1,UVL language,1,UVL language is,used in,PerformanceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigation
+1,UVL language,1,UVL language is,used in,PerformanceMemory
+1,UVL language,1,UVL language is,used in,PerformanceObserverEntryList
+1,UVL language,1,UVL language is,used in,PerformanceResourceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigationTiming
+1,UVL language,1,UVL language is,used in,PerformancePaintTiming
+1,UVL language,1,UVL language is,used in,PerformanceLongTaskTiming
+1,UVL language,1,UVL language is,used in,PerformanceEventTiming
+1,UVL language,1,UVL language is,used in,PerformanceLayoutJank
+1,UVL language,1,UVL language is,used in,PerformanceServerTiming
+1,UVL language,1,UVL language is,used in,PerformanceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigation
+1,UVL language,1,UVL language is,used in,PerformanceMemory
+1,UVL language,1,UVL language is,used in,PerformanceObserverEntryList
+1,UVL language,1,UVL language is,used in,PerformanceResourceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigationTiming
+1,UVL language,1,UVL language is,used in,PerformancePaintTiming
+1,UVL language,1,UVL language is,used in,PerformanceLongTaskTiming
+1,UVL language,1,UVL language is,used in,PerformanceEventTiming
+1,UVL language,1,UVL language is,used in,PerformanceLayoutJank
+1,UVL language,1,UVL language is,used in,PerformanceServerTiming
+1,UVL language,1,UVL language is,used in,PerformanceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigation
+1,UVL language,1,UVL language is,used in,PerformanceMemory
+1,UVL language,1,UVL language is,used in,PerformanceObserverEntryList
+1,UVL language,1,UVL language is,used in,PerformanceResourceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigationTiming
+1,UVL language,1,UVL language is,used in,PerformancePaintTiming
+1,UVL language,1,UVL language is,used in,PerformanceLongTaskTiming
+1,UVL language,1,UVL language is,used in,PerformanceEventTiming
+1,UVL language,1,UVL language is,used in,PerformanceLayoutJank
+1,UVL language,1,UVL language is,used in,PerformanceServerTiming
+1,UVL language,1,UVL language is,used in,PerformanceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigation
+1,UVL language,1,UVL language is,used in,PerformanceMemory
+1,UVL language,1,UVL language is,used in,PerformanceObserverEntryList
+1,UVL language,1,UVL language is,used in,PerformanceResourceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigationTiming
+1,UVL language,1,UVL language is,used in,PerformancePaintTiming
+1,UVL language,1,UVL language is,used in,PerformanceLongTaskTiming
+1,UVL language,1,UVL language is,used in,PerformanceEventTiming
+1,UVL language,1,UVL language is,used in,PerformanceLayoutJank
+1,UVL language,1,UVL language is,used in,PerformanceServerTiming
+1,UVL language,1,UVL language is,used in,PerformanceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigation
+1,UVL language,1,UVL language is,used in,PerformanceMemory
+1,UVL language,1,UVL language is,used in,PerformanceObserverEntryList
+1,UVL language,1,UVL language is,used in,PerformanceResourceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigationTiming
+1,UVL language,1,UVL language is,used in,PerformancePaintTiming
+1,UVL language,1,UVL language is,used in,PerformanceLongTaskTiming
+1,UVL language,1,UVL language is,used in,PerformanceEventTiming
+1,UVL language,1,UVL language is,used in,PerformanceLayoutJank
+1,UVL language,1,UVL language is,used in,PerformanceServerTiming
+1,UVL language,1,UVL language is,used in,PerformanceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigation
+1,UVL language,1,UVL language is,used in,PerformanceMemory
+1,UVL language,1,UVL language is,used in,PerformanceObserverEntryList
+1,UVL language,1,UVL language is,used in,PerformanceResourceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigationTiming
+1,UVL language,1,UVL language is,used in,PerformancePaintTiming
+1,UVL language,1,UVL language is,used in,PerformanceLongTaskTiming
+1,UVL language,1,UVL language is,used in,PerformanceEventTiming
+1,UVL language,1,UVL language is,used in,PerformanceLayoutJank
+1,UVL language,1,UVL language is,used in,PerformanceServerTiming
+1,UVL language,1,UVL language is,used in,PerformanceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigation
+1,UVL language,1,UVL language is,used in,PerformanceMemory
+1,UVL language,1,UVL language is,used in,PerformanceObserverEntryList
+1,UVL language,1,UVL language is,used in,PerformanceResourceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigationTiming
+1,UVL language,1,UVL language is,used in,PerformancePaintTiming
+1,UVL language,1,UVL language is,used in,PerformanceLongTaskTiming
+1,UVL language,1,UVL language is,used in,PerformanceEventTiming
+1,UVL language,1,UVL language is,used in,PerformanceLayoutJank
+1,UVL language,1,UVL language is,used in,PerformanceServerTiming
+1,UVL language,1,UVL language is,used in,PerformanceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigation
+1,UVL language,1,UVL language is,used in,PerformanceMemory
+1,UVL language,1,UVL language is,used in,PerformanceObserverEntryList
+1,UVL language,1,UVL language is,used in,PerformanceResourceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigationTiming
+1,UVL language,1,UVL language is,used in,PerformancePaintTiming
+1,UVL language,1,UVL language is,used in,PerformanceLongTaskTiming
+1,UVL language,1,UVL language is,used in,PerformanceEventTiming
+1,UVL language,1,UVL language is,used in,PerformanceLayoutJank
+1,UVL language,1,UVL language is,used in,PerformanceServerTiming
+1,UVL language,1,UVL language is,used in,PerformanceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigation
+1,UVL language,1,UVL language is,used in,PerformanceMemory
+1,UVL language,1,UVL language is,used in,PerformanceObserverEntryList
+1,UVL language,1,UVL language is,used in,PerformanceResourceTiming
+1,UVL language,1,UVL language is,used in,PerformanceNavigationTiming
+1,UVL language,1,UVL language is,used in,PerformancePaintTiming
+1,UVL language,1,UVL language is,used in,PerformanceLongTaskTiming
+1,UVL language,1,UVL language is,used in,PerformanceEventTiming
+1,UVL language,1,UVL language is,used in,PerformanceLayoutJank
+1,UVL language,1,UVL language is,used in,PerformanceServerTiming
+1,UVL language,1,UVL language is,used in,PerformanceTiming
+1,UVL language,1,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,2,,,
+1,UVL language,3,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+1,UVL language,4,,,
+2,Language extensions,0,Language extensions,is a,concept
+2,Language extensions,0,Language extensions,are used in,UVL
+2,Language extensions,0,Language extensions,allow,adding new features
+2,Language extensions,0,Language extensions,allow,custom syntax
+2,Language extensions,0,Language extensions,enable,domain-specific adaptations
+2,Language extensions,0,Language extensions,are defined using,UVL's meta-model
+2,Language extensions,0,Language extensions,can be,user-defined
+2,Language extensions,0,Language extensions,enhance,expressiveness
+2,Language extensions,0,Language extensions,provide,flexibility
+2,Language extensions,0,Language extensions,are part of,UVL's extensibility mechanism
+2,Language extensions,1,Language extensions,is a,concept
+2,Language extensions,1,Language extensions,are used in,UVL
+2,Language extensions,1,Language extensions,allow,adding new constructs
+2,Language extensions,1,Language extensions,allow,adding new constraints
+2,Language extensions,1,Language extensions,are defined using,DSLs
+2,Language extensions,1,Language extensions,enhance,expressiveness
+2,Language extensions,1,Language extensions,are,optional
+2,Language extensions,1,Language extensions,can be,domain-specific
+2,Language extensions,1,Language extensions,enable,customization
+2,Language extensions,1,Language extensions,require,tool support
+2,Language extensions,2,Language extensions,has purpose,extend UVL
+2,Language extensions,2,Language extensions,adds,new language constructs
+2,Language extensions,2,Language extensions,enables,domain-specific adaptations
+2,Language extensions,2,Language extensions,requires,meta-model extension
+2,Language extensions,2,Language extensions,can define,new constraint types
+2,Language extensions,2,Language extensions,can define,new feature types
+2,Language extensions,2,Language extensions,can define,new attribute types
+2,Language extensions,2,Language extensions,can define,new section types
+2,Language extensions,2,Language extensions,can be,formalized
+2,Language extensions,2,Language extensions,can be,implemented
+2,Language extensions,2,Language extensions,can be,validated
+2,Language extensions,2,Language extensions,is related to,UVL meta-model
+2,Language extensions,2,Language extensions,is related to,UVL core
+2,Language extensions,2,Language extensions,is related to,UVL tooling
+2,Language extensions,3,Language extensions,is a,concept
+2,Language extensions,3,Language extensions,are used in,UVL
+2,Language extensions,3,Language extensions,allow,adding new language constructs
+2,Language extensions,3,Language extensions,are defined using,DSLs
+2,Language extensions,3,Language extensions,enable,custom syntax
+2,Language extensions,3,Language extensions,can specify,new grammar rules
+2,Language extensions,3,Language extensions,can define,new semantic checks
+2,Language extensions,3,Language extensions,integrate with,UVL core
+2,Language extensions,3,Language extensions,support,domain-specific adaptations
+2,Language extensions,3,Language extensions,facilitate,tailoring UVL
+2,Language extensions,3,Language extensions,are a mechanism for,language evolution
+2,Language extensions,4,Language extensions,is a,concept
+2,Language extensions,4,Language extensions,are used in,UVL
+2,Language extensions,4,Language extensions,allow,additional syntax
+2,Language extensions,4,Language extensions,allow,additional semantics
+2,Language extensions,4,Language extensions,enable,DSL integration
+2,Language extensions,4,Language extensions,are defined via,grammar rules
+2,Language extensions,4,Language extensions,can be,optional
+2,Language extensions,4,Language extensions,can be,mandatory
+2,Language extensions,4,Language extensions,are part of,UVL meta model
+2,Language extensions,4,Language extensions,facilitate,custom constraints
+2,Language extensions,4,Language extensions,support,feature model extensions
+2,Language extensions,4,Language extensions,enhance,expressiveness
+3,Feature Tree,0,,,
+3,Feature Tree,0,,,
+3,Feature Tree,0,,,
+3,Feature Tree,0,,,
+3,Feature Tree,0,,,
+3,Feature Tree,0,,,
+3,Feature Tree,0,,,
+3,Feature Tree,0,,,
+3,Feature Tree,0,,,
+3,Feature Tree,0,,,
+3,Feature Tree,0,,,
+3,Feature Tree,0,,,
+3,Feature Tree,0,,,
+3,Feature Tree,0,,,
+3,Feature Tree,1,,,
+3,Feature Tree,1,,,
+3,Feature Tree,1,,,
+3,Feature Tree,1,,,
+3,Feature Tree,1,,,
+3,Feature Tree,1,,,
+3,Feature Tree,1,,,
+3,Feature Tree,1,,,
+3,Feature Tree,1,,,
+3,Feature Tree,1,,,
+3,Feature Tree,1,,,
+3,Feature Tree,1,,,
+3,Feature Tree,1,,,
+3,Feature Tree,1,,,
+3,Feature Tree,2,,,
+3,Feature Tree,2,,,
+3,Feature Tree,2,,,
+3,Feature Tree,2,,,
+3,Feature Tree,2,,,
+3,Feature Tree,2,,,
+3,Feature Tree,2,,,
+3,Feature Tree,2,,,
+3,Feature Tree,2,,,
+3,Feature Tree,2,,,
+3,Feature Tree,2,,,
+3,Feature Tree,2,,,
+3,Feature Tree,2,,,
+3,Feature Tree,2,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,3,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+3,Feature Tree,4,,,
+4,Cross-tree constraints,0,,,
+4,Cross-tree constraints,0,,,
+4,Cross-tree constraints,0,,,
+4,Cross-tree constraints,0,,,
+4,Cross-tree constraints,0,,,
+4,Cross-tree constraints,0,,,
+4,Cross-tree constraints,0,,,
+4,Cross-tree constraints,0,,,
+4,Cross-tree constraints,0,,,
+4,Cross-tree constraints,0,,,
+4,Cross-tree constraints,0,,,
+4,Cross-tree constraints,0,,,
+4,Cross-tree constraints,0,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,1,,,
+4,Cross-tree constraints,2,,,
+4,Cross-tree constraints,2,,,
+4,Cross-tree constraints,2,,,
+4,Cross-tree constraints,2,,,
+4,Cross-tree constraints,2,,,
+4,Cross-tree constraints,2,,,
+4,Cross-tree constraints,2,,,
+4,Cross-tree constraints,2,,,
+4,Cross-tree constraints,2,,,
+4,Cross-tree constraints,2,,,
+4,Cross-tree constraints,2,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,3,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+4,Cross-tree constraints,4,,,
+5,Boolean Level,0,Boolean Level,is a,concept in UVL
+5,Boolean Level,0,Boolean Level,defines,feature model structure
+5,Boolean Level,0,Boolean Level,includes,features
+5,Boolean Level,0,Boolean Level,includes,constraints
+5,Boolean Level,0,Boolean Level,is part of,UVL metamodel
+5,Boolean Level,0,Boolean Level,is represented by,Feature Tree
+5,Boolean Level,0,Boolean Level,is represented by,Constraints Section
+5,Boolean Level,0,Boolean Level,is above,Type Level
+5,Boolean Level,0,Boolean Level,is above,Attribute Level
+5,Boolean Level,0,Boolean Level,uses,Boolean logic
+5,Boolean Level,0,Boolean Level,uses,propositional formulas
+5,Boolean Level,0,Boolean Level,constraints include,requires
+5,Boolean Level,0,Boolean Level,constraints include,excludes
+5,Boolean Level,0,Boolean Level,features can be,mandatory
+5,Boolean Level,0,Boolean Level,features can be,optional
+5,Boolean Level,0,Boolean Level,features can be,alternative groups
+5,Boolean Level,0,Boolean Level,features can be,or groups
+5,Boolean Level,0,Boolean Level,enables,configuration decisions
+5,Boolean Level,1,Boolean Level,is a,concept in UVL
+5,Boolean Level,1,Boolean Level,defines,feature model structure
+5,Boolean Level,1,Boolean Level,includes,features
+5,Boolean Level,1,Boolean Level,includes,constraints
+5,Boolean Level,1,Boolean Level,uses,Boolean logic
+5,Boolean Level,1,Boolean Level,is part of,UVL metamodel
+5,Boolean Level,1,Boolean Level,precedes,Arithmetic Level
+5,Boolean Level,1,Boolean Level,precedes,Type Level
+5,Boolean Level,1,Boolean Level,has representation,in JSON
+5,Boolean Level,1,Boolean Level,has representation,in XML
+5,Boolean Level,1,Boolean Level,has representation,in textual syntax
+5,Boolean Level,1,Boolean Level,specifies,mandatory features
+5,Boolean Level,1,Boolean Level,specifies,optional features
+5,Boolean Level,1,Boolean Level,specifies,alternative groups
+5,Boolean Level,1,Boolean Level,specifies,or groups
+5,Boolean Level,1,Boolean Level,specifies,requires constraints
+5,Boolean Level,1,Boolean Level,specifies,excludes constraints
+5,Boolean Level,2,Boolean Level,is a,concept in UVL
+5,Boolean Level,2,Boolean Level,is part of,UVL's layered structure
+5,Boolean Level,2,Boolean Level,defines,feature model constraints
+5,Boolean Level,2,Boolean Level,uses,Boolean logic operators
+5,Boolean Level,2,Boolean Level,includes,logical cross-tree constraints
+5,Boolean Level,2,Boolean Level,contains,requires statements
+5,Boolean Level,2,Boolean Level,contains,excludes statements
+5,Boolean Level,2,Boolean Level,is described in,UVL's formal syntax
+5,Boolean Level,2,Boolean Level,is above,Feature Level
+5,Boolean Level,2,Boolean Level,is below,Arithmetic Level
+5,Boolean Level,2,Boolean Level,operates on,features from Feature Level
+5,Boolean Level,3,Boolean Level,is a,concept in UVL
+5,Boolean Level,3,Boolean Level,defines,feature tree structure
+5,Boolean Level,3,Boolean Level,includes,mandatory features
+5,Boolean Level,3,Boolean Level,includes,optional features
+5,Boolean Level,3,Boolean Level,includes,alternative groups
+5,Boolean Level,3,Boolean Level,includes,or groups
+5,Boolean Level,3,Boolean Level,is part of,UVL metamodel
+5,Boolean Level,3,Boolean Level,is represented by,Feature tree
+5,Boolean Level,3,Boolean Level,precedes,Arithmetic Level
+5,Boolean Level,3,Boolean Level,precedes,Type Level
+5,Boolean Level,3,Boolean Level,uses,Boolean constraints
+5,Boolean Level,3,Boolean Level,specifies,presence conditions
+5,Boolean Level,3,Boolean Level,is for,configuration decisions
+5,Boolean Level,4,Boolean Level,is a,concept in UVL
+5,Boolean Level,4,Boolean Level,defines,feature tree structure
+5,Boolean Level,4,Boolean Level,includes,mandatory features
+5,Boolean Level,4,Boolean Level,includes,optional features
+5,Boolean Level,4,Boolean Level,includes,alternative groups
+5,Boolean Level,4,Boolean Level,includes,or groups
+5,Boolean Level,4,Boolean Level,is part of,UVL metamodel
+5,Boolean Level,4,Boolean Level,is represented by,Feature tree
+5,Boolean Level,4,Boolean Level,precedes,Arithmetic Level
+5,Boolean Level,4,Boolean Level,precedes,Type Level
+5,Boolean Level,4,Boolean Level,uses,Boolean constraints
+5,Boolean Level,4,Boolean Level,is described in,UVL specification
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,0,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,1,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,2,,,
+6,Arithmetic Level,3,,,
+6,Arithmetic Level,3,,,
+6,Arithmetic Level,3,,,
+6,Arithmetic Level,3,,,
+6,Arithmetic Level,3,,,
+6,Arithmetic Level,3,,,
+6,Arithmetic Level,3,,,
+6,Arithmetic Level,3,,,
+6,Arithmetic Level,3,,,
+6,Arithmetic Level,3,,,
+6,Arithmetic Level,3,,,
+6,Arithmetic Level,3,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+6,Arithmetic Level,4,,,
+7,Type Level,0,Type Level,is a,Feature Model Level
+7,Type Level,0,Type Level,is a,UVL Level
+7,Type Level,0,Type Level,is a,Language Level
+7,Type Level,0,Type Level,defines,Feature Types
+7,Type Level,0,Type Level,defines,Feature Cardinalities
+7,Type Level,0,Type Level,uses,Feature Type Keywords
+7,Type Level,0,Type Level,uses,mandatory
+7,Type Level,0,Type Level,uses,optional
+7,Type Level,0,Type Level,uses,alternative
+7,Type Level,0,Type Level,uses,or
+7,Type Level,0,Type Level,uses,group
+7,Type Level,0,Type Level,uses,cardinality
+7,Type Level,0,Type Level,is described in,UVL Specification
+7,Type Level,0,Type Level,is part of,UVL Metamodel
+7,Type Level,0,Type Level,is abstracted in,Concrete Syntax
+7,Type Level,0,Type Level,is abstracted in,Abstract Syntax
+7,Type Level,0,Type Level,is below,Feature Level
+7,Type Level,0,Type Level,is above,Instance Level
+7,Type Level,1,Type Level,is a,UVL Feature Type
+7,Type Level,1,Type Level,defines,Feature Types
+7,Type Level,1,Type Level,includes,Mandatory
+7,Type Level,1,Type Level,includes,Optional
+7,Type Level,1,Type Level,includes,Alternative
+7,Type Level,1,Type Level,includes,Or
+7,Type Level,1,Type Level,is part of,UVL Feature Model
+7,Type Level,1,Type Level,uses,Feature Cardinality
+7,Type Level,1,Type Level,is represented in,UVL JSON Format
+7,Type Level,1,Type Level,is represented in,UVL XML Format
+7,Type Level,1,Type Level,is distinct from,Feature Level
+7,Type Level,1,Type Level,is distinct from,Group Level
+7,Type Level,1,Type Level,is defined in,UVL Specification
+7,Type Level,2,Type Level,is a,concept
+7,Type Level,2,Type Level,is part of,UVL
+7,Type Level,2,Type Level,defines,feature types
+7,Type Level,2,Type Level,includes,mandatory
+7,Type Level,2,Type Level,includes,optional
+7,Type Level,2,Type Level,includes,alternative
+7,Type Level,2,Type Level,includes,or
+7,Type Level,2,Type Level,is defined in,Feature Model
+7,Type Level,2,Type Level,precedes,Cardinality Level
+7,Type Level,2,Type Level,uses,abstract features
+7,Type Level,2,Type Level,uses,concrete features
+7,Type Level,2,Type Level,is a,variability modeling level
+7,Type Level,3,Type Level,is a,UVL Feature Model Level
+7,Type Level,3,Type Level,is a,UVL Language Level
+7,Type Level,3,Type Level,is a,UVL Abstraction Level
+7,Type Level,3,Type Level,is defined in,UVL Specification
+7,Type Level,3,Type Level,describes,Feature Types
+7,Type Level,3,Type Level,defines,Feature Cardinalities
+7,Type Level,3,Type Level,uses,Feature Type Keywords
+7,Type Level,3,Type Level,includes keyword,optional
+7,Type Level,3,Type Level,includes keyword,mandatory
+7,Type Level,3,Type Level,includes keyword,alternative
+7,Type Level,3,Type Level,includes keyword,or
+7,Type Level,3,Type Level,is above,Feature Level
+7,Type Level,3,Type Level,is below,Group Level
+7,Type Level,4,Type Level,is,a concept in UVL
+7,Type Level,4,Type Level,defines,the allowed types for features
+7,Type Level,4,Type Level,is part of,the feature model structure
+7,Type Level,4,Type Level,uses,primitive types
+7,Type Level,4,Type Level,uses,composite types
+7,Type Level,4,Type Level,includes,string type
+7,Type Level,4,Type Level,includes,integer type
+7,Type Level,4,Type Level,includes,boolean type
+7,Type Level,4,Type Level,includes,real type
+7,Type Level,4,Type Level,includes,enumeration type
+7,Type Level,4,Type Level,includes,range type
+7,Type Level,4,Type Level,is specified,in the feature model header
