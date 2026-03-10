@@ -1,0 +1,363 @@
+Class [tailor language specification] children: ['language extension']
+Class [language extension] children: ['include keyword', 'conversion strategy']
+Class [propositional crosstree constraint] children: ['boolean level']
+Class [boolean level] children: ['arithmetic level', 'group cardinality', 'alternative group', 'optional group']
+Class [group cardinality] children: ['uvl language']
+Class [major level] children: ['minor level']
+Class [booleanattribute key] children: ['boolean variable']
+Class [+] children: ['arithmetic operation', 'binary expression']
+Class [attach constraint] children: ['valid configuration']
+Class [arithmetic level] children: ['arithmetic core']
+Class [minor level type level] children: ['string constraint', 'numericconstraint']
+Class [boolean variable] children: ['constraint']
+Class [constraint] children: ['require relationship', 'exclude relationship']
+Class [function] children: ['term']
+Class [simple base language] children: ['extension mechanism']
+Class [string comparison] children: ['type stringconstraint']
+Class [sum] children: ['aggregate function', 'function constraint']
+Class [dependencie base string value] children: ['predicate']
+Class [compose model] children: ['submodel', 'import submodel']
+Class [len] children: ['string operation']
+Class [select feature multiple time] children: ['feature cardinality']
+Class [type stringconstraint] children: ['type level']
+Class [core language uvl] children: ['boolean core']
+Class [parentchild relationship] children: ['feature tree']
+Class [feature tree] children: ['import mechanism', 'group']
+Class [namespace] children: ['import feature']
+Class [line constraint] children: ['feature attribute']
+Class [predicate] children: ['propositional operator']
+Class [unique name identifier] children: ['feature']
+Class [floor] children: ['numeric operation']
+Class [language construct] children: ['minor language level']
+└── tailor language specification
+    └── language extension
+        ├── include keyword
+        └── conversion strategy
+└── propositional crosstree constraint
+    └── boolean level
+        ├── arithmetic level
+        │   └── arithmetic core
+        ├── group cardinality
+        │   └── uvl language
+        ├── alternative group
+        └── optional group
+└── major level
+    └── minor level
+└── booleanattribute key
+    └── boolean variable
+        └── constraint
+            ├── require relationship
+            └── exclude relationship
+└── +
+    ├── arithmetic operation
+    └── binary expression
+└── attach constraint
+    └── valid configuration
+└── minor level type level
+    ├── string constraint
+    └── numericconstraint
+└── function
+    └── term
+└── simple base language
+    └── extension mechanism
+└── string comparison
+    └── type stringconstraint
+        └── type level
+└── sum
+    ├── aggregate function
+    └── function constraint
+└── dependencie base string value
+    └── predicate
+        └── propositional operator
+└── compose model
+    ├── submodel
+    └── import submodel
+└── len
+    └── string operation
+└── select feature multiple time
+    └── feature cardinality
+└── core language uvl
+    └── boolean core
+└── parentchild relationship
+    └── feature tree
+        ├── import mechanism
+        └── group
+└── namespace
+    └── import feature
+└── line constraint
+    └── feature attribute
+└── unique name identifier
+    └── feature
+└── floor
+    └── numeric operation
+└── language construct
+    └── minor language level
+Class [uvl language] children: ['uvl', 'textual language', 'feature model', 'humanreadable', 'pivot language', 'communitydriven', 'boolean level', 'arithmetic level', 'type level', 'language extension', 'featureide', 'flamapy', 'python', 'java', 'javascript', 'antlr', 'treelike structure', 'hierarchical structure', 'mandatory relationship', 'optional relationship', 'relationship', 'alternative relationship', 'constraint', 'group cardinality', 'arithmetic core', 'attribute aggregate', 'feature cardinality', 'type core', 'type numericconstraint', 'type stringconstraint', 'common textual exchange format', 'opensource', 'nest hierarchy', 'complete keyword', 'propositional crosstree constraint', 'decomposition', 'composition', 'conversion strategy level', 'consortium institution', 'concise', 'namespace', 'import', 'feature attribute', 'propositional logic', 'numeric constraint', 'string constraint', 'textual variability modeling language', 'extensible', 'indentation block', 'feature', 'boolean core', 'group cardinality minor level', 'feature cardinality minor level', 'numeric constraints feature attribute', 'string feature', 'integer feature', 'float feature', 'modevar initiative', '2018', 'pure::variant', 'travart', 'antlr parser generator', 'model decomposition', 'line break end statement', 'abstract feature', 'import mechanism', 'compose model', 'tool interoperability', 'uvlhub repository', 'simplicity', 'expressiveness', 'information hiding', 'contextfree grammar specification', 'toolspecific data storage attribute', 'identifier protect quotation mark ambiguity', 'gnu less general public license', 'ddueruem', 'fm fact label', 'v4rdiac']
+Class [boolean level] children: ['core language uvl', 'language construct', 'sit solver', 'boolean core', 'group cardinality', 'mandatory relationship', 'optional relationship', 'group', 'alternative group', 'propositional crosstree constraint', 'arithmetic level', 'type level', 'propositional logic', '!', '&', '|', '>=', '< =>', 'sit instance', 'featureide', 'flamapy', 'nemo', 'major language level', 'reasoning engine', 'optional group', 'mandatory group', 'constraint attribute', 'ddueruem', 'fm fact label', 'pure::variant', 'variability.dev', 'cnf', 'group keyword', 'clojurebase parser', 'pythonbase parser', 'high position language hierarchy']
+Class [boolean core] children: ['store feature information', 'constraint attribute', 'core language uvl', 'conversion target group cardinality', 'level extension']
+Class [group cardinality] children: ['boolean level', 'boolean minor level extension', 'select n m feature group']
+Class [group] children: ['integer feature', 'boolean level', 'feature tree']
+Class [feature tree] children: ['hierarchically arrange set feature', 'feature diagram', 'feature model', 'feature', 'group', 'exactly root feature', 'indentation represent relationship', 'nest hierarchy', 'optional group', 'mandatory group', 'alternative group', 'group cardinality', 'hierarchical structure variability model', 'indentation block', 'nest', 'parentchild relationship', 'subpart', 'keyword specify relationship', 'uvl model', 'feature name', 'feature cardinality', 'feature attribute', 'arbitrary number group']
+Class [feature] children: ['unique name identifier', 'feature cardinality', 'feature attribute', 'arbitrary number group', 'feature tree']
+Class [feature cardinality] children: ['arithmetic level', 'select feature multiple time', 'arithmetic core', 'minmax']
+Class [arithmetic level] children: ['numeric constraints feature attribute', 'major language level', 'boolean level', 'term resolve boolean', '+', '-', '*', '/', '==', '!=', '<', '>', '>=', 'feature cardinality', 'aggregate function', 'smt problem', 'cp problem', 'process sit encode', 'type level', 'travart', 'uvl', 'tool smt solver', 'tool cp solver', 'boolean core', 'numeric constant', 'numerical feature attribute', 'type level conversion', 'minor level selection wildcard', 'arithmetic expression feature', 'reasoning engine', 'smt instance', 'cp instance', 'sat encode', 'arithmetic core']
+Class [aggregate function] children: ['arithmetic level', 'sum', 'avg', 'arithmetic core', 'select feature', 'numerical feature attribute', 'feature second parameter']
+Class [arithmetic core] children: ['arithmetic level', 'constraint attribute', 'standard arithmetic operation', 'boolean core']
+Class [type level] children: ['string constraint', 'numeric operation', 'arithmetic level', 'major language level', 'boolean level', 'type feature', 'string feature', 'integer feature', 'real feature', 'type core', 'type numericconstraint', 'type stringconstraint', 'smt problem', 'cp problem', 'explicit set boolean domain', 'travart', 'uvl', 'v4rdiac', 'feature nonboolean type', 'core language uvl', 'float feature', 'string length operation', 'string comparison', 'floor operation', 'ceil operation', 'boolean feature attribute', 'configuration nonboolean value', 'reasoning engine', 'high position language hierarchy']
+Class [string constraint] children: ['minor level type level', 'conversion']
+Class [numeric operation] children: ['floor', 'ceil']
+Class [type stringconstraint] children: ['len', 'string comparison']
+Class [feature attribute] children: ['line constraint']
+Class [optional group] children: ['boolean level']
+Class [alternative group] children: ['boolean level']
+Class [language extension] children: ['expressiveness', 'diverse modelling need', 'language construct', 'core language uvl', 'optional', 'major language level', 'tailor model specific use case', 'tailor model tool limitation', 'include keyword', 'reasoning engine', 'core language simplicity', 'additional construct', 'uvl expressiveness', 'tailor language specification', 'sophisticated expression', 'expressive language feature', 'complex construct']
+Class [include keyword] children: ['language extension', 'major level', 'minor level type level', 'minor level selection wildcard']
+Class [constraint] children: ['feature model', 'domain constraint', 'number valid configuration', 'inclusion statement', 'exclusion statement', 'arbitrary propositional formulae', 'treelike structure', 'constraints keyword', 'propositional logic', '!', '&', '|', '>=', '< =>', 'boolean variable', 'boolean constant', 'predicate', 'uvl model', 'limitation feature', 'reasoning engine', 'separately feature tree structure']
+Class [boolean variable] children: ['feature name', 'booleanattribute key']
+Class [predicate] children: ['string value', 'numerical value', '==', '!=', '>', '<', '>=', 'term', 'dependencie base string value', 'dependencie base numerical value']
+Class [term] children: ['reference variable', 'constant', 'function', 'binary expression']
+Class [binary expression] children: ['+', '-', '*', '/']
+Class [import mechanism] children: ['feature tree', 'compose model']
+Class [minor language level] children: ['optional extension', 'uvl', 'language construct', 'core language uvl', 'expressiveness', 'reasoning engine', 'type feature', 'vary relationship type', 'major level']
+Class [function constraint] children: ['sum', 'avg', 'len', 'floor', 'ceil']
+Class [arithmetic operation] children: ['+', '-', '*', '/']
+Class [extension mechanism] children: ['sophisticated language property', 'simple base language', 'arbitrary datum storage', 'feature attribute toolspecific data']
+Class [numericconstraint] children: ['minor level type level', 'floor', 'ceil']
+Class [propositional operator] children: ['boolean variable', 'boolean constant', 'predicate']
+Class [require relationship] children: ['constraint', 'inclusion feature']
+Class [submodel] children: ['arbitrary location feature tree', 'compose model']
+Class [exclude relationship] children: ['constraint', 'feature incompatibility']
+Class [minor level] children: ['major level']
+Class [valid configuration] children: ['attach constraint']
+Class [conversion strategy] children: ['language extension']
+Class [string operation] children: ['len']
+Class [import submodel] children: ['compose model']
+Class [import feature] children: ['namespace']
+└── uvl language
+    ├── uvl
+    ├── textual language
+    ├── feature model
+    ├── humanreadable
+    ├── pivot language
+    ├── communitydriven
+    ├── boolean level
+    │   ├── core language uvl
+    │   ├── language construct
+    │   ├── sit solver
+    │   ├── boolean core
+    │   │   ├── store feature information
+    │   │   ├── constraint attribute
+    │   │   ├── conversion target group cardinality
+    │   │   └── level extension
+    │   ├── group cardinality
+    │   │   ├── boolean minor level extension
+    │   │   └── select n m feature group
+    │   ├── mandatory relationship
+    │   ├── optional relationship
+    │   ├── group
+    │   │   ├── integer feature
+    │   │   └── feature tree
+    │   │       ├── hierarchically arrange set feature
+    │   │       ├── feature diagram
+    │   │       ├── feature
+    │   │       │   ├── unique name identifier
+    │   │       │   ├── feature cardinality
+    │   │       │   │   ├── arithmetic level
+    │   │       │   │   │   ├── numeric constraints feature attribute
+    │   │       │   │   │   ├── major language level
+    │   │       │   │   │   ├── term resolve boolean
+    │   │       │   │   │   ├── +
+    │   │       │   │   │   ├── -
+    │   │       │   │   │   ├── *
+    │   │       │   │   │   ├── /
+    │   │       │   │   │   ├── ==
+    │   │       │   │   │   ├── !=
+    │   │       │   │   │   ├── <
+    │   │       │   │   │   ├── >
+    │   │       │   │   │   ├── >=
+    │   │       │   │   │   ├── aggregate function
+    │   │       │   │   │   │   ├── sum
+    │   │       │   │   │   │   ├── avg
+    │   │       │   │   │   │   ├── arithmetic core
+    │   │       │   │   │   │   │   ├── standard arithmetic operation
+    │   │       │   │   │   │   ├── select feature
+    │   │       │   │   │   │   ├── numerical feature attribute
+    │   │       │   │   │   │   └── feature second parameter
+    │   │       │   │   │   ├── smt problem
+    │   │       │   │   │   ├── cp problem
+    │   │       │   │   │   ├── process sit encode
+    │   │       │   │   │   ├── type level
+    │   │       │   │   │   │   ├── string constraint
+    │   │       │   │   │   │   │   ├── minor level type level
+    │   │       │   │   │   │   │   └── conversion
+    │   │       │   │   │   │   ├── numeric operation
+    │   │       │   │   │   │   │   ├── floor
+    │   │       │   │   │   │   │   └── ceil
+    │   │       │   │   │   │   ├── type feature
+    │   │       │   │   │   │   ├── string feature
+    │   │       │   │   │   │   ├── real feature
+    │   │       │   │   │   │   ├── type core
+    │   │       │   │   │   │   ├── type numericconstraint
+    │   │       │   │   │   │   ├── type stringconstraint
+    │   │       │   │   │   │   │   ├── len
+    │   │       │   │   │   │   │   └── string comparison
+    │   │       │   │   │   │   ├── explicit set boolean domain
+    │   │       │   │   │   │   ├── travart
+    │   │       │   │   │   │   ├── v4rdiac
+    │   │       │   │   │   │   ├── feature nonboolean type
+    │   │       │   │   │   │   ├── float feature
+    │   │       │   │   │   │   ├── string length operation
+    │   │       │   │   │   │   ├── floor operation
+    │   │       │   │   │   │   ├── ceil operation
+    │   │       │   │   │   │   ├── boolean feature attribute
+    │   │       │   │   │   │   ├── configuration nonboolean value
+    │   │       │   │   │   │   ├── reasoning engine
+    │   │       │   │   │   │   └── high position language hierarchy
+    │   │       │   │   │   ├── tool smt solver
+    │   │       │   │   │   ├── tool cp solver
+    │   │       │   │   │   ├── numeric constant
+    │   │       │   │   │   ├── type level conversion
+    │   │       │   │   │   ├── minor level selection wildcard
+    │   │       │   │   │   ├── arithmetic expression feature
+    │   │       │   │   │   ├── smt instance
+    │   │       │   │   │   ├── cp instance
+    │   │       │   │   │   ├── sat encode
+    │   │       │   │   ├── select feature multiple time
+    │   │       │   │   └── minmax
+    │   │       │   ├── feature attribute
+    │   │       │   │   └── line constraint
+    │   │       │   ├── arbitrary number group
+    │   │       ├── exactly root feature
+    │   │       ├── indentation represent relationship
+    │   │       ├── nest hierarchy
+    │   │       ├── optional group
+    │   │       ├── mandatory group
+    │   │       ├── alternative group
+    │   │       ├── hierarchical structure variability model
+    │   │       ├── indentation block
+    │   │       ├── nest
+    │   │       ├── parentchild relationship
+    │   │       ├── subpart
+    │   │       ├── keyword specify relationship
+    │   │       ├── uvl model
+    │   │       ├── feature name
+    │   ├── propositional crosstree constraint
+    │   ├── propositional logic
+    │   ├── !
+    │   ├── &
+    │   ├── |
+    │   ├── < =>
+    │   ├── sit instance
+    │   ├── featureide
+    │   ├── flamapy
+    │   ├── nemo
+    │   ├── ddueruem
+    │   ├── fm fact label
+    │   ├── pure::variant
+    │   ├── variability.dev
+    │   ├── cnf
+    │   ├── group keyword
+    │   ├── clojurebase parser
+    │   ├── pythonbase parser
+    ├── language extension
+    │   ├── expressiveness
+    │   ├── diverse modelling need
+    │   ├── optional
+    │   ├── tailor model specific use case
+    │   ├── tailor model tool limitation
+    │   ├── include keyword
+    │   │   ├── major level
+    │   ├── core language simplicity
+    │   ├── additional construct
+    │   ├── uvl expressiveness
+    │   ├── tailor language specification
+    │   ├── sophisticated expression
+    │   ├── expressive language feature
+    │   └── complex construct
+    ├── python
+    ├── java
+    ├── javascript
+    ├── antlr
+    ├── treelike structure
+    ├── hierarchical structure
+    ├── relationship
+    ├── alternative relationship
+    ├── constraint
+    │   ├── domain constraint
+    │   ├── number valid configuration
+    │   ├── inclusion statement
+    │   ├── exclusion statement
+    │   ├── arbitrary propositional formulae
+    │   ├── constraints keyword
+    │   ├── boolean variable
+    │   │   └── booleanattribute key
+    │   ├── boolean constant
+    │   ├── predicate
+    │   │   ├── string value
+    │   │   ├── numerical value
+    │   │   ├── term
+    │   │   │   ├── reference variable
+    │   │   │   ├── constant
+    │   │   │   ├── function
+    │   │   │   └── binary expression
+    │   │   ├── dependencie base string value
+    │   │   └── dependencie base numerical value
+    │   ├── limitation feature
+    │   └── separately feature tree structure
+    ├── attribute aggregate
+    ├── common textual exchange format
+    ├── opensource
+    ├── complete keyword
+    ├── decomposition
+    ├── composition
+    ├── conversion strategy level
+    ├── consortium institution
+    ├── concise
+    ├── namespace
+    ├── import
+    ├── numeric constraint
+    ├── textual variability modeling language
+    ├── extensible
+    ├── group cardinality minor level
+    ├── feature cardinality minor level
+    ├── modevar initiative
+    ├── 2018
+    ├── antlr parser generator
+    ├── model decomposition
+    ├── line break end statement
+    ├── abstract feature
+    ├── import mechanism
+    │   └── compose model
+    ├── tool interoperability
+    ├── uvlhub repository
+    ├── simplicity
+    ├── information hiding
+    ├── contextfree grammar specification
+    ├── toolspecific data storage attribute
+    ├── identifier protect quotation mark ambiguity
+    ├── gnu less general public license
+└── minor language level
+    ├── optional extension
+    ├── vary relationship type
+└── function constraint
+└── arithmetic operation
+└── extension mechanism
+    ├── sophisticated language property
+    ├── simple base language
+    ├── arbitrary datum storage
+    └── feature attribute toolspecific data
+└── numericconstraint
+└── propositional operator
+└── require relationship
+    └── inclusion feature
+└── submodel
+    ├── arbitrary location feature tree
+└── exclude relationship
+    └── feature incompatibility
+└── minor level
+└── valid configuration
+    └── attach constraint
+└── conversion strategy
+└── string operation
+└── import submodel
+└── import feature

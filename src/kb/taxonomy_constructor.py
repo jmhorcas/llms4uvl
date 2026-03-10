@@ -15,7 +15,7 @@ class TaxonomyConstructor:
         self.taxonomy: dict[str, list[str]] = {}       # H (The final hierarchy)
         self.V: set[str] = set()           # Set of classes already visited/processed
         self.class_embeddings: dict[str, numpy.ndarray] = {}
-        self.logical_operators = {'==', '<=', '>=', '!=', '>', '<', '=>', '<=>' '&', '|', '!', '+', '-', '/', '*'}
+        self.logical_operators = {'==', '<=', '>=', '!=', '>', '<', '=>', '<=>', '&', '|', '!', '+', '-', '/', '*'}
 
     def _get_custom_similarity(self, c: str, p: str) -> float:
         """Calculate similarity: Strict identity for logical operators, Cosine for the rest."""

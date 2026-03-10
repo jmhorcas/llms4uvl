@@ -17,7 +17,7 @@ TRANSFORMER_LANGUAGE_MODEL = 'all-MiniLM-L6-v2'  # Light and free model (approx 
 
 def setup_custom_tokenizer(nlp):
     """Set up a custom tokenizer for the spaCy language model to ensure that certain special cases (like "==", "=>", "<=", "!=", etc.) are treated as single tokens rather than being split into multiple tokens."""
-    special_cases = ['==', '<=', '>=', '!=', '>', '<', '=>', '<=>' '&', '|', '!', '+', '-', '/', '*']
+    special_cases = ['==', '<=', '>=', '!=', '>', '<', '=>', '<=>', '&', '|', '!', '+', '-', '/', '*']
     for case in special_cases:
         nlp.tokenizer.add_special_case(case, [{spacy.symbols.ORTH: case}])
     return nlp
