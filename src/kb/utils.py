@@ -1,20 +1,34 @@
 import json
-import spacy
-from spacy_wordnet.wordnet_annotator import WordnetAnnotator
+import os
+
+import numpy
 import nltk
+import spacy
 from sentence_transformers import SentenceTransformer
 from rapidfuzz import fuzz
 from sklearn.metrics.pairwise import cosine_similarity
-import numpy
+
 
 
 SPACY_LANGUAGE_MODEL = "en_core_web_sm"
-TRANSFORMER_LANGUAGE_MODEL = 'all-MiniLM-L6-v2'  # Modelo ligero y gratuito (aprox 80MB)
+TRANSFORMER_LANGUAGE_MODEL = 'all-MiniLM-L6-v2'  # Light and free model (approx 80MB)
 
 
-nltk.download('wordnet')
-nlp = spacy.load(SPACY_LANGUAGE_MODEL)
-language_model = SentenceTransformer(TRANSFORMER_LANGUAGE_MODEL)
+def setup_custom_tokenizer(nlp):
+    """Set up a custom tokenizer for the spaCy language model to ensure that certain special cases (like "==", "=>", "<=", "!=", etc.) are treated as single tokens rather than being split into multiple tokens."""
+    special_cases = ["==", ">=", "<=", "!=", "=>", "<=>"]
+    for case in special_cases:
+        nlp.tokenizer.add_special_case(case, [{spacy.symbols.ORTH: case}])
+    return nlp
+
+
+def initialize_language_models() -> tuple[spacy.Language, SentenceTransformer]:
+    """Initialize the language models and resources needed for text processing and similarity calculations."""
+    nltk.download('wordnet', quiet=True)
+    nlp = spacy.load(SPACY_LANGUAGE_MODEL)
+    nlp = setup_custom_tokenizer(nlp)
+    language_model = SentenceTransformer(TRANSFORMER_LANGUAGE_MODEL)
+    return nlp, language_model
 
     
 def case_folding(text: str) -> str:
@@ -22,24 +36,24 @@ def case_folding(text: str) -> str:
     return text.lower().strip()
 
 
-def lemmatization(text: str) -> str:
+def lemmatization(text: str, nlp: spacy.Language) -> str:
     """Lemmatize the text (convert words to their base form)."""
     doc = nlp(text)
     lemmatized_tokens = [token.lemma_ for token in doc]
     return " ".join(lemmatized_tokens)
 
 
-def remove_stopwords(text: str) -> str:
+def remove_stopwords(text: str, nlp: spacy.Language) -> str:
     """Remove stop words (articles, prepositions, etc.) from the text."""
     doc = nlp(text)
-    filtered_tokens = [token.text for token in doc if not token.is_stop and not token.is_punct]
-    result = " ".join(filtered_tokens)
-    if result.strip() == "":
-        result = text  # Return original text if all tokens are removed (e.g., for syntax terms like "==", "=>", etc.)
-    return result
+    keep_tokens = [t for t in doc if not t.is_stop and not t.is_punct]
+    if not keep_tokens:
+        return text  # Return original text if all tokens are removed
+    result = "".join([t.text_with_ws for t in keep_tokens]).strip()  # Preserve original spacing
+    return result if result else text  # Return original text if result is empty after removing stop words
 
 
-def get_synonyms(word: str) -> list:
+def get_synonyms(word: str, nlp: spacy.Language) -> list:
     """Get synonyms for a given word using the specified language model."""
     doc = nlp(word)
     synonyms = set()
@@ -60,32 +74,36 @@ def get_established_concept(text: str, concept_mapping_file: str) -> str:
     return concept_mapping.get(text, text)
 
 
-def normalize_text(text: str, concept_mapping_file: str) -> str:
-    """Normalize the text"""
+def normalize_text(text: str, concept_mapping_file: str, nlp: spacy.Language) -> str:
+    """Normalize the text by applying case folding, concept mapping, stop word removal, and lemmatization."""
     original_text = text
     text = case_folding(text)
-    # mapped_concept = get_established_concept(text, concept_mapping_file)
-    # if mapped_concept != text:
-    #     return mapped_concept  # Return the mapped concept if found
-    text = remove_stopwords(text)
-    text = lemmatization(text)
-    # mapped_concept = get_established_concept(text, concept_mapping_file)
+    mapped_concept = get_established_concept(text, concept_mapping_file)
+    if mapped_concept != text:
+        return mapped_concept  # Return the mapped concept if found
+    
+    text = remove_stopwords(text, nlp)
+    text = lemmatization(text, nlp)
+    mapped_concept = get_established_concept(text, concept_mapping_file)
     if text == '':
         return original_text  # Return the original text if no mapping found for it
+    if mapped_concept != text:
+        return mapped_concept  # Return the mapped concept if found after normalization
     return text  # Return the normalized text if no mapping found for it
 
 
-def flatten_predicate(pred: str) -> str:
-    """Normalize the predicate by converting it to lowercase and mapping it to a standard form if it matches certain patterns."""
-    pred = pred.lower().strip()
-    if pred in ['isa', 'typeof', 'is']: return 'is_a'
-    if pred in ['partof', 'includedin', 'memberof']: return 'part_of'
-    if pred in ['defines', 'supports', 'allows', 'has']: return 'defines'
-    return pred
+# def flatten_predicate(pred: str) -> str:
+#     """Normalize the predicate by converting it to lowercase and mapping it to a standard form if it matches certain patterns."""
+#     pred = pred.lower().strip()
+#     if pred in ['isa', 'typeof', 'is']: return 'is_a'
+#     if pred in ['partof', 'includedin', 'memberof']: return 'part_of'
+#     if pred in ['defines', 'supports', 'allows', 'has']: return 'defines'
+#     return pred
 
 
 def get_similarity(text1: str, 
-                   text2: str, 
+                   text2: str,
+                   language_model: SentenceTransformer, 
                    weight_semantic: float = 0.7, 
                    weight_lexical: float = 0.3) -> float:
     """Compute the similarity between two texts by combining Semantic Similarity (using embeddings) and Lexical Similarity (using Fuzzy Matching).
@@ -118,6 +136,7 @@ def get_similarity(text1: str,
 
 def get_atomic_similarity(triplet1: tuple[str, str, str], 
                           triplet2: tuple[str, str, str],
+                          language_model: SentenceTransformer,
                           weight_subject: float = 0.4, 
                           weight_predicate: float = 0.2, 
                           weight_object: float = 0.4) -> float:
@@ -152,7 +171,9 @@ def get_atomic_similarity(triplet1: tuple[str, str, str],
 
 
 
-def get_hybrid_similarity(triple1: tuple[str, str, str], triple2: tuple[str, str, str]) -> float:
+def get_hybrid_similarity(triple1: tuple[str, str, str], 
+                          triple2: tuple[str, str, str], 
+                          language_model: SentenceTransformer) -> float:
     """Compute the similarity between two triplets using a hybrid strategy that combines both global and atomic similarities.
 
     Use the global similarity to capture the overall meaning of the triplet as a sentence, and the atomic similarity to ensure that the individual components (subject, predicate, object) are also similar.
@@ -197,7 +218,9 @@ def get_hybrid_similarity(triple1: tuple[str, str, str], triple2: tuple[str, str
     return float(final_score)
 
 
-def fast_semantic_deduplication(triples: list[tuple[str, str, str]], threshold: float = 0.92) -> list[tuple[str, str, str]]:
+def fast_semantic_deduplication(language_model: SentenceTransformer,
+                                triples: list[tuple[str, str, str]],  
+                                threshold: float = 0.92) -> list[tuple[str, str, str]]:
     if not triples:
         return []
 

@@ -1,43 +1,32 @@
-
-from dataclasses import dataclass
 import csv
+import spacy
+from sentence_transformers import SentenceTransformer
+
+from kb import Triplet
 from kb import utils
 
 
-@dataclass(frozen=True)
-class Triplet:
-    subject: str
-    predicate: str
-    object: str
-
-    def __str__(self):
-        return f"({self.subject}, {self.predicate}, {self.object})"
-    
-    def to_tuple(self) -> tuple[str, str, str]:
-        """Convert the Triplet dataclass instance into a tuple of strings (subject, predicate, object)."""
-        return (self.subject, self.predicate, self.object)
-    
-    def to_sentence(self) -> str:
-        """Convert a triplet (subject, predicate, object) into a single sentence for similarity comparison.
-        For example, given the triplet (UVL, partOf, Language Levels), it will return "uvl partof language level" after normalization.
-        """
-        return f"{self.subject} {self.predicate} {self.object}"
-
-
 class KnowledgeBase:
+    """Class representing a knowledge base, which is a collection of triplets (subject, predicate, object)."""
 
     CONCEPT_MAPPING_FILE = "../resources/concept_mapping.json"
 
-    def __init__(self) -> None:
+    def __init__(self, nlp: spacy.Language, language_model: SentenceTransformer) -> None:
+        """Initialize an empty knowledge base."""
         self.triplets: list[Triplet] =[]
+        self.nlp = nlp
+        self.language_model = language_model
 
     def add_triplet(self, triplet: Triplet) -> None:
+        """Add a triplet to the knowledge base."""
         self.triplets.append(triplet)
     
     def join_kb(self, other_kb: 'KnowledgeBase') -> None:
+        """Join another knowledge base with the current one by adding all its triplets to the current knowledge base."""
         self.triplets.extend(other_kb.triplets)
         
     def __len__(self):
+        """Return the number of triplets in the knowledge base."""
         return len(self.triplets)
 
     def load_from_csv(self, file_path: str) -> None:
@@ -55,12 +44,12 @@ class KnowledgeBase:
     
     def normalize(self) -> 'KnowledgeBase':
         """Normalize all triplets in the knowledge base and return a new KnowledgeBase instance."""
-        normalized_kb = KnowledgeBase()
+        normalized_kb = KnowledgeBase(self.nlp, self.language_model)
         for triplet in self.triplets:
             normalized_triplet = Triplet(
-                subject=utils.normalize_text(triplet.subject, self.CONCEPT_MAPPING_FILE),
-                predicate=utils.normalize_text(triplet.predicate, self.CONCEPT_MAPPING_FILE),
-                object=utils.normalize_text(triplet.object, self.CONCEPT_MAPPING_FILE)
+                subject=utils.normalize_text(triplet.subject, self.CONCEPT_MAPPING_FILE, self.nlp),
+                predicate=triplet.predicate,  # Assuming predicates do not need normalization
+                object=utils.normalize_text(triplet.object, self.CONCEPT_MAPPING_FILE, self.nlp)
             )
             normalized_kb.add_triplet(normalized_triplet)
         return normalized_kb
@@ -73,17 +62,17 @@ class KnowledgeBase:
             for triplet in self.triplets:
                 writer.writerow([triplet.subject, triplet.predicate, triplet.object])
 
-    def deduplicate(self, threshold: float = 0.85) -> 'KnowledgeBase':
-        """Remove those triplets that are equals or similar to other triplets."""
-        kb = KnowledgeBase()
-        for triplet1 in self.triplets:
-            for triplet2 in self.triplets:
-                pass
-        pass
+    # def deduplicate(self, threshold: float = 0.85) -> 'KnowledgeBase':
+    #     """Remove those triplets that are equals or similar to other triplets."""
+    #     kb = KnowledgeBase(self.nlp, self.language_model)
+    #     for triplet1 in self.triplets:
+    #         for triplet2 in self.triplets:
+    #             pass
+    #     pass
 
     def remove_exact_duplicates(self) -> 'KnowledgeBase':
         """Remove those triplets that are exactly the same as other triplets."""
-        kb = KnowledgeBase()
+        kb = KnowledgeBase(self.nlp, self.language_model)
         seen = set()
         for triplet in self.triplets:
             if triplet not in seen:
@@ -120,10 +109,11 @@ class KnowledgeBase:
     def remove_semantic_duplicates(self, threshold=0.92) -> 'KnowledgeBase':
         """Remove those triplets that are semantically similar to other triplets based on a similarity threshold."""
         unique_triples = utils.fast_semantic_deduplication(
+            self.language_model,
             triples=[t.to_tuple() for t in self.triplets],
             threshold=threshold
         )
-        kb = KnowledgeBase()
+        kb = KnowledgeBase(self.nlp, self.language_model)
         for t in unique_triples:
             kb.add_triplet(Triplet(*t))
         return kb

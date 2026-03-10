@@ -1,4 +1,5 @@
-from .knowledge_base import KnowledgeBase, Triplet
+from .triplet import Triplet
+from .knowledge_base import KnowledgeBase
 from .knowledge_comparator import KnowledgeComparator
 
 
