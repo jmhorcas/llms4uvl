@@ -2,6 +2,7 @@ import json
 import os
 
 import numpy
+from collections import Counter, defaultdict
 import nltk
 import spacy
 from sentence_transformers import SentenceTransformer
@@ -16,7 +17,7 @@ TRANSFORMER_LANGUAGE_MODEL = 'all-MiniLM-L6-v2'  # Light and free model (approx 
 
 def setup_custom_tokenizer(nlp):
     """Set up a custom tokenizer for the spaCy language model to ensure that certain special cases (like "==", "=>", "<=", "!=", etc.) are treated as single tokens rather than being split into multiple tokens."""
-    special_cases = ["==", ">=", "<=", "!=", "=>", "<=>"]
+    special_cases = ['==', '<=', '>=', '!=', '>', '<', '=>', '<=>' '&', '|', '!', '+', '-', '/', '*']
     for case in special_cases:
         nlp.tokenizer.add_special_case(case, [{spacy.symbols.ORTH: case}])
     return nlp
@@ -252,3 +253,81 @@ def fast_semantic_deduplication(language_model: SentenceTransformer,
 
     #print(f"Original: {n} | Únicos: {len(unique_triples)} | Eliminados: {len(indices_to_remove)}")
     return unique_triples
+
+
+
+
+def relation_clustering(language_model: SentenceTransformer, 
+                        relations: set[str], 
+                        alpha: float = 1.4, 
+                        H: float = 0.95, 
+                        L: float = 0.75) -> dict[str, str]:
+    """
+    A greedy clustering algorithm that merges relation r into a more frequen relation s,
+    selected as the one with the highest textual embedding similarity to r among all relations more frequent than r,
+    if the similarity is greaer than an adaptive threshold.
+    This threshold varies with the frequency of the relation, leading to a more aggressive removal of relations with low frequency.
+    Algorithm from [Hu2025_ExtensiveMaterialization](https://doi.org/10.18653/v1/2025.acl-long.789).
+    Args:
+        language_model: Instance of SentenceTransformer.
+        relations: Set of relations.
+        alpha: Sensitivity threshold (default 1.4).
+        H: Maximum threshold for very frequent relations (0.95).
+        L: Minimum threshold for rare relations (0.75).
+    """
+    if not relations:
+        return {}
+
+    # Count frequencies and sort: R_sort <- sort R by frequency descending
+    counts = Counter(relations)
+    sorted_relations = sorted(counts.items(), key=lambda x: x[1], reverse=True)
+    
+    r_names = [r for r, f in sorted_relations]
+    r_freqs = [f for r, f in sorted_relations]
+    max_f = r_freqs[0]
+
+    # Pre-calculate embeddings for better performance
+    embeddings = language_model.encode(r_names)
+    
+    # C: Map original relation -> Representative relation (the most frequent in the group)
+    clusters = {} 
+    # cluster_heads store the embeddings and names of the "leaders" of each created cluster
+    cluster_heads = []  # List of (name, embedding)
+
+    # For r in R_sort
+    for i, r_name in enumerate(r_names):
+        f = r_freqs[i]
+        r_emb = embeddings[i].reshape(1, -1)
+        
+        best_match = None
+        max_sim = -1
+
+        # Search for the most similar relation s' among the already processed ones (cluster leaders)
+        for head_name, head_emb in cluster_heads:
+            # sim = cosine_similarity
+            sim = cosine_similarity(r_emb, head_emb.reshape(1, -1))[0][0]
+            if sim > max_sim:
+                max_sim = sim
+                best_match = head_name
+
+        # Calculate the adaptive threshold T
+        # Avoid log(0) or log(1) with max(1.1, ...) to ensure the denominator is > 0
+        log_f = numpy.log(f) if f > 1 else 0
+        log_max_f = numpy.log(max_f) if max_f > 1 else 1
+        
+        # Formula: threshold = L + (H - L) * (log_f / log_max_f)^alpha
+        if log_max_f > 0:
+            threshold = L + (H - L) * (pow(log_f / log_max_f, alpha))
+        else:
+            threshold = H
+
+        # if similarity(r, s') > threshold
+        if best_match and max_sim > threshold:
+            # C[r] <- C[s']
+            clusters[r_name] = best_match
+        else:
+            # C[r] <- r (new entry, r is the leader of its own cluster)
+            clusters[r_name] = r_name
+            cluster_heads.append((r_name, embeddings[i]))
+
+    return clusters

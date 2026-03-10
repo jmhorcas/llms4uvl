@@ -106,7 +106,7 @@ class KnowledgeBase:
     #         kb.add_triplet(t)
     #     return kb
     
-    def remove_semantic_duplicates(self, threshold=0.92) -> 'KnowledgeBase':
+    def remove_semantic_duplicates(self, threshold: float = 0.92) -> 'KnowledgeBase':
         """Remove those triplets that are semantically similar to other triplets based on a similarity threshold."""
         unique_triples = utils.fast_semantic_deduplication(
             self.language_model,
@@ -128,3 +128,52 @@ class KnowledgeBase:
 
     # def combine(self, other_kb: 'KnowledgeBase') -> None:
     #     self.triplets.extend(other_kb.triplets)
+
+    def knowledge_consolidation(self) -> 'KnowledgeBase':
+        """Consolidate the knowledge base by normalizing and removing duplicates."""
+        kb = self.normalize()
+        kb = kb.consolidate_relations()
+        kb = kb.consolidate_objects()
+        kb = kb.consolidate_subjects()
+        kb = kb.remove_exact_duplicates()
+        #kb = kb.remove_semantic_duplicates(threshold=threshold)
+        return kb
+    
+    def consolidate_relations(self, alpha: float = 1.4, threshold_max: float = 0.95, threshold_min: float = 0.75) -> 'KnowledgeBase':
+        """Apply Relation Clustering to unify semantically similar predicates."""
+        # Extract all predicates
+        all_predicates = [t.predicate for t in self.triplets]
+        # Obtain the unification map
+        mapping = utils.relation_clustering(self.language_model, all_predicates, alpha=alpha, H=threshold_max, L=threshold_min)
+        # Create a new KB with the updated predicates
+        new_kb = KnowledgeBase(self.nlp, self.language_model)
+        for t in self.triplets:
+            unified_predicate = mapping.get(t.predicate, t.predicate)
+            new_kb.add_triplet(Triplet(t.subject, unified_predicate, t.object))
+        return new_kb
+    
+    def consolidate_objects(self, alpha: float = 1.4, threshold_max: float = 0.95, threshold_min: float = 0.75) -> 'KnowledgeBase':
+        """Apply Relation Clustering to unify semantically similar predicates."""
+        # Extract all objects
+        all_objects = [t.object for t in self.triplets]
+        # Obtain the unification map
+        mapping = utils.relation_clustering(self.language_model, all_objects, alpha=alpha, H=threshold_max, L=threshold_min)
+        # Create a new KB with the updated objects
+        new_kb = KnowledgeBase(self.nlp, self.language_model)
+        for t in self.triplets:
+            unified_object = mapping.get(t.object, t.object)
+            new_kb.add_triplet(Triplet(t.subject, t.predicate, unified_object))
+        return new_kb
+    
+    def consolidate_subjects(self, alpha: float = 1.4, threshold_max: float = 0.95, threshold_min: float = 0.75) -> 'KnowledgeBase':
+        """Apply Relation Clustering to unify semantically similar predicates."""
+        # Extract all subjects
+        all_subjects = [t.subject for t in self.triplets]
+        # Obtain the unification map
+        mapping = utils.relation_clustering(self.language_model, all_subjects, alpha=alpha, H=threshold_max, L=threshold_min)
+        # Create a new KB with the updated subjects
+        new_kb = KnowledgeBase(self.nlp, self.language_model)
+        for t in self.triplets:
+            unified_subject = mapping.get(t.subject, t.subject)
+            new_kb.add_triplet(Triplet(unified_subject, t.predicate, t.object))
+        return new_kb
