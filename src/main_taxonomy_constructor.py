@@ -80,6 +80,59 @@ def print_iterative(taxonomy):
         for i, child in enumerate(reversed(children)):
             stack.append((child, new_indent, i == 0))
 
+def print_taxonomy_iterative_with_predicates(taxonomy):
+    """
+    Versión iterativa de la impresión de taxonomía para evitar RecursionError.
+    Maneja ciclos y muestra predicados en las conexiones.
+    """
+    # 1. Identificar raíces (nodos que no son hijos de nadie)
+    all_children = set(rel[0] for children in taxonomy.values() for rel in children)
+    roots = [n for n in taxonomy.keys() if n not in all_children]
+    
+    if not roots and taxonomy:
+        # Si todo es un ciclo, tomamos las llaves para empezar
+        roots = list(taxonomy.keys())[:3]
+        print("(!) Ciclo detectado en la raíz. Empezando por nodos arbitrarios:")
+
+    # La pila guardará: (nodo_actual, indentación, es_el_último_hijo, predicado_padre)
+    # Metemos las raíces en orden inverso para que se impriman en el orden correcto
+    stack = []
+    for i, root in enumerate(reversed(roots)):
+        stack.append((root, "", i == 0, None))
+
+    visited = set()
+
+    while stack:
+        node, indent, is_last, pred = stack.pop()
+
+        # Si ya visitamos este nodo en este "camino" (o globalmente para árboles estrictos)
+        # Aquí usamos un set global para evitar ciclos infinitos en el grafo
+        if node in visited:
+            marker = "└── " if is_last else "├── "
+            label = f" [{pred}]──>" if pred else ""
+            print(f"{indent}{marker}{label} {node} (RECURSIÓN/CICLO)")
+            continue
+        
+        visited.add(node)
+
+        # Imprimir el nodo actual
+        marker = "└── " if is_last else "├── "
+        if pred:
+            # Si viene de un padre, mostramos el predicado
+            print(f"{indent}{marker}[{pred}]──> {node}")
+        else:
+            # Si es raíz
+            print(f"{indent}{marker}{node}")
+
+        # Preparar hijos
+        children_rels = taxonomy.get(node, [])
+        new_indent = indent + ("    " if is_last else "│   ")
+        
+        # Añadir hijos a la pila en orden inverso
+        for i, (child, p_name) in enumerate(reversed(children_rels)):
+            stack.append((child, new_indent, i == 0, p_name))
+
+
 
 def main(kb_filepath: str) -> None:
     path = pathlib.Path(kb_filepath)
@@ -116,7 +169,7 @@ def main(kb_filepath: str) -> None:
     #     print_taxonomy(inverted_taxonomy, root)
 
     #display_pretty_taxonomy(inverted_taxonomy)
-    print_iterative(inverted_taxonomy)
+    print_taxonomy_iterative_with_predicates(inverted_taxonomy)
 
 
 

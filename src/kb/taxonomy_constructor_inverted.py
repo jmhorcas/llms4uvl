@@ -43,35 +43,33 @@ class TaxonomyConstructorInverted:
         return self.taxonomy
 
     def insert_class_recursive(self, p: str, kb: KnowledgeBase) -> None:
-        """Aquí 'p' es el Padre y buscamos a sus hijos."""
+        """Versión Invertida: p es Padre, buscamos sus hijos y el predicado que los une."""
         if p in self.V: return
         self.V.add(p)
 
-        # CAMBIO 2: Buscar candidatos a HIJOS (donde p es el sujeto)
-        # Buscamos los objetos que están bajo este sujeto
-        candidates = [t.object for t in kb.triplets if t.subject == p and t.object != p]
+        # Buscamos tripletas donde p es el sujeto (Padre -> Predicado -> Hijo)
+        candidates = [t for t in kb.triplets if t.subject == p and t.object != p]
         
         if not candidates:
             return 
 
-        # Seleccionar los mejores hijos (pueden ser varios en un árbol)
-        # Nota: A diferencia del artículo original que busca UN padre, 
-        # un padre puede tener MÚLTIPLES hijos legítimos.
-        counts = Counter(candidates)
-        
-        for child, freq in counts.items():
-            # Calculamos si el hijo es lo suficientemente similar/frecuente
-            sim = self._get_custom_similarity(p, child)
-            score = freq + (self.beta * sim)
+        for t in candidates:
+            child = t.object
+            predicate = t.predicate
             
-            # Si el score es alto, lo aceptamos como hijo legítimo
-            if score > 0.5: # Umbral de aceptación
+            # Calculamos score para validar si la relación es fuerte
+            sim = self._get_custom_similarity(p, child)
+            score = 1 + (self.beta * sim) # Usamos frecuencia 1 por tripleta individual
+            
+            if score > 0.5:
                 if p not in self.taxonomy:
                     self.taxonomy[p] = []
-                if child not in self.taxonomy[p]:
-                    self.taxonomy[p].append(child)
                 
-                # Recursión hacia abajo: procesar al hijo
+                # Guardamos (Hijo, Predicado) para la impresión
+                relacion = (child, predicate)
+                if relacion not in self.taxonomy[p]:
+                    self.taxonomy[p].append(relacion)
+                
                 if child not in self.V:
                     self.insert_class_recursive(child, kb)
 
