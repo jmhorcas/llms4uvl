@@ -1,0 +1,574 @@
+Subject,Predicate,Object
+uvl,acronym for,uvl
+uvl,represents,feature model
+uvl,type,textual language
+uvl,property,humanreadable
+uvl,role,pivot language
+uvl,origin,modevar initiative
+uvl,development start date,2018
+uvl,major level,boolean
+uvl,major level,arithmetic
+uvl,major level,type
+boolean level,includes,boolean core
+boolean level,includes,group cardinality
+arithmetic level,includes,arithmetic core
+arithmetic level,includes,attribute aggregate
+arithmetic level,includes,feature cardinality
+type level,includes,type core
+type level,includes,numeric constraint
+type level,includes,stringconstraint
+uvl,supports,language extension
+uvl,integrated into,featureide
+uvl,integrated into,flamapy
+uvl,integrated into,pure::variant
+uvl,supported by,python parser
+uvl,supported by,java parser
+uvl,supported by,javascript parser
+uvl,use parser generator,antlr
+uvl,structure,treelike structure
+uvl,supports,constraint
+uvl,keyword,mandatory
+uvl,keyword,optional
+uvl,keyword,or
+uvl,keyword,alternative
+uvl,keyword,include
+uvl,keyword,feature
+uvl,keyword,import
+uvl,keyword,namespace
+uvl,keyword,cardinality
+uvl,use operator,sum
+uvl,use operator,avg
+uvl,use operator,floor
+uvl,use operator,ceil
+uvl,use operator,len
+uvl,feature type,string
+uvl,feature type,integer
+uvl,feature type,real
+uvl,feature type,boolean
+uvl,mechanism,import
+uvl,maintenance by,consortium institution
+uvl,contributor,david benavides
+uvl,contributor,chico sundermann
+uvl,contributor,kevin feichtinger
+uvl,contributor,josé a. galindo
+uvl,contributor,rick rabiser
+uvl,contributor,thomas thüm
+uvl,institution,universidad de sevilla
+uvl,institution,university ulm
+uvl,institution,kit
+uvl,institution,jku linz
+uvl,institution,tu braunschweig
+uvl,operation,knowledge sharing
+uvl,operation,educational instruction
+uvl,operation,tool integration
+uvl,developed by,modevar initiative
+uvl,created in,2018
+uvl,includes,boolean level
+uvl,includes,arithmetic level
+uvl,includes,type level
+boolean core,includes,mandatory
+boolean core,includes,or
+boolean core,includes,alternative
+boolean core,includes,constraint
+uvl syntax,uses keyword,feature
+uvl syntax,uses keyword,optional
+uvl syntax,uses keyword,or
+uvl syntax,uses keyword,constraint
+uvl,supports operator,!
+uvl,supports operator,==
+uvl,supports operator,<
+uvl,supports operator,*
+uvl,supports function,sum
+uvl,supports function,avg
+uvl,supports function,len
+uvl,supports function,floor
+uvl,supports function,ceil
+david benavides,author of,uvl
+chico sundermann,author of,uvl
+kevin feichtinger,author of,uvl
+josé a. galindo,author of,uvl
+rick rabiser,author of,uvl
+thomas thüm,author of,uvl
+david benavides,affiliated with,universidad de sevilla
+chico sundermann,affiliated with,university ulm
+kevin feichtinger,affiliated with,karlsruhe institute technology
+rick rabiser,affiliated with,johannes kepler university linz
+thomas thüm,affiliated with,tu braunschweig
+uvl,integrated into,travart
+uvl,integrated into,uvl
+uvl,integrated into,variability.dev
+uvl,supports,feature model
+uvl,supports,knowledge sharing
+uvl,supports,tool integration
+uvl,supports,educational instruction
+uvl,design goal,simplicity
+uvl,design goal,information hiding
+uvl,design goal,expressiveness
+uvl,design goal,extensibility
+uvl,design goal,exchange
+uvl,hierarchy,nest
+uvl,designer,david benavides
+uvl,designer,chico sundermann
+uvl,designer,kevin feichtinger
+uvl,designer,josé a. galindo
+uvl,designer,rick rabiser
+uvl,designer,thomas thüm
+uvl,developed at,universidad de sevilla
+uvl,developed at,university ulm
+uvl,developed at,karlsruhe institute technology
+uvl,developed at,johannes kepler university linz
+uvl,developed at,tu braunschweig
+uvl,has level,type
+boolean level,includes,group keyword
+boolean level,includes,propositional logic
+boolean level,has minor level,group cardinality
+arithmetic level,includes,numeric constraint
+arithmetic level,includes,numeric attribute
+arithmetic level,has minor level,feature cardinality
+arithmetic level,has minor level,aggregate function
+type level,includes,real feature
+type level,includes,integer feature
+type level,includes,string feature
+type level,has minor level,string constraint
+uvl,has keyword,as
+uvl,has syntax,indentation
+uvl,uses,curly bracket attribute
+uvl,supports,model decomposition
+uvl,supports,composition model
+uvl,integrated into,nemo
+uvl,uses,tool interoperability
+uvl,product of,modevar initiative
+uvl,intended as,humanreadable
+uvl,intended as,pivot language
+arithmetic level,includes,boolean level
+arithmetic level,has minor level,attribute aggregate
+type level,includes,arithmetic level
+type level,has minor level,type numericconstraint
+type level,has minor level,stringconstraint
+uvl,uses keyword,string
+uvl,uses keyword,boolean
+uvl,uses keyword,integer
+uvl,uses keyword,real
+uvl,use operator,!
+uvl,use operator,<=>
+uvl,uses function,ceil
+uvl,shows hierarchy with,indentation
+uvl,shows hierarchy with,nest
+uvl,facilitates,knowledge sharing
+uvl,enables,model decomposition
+uvl,provides,conversion strategy
+uvl,models,software variability
+uvl syntax,uses,antlr
+university seville,contributes to,uvl
+university ulm,contributes to,uvl
+johannes kepler university linz,contributes to,uvl
+tu braunschweig,contributes to,uvl
+uvl,allows,feature attribute
+uvl,allows,feature cardinality
+uvl,is,communitydriven
+uvl,initiative started in,2018
+boolean level,is,core language
+boolean level,has minor level,groupcardinality
+boolean level,includes,mandatory relationship
+boolean level,includes,constraint
+arithmetic level,has minor level,featurecardinality
+type level,includes,boolean level
+type level,supports,string feature
+uvl,uses indentation for,treelike structure
+uvl,supports,model analysis
+uvl,supports,model transformation
+uvl,supports,model configuration
+uvl,parser implementation exists for,antlr
+uvl,developed by,university málaga
+uvl,developed by,university siegen
+uvl,has repository,uvlhub
+language extension,are called,major language level
+language extension,categorize,language construct
+language extension,increase,expressiveness
+language extension,maintain,simplicity
+language extension,include,major level
+language extension,include,minor level
+language extension,differentiate,reasoning engine
+language extension,introduce,additional construct
+language extension,accommodate,diverse modelling need
+language extension,allows,model tailoring
+language extension,are declared via,include keyword
+language level,follow,hierarchical order
+language level,act as,optional extension
+language level,include,boolean level
+language level,include,arithmetic level
+language level,include,type level
+boolean level,is,major language level
+arithmetic level,is,major language level
+type level,is,major language level
+aggregate function,is,arithmetic level
+string constraint,is,minor level
+numericconstraint,is,minor level
+conversion strategy,translate,major language level
+wildcard,enables,minor level
+language extension,is,optional
+major level,include,boolean level
+major level,include,arithmetic level
+major level,include,type level
+type level,adds,type feature
+minor level,include,group cardinality
+minor level,include,feature cardinality
+minor level,include,aggregate function
+minor level,include,string constraint
+string constraint,extends,type level
+include mechanism,uses,include keyword
+language level,group features by,reasoning engine
+arithmetic level,supports,numeric constraints feature attribute
+type level,supports,float feature
+feature cardinality,enables,select feature multiple time
+aggregate function,introduce,sum
+aggregate function,introduce,avg
+string constraint,adds,string comparison
+string constraint,adds,string length check
+language level,separate language by,reasoning engine
+language extension,allows,uvl model
+language level,structure,uvl
+language level,encapsulates,language construct
+language level,extends,core language uvl
+language level,are categorized into,major level
+language level,are categorized into,minor level
+major level,follow,hierarchical order
+boolean level,is,core language uvl
+language level,are specified using,include keyword
+arithmetic level,supports,feature attribute
+string constraint,introduce,len
+string constraint,introduce,string comparison
+numericconstraint,allows,floor
+numericconstraint,allows,ceil
+language extension,enhance,uvl expressiveness
+language extension,are structured into,major language level
+boolean level,includes extension,group cardinality
+arithmetic level,includes extension,feature cardinality
+arithmetic level,includes extension,aggregate function
+type level,includes extension,string constraint
+type level,includes extension,numeric constraint
+minor level,automatically include,major level
+conversion strategy,translate,language extension
+conversion strategy,replace,language construct
+language extension,facilitates,tool interoperability
+language level,group constructs by,reasoning engine
+language level,enhance,expressiveness
+type feature,include,string
+type feature,include,integer
+type feature,include,float feature
+type feature,include,real
+aggregate function,supports,sum
+conversion strategy,translate,high level low level
+conversion strategy,replace,complex construct
+uvlparser,supports,major language level
+uvlparser,implements,conversion strategy
+feature tree,is part of,feature model
+feature tree,is synonymous with,feature diagram
+feature tree,represents,hierarchical structure
+feature tree,consists of,feature
+feature tree,consists of,group
+feature tree,requires,exactly root feature
+feature tree,uses,indentation represent hierarchy
+feature tree,uses,keyword parentchild relationship
+feature tree,contains,unique feature name
+feature tree,supports,feature cardinality
+feature tree,supports,feature attribute
+feature tree,includes,mandatory group
+feature tree,includes,alternative group
+feature tree,includes,group cardinality
+mandatory group,belongs to,boolean level
+group,belongs to,boolean level
+alternative group,belongs to,boolean level
+feature tree,is part of,universal variability language model
+feature tree,represents,software variability
+feature tree,is also known as,feature diagram
+feature tree,supports,mandatory relationship
+feature tree,supports,optional relationship
+feature tree,supports,group
+feature tree,can be decomposed into,subpart
+feature tree,allows,composition import mechanism
+feature tree,supports,abstract feature
+feature tree,supports,concrete feature
+feature tree,uses,mandatory keyword
+feature tree,uses,optional keyword
+feature tree,uses,alternative keyword
+feature tree,uses,keyword
+feature tree,uses,cardinality
+feature tree,is defined in,boolean core
+feature tree,is defined in,boolean level
+feature tree,can be exported to,featureide xml
+feature tree,can be edited in,featureide
+feature tree,is a major part of,uvl model
+feature tree,utilizes,indentation
+feature,requires,unique
+feature,contains,arbitrary number group
+group,contains,integer feature
+feature tree,include,mandatory
+feature tree,include,optional
+feature tree,include,or
+feature tree,include,alternative
+boolean level feature tree,supports,mandatory feature
+boolean level feature tree,supports,group
+feature tree,can be decomposed into,submodel
+feature tree,can be composed via,import
+feature tree,represents,hierarchical structure variability model
+feature tree,organizes,feature hierarchically
+feature tree,allows,decompose model subpart
+feature tree,supports,import submodel
+feature tree,contains,constraint
+feature tree,maps,parent feature child feature
+feature tree,includes,relationship
+feature,has,unique identifier
+feature,may have,group
+feature,may have,feature cardinality
+feature,may have,feature attribute
+indentation,denotes relationship between,feature group
+submodel,can be attached to,arbitrary location feature tree
+constraint,is part of,feature model
+constraint,represent,application domain constraint
+constraint,are expressed as,inclusion statement
+constraint,are expressed as,exclusion statement
+constraint,uses keyword,constraint
+constraint,include,mandatory relationship
+constraint,include,exclude relationship
+require relationship,implies,feature inclusion
+exclude relationship,implies,feature incompatibility
+boolean core,limits constraints to,propositional logic
+constraint,use operator,!
+constraint,use operator,|
+constraint,use operator,==
+constraint,use operator,<=>
+arithmetic level,supports,aggregate function
+constraint,use arithmetic operator,+
+constraint,use arithmetic operator,*
+constraint,use comparison operator,==
+constraint,use comparison operator,<
+constraint,use aggregate function,sum
+constraint,use aggregate function,avg
+type level,supports,string constraint
+constraint,use string function,len
+valid configuration,must satisfy,attach constraint
+constraint,combine,boolean
+constraint,combine,boolean constant
+constraint,combine,predicate
+predicate,evaluate to,boolean
+term,include,variable
+term,include,constant
+term,include,function
+term,include,binary expression
+submodel,apply to,compose model
+compose model,reference submodel features via,dot notation
+constraint,excludes,boolean core
+constraint,use numeric function,floor
+constraint,use numeric function,ceil
+constraint,are specified using,constraint
+constraint,represent,inclusion statement
+constraint,represent,exclusion statement
+constraint,follow,feature section
+constraint,express,relationship feature
+constraint,evaluate to,boolean
+constraint,include,propositional logic
+constraint,include,numeric constraint
+constraint,include,string constraint
+valid configuration,must satisfy,constraint
+boolean level,supports,propositional logic
+boolean level,can be encoded as,sit instance
+boolean level,are limited to,propositional logic
+arithmetic level constraint,represented as,smt problem
+arithmetic level constraint,represented as,cp problem
+arithmetic level constraint,use operator,+
+arithmetic level constraint,use operator,==
+arithmetic level constraint,use operator,!=
+aggregate function,include,sum
+type level constraint,uses,type feature
+string constraint,include,len
+numericconstraint,include,floor
+numericconstraint,include,ceil
+import mechanism,applies,submodel constraint compose model
+constraint,reference features by,namespace
+constraint,reference features by,alias
+predicate,connect,term
+constraint,are additional to,treelike structure
+constraint,supports operator,!
+constraint,supports operator,&
+constraint,supports operator,==
+constraint,supports operator,<=>
+constraint,can be,propositional logic
+boolean level,includes,propositional constraint
+arithmetic level,introduces,numeric constraint
+arithmetic level,supports operator,+
+arithmetic level,supports operator,*
+arithmetic level,supports operator,==
+arithmetic level,supports operator,<
+string constraint,introduce,equality check string
+import submodel,contribute,crosstree constraint compose model
+constraint,reference submodel features via,namespace
+constraint,reference submodel features via,dot notation
+constraint conversion strategy,translate,complex construct
+constraint,can be stored,line
+constraint,can be stored,separately feature tree
+constraint,restrict,product line configuration space
+constraint,uses indentation for,block structure
+constraint,include,inclusion statement
+constraint,include,exclusion statement
+constraint,include,complex propositional formulae
+constraint,support Boolean operator,!
+constraint,support comparison operator,==
+constraint,supports operator,*
+constraint,support numeric function,ceil
+constraint,reference,feature
+constraint,reference,boolean attribute key
+constraint,Boolean level,propositional logic
+constraint,Type level,string constraint
+constraint,composition,submodel constraint compose model
+constraint,cloned feature interaction,contextual clone constraint
+constraint,research institution,universidad de sevilla
+constraint,research institution,university ulm
+constraint,research institution,johannes kepler university linz
+constraint,research institution,tu braunschweig
+constraint,research institution,karlsruhe institute technology
+constraint,subject of publication by,david benavides
+constraint,subject of publication by,chico sundermann
+constraint,subject of publication by,kevin feichtinger
+constraint,subject of publication by,rick rabiser
+constraint,subject of publication by,thomas thüm
+constraint,publication date,2025
+constraint,take form of,exclusion statement
+constraint,are specified using,feature attribute
+arithmetic level constraint,supports operator,+
+arithmetic level constraint,supports operator,*
+arithmetic level constraint,include function,sum
+arithmetic level constraint,include function,avg
+type level constraint,supports,string comparison
+type level constraint,supports,string length check
+type level constraint,include function,len
+constraint,reference features by,name
+constraint,connect,import submodel
+boolean level,includes,separately feature tree
+boolean level,Includes keyword,mandatory
+boolean level,Includes keyword,alternative
+boolean level,Includes keyword,or
+boolean level,use operator,!
+boolean level,use operator,==
+boolean level,use operator,<=>
+boolean level,allows,feature attribute
+boolean level,supported by,featureide
+boolean level,supported by,flamapy
+boolean level,supported by,nemo
+boolean level,supported by,variability.dev
+boolean level,supported by,ddueruem
+boolean level,supported by,fm fact label
+boolean level,supported by,pure::variant
+boolean level,Foundation for,arithmetic level
+boolean level,can be encoded as,sit problem
+boolean level,contains,feature
+boolean level,uses,indentation represent hierarchy
+boolean level,supports,operator
+boolean core,contains,mandatory keyword
+boolean core,contains,alternative keyword
+boolean core,includes,propositional constraint
+group cardinality,allows,select n m feature
+boolean level,refer to,feature
+boolean level,refer to,boolean attribute key
+boolean level,includes,optional keyword
+boolean level,can be encoded as,cnf
+boolean level,allows,boolean attribute key
+boolean level,supports,boolean
+boolean level,includes,optional group type
+boolean level,excludes,constraint
+boolean level,uses,sit solver
+boolean level,is used by,featureide
+boolean level,is part of,language level hierarchy
+boolean core,is,boolean level
+group cardinality,enables,select n m child
+boolean level,is analyzed with,bdd
+boolean level,allows,feature attribute information storage
+boolean level,has features with value,0
+boolean level,features are,boolean
+boolean level,is extended by,arithmetic level
+boolean level,is target of,conversion strategy
+boolean level,integrated into,uvl
+boolean level,uses,indentation
+boolean level,uses,linebreak statement ending
+boolean level,uses,complete keyword
+arithmetic level,represented as,smt problem
+arithmetic level,represented as,cp problem
+arithmetic level,supports operator,!=
+arithmetic level,supports,avg aggregate function
+arithmetic level,converts to,boolean level
+arithmetic level,receives conversion from,type level
+arithmetic level,encapsulates,arithmetic expression feature
+arithmetic level,requires processing for,sat encode
+arithmetic level,is used by,clafer
+arithmetic level,supports,sumfunction
+arithmetic level,supports,avgfunction
+arithmetic level,uses,numerical feature attribute variable
+arithmetic level,target level for,type level
+arithmetic level,minor level grammar keyword,featurecardinality
+arithmetic level,minor level grammar keyword,aggregate function
+arithmetic level,minor level grammar keyword,arithmetic
+arithmetic level,reasoning engine,smt solver
+arithmetic level,reasoning engine,cp solver
+arithmetic level,supports function,avg
+arithmetic level,requires,smt solver
+arithmetic level,requires,reasoning engine
+arithmetic level,allows,select feature multiple time
+arithmetic level,keyword,arithmetic
+arithmetic level,minor level identifier,arithmetic
+arithmetic level,minor level identifier,featurecardinality
+arithmetic level,minor level identifier,aggregate function
+arithmetic level,conversion target for,type level
+arithmetic level,is part of,language level hierarchy
+arithmetic level,supports,numeric variable
+arithmetic level,hierarchy,boolean level
+arithmetic level,hierarchy,type level
+arithmetic level,contains,arithmetic expression feature
+arithmetic level,supports,subtraction operator
+arithmetic level,supports,division operator
+arithmetic level,supports,inequality operator
+arithmetic level,supports,great operator
+arithmetic level,allows,term constant
+arithmetic level,conversion strategy,enumerate constraint
+type level,occupies highest position in,language level hierarchy
+type level,introduces,float feature
+type level,introduces,string feature
+type level,introduces,nonboolean feature
+type level,contains core level,type core
+type level,has minor level,numeric constraint
+type core,supports,string feature
+string constraint,allows operator,len
+string constraint,allows operator,==
+numericconstraint,allows operator,floor
+numericconstraint,allows operator,ceil
+type level,conversion strategy,arithmetic level
+type level,conversion strategy,string constraint
+type level,conversion strategy,transform nonboolean feature boolean feature attribute
+type level,supports function,len
+type level,supports function,floor
+type level,supports function,ceil
+type level,supports,equality check string
+type level,supports,string comparison
+type level,drops in conversion,string constraint
+type level,provides expressiveness for,string constraint
+string constraint,adds,string constraint
+string constraint,introduces,len function
+type level,can be converted to,arithmetic level
+type level,maps,transform nonboolean feature boolean feature attribute
+string constraint,are dropped,conversion strategy
+type level,declared with keyword,type
+type level,supports,include keyword
+type level,uses keyword,real
+type level,uses keyword,integer
+type level,uses keyword,string
+uvl,supports,language level hierarchy
+travart,supports,language level hierarchy
+v4rdiac,supports,language level hierarchy
+type level,has minor level,type core
+type stringconstraint,allows,len function
+type stringconstraint,allows,string comparison
+type level,Includes keyword,type
+type level,supports wildcard,type
+type level,transforms typed features to,boolean attribute key
+type level,are dropped,string constraint
+travart,supports,type level
+v4rdiac,supports,type level

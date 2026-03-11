@@ -1,129 +1,103 @@
 Subject,Predicate,Object
-uvl language,stands for,uvl
-uvl language,is,textual language
-uvl language,represents,feature model
-uvl language,is,humanreadable
-uvl language,serves as,pivot language
-uvl language,is,communitydriven
-uvl language,has,boolean level
-uvl language,has,arithmetic level
-uvl language,has,type level
-uvl language,supports,language extension
-uvl language,is integrated into,featureide
-uvl language,is integrated into,flamapy
-uvl language,has parser implementation for,python
-uvl language,has parser implementation for,java
-uvl language,has parser implementation for,javascript
-uvl language,uses,antlr
-uvl language,uses,treelike structure
-uvl language,represents,hierarchical structure
-uvl language,core includes,mandatory relationship
-uvl language,core includes,optional relationship
-uvl language,core includes,relationship
-uvl language,core includes,alternative relationship
-uvl language,core includes,constraint
-uvl language,Boolean level includes,group cardinality
-uvl language,Arithmetic level includes,arithmetic core
-uvl language,Arithmetic level includes,attribute aggregate
-uvl language,Arithmetic level includes,feature cardinality
-uvl language,Type level includes,type core
-uvl language,Type level includes,type numericconstraint
-uvl language,Type level includes,type stringconstraint
-uvl language,is,common textual exchange format
-uvl language,is,opensource
-uvl language,uses,nest hierarchy
-uvl language,uses,complete keyword
-uvl language,stores,propositional crosstree constraint
-uvl language,supports,decomposition
-uvl language,supports,composition
-uvl language,supports,conversion strategy level
-uvl language,is maintained by,consortium institution
-uvl language,is,concise
-uvl language,uses,namespace
-uvl language,uses,import
-uvl language,allows,feature attribute
-uvl language,allows,feature cardinality
-uvl language,allows,group cardinality
-uvl language,supports,propositional logic
-uvl language,supports,numeric constraint
-uvl language,supports,string constraint
-uvl language,is,textual variability modeling language
-uvl language,is,extensible
-uvl language,include,boolean level
-uvl language,include,arithmetic level
-uvl language,include,type level
-uvl language,has,treelike structure
-uvl language,uses,indentation block
-uvl language,contains,feature
-uvl language,contains,relationship
-uvl language,contains,constraint
-uvl language,supports,namespace
-uvl language,supports,import
-uvl language,include,mandatory relationship
-uvl language,include,optional relationship
-uvl language,include,relationship
-uvl language,include,alternative relationship
-uvl language,features,boolean core
-uvl language,features,group cardinality minor level
-uvl language,features,arithmetic core
-uvl language,features,attribute aggregate
-uvl language,features,feature cardinality minor level
-uvl language,features,type core
-uvl language,features,type numericconstraint
-uvl language,features,type stringconstraint
-uvl language,supports,numeric constraints feature attribute
-uvl language,supports,string feature
-uvl language,supports,integer feature
-uvl language,supports,float feature
-uvl language,originated from,modevar initiative
-uvl language,development started in,2018
-uvl language,is integrated into,pure::variant
-uvl language,is integrated into,travart
-uvl language,is supported by,uvl
-uvl language,has,antlr parser generator
-uvl language,uses,propositional logic
-uvl language,supports,model decomposition
-uvl language,uses,line break end statement
-uvl language,allows,abstract feature
-uvl language,include,constraint
-uvl language,supports,feature cardinality
-uvl language,supports,group cardinality
-uvl language,has,import mechanism
-uvl language,has,namespace
-uvl language,uses,antlr parser generator
-uvl language,is integrated into,uvl
-uvl language,supports,compose model
-uvl language,aims for,tool interoperability
-uvl language,maintains,uvlhub repository
-uvl language,design goals include,simplicity
-uvl language,design goals include,expressiveness
-uvl language,design goals include,information hiding
-uvl language,is structured into,boolean level
-uvl language,is structured into,arithmetic level
-uvl language,is structured into,type level
-uvl language,supports,constraint
-uvl language,supports,feature attribute
-uvl language,include,import mechanism
-uvl language,allows,model decomposition
-uvl language,includes minor level,group cardinality
-uvl language,includes minor level,attribute aggregate
-uvl language,includes minor level,feature cardinality
-uvl language,includes minor level,type numericconstraint
-uvl language,includes minor level,type stringconstraint
-uvl language,provide,conversion strategy level
-uvl language,uses,contextfree grammar specification
-uvl language,allows,toolspecific data storage attribute
-uvl language,uses,identifier protect quotation mark ambiguity
-uvl language,is licensed under,gnu less general public license
-uvl language,features minor level,group cardinality
-uvl language,features minor level,attribute aggregate
-uvl language,features minor level,feature cardinality
-uvl language,features minor level,type numericconstraint
-uvl language,features minor level,type stringconstraint
-uvl language,is integrated into,ddueruem
-uvl language,is integrated into,fm fact label
-uvl language,is integrated into,v4rdiac
-uvl language,has models available in,uvlhub repository
+uvl,stands for,uvl
+uvl,is,textual language
+uvl,represents,feature model
+uvl,is,humanreadable
+uvl,serves as,pivot language
+uvl,is,communitydriven
+uvl,has,boolean level
+uvl,has,arithmetic level
+uvl,has,type level
+uvl,supports,language extension
+uvl,is integrated into,featureide
+uvl,is integrated into,flamapy
+uvl,has parser implementation for,python
+uvl,has parser implementation for,java
+uvl,has parser implementation for,javascript
+uvl,uses,antlr
+uvl,uses,treelike structure
+uvl,represents,hierarchical structure
+uvl,core includes,mandatory relationship
+uvl,core includes,relationship
+uvl,core includes,constraint
+uvl,Boolean level includes,group cardinality
+uvl,Arithmetic level includes,arithmetic core
+uvl,Arithmetic level includes,attribute aggregate
+uvl,Arithmetic level includes,feature cardinality
+uvl,Type level includes,type core
+uvl,Type level includes,type numericconstraint
+uvl,Type level includes,type stringconstraint
+uvl,is,common textual exchange format
+uvl,is,opensource
+uvl,uses,nest hierarchy
+uvl,uses,complete keyword
+uvl,stores,propositional crosstree constraint
+uvl,supports,decomposition
+uvl,supports,composition
+uvl,supports,conversion strategy level
+uvl,is maintained by,consortium institution
+uvl,is,concise
+uvl,uses,namespace
+uvl,uses,import
+uvl,allows,feature attribute
+uvl,allows,feature cardinality
+uvl,allows,group cardinality
+uvl,supports,propositional logic
+uvl,supports,numeric constraint
+uvl,supports,string constraint
+uvl,is,textual variability modeling language
+uvl,is,extensible
+uvl,include,boolean level
+uvl,include,arithmetic level
+uvl,include,type level
+uvl,uses,indentation block
+uvl,contains,feature
+uvl,contains,relationship
+uvl,contains,constraint
+uvl,supports,import
+uvl,include,optional relationship
+uvl,include,relationship
+uvl,features,boolean core
+uvl,features,group cardinality minor level
+uvl,features,arithmetic core
+uvl,features,attribute aggregate
+uvl,features,feature cardinality minor level
+uvl,features,type core
+uvl,features,type numericconstraint
+uvl,features,type stringconstraint
+uvl,supports,numeric constraints feature attribute
+uvl,supports,string feature
+uvl,supports,integer feature
+uvl,supports,float feature
+uvl,originated from,modevar initiative
+uvl,development started in,2018
+uvl,is integrated into,pure::variant
+uvl,is integrated into,travart
+uvl,is supported by,uvl
+uvl,has,antlr parser generator
+uvl,supports,model decomposition
+uvl,uses,line break end statement
+uvl,allows,abstract feature
+uvl,include,constraint
+uvl,is integrated into,uvl
+uvl,supports,compose model
+uvl,aims for,tool interoperability
+uvl,maintains,uvlhub repository
+uvl,design goals include,simplicity
+uvl,design goals include,expressiveness
+uvl,design goals include,information hiding
+uvl,supports,constraint
+uvl,include,import mechanism
+uvl,includes minor level,group cardinality
+uvl,includes minor level,attribute aggregate
+uvl,uses,contextfree grammar specification
+uvl,allows,toolspecific data storage attribute
+uvl,uses,identifier protect quotation mark ambiguity
+uvl,is licensed under,gnu less general public license
+uvl,is integrated into,ddueruem
+uvl,is integrated into,fm fact label
+uvl,is integrated into,v4rdiac
+uvl,has models available in,uvlhub repository
 language extension,enhance,expressiveness
 language extension,accommodate,diverse modelling need
 language extension,encapsulates,language construct
@@ -143,7 +117,6 @@ conversion strategy,translate between,language extension
 language extension,extends,core language simplicity
 language extension,introduces,additional construct
 language extension,enhance,uvl expressiveness
-uvl language,allows,language extension
 minor language level,are,uvl
 minor language level,encapsulates,language construct
 minor language level,extends,core language uvl
@@ -161,16 +134,11 @@ minor level,include,major level
 minor language level,groups constructs by,reasoning engine
 language extension,enable,tailor language specification
 language extension,cover,sophisticated expression
-language extension,preserve,core language simplicity
 minor language level,represent,type feature
 minor language level,represent,vary relationship type
-language extension,are,major language level
 minor language level,extends,major level
 language extension,provide,expressive language feature
 language extension,adds,complex construct
-language extension,allows,tailor language specification
-aggregate function,is,arithmetic level
-string constraint,is,minor level type level
 feature tree,is,hierarchically arrange set feature
 feature tree,is also known as,feature diagram
 feature tree,is a component of,feature model
@@ -195,23 +163,17 @@ alternative group,is part of,boolean level
 group cardinality,is,boolean minor level extension
 feature tree,represents,hierarchical structure variability model
 feature tree,represents hierarchy using,indentation block
-feature tree,represents hierarchy using,nest
 feature tree,contains,parentchild relationship
 feature tree,can be decomposed into,subpart
 feature tree,utilizes,keyword specify relationship
 feature,is a main element of,feature tree
 group,is a main element of,feature tree
-feature,has,unique name identifier
-feature tree,utilizes,parentchild relationship
-feature,requires,unique name identifier
 import mechanism,supports,feature tree
-feature tree,uses,parentchild relationship
 feature tree,are a major part of,uvl model
 feature tree,contains,feature name
 feature tree,contains,feature cardinality
 feature tree,contains,feature attribute
 feature tree,contains,arbitrary number group
-import mechanism,allows,feature tree
 submodel,can be attached to,arbitrary location feature tree
 constraint,are,feature model
 constraint,represent,domain constraint
@@ -224,9 +186,7 @@ constraint,are marked by,constraints keyword
 constraint,uses,propositional logic
 constraint,supports operator,!
 constraint,supports operator,&
-constraint,supports operator,|
 constraint,supports operator,>=
-constraint,supports operator,< =>
 constraint,combine,boolean variable
 constraint,combine,boolean constant
 constraint,combine,predicate
@@ -237,8 +197,6 @@ predicate,specify dependencies based on,numerical value
 predicate,use operator,==
 predicate,use operator,!=
 predicate,use operator,>
-predicate,use operator,<
-predicate,use operator,>=
 predicate,connect,term
 term,include,reference variable
 term,include,constant
@@ -252,7 +210,6 @@ function constraint,include,ceil
 binary expression,supports,+
 binary expression,supports,-
 binary expression,supports,*
-binary expression,supports,/
 arithmetic level,introduces,numeric constraints feature attribute
 type level,introduces,string constraint
 type level,introduces,numeric operation
@@ -272,14 +229,11 @@ propositional operator,combine,predicate
 predicate,specify,dependencie base string value
 predicate,specify,dependencie base numerical value
 arithmetic operation,include,+
-arithmetic operation,include,-
 arithmetic operation,include,*
-arithmetic operation,include,/
 require relationship,implies,inclusion feature
 exclude relationship,denotes,feature incompatibility
 import submodel,apply constraints to,compose model
 constraint,are handled by,reasoning engine
-import mechanism,applies submodel constraints to,compose model
 constraint,are stored,separately feature tree structure
 aggregate function,include,sum
 aggregate function,include,avg
@@ -290,33 +244,24 @@ boolean level,is,core language uvl
 boolean level,encapsulates,language construct
 boolean level,is reasoned about using,sit solver
 boolean level,consists of,boolean core
-boolean level,has minor level extension,group cardinality
 boolean level,supports,mandatory relationship
-boolean level,supports,optional relationship
 boolean level,supports,group
-boolean level,supports,alternative group
 boolean level,supports,propositional crosstree constraint
 boolean level,is included in,arithmetic level
 boolean level,is included in,type level
 boolean level,limits constraints to,propositional logic
 boolean level,supports operator,!
-boolean level,supports operator,&
-boolean level,supports operator,|
 boolean level,supports operator,>=
-boolean level,supports operator,< =>
 boolean core,allows attributes to,store feature information
 boolean core,excludes,constraint attribute
 boolean level,can be encoded as,sit instance
 boolean level,is used by,featureide
 boolean level,is used by,flamapy
 boolean level,is used by,nemo
-group cardinality,extends,boolean level
 group cardinality,enables,select n m feature group
 boolean level,is,major language level
 boolean level,include,boolean core
-boolean level,include,group cardinality
 boolean level,groups features by,reasoning engine
-boolean level,supports,optional group
 boolean level,supports,mandatory group
 boolean level,excludes,constraint attribute
 boolean level,is used by,ddueruem
@@ -324,33 +269,21 @@ boolean level,is used by,fm fact label
 boolean level,is used by,pure::variant
 boolean level,is used by,variability.dev
 boolean level,can be encoded as,cnf
-boolean level,is extended by,type level
 boolean level,consists of,group keyword
-boolean level,consists of,propositional crosstree constraint
-boolean core,is,core language uvl
 boolean core,is,conversion target group cardinality
 boolean level,is parsed by,clojurebase parser
 boolean level,is parsed by,pythonbase parser
-boolean level,consists of,group cardinality
 boolean level,include,group keyword
-boolean level,include,propositional crosstree constraint
-boolean level,uses,sit solver
 boolean core,is,level extension
-boolean level,is extended by,arithmetic level
 boolean level,is the lowest level in,high position language hierarchy
 arithmetic level,is,major language level
-arithmetic level,fully includes,boolean level
 arithmetic level,extends,boolean level
 arithmetic level,allows,term resolve boolean
 arithmetic level,supports operator,+
-arithmetic level,supports operator,-
 arithmetic level,supports operator,*
-arithmetic level,supports operator,/
 arithmetic level,supports operator,==
 arithmetic level,supports operator,!=
 arithmetic level,supports operator,<
-arithmetic level,supports operator,>
-arithmetic level,supports operator,>=
 arithmetic level,has minor level extension,feature cardinality
 arithmetic level,has minor level extension,aggregate function
 arithmetic level,can be represented as,smt problem
@@ -358,7 +291,6 @@ arithmetic level,can be represented as,cp problem
 arithmetic level,requires,process sit encode
 arithmetic level,is included in,type level
 arithmetic level,is used by,travart
-arithmetic level,is supported by,uvl
 arithmetic level,is used by,tool smt solver
 arithmetic level,is used by,tool cp solver
 arithmetic level,can be converted to,boolean core
@@ -366,7 +298,6 @@ arithmetic level,supports,numeric constant
 arithmetic level,supports,numerical feature attribute
 arithmetic level,is target for,type level conversion
 arithmetic level,allows,minor level selection wildcard
-arithmetic level,is part of,uvl
 arithmetic level,is supported by,travart
 arithmetic level,encapsulates,arithmetic expression feature
 arithmetic level,groups constructs by,reasoning engine
@@ -378,13 +309,9 @@ aggregate function,introduces,sum
 aggregate function,introduces,avg
 arithmetic level,can be encoded as,smt instance
 arithmetic level,can be encoded as,cp instance
-type level,converts to,arithmetic level
-arithmetic level,converts to,boolean level
 arithmetic core,converts to,boolean core
 feature cardinality,converts to,arithmetic core
 aggregate function,converts to,arithmetic core
-arithmetic level,includes minor level,feature cardinality
-arithmetic level,includes minor level,aggregate function
 arithmetic level,requires further processing for,sat encode
 arithmetic level,allows wildcard,arithmetic level
 arithmetic level,include,arithmetic core
@@ -393,14 +320,12 @@ aggregate function,takes,numerical feature attribute
 aggregate function,can take,feature second parameter
 feature cardinality,uses syntax,minmax
 type level,is,major language level
-type level,extends,boolean level
 type level,extends,arithmetic level
 type level,introduces,type feature
 type level,supports,string feature
 type level,supports,integer feature
 type level,supports,real feature
 type level,include,type core
-type level,has minor level extension,type numericconstraint
 type level,has minor level extension,type stringconstraint
 numericconstraint,allows,floor
 numericconstraint,allows,ceil
@@ -411,9 +336,7 @@ type level,can be represented as,cp problem
 type level,converts to,boolean level
 string constraint,drops,conversion
 type level,allows,explicit set boolean domain
-type level,uses,explicit set boolean domain
 type level,is supported by,travart
-type level,is supported by,uvl
 type level,is supported by,v4rdiac
 type level,encapsulates,feature nonboolean type
 type level,is,core language uvl
@@ -421,9 +344,6 @@ type level,introduces,integer feature
 type level,introduces,float feature
 type level,introduces,string feature
 type level,introduces,real feature
-type level,includes minor level,type stringconstraint
-type level,includes minor level,type numericconstraint
-type level,core includes,type core
 type level,supports,string length operation
 type level,supports,string comparison
 type level,supports,floor operation
@@ -433,4 +353,3 @@ type level,drops,type stringconstraint
 type level,allows,configuration nonboolean value
 type level,encapsulates,reasoning engine
 type level,occupies,high position language hierarchy
-type level,enables,configuration nonboolean value

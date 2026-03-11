@@ -21,6 +21,8 @@ def main(kb_filepath: str) -> None:
     
     total_triplets = len(kb.triplets)
 
+    kb.consistency(kb_filepath)
+
     # Consolidate knowledge base by normalizing and removing duplicates.
     kb = kb.knowledge_consolidation()
 
@@ -35,11 +37,13 @@ def main(kb_filepath: str) -> None:
     print(f'Total triplets after consolidation: {triplets_after_processing}')
 
     # Construct taxonomy
-    builder = TaxonomyConstructor(language_model, beta=0.5)
-    taxonomy_graph = builder.construct_taxonomy(kb)
+    # builder = TaxonomyConstructor(language_model, beta=0.5)
+    # taxonomy_graph = builder.construct_taxonomy(kb)
 
-    for parent, children in taxonomy_graph.items():
-        print(f"Class [{parent}] children: {children}")
+    # for parent, children in taxonomy_graph.items():
+    #     print(f"Class [{parent}] children: {children}")
+
+    kb.consistency(kb_filepath)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Knowledge Consolidator: Normalize a knowledge base data.")
