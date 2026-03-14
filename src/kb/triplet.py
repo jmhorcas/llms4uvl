@@ -10,6 +10,7 @@ class Triplet:
     object: str
 
     def __str__(self):
+        """Return a string representation of the Triplet instance in the format (subject, predicate, object)."""
         return f"({self.subject}, {self.predicate}, {self.object})"
     
     def to_tuple(self) -> tuple[str, str, str]:
