@@ -25,13 +25,27 @@ class NaturalLanguageProcessor:
                  concept_mapping_file: str = CONCEPT_MAPPING_FILE,
                  special_cases: list[str] = SPECIAL_CASES) -> None:
         """Initialize the natural language processor with the specified language models and concept mapping."""
+        self.special_cases = special_cases
         nltk.download('wordnet', quiet=True)
         self.nlp: spacy.Language = spacy.load(spacy_language_model)
-        for case in special_cases:
-            self.nlp.tokenizer.add_special_case(case, [{spacy.symbols.ORTH: case}])
+        self._configure_tokenizer()
         self.language_model: SentenceTransformer = SentenceTransformer(transformer_language_model)
         self.concept_mapping: dict[str, str] = load_concept_mapping(concept_mapping_file)
-        self.special_cases = special_cases
+
+    def _configure_tokenizer(self):
+        """Configure the tokenizer to handle special cases properly."""
+        for case in self.special_cases:
+            self.nlp.tokenizer.add_special_case(case, [{spacy.symbols.ORTH: case}])
+        
+        # IMPORTAN: Avoid that operators considered as part of a suffix/prefix
+        # This prevents operators like "==" from being attached to commas or parentheses
+        prefixes = self.nlp.Defaults.prefixes + self.special_cases
+        prefix_regex = spacy.util.compile_prefix_regex(prefixes)
+        self.nlp.tokenizer.prefix_search = prefix_regex.search
+
+        suffixes = self.nlp.Defaults.suffixes + self.special_cases
+        suffix_regex = spacy.util.compile_suffix_regex(suffixes)
+        self.nlp.tokenizer.suffix_search = suffix_regex.search
 
     def case_folding(self, text: str) -> str:
         """Convert text to lowercase."""
@@ -46,7 +60,12 @@ class NaturalLanguageProcessor:
     def remove_stopwords(self, text: str) -> str:
         """Remove stop words (articles, prepositions, etc.) from the text."""
         doc = self.nlp(text)
-        keep_tokens = [t for t in doc if not t.is_stop and not t.is_punct]
+        keep_tokens = []
+        for t in doc:
+            if t.text in self.special_cases:
+                keep_tokens.append(t)
+            elif not t.is_stop and not t.is_punct and not t.is_space:
+                keep_tokens.append(t)
         if not keep_tokens:
             return text  # Return original text if all tokens are removed
         result = "".join([t.text_with_ws for t in keep_tokens]).strip()  # Preserve original spacing
@@ -68,6 +87,11 @@ class NaturalLanguageProcessor:
 
     def normalize_text(self, text: str) -> str:
         """Normalize the text by applying case folding, concept mapping, stop word removal, and lemmatization."""
+        has_special = any(case in text for case in self.special_cases)
+        if has_special:
+            text = self.case_folding(text)
+            text = self.remove_stopwords(text)
+            return text  # For special cases, we only apply case folding and stop word removal to preserve their meaning
         original_text = text
         text = self.case_folding(text)
         mapped_concept = self.get_concept_mapping(text)
@@ -197,6 +221,13 @@ class NaturalLanguageProcessor:
                 if sim_global < 0.6: 
                     continue
 
+                # Protection against SPECIAL CASES
+                ops_i = {op for op in self.special_cases if op in predicates[i]}
+                ops_j = {op for op in self.special_cases if op in predicates[j]}
+                if ops_i or ops_j:
+                    if ops_i != ops_j:
+                        continue
+
                 # Atomic score (component by component)
                 sim_s = util.cos_sim(sub_embs[i], sub_embs[j]).item()
                 sim_p = util.cos_sim(pre_embs[i], pre_embs[j]).item()
@@ -275,6 +306,15 @@ class NaturalLanguageProcessor:
                 best_idx = similarities.argmax().item()
                 best_match = cluster_heads_names[best_idx]
 
+            # Protection of special cases
+            ops_r = {op for op in self.special_cases if op in r_name}
+        
+            can_merge = True
+            if best_match:
+                ops_best = {op for op in self.special_cases if op in best_match}
+                if ops_r != ops_best:
+                    can_merge = False
+
             # Calculate the adaptive threshold T
             log_f = numpy.log(f) if f > 1 else 0
             log_max_f = numpy.log(max_f) if max_f > 1 else 1
@@ -285,7 +325,7 @@ class NaturalLanguageProcessor:
                 threshold = H
 
             # Decide: Does r join an existing cluster or create a new one?
-            if best_match and max_sim > threshold:
+            if best_match and max_sim > threshold and can_merge:
                 clusters[r_name] = best_match
             else:
                 clusters[r_name] = r_name
