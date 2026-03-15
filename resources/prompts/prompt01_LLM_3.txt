@@ -10,10 +10,23 @@ Given a technical concept related to UVL (Universal Variability Language) as a s
 - Content: Include at least one triple where the predicate is "isA" or "typeOf".
 - Atomicity: Separate several objects into multiple triples with one object each.
 - Conciseness: Do not get wordy. Do not include headers, intro, or any text other than the triples.
-
-### IMPORTANT
 - Do not use commas inside the Subject, Predicate, or Object strings.
 - If you do not know the concept or it is not a technical term, return an empty list.
+
+### PREDICATE TAXONOMY
+To ensure interoperability, you must prioritize these predicates when applicable:
+- defines: Entity X establishes the concept/class Y.
+- contains: Entity X has Y as a structural component or child.
+- denotedBy: Entity X is represented in code by the keyword/symbol Y.
+- supports: Entity X enables the functionality or operation Y.
+- has: Entity X possesses the property or characteristic Y.
+- is: Entity X belongs to the category Y.
+
+### SPECIFIC EXTRACTION RULES FOR UVL
+- Grammar: Extract triples about syntax and keywords.
+- Levels: Map the relationship between language levels and constructs.
+- Metadata: Extract entities like institutions, authors, and dates.
+- Operations: Extract what can be done with UVL.
 
 ### SUBJECT ENTITY
 [INSERT_CONCEPT_HERE]

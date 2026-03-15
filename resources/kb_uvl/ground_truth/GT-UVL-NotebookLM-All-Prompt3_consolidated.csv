@@ -1,0 +1,540 @@
+Subject,Predicate,Object
+language extension,contains,major level
+cross-tree constraints,supports,! operator
+language extension,supports,expressiveness
+cross-tree constraints,contains,greater equal operator >=
+boolean level,has,indentation-based hierarchy
+arithmetic level,supports,constraint programming reasoning
+relationship,denotedby,alternative
+cross-tree constraints,is,structural component uvl model
+language extension,contains,minor level
+cross-tree constraints,supports,greater equal operator >=
+cross-tree constraints,contains,> operator
+arithmetic level,supports,comparison operation
+uvl,authors,rick rabiser
+arithmetic level,contains,conversion boolean level
+feature tree,supports,require relationship
+arithmetic level,supports,multiplication operator *
+language extension,contains,conversion boolean level
+uvl,supports,knowledge sharing
+cross-tree constraints,supports,> operator
+arithmetic level,supports,subtraction operator -
+uvl,contains,namespace referencing
+arithmetic level,is,major level
+type level,defines,float feature
+minor language level,supports,explicit declaration
+string constraint,is,minor language level
+minor language level,has,major level
+arithmetic level,supports,inequality operator
+logic equal,denotedby,|
+arithmetic level,denotedby,avg function
+arithmetic level,supports,lesser equal operator <=
+minor language level,has,minor level
+language extension,contains,feature cardinality
+uvl,isdevelopedby,tu braunschweig
+uvl,isdevelopedby,universidad de sevilla
+language extension,group,feature reasoning engine
+arithmetic level,is,conversion boolean level
+uvl,denotedby,curly bracket attribute
+boolean level,has,feature name identifier
+boolean level,supported,fm fact level
+minor language level,extends,major uvl language level
+language extension,contains,group cardinality
+predicate,contains,!= operator
+uvl,supports,tool integration
+cross-tree constraints,defines,configuration validity
+uvl,denotedby,== symbol
+boolean level,supports,flamapy
+arithmetic level,supports,/ operator
+arithmetic level,contains,attribute aggregate
+arithmetic level,supports,conversion boolean level
+boolean level,contains,boolean core
+uvl,has,cardinality keyword
+type level,supports,configuration arbitrary integer value
+boolean level,supports,sit solver
+uvl,is,community-driven language
+numeric constraint,defines,ceil function
+feature,contains,group
+boolean level,supports,sat encode
+uvl,has,rust-based language server protocol
+language extension,is,minor language level
+alternative group,denotedby,alternative
+minor language level,contains,extension arithmetic level
+cross-tree constraints,contains,=> operator
+cross-tree constraints,contains,bracket
+feature,has,feature cardinality
+boolean level,supports,mandatory feature
+minor language level,contains,include type level
+cross-tree constraints,supports,=> operator
+type level,supports,aggregate function numerical feature
+type level,contains,float feature
+arithmetic level,defines,arithmetic core
+uvl,contains,import mechanism
+boolean level,supports,featureide
+arithmetic level,supports,arithmetic expression feature
+arithmetic level,supports,standard arithmetic operation
+uvl,has,kevin feichtinger
+minor language level,encapsulate,language construct
+arithmetic level,supports,equality operator ==
+arithmetic level,supports,cp solver
+arithmetic level,supports,addition operator +
+uvl,denotedby,exclamation mark mandatory
+type level,has,type feature
+major level,has,hierarchical structure
+uvl,integrated,flamapy
+boolean level,is,major level
+aggregate function,denotedby,sum operation
+boolean level,is,component type level
+minor language level,supports,string constraint
+language extension,contains,feature-cardinality
+cross-tree constraints,contains,!= operator
+feature tree,supports,feature cardinality
+arithmetic level,denotedby,!=
+type level,supports,conversion strategy arithmetic level
+cross-tree constraints,is,structural component feature model
+cross-tree constraints,supports,!= operator
+uvl,has,major level
+cross-tree constraints,denotedby,!
+import declaration,denotedby,import
+uvl,supports,javascript implementation
+type level,supports,non-boolean feature configuration
+uvl,has,namespace referencing
+feature tree,supports,group cardinality
+cross-tree constraints,supports,ceil function
+string constraint,supports,len function
+uvl,supports,product configuration
+feature cardinality,defines,multiple feature selection
+uvl,defines,feature attribute
+arithmetic level,supports,avg function
+uvl,has,conversion boolean level
+cross-tree constraints,supports,operator <
+aggregate function,supports,sum operation
+cross-tree constraints,denotedby,>
+uvl,defines,feature modelling
+type level,defines,ceil function
+feature tree,contains,integer feature
+cross-tree constraints,is,core concept boolean language level
+boolean level,supports,nemo
+type level,supports,numeric constraint
+uvl,waslaunchedin,2018
+cross-tree constraints,has,separate block tree structure
+feature tree,is,feature diagram
+uvl,integrated,featureide
+uvl,is,pivot language diverse software engineering tool
+arithmetic level,contains,arithmetic core
+language extension,contains,numeric-constraints
+uvl,supports,feature modeling standardization
+uvl,has,group cardinality
+uvl,contains,include section
+uvl,is,textual language
+arithmetic level,supports,less operator
+cross-tree constraints,has,separate storage feature tree
+arithmetic level,supports,greater equal operator >=
+arithmetic level,contains,aggregate function
+language extension,contains,aggregate function
+type level,is,support uvls
+cross-tree constraints,supports,string constraint
+arithmetic level,supports,multiplication operator
+type level,contains,extension arithmetic level
+uvl,has,thomas thüm
+feature cardinality,denotedby,cardinality keyword
+uvl,is,human-readable language
+boolean level,supports,cnf transformation
+uvl,authors,thomas thüm
+feature tree,represents,parent-child relationships
+cross-tree constraints,supports,boolean constant
+feature tree,supports,decomposition
+arithmetic level,denotedby,+
+type level,defines,real feature
+arithmetic level,supports,equal operator
+group cardinality,denotedby,nm
+uvl,authors,josé a. galindo
+type level,is,extension arithmetic level
+uvl,denotedby,lenfunction
+type level,is,extension boolean level
+arithmetic level,defines,standard arithmetic operation
+uvl,supports,feature modelling
+arithmetic level,extends,conversion boolean level
+arithmetic level,has,conversion boolean level
+uvl,contains,feature tree
+type string-constraints,supports,string comparison
+cross-tree constraints,supports,sum operation
+uvl,has,launch year 2018
+feature tree,allows,decomposition manageable submodel
+cross-tree constraints,denotedby,<
+arithmetic level,supports,aggregate function
+feature attribute,denotedby,brace
+language extension,contains,include type level
+feature tree,contains,optional group
+arithmetic level,supports,division operator
+cross-tree constraints,denotedby,>=
+minor language level,has,hierarchical structure
+language extension,encapsulate,relate language feature
+uvl,has,rick rabiser
+cross-tree constraints,has,boolean evaluation
+uvl,supports,ceil function
+cross-tree constraints,supports,floor operation
+minor language level,supports,cardinality keyword
+arithmetic level,is,cp problem
+cross-tree constraints,denotedby,constraints keyword
+group,denotedby,or
+language extension,supports,tailor language specification
+uvl,supports,educational instruction
+uvl,contains,include type level
+logic equal,denotedby,=>
+arithmetic level,denotedby,/
+minor language level,supports,type feature
+uvl,has,university ulm
+uvl,contains,constraint section
+type level,defines,floor operation
+cross-tree constraints,supports,numeric constraint
+uvl,contains,feature attribute
+cross-tree constraints,contains,| operator
+arithmetic level,contains,feature cardinality
+cross-tree constraints,denotedby,==
+uvl,is,open-source format
+cross-tree constraints,supports,| operator
+arithmetic level,supports,subtraction operator
+feature tree,has,unique feature identifier
+arithmetic level,supports,sumfunction
+uvl,supports,tool interoperability
+arithmetic level,supports,less than
+feature tree,denotedby,keyword
+feature tree,denotedby,indentation hierarchy
+type level,supports,ceil function
+boolean level,supports,alternative group
+type level,contains,real feature
+type level,contains,string constraint
+type level,contains,string-constraints
+uvl,denotedby,!
+arithmetic level,supports,feature attribute
+cross-tree constraints,denotedby,|
+boolean level,contains,& operator
+cross-tree constraints,supports,require relationship
+cross-tree constraints,contains,term
+feature,has,feature attribute
+predicate,contains,operator <
+uvl,has,javascript parser
+len function,evaluatesto,numeric value
+feature tree,has,hierarchical arrangement
+uvl,denotedby,nmcardinalitie
+uvl,has,relationship
+uvl,defines,relationship
+boolean core,supports,propositional logic operator
+arithmetic level,supports,!= operator
+uvl,integrated,pure::variant
+uvl,contains,language level declaration
+uvl,denotedby,mandatory keyword
+uvl,supports,composition
+uvl,is,pivot language
+feature tree,supports,parent-child relationships
+uvl,denotedby,<=> equivalence
+feature tree,has,tree-like structure
+boolean level,contains,=> operator
+logic equal,denotedby,&
+feature tree,defines,hierarchical structure variability model
+cross-tree constraints,contains,- operator
+uvl,has,aggregate function
+arithmetic level,is,language level hierarchy
+uvl,supports,conversion strategy arithmetic level
+minor language level,supports,expressiveness
+uvl,has,chico sundermann
+uvl,supports,sum operation
+arithmetic level,is,major uvl language level
+uvl,isdevelopedby,university ulm
+arithmetic level,supports,great
+type level,supports,real feature
+type level,supports,string constraint
+uvl,authors,chico sundermann
+type level,supports,string-constraints
+arithmetic level,supports,avgfunction
+cross-tree constraints,imposes,limitation feature
+uvl,supports,floor operation
+arithmetic level,supports,numeric constraints feature attribute
+cross-tree constraints,contains,multiplication operator *
+feature tree,supports,feature attribute
+feature,has,unique
+boolean level,contains,group cardinality minor level
+boolean level,contains,feature attribute
+language extension,supports,conversion strategy arithmetic level
+boolean level,contains,keyword
+feature tree,supports,indentation hierarchy
+type level,supports,non-boolean feature domains
+uvl,supports,pure::variant
+cross-tree constraints,supports,string comparison
+arithmetic level,supports,greater operator >
+type level,contains,numeric constraint
+feature tree,contains,string feature
+uvl,denotedby,alternative keyword
+aggregate function,defines,sum operation
+predicate,contains,equality operator ==
+uvl,outcome,modevar initiative
+language extension,contains,group-cardinality
+uvl,has,optional relationship
+uvl,has,include type level
+minor language level,contains,conversion boolean level
+feature cardinality,is,minor level
+type core,supports,string feature
+arithmetic level,supports,great operator
+numeric-constraints,is,minor level
+cross-tree constraints,contains,operator <
+logic equal,denotedby,<=>
+feature tree,contains,group cardinality
+uvl,has,feature attribute
+type level,supports,floor operation
+cross-tree constraints,contains,/ operator
+uvl,isdevelopedby,karlsruhe institute technology
+type level,has,hierarchical structure
+uvl,has,david benavides
+boolean level,denotedby,boolean keyword
+type level,is,support travart
+arithmetic level,supports,float constant
+minor language level,is,optional extension
+uvl,denotedby,constraints keyword
+uvl,authors,david benavides
+cross-tree constraints,supports,multi-model references
+type string-constraints,supports,len function
+arithmetic level,supports,addition operator
+language extension,permit,additional construct
+language extension,denotedby,include
+numeric constraint,defines,floor operation
+arithmetic level,denotedby,<
+boolean level,contains,<=> operator
+type level,extends,extension arithmetic level
+uvl,supports,support uvls
+boolean level,supports,automate reasoning
+cross-tree constraints,denotedby,<=>
+cross-tree constraints,is,separate feature tree uvl
+type level,defines,string feature
+uvl,contains,feature section
+language extension,defines,additional construct
+feature cardinality,is,minor language level
+boolean level,is,language level hierarchy
+numeric-constraints,is,minor language level
+boolean level,defines,relationship
+boolean level,is,major uvl language level
+arithmetic level,denotedby,*
+boolean level,is,arithmetic level basis
+boolean level,contains,boolean constant
+aggregate function,contains,sum operation
+uvl,is,support uvls
+arithmetic level,supports,numeric constraint
+uvl,has,josé a. galindo
+cross-tree constraints,contains,equality operator ==
+uvl,supports,travart
+feature tree,consists,real feature
+uvl,denotedby,|
+cross-tree constraints,supports,equality operator ==
+cross-tree constraints,contains,inclusion statement
+cross-tree constraints,denotedby,<=
+arithmetic level,has,minor level
+uvl,has,human-readable design
+feature tree,is,hierarchically arrange set feature
+type level,defines,integer feature
+uvl,is,community effort
+cross-tree constraints,reference,boolean-attribute keys
+cross-tree constraints,denotedby,!=
+language extension,contains,extension arithmetic level
+arithmetic level,supports,numeric constant
+boolean level,contains,boolean keyword
+uvl,originatesfrom,modevar initiative
+arithmetic level,supports,smt solver
+boolean level,contains,! operator
+boolean level,is,base type level
+boolean level,supports,cnf encoding
+type level,denotedby,type
+feature tree,contains,float feature
+boolean core,contains,mandatory feature
+cross-tree constraints,contains,propositional logic operator
+boolean core,contains,group
+feature tree,is,structural component uvl model
+relationship,denotedby,or
+cross-tree constraints,supports,avg function
+predicate,contains,<= operator
+uvl,denotedby,=> symbol
+cross-tree constraints,supports,propositional logic operator
+type level,contains,conversion boolean level
+arithmetic level,is,include type level
+boolean level,has,group-cardinality minor level
+boolean level,defines,optional relationship
+type level,contains,string feature
+uvl,supports,submodel composition
+type level,supports,string comparison
+type level,is,major level
+boolean level,supports,variability.dev support level
+feature tree,contains,exactly root feature
+feature tree,supports,relationship
+boolean level,is,pure::variant
+boolean level,contains,relationship
+arithmetic level,has,numeric constraints feature attribute
+feature tree,contains,relationship
+uvl,supports,variability analysis
+uvl,has,human-readable format
+boolean level,contains,mandatory keyword
+arithmetic level,denotedby,sum operation
+cross-tree constraints,reference,feature keyword
+feature tree,supports,model composition
+cross-tree constraints,denotedby,=>
+uvl,supports,python implementation
+uvl,supports,software product line engineering
+constraint section,denotedby,constraints keyword
+boolean level,is,variability.dev support level
+aggregate function,supports,average operation
+cross-tree constraints,supports,len function
+uvl,supports,model transformation
+type level,has,conversion strategy arithmetic level
+boolean level,is,flamapy support level
+type level,supports,conversion boolean level
+arithmetic level,is,smt problem
+uvl,denotedby,=> implication
+cross-tree constraints,has,impact configuration space
+type level,supports,string feature
+language extension,supports,diverse modelling need
+cross-tree constraints,supports,attribute constraint
+type level,defines,len function
+uvl,denotedby,feature keyword
+type level,defines,type core
+uvl,has,karlsruhe institute technology
+boolean level,supports,sit instance encode
+language extension,contains,string constraint
+uvl,has,antlr parser generator
+language extension,contains,string-constraints
+uvl,has,require relationship
+arithmetic level,supports,greater equal
+arithmetic level,supports,operator <
+arithmetic level,denotedby,>
+uvl,supports,import mechanism
+feature tree,supports,optional relationship
+cross-tree constraints,contains,<= operator
+uvl,supports,automate analysis
+minor level,is,optional extension
+cross-tree constraints,supports,aggregate function
+cross-tree constraints,contains,& operator
+feature tree,contains,group
+uvl,is,textual variability modeling language
+type level,defines,type feature
+uvl,denotedby,cardinality keyword
+uvl,ismaintainedby,consortium institution
+feature tree,is,hierarchical structure
+cross-tree constraints,supports,& operator
+feature tree,requires,exactly root feature
+numeric-constraints,supports,include type level
+cross-tree constraints,supports,reference submodel alias
+type level,supports,integer feature
+uvl,supports,avg function
+arithmetic level,has,smt representation
+group cardinality,is,minor level
+feature tree,denotedby,real feature
+cross-tree constraints,denotedby,&
+boolean level,is,component arithmetic level
+boolean level,is,extension arithmetic level
+string constraint,defines,string comparison
+uvl,contains,import section
+arithmetic level,has,cp representation
+minor language level,contains,language construct
+uvl,integrated,support uvls
+uvl,has,extension arithmetic level
+mandatory relationship,denotedby,optional
+cross-tree constraints,contains,binary expression
+uvl,denotedby,include keyword
+arithmetic level,supports,division operator /
+uvl,contains,cross-tree constraints
+aggregate function,defines,avg function
+numeric-constraints,supports,ceil function
+logic equal,denotedby,!
+aggregate function,denotedby,avg function
+string constraint,defines,len
+aggregate function,is,minor level
+cross-tree constraints,supports,namespace referencing
+feature tree,supports,submodel composition
+boolean level,defines,cross-tree constraints
+language extension,contains,aggregate-function
+arithmetic level,denotedby,<=
+arithmetic level,contains,numeric constraint
+type level,contains,type core
+uvl,authors,kevin feichtinger
+uvl,supports,len function
+group cardinality,is,minor language level
+boolean level,supports,sat solver backend
+parent-child relationship,denotedby,indentation hierarchy
+boolean level,supported,ddueruem
+uvl,integrated,travart
+arithmetic level,supports,sum operation
+uvl,denotedby,sumfunction
+arithmetic level,supports,inequality operator !=
+uvl,is,support travart
+arithmetic level,denotedby,-
+type level,supports,configuration arbitrary string value
+arithmetic level,denotedby,>=
+boolean level,supports,group cardinality
+type level,contains,numeric-constraints
+type level,contains,type feature
+boolean level,is,sit problem
+uvl,denotedby,namespace referencing
+language extension,supports,uvl expressiveness
+mandatory relationship,denotedby,mandatory
+type level,supports,float feature
+type level,supports,smt representation
+feature tree,contains,real feature
+feature tree,has,exactly root feature
+uvl,denotedby,import keyword
+uvl,denotedby,indentation hierarchy
+minor language level,supports,reasoning engine grouping
+aggregate function,is,minor language level
+uvl,uses,antlr parser generator
+predicate,contains,greater equal operator >=
+minor language level,supports,conversion strategy arithmetic level
+uvl,supports,extension mechanism
+type level,supports,len function
+uvl,supports,flamapy
+predicate,contains,> operator
+type level,supports,cp representation
+uvl,defines,feature cardinality
+cross-tree constraints,supports,numeric constraints feature attribute
+feature tree,supports,composition
+arithmetic level,denotedby,==
+cross-tree constraints,contains,<=> operator
+cross-tree constraints,contains,addition operator +
+boolean level,has,boolean keyword
+uvl,is,context-free grammar
+cross-tree constraints,supports,standard arithmetic operation
+cross-tree constraints,is,apply import submodel
+cross-tree constraints,supports,predicate
+uvl,isdevelopedby,johannes kepler university linz
+uvl,has,python parser
+boolean level,defines,require relationship
+arithmetic level,supports,equality
+aggregate function,contains,avg function
+uvl,has,real feature
+uvl,has,string constraint
+cross-tree constraints,supports,exclude relationship
+uvl,has,community-driven design
+cross-tree constraints,is,configuration validity
+boolean level,contains,cross-tree constraints
+uvl,has,tree-like structure
+type level,extends,conversion boolean level
+uvl,has,tu braunschweig
+cross-tree constraints,contains,exclusion statement
+uvl,denotedby,avgfunction
+uvl,has,java parser
+feature tree,contains,boolean keyword
+minor language level,supports,numeric constraint
+boolean level,supports,propositional logic operator
+string constraint,supports,string comparison
+numeric-constraints,supports,floor operation
+uvl,denotedby,<=> operator
+uvl,supports,java implementation
+cross-tree constraints,contains,function
+uvl,supports,featureide
+uvl,supports,model decomposition
+namespace,denotedby,namespace referencing
+boolean level,defines,boolean core
+feature tree,denotedby,nest
+arithmetic level,denotedby,standard arithmetic operation
+boolean level,contains,| operator
+arithmetic level,supports,- operator
+language level declaration,denotedby,include
+uvl,denotedby,&
+uvl,supports,language extension
+cross-tree constraints,contains,! operator
+uvl,supports,variability model sharing

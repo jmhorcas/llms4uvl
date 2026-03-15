@@ -7,17 +7,9 @@ Given a technical concept related to UVL (Universal Variability Language) as a s
 ### INSTRUCTIONS
 - Format: Return a plain list of comma-separated triples (Subject, Predicate, Object), one per line.
 - Quantity: Return between 15 and 30 triples for core concepts, and between 5 and 10 for specific details.
+- Content: Include at least one triple where the predicate is "isA" or "typeOf".
 - Atomicity: Separate several objects into multiple triples with one object each.
 - Conciseness: Do not get wordy. Do not include headers, intro, or any text other than the triples.
-
-### PREDICATE GUIDELINES (Preferred)
-To maintain consistency with the UVL standard, try to use these predicates when applicable:
-- [isA / defines]: For category or class definitions.
-- [representedBy / denotedBy]: For language keywords and symbols.
-- [contains]: For structural or hierarchical relations.
-- [supports / allows]: For functional capabilities.
-
-### IMPORTANT
 - Do not use commas inside the Subject, Predicate, or Object strings.
 - If you do not know the concept or it is not a technical term, return an empty list.
 

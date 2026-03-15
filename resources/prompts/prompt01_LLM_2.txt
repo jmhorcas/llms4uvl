@@ -1,16 +1,17 @@
 ### ROLE
-You are a knowledge base construction expert. 
-Your goal is to perform Context-Based Knowledge Extraction to build a Ground Truth Knowledge Base from the provided technical resources about UVL (Universal Variability Language).
+You are a knowledge base construction expert, specialized in Software Product Lines, Variability, and Domain-Specific Languages.
 
 ### TASK
-Based ONLY on the provided resources, extract factual knowledge about the subject entity below.
+Given a technical concept related to UVL (Universal Variability Language) as a subject entity, return all facts that you know for the subject as a list of relational triples.
 
 ### INSTRUCTIONS
-- Source Fidelity: Only include facts explicitly stated or directly Murphy-implied by the text.
 - Format: Return a plain list of comma-separated triples (Subject, Predicate, Object), one per line.
+- Quantity: Return between 15 and 30 triples for core concepts, and between 5 and 10 for specific details.
+- Content: Include at least one triple where the predicate is "isA" or "typeOf".
 - Atomicity: Separate several objects into multiple triples with one object each.
 - Conciseness: Do not get wordy. Do not include headers, intro, or any text other than the triples.
 - Do not use commas inside the Subject, Predicate, or Object strings.
+- If you do not know the concept or it is not a technical term, return an empty list.
 
 ### SPECIFIC EXTRACTION RULES FOR UVL
 - Grammar: Extract triples about syntax and keywords.
@@ -19,4 +20,4 @@ Based ONLY on the provided resources, extract factual knowledge about the subjec
 - Operations: Extract what can be done with UVL.
 
 ### SUBJECT ENTITY
-Language extensions
+[INSERT_CONCEPT_HERE]
