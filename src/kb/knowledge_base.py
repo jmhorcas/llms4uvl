@@ -77,20 +77,20 @@ class KnowledgeBase:
 
     def remove_exact_duplicates(self) -> 'KnowledgeBase':
         """Remove those triplets that are exactly the same as other triplets."""
-        kb = KnowledgeBase(self.nlp)
+        deduplicated_kb = KnowledgeBase(self.nlp)
         seen = set()
         for triplet in self.triplets:
             if triplet not in seen:
-                kb.add_triplet(triplet)
+                deduplicated_kb.add_triplet(triplet)
                 seen.add(triplet)
-        return kb
-    
+        return deduplicated_kb
+
     def deduplicate(self, threshold: float = 0.92) -> 'KnowledgeBase':
         """Remove those triplets that are semantically similar to other triplets based on a similarity threshold."""
-        kb = KnowledgeBase(self.nlp)
+        deduplicated_kb = KnowledgeBase(self.nlp)
         deduplicated_triplets = self.nlp.deduplicate_triplets(self.triplets, threshold=threshold)
-        kb.triplets = list(deduplicated_triplets)
-        return kb
+        deduplicated_kb.triplets = list(deduplicated_triplets)
+        return deduplicated_kb
 
     def clustering(self) -> 'KnowledgeBase':
         """Merges each component of the triplet into a more frequen component."""

@@ -1,22 +1,16 @@
-from kb import KnowledgeBase, Triplet
-from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
-import numpy
+import torch
+from sentence_transformers import SentenceTransformer, util
+from rapidfuzz import fuzz
 
-
-# all-MiniLM-L6-v2 es un modelo de Microsoft alojado en HuggingFace que es el estándar para tareas de comparación de frases por su equilibrio entre velocidad y precisión. 
-# Es gratuito bajo licencia Apache 2.0.
-MODEL = 'all-MiniLM-L6-v2'  # Modelo ligero y gratuito (aprox 80MB)
+from kb import KnowledgeBase, Triplet, NaturalLanguageProcessor
 
 
 class KnowledgeComparator:
-
-    TRANSFORMER_LANGUAGE_MODEL = 'all-MiniLM-L6-v2'  # Modelo ligero y gratuito (aprox 80MB)
     
-    def __init__(self, ground_truth_kb: KnowledgeBase, llm_kb: KnowledgeBase) -> None:
+    def __init__(self, nlp: NaturalLanguageProcessor, ground_truth_kb: KnowledgeBase, llm_kb: KnowledgeBase) -> None:
+        self.nlp = nlp
         self.ground_truth_kb = ground_truth_kb
         self.llm_kb = llm_kb
-        self.language_model = SentenceTransformer(self.TRANSFORMER_LANGUAGE_MODEL)
 
     def compare(self, threshold: float = 0.85) -> list[tuple[Triplet, Triplet, float]]:
         """Compare the triplets in this knowledge base with those in another knowledge base and return a list of tuples containing the compared triplets and their similarity score.
@@ -25,39 +19,101 @@ class KnowledgeComparator:
         The similarity between the triplets is computed using cosine similarity of their embeddings. 
         This allows for a more robust comparison that can capture semantic similarities even when the wording is different.
         """
-        this_sentences = [triplet.to_sentence() for triplet in self.ground_truth_kb.triplets]
-        other_sentences = [triplet.to_sentence() for triplet in self.llm_kb.triplets]
-        this_vecs = self.language_model.encode(this_sentences)
-        other_vecs = self.language_model.encode(other_sentences)
+        if not self.ground_truth_kb.triplets or not self.llm_kb.triplets:
+            return [{"real": t, "match": False} for t in self.ground_truth_kb.triplets]
 
-        similarity_matrix = cosine_similarity(this_vecs, other_vecs)
+        # 1. Preparar textos para codificación por componentes
+        gt_triples = self.ground_truth_kb.triplets
+        llm_triples = self.llm_kb.triplets
+
+        # Codificamos oraciones completas para la similitud global
+        gt_sentences = [t.to_sentence() for t in gt_triples]
+        llm_sentences = [t.to_sentence() for t in llm_triples]
+
+        # 2. Generar Embeddings usando util.cos_sim requiere tensores
+        # Codificamos todo por separado para máxima precisión atómica
+        gt_vecs = self.nlp.language_model.encode(gt_sentences, convert_to_tensor=True)
+        llm_vecs = self.nlp.language_model.encode(llm_sentences, convert_to_tensor=True)
+        
+        # Componentes para el score atómico
+        gt_sub_vecs = self.nlp.language_model.encode([t.subject for t in gt_triples], convert_to_tensor=True)
+        llm_sub_vecs = self.nlp.language_model.encode([t.subject for t in llm_triples], convert_to_tensor=True)
+        
+        gt_pre_vecs = self.nlp.language_model.encode([t.predicate for t in gt_triples], convert_to_tensor=True)
+        llm_pre_vecs = self.nlp.language_model.encode([t.predicate for t in llm_triples], convert_to_tensor=True)
+        
+        gt_obj_vecs = self.nlp.language_model.encode([t.object for t in gt_triples], convert_to_tensor=True)
+        llm_obj_vecs = self.nlp.language_model.encode([t.object for t in llm_triples], convert_to_tensor=True)
+
+        # 3. Calcular matrices de similitud
+        sim_matrix_global = util.cos_sim(gt_vecs, llm_vecs)
+        sim_matrix_sub = util.cos_sim(gt_sub_vecs, llm_sub_vecs)
+        sim_matrix_pre = util.cos_sim(gt_pre_vecs, llm_pre_vecs)
+        sim_matrix_obj = util.cos_sim(gt_obj_vecs, llm_obj_vecs)
 
         results = []
-        # Para controlar qué tripletas del LLM ya han sido "usadas"
         used_llm_indices = set()
 
-        for i, row in enumerate(similarity_matrix):
-            best_match_idx = numpy.argmax(row)
-            best_score = row[best_match_idx]
-            
-            if best_score >= threshold:
-                # Marcamos que esta tripleta del LLM es válida
+        for i in range(len(gt_triples)):
+            # Buscamos el mejor match en la fila i
+            # Obtenemos los candidatos ordenados por similitud global
+            row_scores = sim_matrix_global[i]
+            potential_indices = torch.argsort(row_scores, descending=True)
+
+            best_match_idx = -1
+            best_score = 0.0
+
+            for j_idx in potential_indices:
+                j = j_idx.item()
+                global_score = row_scores[j].item()
+
+                if global_score < 0.6: # Filtro rápido igual que en deduplicate
+                    break
+                
+                # --- PROTECCIÓN DE OPERADORES ---
+                ops_gt = {op for op in self.nlp.special_cases if op in gt_triples[i].object}
+                ops_llm = {op for op in self.nlp.special_cases if op in llm_triples[j].object}
+
+                if ops_gt or ops_llm:
+                    if ops_gt != ops_llm:
+                        continue 
+
+                # --- SCORE HÍBRIDO (Semántica Atómica + Léxica) ---
+                score_s = sim_matrix_sub[i][j].item()
+                score_p = sim_matrix_pre[i][j].item()
+                score_o = sim_matrix_obj[i][j].item()
+                
+                score_atomic = (score_s * 0.4) + (score_o * 0.4) + (score_p * 0.2)
+                best_semantic = max(global_score, score_atomic)
+                
+                # Similitud léxica (Fuzzy)
+                lex_score = fuzz.token_set_ratio(gt_sentences[i], llm_sentences[j]) / 100.0
+                
+                final_score = (best_semantic * 0.7) + (lex_score * 0.3)
+
+                if final_score >= threshold:
+                    best_match_idx = j
+                    best_score = final_score
+                    break
+
+            if best_match_idx != -1:
                 is_first_time_used = best_match_idx not in used_llm_indices
                 used_llm_indices.add(best_match_idx)
                 
                 results.append({
-                    "real": self.ground_truth_kb.triplets[i],
-                    "llm": self.llm_kb.triplets[best_match_idx],
+                    "real": gt_triples[i],
+                    "llm": llm_triples[best_match_idx],
                     "score": best_score,
                     "match": True,
-                    "llm_index": best_match_idx, # Guardamos el índice para deduplicar luego
-                    "is_unique_hit": is_first_time_used # Flag clave para Precision
+                    "llm_index": best_match_idx,
+                    "is_unique_hit": is_first_time_used
                 })
             else:
                 results.append({
-                    "real": self.ground_truth_kb.triplets[i],
+                    "real": gt_triples[i],
                     "match": False
                 })
+        
         return results
     
 

@@ -61,13 +61,6 @@ def main(kb_filepath: str, threshold: float) -> None:
         for seed, score in consistency['Seed_Scores'].items():
             print(f'            - {seed}: {score}')
 
-    # Construct taxonomy
-    # builder = TaxonomyConstructor(language_model, beta=0.5)
-    # taxonomy_graph = builder.construct_taxonomy(kb)
-
-    # for parent, children in taxonomy_graph.items():
-    #     print(f"Class [{parent}] children: {children}")
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Knowledge Consolidator: Consolidate a knowledge base data.")

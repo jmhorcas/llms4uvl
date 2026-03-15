@@ -1,3 +1,4 @@
+import re
 import json
 from collections import Counter
 
@@ -17,7 +18,7 @@ class NaturalLanguageProcessor:
     SPACY_LANGUAGE_MODEL = "en_core_web_sm"
     TRANSFORMER_LANGUAGE_MODEL = 'all-MiniLM-L6-v2'  # Light and free model (approx 80MB)
     CONCEPT_MAPPING_FILE = "../resources/concept_mapping.json"
-    SPECIAL_CASES = ['==', '<=', '>=', '!=', '>', '<', '=>', '<=>', '&', '|', '!', '+', '-', '/', '*']
+    SPECIAL_CASES = ['>', '<', '&', '|', '!', '+', '-', '/', '*', '==', '<=', '>=', '!=',  '=>', '<=>']
 
     def __init__(self, 
                  spacy_language_model: str = SPACY_LANGUAGE_MODEL, 
@@ -25,7 +26,7 @@ class NaturalLanguageProcessor:
                  concept_mapping_file: str = CONCEPT_MAPPING_FILE,
                  special_cases: list[str] = SPECIAL_CASES) -> None:
         """Initialize the natural language processor with the specified language models and concept mapping."""
-        self.special_cases = special_cases
+        self.special_cases = sorted(special_cases, key=len, reverse=True)
         nltk.download('wordnet', quiet=True)
         self.nlp: spacy.Language = spacy.load(spacy_language_model)
         self._configure_tokenizer()
@@ -37,13 +38,15 @@ class NaturalLanguageProcessor:
         for case in self.special_cases:
             self.nlp.tokenizer.add_special_case(case, [{spacy.symbols.ORTH: case}])
         
+        escaped_special_cases = [re.escape(case) for case in self.special_cases]
+
         # IMPORTAN: Avoid that operators considered as part of a suffix/prefix
         # This prevents operators like "==" from being attached to commas or parentheses
-        prefixes = self.nlp.Defaults.prefixes + self.special_cases
+        prefixes = self.nlp.Defaults.prefixes + escaped_special_cases
         prefix_regex = spacy.util.compile_prefix_regex(prefixes)
         self.nlp.tokenizer.prefix_search = prefix_regex.search
 
-        suffixes = self.nlp.Defaults.suffixes + self.special_cases
+        suffixes = self.nlp.Defaults.suffixes + escaped_special_cases
         suffix_regex = spacy.util.compile_suffix_regex(suffixes)
         self.nlp.tokenizer.suffix_search = suffix_regex.search
 
@@ -190,7 +193,7 @@ class NaturalLanguageProcessor:
         subjects = [t.subject for t in triples]
         predicates = [t.predicate for t in triples]
         objects = [t.object for t in triples]
-        
+
         all_texts = sentences + subjects + predicates + objects
         all_embs = self.language_model.encode(all_texts, convert_to_tensor=True)
 
@@ -214,19 +217,19 @@ class NaturalLanguageProcessor:
                 if j in indices_to_remove:
                     continue
 
+                # Protection against SPECIAL CASES
+                ops_i = {op for op in self.special_cases if op in objects[i]}
+                ops_j = {op for op in self.special_cases if op in objects[j]}
+                if ops_i or ops_j:
+                    if ops_i != ops_j:
+                        continue
+
                 # Global semantic
                 sim_global = sim_matrix_global[i][j]
 
                 # Fast filtering: if global is low, omit syntax comparison
                 if sim_global < 0.6: 
                     continue
-
-                # Protection against SPECIAL CASES
-                ops_i = {op for op in self.special_cases if op in predicates[i]}
-                ops_j = {op for op in self.special_cases if op in predicates[j]}
-                if ops_i or ops_j:
-                    if ops_i != ops_j:
-                        continue
 
                 # Atomic score (component by component)
                 sim_s = util.cos_sim(sub_embs[i], sub_embs[j]).item()
