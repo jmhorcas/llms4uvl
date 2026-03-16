@@ -33,6 +33,7 @@ def main(kb_filepath: str, threshold: float) -> None:
     kb = kb.normalize()
     triplets_after_normalization = len(kb.triplets)
     print(f'    🔍 Deduplicating KB with threshold {threshold}...')
+    kb = kb.remove_exact_duplicates()
     kb = kb.deduplicate(threshold)
     triplets_after_deduplication = len(kb.triplets)
     print('    🧬 Clustering KB...')

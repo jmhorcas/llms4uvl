@@ -1,0 +1,9 @@
+Each pizza needs a Base, exactly one type of Sauce (Tomato or Creme Fraiche), and may contain one or multiple types of Cheese (Mozzarella, Cheddar). 
+Cheddar cannot be selected with Creme Fraiche. 
+The price of a feature is atached as additional information: Base 2.0, Tomato 0.8, Creme Fraiche 1.1, Mozarella 0.4, Cheddar 0.6, Mushrooms 0.5, Onion 0.3, Olive 0.3, Pineapple 0.8. 
+Between one and three Toppings can be selected (Mushrooms, Onion, Olive, Pineapple). 
+Multiple delivery addresses ([1..10]) can be configured (Street and City). 
+The overall price needs to be smaller than 5. 
+The Size of the pizza is an integer and the Street and City are strings. 
+The Size needs to be between 20 and 60. 
+The delivery location needs to be in the same City as the pizza place ('Omashu') and the length of the Street may be at most 100.

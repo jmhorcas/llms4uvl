@@ -1,0 +1,29 @@
+
+Modelos cubriendo los siguientes casos:
+
+1. BOOLEAN LEVEL
+   1.1. Boolean features + Group keywords (solo el árbol y relaciones: mandatory, optional, or, alternative).
+   1.2. Boolean constraints (1.1 + constraints lógicas: =>, !, &, |, <=>).  
+   1.3. Feature attributes (1.2 + atributos).
+   1.4. Group cardinality (cualquiera de los anteriores + grupos [a..b])
+2. ARITHMETIC LEVEL
+   2.1. Numeric constraints (1 + constraints sobre atributos: +, -, /, *, <, <=, >, >=, ==, !=
+   2.2. Aggregate functions (2.1 + operadores de agregación: sum(), avg()).
+   2.3. Feature cardinality (1 + cardinality [a..b]).
+3. TYPE LEVEL
+   3.1. Type features (1 ó 2 + Integer/Real/String features).
+   3.2. String constraints (3.1. + restricciones sobre String features: len(), <, <=, >, >=, ==, !=
+   
+
+Listado de modelos y niveles soportados:
+No existían en UVL:
+1. Knuppel2017_Pizza_Boolean: 1.1, 1.2
+2. Horcas2021_AAFM_Boolean: 1.1, 1.2
+
+Sí existen en UVL:
+1. Sundermann2024_Pizza_Type: 3.1, 3.2
+2. Benavides2025_eShop_Boolean: 1.1, 1.2, 1.3
+3. Benavides2025_eshop_Boolean2: 1.1, 1.2, 1.3, 1.4
+4. Benavides2025_eshop_Arithmetic: 2.1, 2.2
+5. Benavides2025_eshop_Arithmetic2: 2.1, 2.2, 2.3
+6. Benavides2025_eshop_Type: 3.1, 3.2

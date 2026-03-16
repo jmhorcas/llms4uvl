@@ -42,7 +42,6 @@ Iteration,Seed,Run,Subject,Predicate,Object
 1,UVL language,2,UVL,is,Human Readable
 1,UVL language,2,UVL,is,Machine Readable
 1,UVL language,2,UVL,promotes,Interoperability
-1,UVL language,2,,,
 1,UVL language,2,UVL,supports,Mandatory Features
 1,UVL language,2,UVL,supports,Optional Features
 1,UVL language,2,UVL,supports,Alternative Groups

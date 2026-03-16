@@ -1,0 +1,7 @@
+A basic feature model representing a product line for pizzas. 
+Features Topping, Size, and Dough are mandatory, thus are part of all pizza products. 
+As for toppings, we must at least select one of the features Salami, Ham, or Mozzarella. 
+Regarding the size, we may either choose feature Normal or Big. 
+We can also decide which dough we would like to use, namely classic Neapolitan or Sicilian. 
+Finally, we can decide to get extra cheese inside our crust, offered by the optional feature CheesyCrust. 
+Nevertheless, by fulfilling the requires constraint CheesyCrust => Big, we force the size of a pizza to be big, whenever we order a cheesy crust.

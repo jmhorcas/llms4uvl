@@ -61,7 +61,8 @@ class KnowledgeBase:
         for triplet in self.triplets:
             normalized_triplet = Triplet(
                                     subject=self.nlp.normalize_text(triplet.subject),
-                                    predicate=self.nlp.remove_stopwords(self.nlp.case_folding(triplet.predicate)),
+                                    #predicate=self.nlp.remove_stopwords(self.nlp.case_folding(triplet.predicate)),
+                                    predicate=self.nlp.normalize_text(triplet.predicate),
                                     object=self.nlp.normalize_text(triplet.object)
                                     )
             normalized_kb.add_triplet(normalized_triplet)
