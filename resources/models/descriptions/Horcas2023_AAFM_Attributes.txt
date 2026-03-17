@@ -1,0 +1,14 @@
+A feature model representing a product line for a Python framework to support AAFMs. 
+AAFMFramework is the root of the feature model. 
+There is a mandatory relation between the root and the System feature, while there are relations between the AAFMFramework feature and its optional children Packages and Solvers. 
+To reason about the models and implement the analysis operations, the framework can use a selection of Solvers (MiniSAT, PicoSAT, Glucose) represented by an or-group relation. 
+Each solver will require one or more Python package (python-sat, pycosat, pyGlucose, pyPicosat) which offer the implementation for that solver.
+The MiniSAT solver is provided by the python-sat package, the PicoSAT solver is offered by the pycosat or by the pyPicosat packages, and the Glucose solver is provided by the python-sat or by the pyGlucose packages. 
+These kind of relations are represented as textual cross-tree constraints in the feature model.
+Finally, a specific version of the framework can be deployed in Linux or Win systems, relation represented by the alternative-group.
+The Win system is not compatible with the pyPicosat package.
+Features representing the Python packages have two attributes associated: the UserRating values and the LastUpdate release date, both values have been obtained from the Python Package Index (PyPI) repository.
+python-sat has a user rating of 243 and a last update date of 'Dec 4, 2021' (in this format).
+pycosat has a user rating of 158 and a last update date of 'Nov 9, 2017'.
+pyGlucose has a user rating of 1 and a last update date of 'Apr 14, 2019'.
+pyPicosat has a user rating of 2 and a last update date of 'Aug 1, 2017'.
