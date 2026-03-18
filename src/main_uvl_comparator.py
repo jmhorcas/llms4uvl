@@ -102,6 +102,21 @@ def compute_configurations(op, model) -> set:
     return configurations
 
 
+def global_score(feature_similarity_score: float, constraint_similarity_score: float, attribute_similarity_score: float, jaccard_similarity_score: float) -> float:
+    weights = {
+        'features': 0.2,
+        'constraints': 0.2,
+        'attributes': 0.2,
+        'configurations': 0.40
+    }
+    global_score = (
+        feature_similarity_score * weights['features'] +
+        constraint_similarity_score * weights['constraints'] +
+        attribute_similarity_score * weights['attributes'] +
+        jaccard_similarity_score * weights['configurations']
+    )
+    
+    return round(global_score, DECIMAL_PRECISION)
 def main(uvl_filepath1: str, uvl_filepath2: str) -> None:
     try:
         print('📥 Reading UVL model 1...')
@@ -188,6 +203,8 @@ def main(uvl_filepath1: str, uvl_filepath2: str) -> None:
         recall_score = round(recall(configurations1, configurations2), DECIMAL_PRECISION)
         f1_score_value = round(f1_score(precision_score, recall_score), DECIMAL_PRECISION)
 
+    global_similarity_score = global_score(feature_similarity_score, constraint_similarity_score, attribute_similarity_score, jaccard_similarity_score if jaccard_similarity_score is not None else 0.0)
+
     print('📊 Report:')
     print(f'  - Language Level of Model 1: {fm1_languageLevel_str}')
     print(f'  - Language Level of Model 2: {fm2_languageLevel_str}')
@@ -206,6 +223,7 @@ def main(uvl_filepath1: str, uvl_filepath2: str) -> None:
     print(f'    - Precision: {precision_score if precision_score is not None else "N/A"}')
     print(f'    - Recall: {recall_score if recall_score is not None else "N/A"}')
     print(f'    - F1 Score: {f1_score_value if f1_score_value is not None else "N/A"}')
+    print(f'  - Global Similarity Score: {global_similarity_score:.4f}')
 
 
 if __name__ == "__main__":
