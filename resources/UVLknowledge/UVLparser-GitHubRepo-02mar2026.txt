@@ -1,0 +1,4168 @@
+Directory structure:
+└── universal-variability-language-uvl-parser/
+    ├── README.md
+    ├── LICENSE
+    ├── Makefile
+    ├── java/
+    │   ├── pom.xml
+    │   └── src/
+    │       └── test/
+    │           └── java/
+    │               └── uvl/
+    │                   ├── ThrowingErrorListener.java
+    │                   └── UVLParserTest.java
+    ├── js/
+    │   ├── README.md
+    │   ├── eslint.config.js
+    │   ├── index.js
+    │   ├── package.json
+    │   ├── .npmignore
+    │   ├── src/
+    │   │   ├── FeatureModel.js
+    │   │   ├── UVLJavaScriptCustomLexer.js
+    │   │   └── errors/
+    │   │       ├── ErrorListener.js
+    │   │       └── SyntaxGenericError.js
+    │   └── test/
+    │       ├── example1.uvl
+    │       ├── example2.uvl
+    │       ├── fm.test.js
+    │       └── grammar.test.js
+    ├── python/
+    │   ├── README.md
+    │   ├── __init__.py
+    │   ├── main.py
+    │   ├── requirements-dev.txt
+    │   ├── setup.py
+    │   ├── test_grammar.py
+    │   └── uvl/
+    │       ├── __init__.py
+    │       └── UVLCustomLexer.py
+    ├── test_models/
+    │   ├── arithmetic_level/
+    │   │   ├── arithmetic-simpleconstraints.uvl
+    │   │   ├── arithmetic_constraints02.uvl
+    │   │   ├── expressions.uvl
+    │   │   ├── aggregate_functions/
+    │   │   │   ├── aggregate.uvl
+    │   │   │   ├── aggregateFunctions.uvl
+    │   │   │   ├── aggregateFunctions02.uvl
+    │   │   │   ├── aggregateFunctions03.uvl
+    │   │   │   └── lengthAggregation.uvl
+    │   │   └── feature_cardinality/
+    │   │       ├── feature-cardinality.uvl
+    │   │       ├── fm01_fc.uvl
+    │   │       ├── fm02_fc.uvl
+    │   │       ├── fm03_fc.uvl
+    │   │       ├── fm04_fc.uvl
+    │   │       ├── fm05_fc.uvl
+    │   │       ├── fm06_fc.uvl
+    │   │       ├── fm07_fc.uvl
+    │   │       ├── fm08_fc.uvl
+    │   │       ├── fm09_fc.uvl
+    │   │       ├── fm10_fc.uvl
+    │   │       ├── fm11_fc.uvl
+    │   │       ├── fm12_fc.uvl
+    │   │       ├── fm13_fc.uvl
+    │   │       ├── fm14_fc.uvl
+    │   │       ├── fm15_fc.uvl
+    │   │       ├── fm16_fc.uvl
+    │   │       ├── fm17_fc.uvl
+    │   │       ├── fm18_fc.uvl
+    │   │       ├── fm19_fc.uvl
+    │   │       ├── fm20_fc.uvl
+    │   │       ├── fm21_fc.uvl
+    │   │       ├── fm22_fc.uvl
+    │   │       └── fm23_fc.uvl
+    │   ├── boolean_level/
+    │   │   ├── attributes.uvl
+    │   │   ├── attributes02.uvl
+    │   │   ├── boolean.uvl
+    │   │   ├── boolean02.uvl
+    │   │   ├── cardinality.uvl
+    │   │   ├── cardinality02.uvl
+    │   │   ├── namespace.uvl
+    │   │   └── attribute_constraints/
+    │   │       ├── fm01_attrctcs.uvl
+    │   │       ├── fm02_attrctcs.uvl
+    │   │       └── fm03_attrctcs.uvl
+    │   ├── complex/
+    │   │   ├── bike.uvl
+    │   │   ├── Galindo2025_Electricity.uvl
+    │   │   ├── Horcas2025_Icecream.uvl
+    │   │   ├── Horcas2026_Pizza.uvl
+    │   │   └── Sundermann2024_Pizza.uvl
+    │   ├── composition/
+    │   │   ├── composition_root.uvl
+    │   │   ├── composition_sub1.uvl
+    │   │   ├── composition_sub1_sub1.uvl
+    │   │   ├── composition_sub1_sub2.uvl
+    │   │   ├── nested_main.uvl
+    │   │   ├── nested/
+    │   │   │   ├── nested_referenced_sub.uvl
+    │   │   │   └── nested_sub.uvl
+    │   │   └── Pizzas-imports/
+    │   │       ├── Dough.uvl
+    │   │       ├── Pizzas.uvl
+    │   │       ├── Topping.uvl
+    │   │       └── submodels/
+    │   │           └── Size.uvl
+    │   ├── faulty/
+    │   │   ├── illegalname.uvl
+    │   │   ├── missingreference.uvl
+    │   │   ├── same_feature_names.uvl
+    │   │   ├── wrong_attribute_name.uvl
+    │   │   └── wrongindent.uvl
+    │   ├── language_level/
+    │   │   ├── all.uvl
+    │   │   ├── arithmetic.uvl
+    │   │   ├── boolean.uvl
+    │   │   └── type.uvl
+    │   ├── lexing/
+    │   │   ├── dotinfeaturename.uvl
+    │   │   ├── dotinstringconstant.uvl
+    │   │   └── legalnumbers.uvl
+    │   ├── syntax/
+    │   │   ├── brackets.uvl
+    │   │   ├── comments.uvl
+    │   │   ├── dash.uvl
+    │   │   └── comments_and_blanks/
+    │   │       ├── fm01_blanks.uvl
+    │   │       ├── fm02_inline_comment.uvl
+    │   │       ├── fm03_block_comment.uvl
+    │   │       ├── fm04_tabs.uvl
+    │   │       ├── fm05_eof_blanks.uvl
+    │   │       └── fm06_comments_and_blanks.uvl
+    │   └── type_level/
+    │       ├── string-attributes.uvl
+    │       ├── string-constraints.uvl
+    │       ├── string-quotes.uvl
+    │       └── nested/
+    │           └── string-attributes-external.uvl
+    ├── uvl/
+    │   ├── UVLLexer.g4
+    │   ├── UVLParser.g4
+    │   ├── Java/
+    │   │   ├── UVLJavaLexer.g4
+    │   │   └── UVLJavaParser.g4
+    │   ├── JavaScript/
+    │   │   ├── UVLJavaScriptLexer.g4
+    │   │   └── UVLJavaScriptParser.g4
+    │   └── Python/
+    │       ├── UVLPythonLexer.g4
+    │       └── UVLPythonParser.g4
+    └── .github/
+        ├── settings.xml
+        └── workflows/
+            ├── conventionalpr.yml
+            ├── java.yml
+            ├── js.yml
+            ├── python.yml
+            └── test.yml
+
+================================================
+FILE: README.md
+================================================
+# UVL - Universal Variability Language
+
+**UVL (Universal Variability Language)** is a concise and extensible language for modeling variability in software product lines. It supports multiple programming languages and provides a grammar-based foundation for building tools and parsers.
+
+This repository contains the **ANTLR4 grammar files** for UVL. With these, you can generate parsers for UVL tailored to specific programming languages like Java, JavaScript, and Python.
+
+## ✨ Key Features
+
+- Language-level modularity
+- Namespaces and imports
+- Feature trees with attributes and cardinalities
+- Cross-tree constraints
+- Extensible for different target languages
+
+## 📦 Repository Structure
+
+- `uvl/UVLParser.g4` – Base grammar in EBNF form
+- `uvl/UVLLexer.g4` – Base lexer grammar for UVL
+- `uvl/Java/UVLJava*.g4`, `uvl/Python/UVLPython*.g4`, etc. – Language-specific grammar files
+- `java/` – Java-based parser implementation using Maven (generated)
+- `python/` – Python-based parser implementation (generated)
+- `js/` – JavaScript-based parser implementation (generated)
+
+UVL uses [ANTLR4](https://www.antlr.org/) as its parser generator.
+
+## Usage
+
+To use UVL in your projects, you can either:
+
+1. **Use the pre-built parsers**
+   ### Java Parser
+   Include the following dependency in your Maven project:
+   ```xml
+   <dependency>
+       <groupId>io.github.universal-variability-language</groupId>
+       <artifactId>uvl-parser</artifactId>
+       <version>0.3</version>
+   </dependency>
+   ```
+   ### Python Parser
+   Install the package via pip:
+   ```bash
+   pip install uvlparser
+   ```
+   ### JavaScript Parser
+   Install the package via npm:
+   ```bash
+   npm install uvl-parser
+   ```
+2. **Build the parser manually** See the sections below for details.
+
+## ⚙️ Building the Parser manually
+
+### Java Parser
+
+#### Prerequisites
+
+- Java 17+
+- [Maven](https://maven.apache.org/)
+
+#### Build Steps
+
+1. Clone the repository:
+
+```bash
+ git clone https://github.com/Universal-Variability-Language/uvl-parser
+```
+
+2. Build the parser:
+
+```bash
+make java_parser
+```
+
+This will generate the jar file in the `java/target/` directory. You can also build the JAR with:
+
+```bash
+cd java && mvn clean package
+```
+
+3. Include the generated JAR in your Java project.
+
+---
+
+### Python Parser
+
+#### Prerequisites
+
+- Python 3.8+
+- [ANTLR4](https://www.antlr.org/)
+
+#### Build Steps
+
+1. Clone the repository:
+
+```bash
+ git clone https://github.com/Universal-Variability-Language/uvl-parser
+```
+
+2. Build the parser:
+
+```bash
+  make python_parser
+```
+
+This will generate the parser files in the `python/` directory. To build the wheel package, run:
+
+```bash
+  make python_prepare_package
+```
+
+### JavaScript Parser
+
+#### Prerequisites
+
+- Node.js 14+
+- [ANTLR4](https://www.antlr.org/)
+
+#### Build Steps
+
+1. Clone the repository:
+
+```bash
+ git clone https://github.com/Universal-Variability-Language/uvl-parser
+```
+
+2. Build the parser:
+
+```bash
+make javascript_parser
+```
+
+## This will generate the parser files in the `js/` directory.
+
+## 💡 Universal-Variability-Language (UVL)
+
+For comprehensive guidance on utilizing UVL, please refer to the following publication:
+
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.jss.2024.112326-blue)](https://doi.org/10.1016/j.jss.2024.112326)
+
+🔗 **Sample UVL models** are available at: https://github.com/Universal-Variability-Language/uvl-models
+
+---
+
+## 📚 Resources
+
+**UVL Models & Tools**
+
+- https://github.com/Universal-Variability-Language/uvl-models
+- https://www.uvlhub.io/
+
+**Tooling Ecosystem**
+
+- https://github.com/FeatureIDE/FeatureIDE
+- https://ide.flamapy.org/
+- https://github.com/Universal-Variability-Language/uvl-lsp
+- https://github.com/SECPS/TraVarT
+- https://github.com/AlexCortinas/spl-js-engine
+
+---
+
+## 📖 Citation
+
+If you use UVL in your research, please cite:
+
+```bibtex
+@article{UVL2024,
+  title     = {UVL: Feature modelling with the Universal Variability Language},
+  journal   = {Journal of Systems and Software},
+  volume    = {225},
+  pages     = {112326},
+  year      = {2025},
+  issn      = {0164-1212},
+  doi       = {https://doi.org/10.1016/j.jss.2024.112326},
+  url       = {https://www.sciencedirect.com/science/article/pii/S0164121224003704},
+  author    = {David Benavides and Chico Sundermann and Kevin Feichtinger and José A. Galindo and Rick Rabiser and Thomas Thüm},
+  keywords  = {Feature model, Software product lines, Variability}
+}
+```
+
+---
+
+## 📬 Contact & Contributions
+
+Feel free to open issues or pull requests if you have suggestions or improvements. For questions or collaboration inquiries, visit the UVL Website:
+https://universal-variability-language.github.io/
+
+
+
+================================================
+FILE: LICENSE
+================================================
+                   GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+
+  This version of the GNU Lesser General Public License incorporates
+the terms and conditions of version 3 of the GNU General Public
+License, supplemented by the additional permissions listed below.
+
+  0. Additional Definitions.
+
+  As used herein, "this License" refers to version 3 of the GNU Lesser
+General Public License, and the "GNU GPL" refers to version 3 of the GNU
+General Public License.
+
+  "The Library" refers to a covered work governed by this License,
+other than an Application or a Combined Work as defined below.
+
+  An "Application" is any work that makes use of an interface provided
+by the Library, but which is not otherwise based on the Library.
+Defining a subclass of a class defined by the Library is deemed a mode
+of using an interface provided by the Library.
+
+  A "Combined Work" is a work produced by combining or linking an
+Application with the Library.  The particular version of the Library
+with which the Combined Work was made is also called the "Linked
+Version".
+
+  The "Minimal Corresponding Source" for a Combined Work means the
+Corresponding Source for the Combined Work, excluding any source code
+for portions of the Combined Work that, considered in isolation, are
+based on the Application, and not on the Linked Version.
+
+  The "Corresponding Application Code" for a Combined Work means the
+object code and/or source code for the Application, including any data
+and utility programs needed for reproducing the Combined Work from the
+Application, but excluding the System Libraries of the Combined Work.
+
+  1. Exception to Section 3 of the GNU GPL.
+
+  You may convey a covered work under sections 3 and 4 of this License
+without being bound by section 3 of the GNU GPL.
+
+  2. Conveying Modified Versions.
+
+  If you modify a copy of the Library, and, in your modifications, a
+facility refers to a function or data to be supplied by an Application
+that uses the facility (other than as an argument passed when the
+facility is invoked), then you may convey a copy of the modified
+version:
+
+   a) under this License, provided that you make a good faith effort to
+   ensure that, in the event an Application does not supply the
+   function or data, the facility still operates, and performs
+   whatever part of its purpose remains meaningful, or
+
+   b) under the GNU GPL, with none of the additional permissions of
+   this License applicable to that copy.
+
+  3. Object Code Incorporating Material from Library Header Files.
+
+  The object code form of an Application may incorporate material from
+a header file that is part of the Library.  You may convey such object
+code under terms of your choice, provided that, if the incorporated
+material is not limited to numerical parameters, data structure
+layouts and accessors, or small macros, inline functions and templates
+(ten or fewer lines in length), you do both of the following:
+
+   a) Give prominent notice with each copy of the object code that the
+   Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the object code with a copy of the GNU GPL and this license
+   document.
+
+  4. Combined Works.
+
+  You may convey a Combined Work under terms of your choice that,
+taken together, effectively do not restrict modification of the
+portions of the Library contained in the Combined Work and reverse
+engineering for debugging such modifications, if you also do each of
+the following:
+
+   a) Give prominent notice with each copy of the Combined Work that
+   the Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the Combined Work with a copy of the GNU GPL and this license
+   document.
+
+   c) For a Combined Work that displays copyright notices during
+   execution, include the copyright notice for the Library among
+   these notices, as well as a reference directing the user to the
+   copies of the GNU GPL and this license document.
+
+   d) Do one of the following:
+
+       0) Convey the Minimal Corresponding Source under the terms of this
+       License, and the Corresponding Application Code in a form
+       suitable for, and under terms that permit, the user to
+       recombine or relink the Application with a modified version of
+       the Linked Version to produce a modified Combined Work, in the
+       manner specified by section 6 of the GNU GPL for conveying
+       Corresponding Source.
+
+       1) Use a suitable shared library mechanism for linking with the
+       Library.  A suitable mechanism is one that (a) uses at run time
+       a copy of the Library already present on the user's computer
+       system, and (b) will operate properly with a modified version
+       of the Library that is interface-compatible with the Linked
+       Version.
+
+   e) Provide Installation Information, but only if you would otherwise
+   be required to provide such information under section 6 of the
+   GNU GPL, and only to the extent that such information is
+   necessary to install and execute a modified version of the
+   Combined Work produced by recombining or relinking the
+   Application with a modified version of the Linked Version. (If
+   you use option 4d0, the Installation Information must accompany
+   the Minimal Corresponding Source and Corresponding Application
+   Code. If you use option 4d1, you must provide the Installation
+   Information in the manner specified by section 6 of the GNU GPL
+   for conveying Corresponding Source.)
+
+  5. Combined Libraries.
+
+  You may place library facilities that are a work based on the
+Library side by side in a single library together with other library
+facilities that are not Applications and are not covered by this
+License, and convey such a combined library under terms of your
+choice, if you do both of the following:
+
+   a) Accompany the combined library with a copy of the same work based
+   on the Library, uncombined with any other library facilities,
+   conveyed under the terms of this License.
+
+   b) Give prominent notice with the combined library that part of it
+   is a work based on the Library, and explaining where to find the
+   accompanying uncombined form of the same work.
+
+  6. Revised Versions of the GNU Lesser General Public License.
+
+  The Free Software Foundation may publish revised and/or new versions
+of the GNU Lesser General Public License from time to time. Such new
+versions will be similar in spirit to the present version, but may
+differ in detail to address new problems or concerns.
+
+  Each version is given a distinguishing version number. If the
+Library as you received it specifies that a certain numbered version
+of the GNU Lesser General Public License "or any later version"
+applies to it, you have the option of following the terms and
+conditions either of that published version or of any later version
+published by the Free Software Foundation. If the Library as you
+received it does not specify a version number of the GNU Lesser
+General Public License, you may choose any version of the GNU Lesser
+General Public License ever published by the Free Software Foundation.
+
+  If the Library as you received it specifies that a proxy can decide
+whether future versions of the GNU Lesser General Public License shall
+apply, that proxy's public statement of acceptance of any version is
+permanent authorization for you to choose that version for the
+Library.
+
+
+
+================================================
+FILE: Makefile
+================================================
+.PHONY: all java_parser python_parser js_parser python_prepare_package clean test dev
+
+all: java_parser python_parser js_parser
+
+LIB_FLAG = -lib
+LIB_PATH = uvl
+
+ROOT_DIR = $(shell pwd)
+PYTHON_OUTPUT_DIR = python/uvl
+JAVASCRIPT_OUTPUT_DIR = js/src/lib
+
+java_parser:
+	cd java && mvn package
+	cd java && mvn install
+
+js_parser:
+	mkdir -p $(JAVASCRIPT_OUTPUT_DIR)
+	cd uvl/JavaScript && \
+		ANTLR4_TOOLS_ANTLR_VERSION=4.13.2 antlr4 $(LIB_FLAG) $(ROOT_DIR)/$(LIB_PATH) -Dlanguage=JavaScript -o $(ROOT_DIR)/$(JAVASCRIPT_OUTPUT_DIR) UVLJavaScriptLexer.g4 UVLJavaScriptParser.g4
+
+python_parser:
+	cd uvl/Python && \
+		ANTLR4_TOOLS_ANTLR_VERSION=4.13.2 antlr4 $(LIB_FLAG) $(ROOT_DIR)/$(LIB_PATH) -Dlanguage=Python3 -o $(ROOT_DIR)/$(PYTHON_OUTPUT_DIR) UVLPythonLexer.g4 UVLPythonParser.g4
+
+python_prepare_package:
+	cd python && python3 -m build
+
+clean:
+	# Clean Java build artifacts
+	cd java && mvn clean
+	
+	# Remove generated Python files except custom_lexer.py and main.py
+	find python/uvl/ -type f ! -name 'UVLCustomLexer.py' ! -name 'main.py' -delete
+	# Remove compiled Python files
+	find . -name "*.pyc" -exec rm {} \;
+	# Remove Python build artifacts
+	rm -rf python/build python/dist
+
+	# Clean JavaScript generated files
+	rm -rf js/src/lib
+
+
+test:
+	python3 ./python/main.py ./tests/parsing/boolean.uvl
+dev:
+	pip install antlr4-tools antlr4-python3-runtime setuptools wheel twine build
+
+
+
+================================================
+FILE: java/pom.xml
+================================================
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>UVL Parser</name>
+    <description>This project host the grammar files and generated source files for the Java version of the UVL parser</description>
+    <url>https://github.com/Universal-Variability-Language/uvl-parser</url>
+
+    <groupId>io.github.universal-variability-language</groupId>
+    <artifactId>uvl-parser</artifactId>
+    <version>0.5.0</version>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://github.com/Universal-Variability-Language/uvl-parser/blob/master/LICENSE</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>José A. Galindo</name>
+            <email>jagalindo@us.es</email>
+            <organization>University of Seville</organization>
+            <organizationUrl>https://www.us.es</organizationUrl>
+        </developer>
+        <developer>
+            <name>Chico Sundermann</name>
+            <email>jagalindo@us.es</email>
+            <organization>University of Ulm</organization>
+            <organizationUrl>https://www.uni-ulm.de/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Kevin Feichtinger</name>
+            <email>kevin.feichtinger@jku.at</email>
+            <organization>Johannes Kepler University</organization>
+            <organizationUrl>https://www.jku.at/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Malte Grave</name>
+            <email>malte.grave@jku.at</email>
+            <organization>Johannes Kepler University</organization>
+            <organizationUrl>https://www.jku.at/</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm><!-- TODO-->
+        <connection>scm:git:git@github.com:Universal-Variability-Language/uvl-parser.git</connection>
+        <developerConnection>scm:git:git@github.com:Universal-Variability-Language/uvl-parser.git</developerConnection>
+        <url>https://github.com/Universal-Variability-Language/uvl-parser</url>
+    </scm>
+
+    <properties>
+        <antlr4.version>4.13.2</antlr4.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <skipCentralPublishing>false</skipCentralPublishing>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4-runtime</artifactId>
+            <version>${antlr4.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>central</id>
+            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>central</id>
+            <url>https://central.sonatype.com/</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <!--<testSourceDirectory>"TO
+        BE DEFINED"</testSourceDirectory>-->
+        <plugins>
+            <!-- ANTLR Plugin  -->
+            <plugin>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-maven-plugin</artifactId>
+                <version>${antlr4.version}</version>
+                <configuration>
+                    <arguments>
+                        <argument>-lib</argument>
+                        <argument>../uvl</argument>
+                    </arguments>
+                    <sourceDirectory>../uvl/Java</sourceDirectory>
+                    <outputDirectory>${project.build.directory}/generated-sources/antlr4</outputDirectory>
+                    <listener>true</listener>
+                    <visitor>true</visitor>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>antlr4</goal>
+                        </goals>
+                        <phase>generate-sources</phase>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.build.directory}/generated-sources/antlr4</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.14.0</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>3.2.7</version>
+                <configuration>
+                    <gpgArguments>
+                        <arg>--pinentry-mode</arg>
+                        <arg>loopback</arg>
+                    </gpgArguments>
+                    <passphrase>${env.MAVEN_GPG_PASSPHRASE}</passphrase>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.5.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
+                    <autoPublish>true</autoPublish>
+                    <skipPublishing>${skipCentralPublishing}</skipPublishing>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.3.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.11.2</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>
+
+
+
+================================================
+FILE: java/src/test/java/uvl/ThrowingErrorListener.java
+================================================
+package uvl;
+
+import org.antlr.v4.runtime.BaseErrorListener;
+import org.antlr.v4.runtime.RecognitionException;
+import org.antlr.v4.runtime.Recognizer;
+
+public class ThrowingErrorListener extends BaseErrorListener {
+    public static final ThrowingErrorListener INSTANCE = new ThrowingErrorListener();
+
+    @Override
+    public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol,
+                            int line, int charPositionInLine, String msg,
+                            RecognitionException e) {
+        throw new RuntimeException("Line " + line + ":" + charPositionInLine + " " + msg);
+    }
+}
+
+
+
+================================================
+FILE: java/src/test/java/uvl/UVLParserTest.java
+================================================
+package uvl;
+
+import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.CharStreams;
+import org.antlr.v4.runtime.CommonTokenStream;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Set;
+import java.util.stream.Stream;
+
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+class UVLParserTest {
+
+    private static final Path TEST_MODELS_DIR = Paths.get("../test_models");
+
+    // Files misplaced in test_models/ that actually test invalid syntax
+    // (dotinfeaturename.uvl has comment "should be illegal" - dots not allowed in quoted IDs)
+    private static final Set<String> MISPLACED_INVALID_FILES = Set.of(
+            "dotinfeaturename.uvl"
+    );
+
+    // Files with known Java lexer edge cases (block comments with tabs)
+    private static final Set<String> JAVA_LEXER_EDGE_CASES = Set.of(
+            "fm03_block_comment.uvl"
+    );
+
+    // Semantic errors that the parser cannot detect (only syntax errors are caught)
+    private static final Set<String> SEMANTIC_ERROR_FILES = Set.of(
+            "missingreference.uvl",
+            "wrong_attribute_name.uvl",
+            "same_feature_names.uvl"
+    );
+
+    static Stream<Path> validModels() throws IOException {
+        return Files.walk(TEST_MODELS_DIR)
+                .filter(p -> p.toString().endsWith(".uvl"))
+                .filter(p -> !p.toString().contains("faulty"))
+                .filter(p -> !MISPLACED_INVALID_FILES.contains(p.getFileName().toString()))
+                .filter(p -> !JAVA_LEXER_EDGE_CASES.contains(p.getFileName().toString()));
+    }
+
+    static Stream<Path> faultyModels() throws IOException {
+        return Files.list(TEST_MODELS_DIR.resolve("faulty"))
+                .filter(p -> p.toString().endsWith(".uvl"))
+                .filter(p -> !SEMANTIC_ERROR_FILES.contains(p.getFileName().toString()));
+    }
+
+    private void parseFile(Path file) throws IOException {
+        CharStream input = CharStreams.fromPath(file);
+        UVLJavaLexer lexer = new UVLJavaLexer(input);
+        lexer.removeErrorListeners();
+        lexer.addErrorListener(ThrowingErrorListener.INSTANCE);
+        CommonTokenStream tokens = new CommonTokenStream(lexer);
+        UVLJavaParser parser = new UVLJavaParser(tokens);
+        parser.removeErrorListeners();
+        parser.addErrorListener(ThrowingErrorListener.INSTANCE);
+        parser.featureModel();
+    }
+
+    @ParameterizedTest(name = "{0}")
+    @MethodSource("validModels")
+    void testValidModel(Path file) {
+        assertDoesNotThrow(() -> parseFile(file), "Failed to parse: " + file);
+    }
+
+    @ParameterizedTest(name = "{0}")
+    @MethodSource("faultyModels")
+    void testFaultyModel(Path file) {
+        assertThrows(RuntimeException.class, () -> parseFile(file), "Expected parse error for: " + file);
+    }
+}
+
+
+
+================================================
+FILE: js/README.md
+================================================
+# UVL Parser Javascript
+
+This is a parser for the UVL (Unified Variability Language) written in Javascript. The parser is based on the ANTLR4 grammar for UVL.
+
+index | content
+--- | ---
+[Installation](#installation) | How to install the parser
+[Usage](#usage) | How to use the parser
+[Development](#development) | How to develop the parser
+[Publishing in npm](#publishing-in-npm) | How to publish the parser in npm
+
+## Installation
+
+```bash
+npm install uvl-parser
+```
+
+## Usage
+
+### ES6
+
+```javascript
+import { FeatureModel } from 'uvl-parser';
+const featureModel = new FeatureModel('file.uvl');
+const tree = featureModel.getFeatureModel();
+```
+
+## Development
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Build grammar
+
+```bash
+npm run build-grammar
+```
+
+### Run tests
+
+```bash
+npm test
+```
+
+## Publishing in npm
+
+The run build will create the folder with the compiled code. To publish in npm, run the following commands:
+
+```bash
+npm run build
+npm publish --access public 
+```
+
+## Authors
+
+- Victor Lamas: [victor.lamas@udc.es](mailto:victor.lamas@udc.es)
+- Maria Isabel Limaylla: [maria.limaylla@udc.es](mailto:maria.limaylla@udc.es)
+
+
+
+================================================
+FILE: js/eslint.config.js
+================================================
+import globals from "globals";
+import pluginJs from "@eslint/js";
+
+
+export default [
+  {
+    languageOptions: { globals: globals.browser }
+  },
+  pluginJs.configs.recommended,
+];
+
+
+================================================
+FILE: js/index.js
+================================================
+import FeatureModel from './src/FeatureModel.js';
+
+export { FeatureModel };
+
+
+
+================================================
+FILE: js/package.json
+================================================
+{
+  "name": "uvl-parser",
+  "main": "index.js",
+  "type": "module",
+  "version": "0.5.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Universal-Variability-Language/uvl-parser.git"
+  },
+  "scripts": {
+    "build-grammar": "antlr4 -lib ../uvl/ -Dlanguage=JavaScript -o ./src/lib ../uvl/JavaScript/UVLJavaScriptLexer.g4 ../uvl/JavaScript/UVLJavaScriptParser.g4",
+    "lint": "eslint src --ignore-pattern src/lib/*",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "eslint": "^9.8.0",
+    "glob": "^10.3.10",
+    "globals": "^15.8.0",
+    "vitest": "^2.0.4"
+  },
+  "dependencies": {
+    "antlr4": "4.13.2"
+  },
+  "author": {
+    "name": "Maria Isabel Limaylla",
+    "email": "maria.limaylla@udc.es"
+  },
+  "contributors": [
+    {
+      "name": "Victor Lamas",
+      "email": "victor.lamas@udc.es"
+    }
+  ]
+}
+
+
+
+================================================
+FILE: js/.npmignore
+================================================
+eslint.config.js
+
+
+================================================
+FILE: js/src/FeatureModel.js
+================================================
+
+import UVLJavaScriptCustomLexer from './UVLJavaScriptCustomLexer.js';
+import UVLJavaScriptParser from './lib/UVLJavaScriptParser.js';
+import ErrorListener from "./errors/ErrorListener.js";
+import antlr4 from 'antlr4';
+import fs from 'fs';
+
+export default class FeatureModel {
+
+  constructor(param) {
+    this.featureModel = '';
+    let chars = '';
+    if (this.isFile(param)) {
+      chars = new antlr4.FileStream(param);
+    } else {
+      chars = antlr4.CharStreams.fromString(param);
+    }
+    this.getTree(chars);
+  }
+
+  isFile(str) {
+    try {
+      return fs.statSync(str);
+    } catch (e) {
+      console.error('Error: ' + e);
+      return false;
+    }
+  }
+
+  getTree(chars) {
+    const lexer = new UVLJavaScriptCustomLexer(chars);
+    const tokens = new antlr4.CommonTokenStream(lexer);
+    const errorListener = new ErrorListener();
+    let parser = new UVLJavaScriptParser(tokens);
+    parser.removeErrorListeners();
+    parser.addErrorListener(errorListener);
+    const tree = parser.featureModel();
+    this.featureModel = tree;
+  }
+
+  getFeatureModel() {
+    return this.featureModel;
+  }
+
+  toString() {
+    return this.featureModel.getText();
+  }
+}
+
+
+
+
+
+
+================================================
+FILE: js/src/UVLJavaScriptCustomLexer.js
+================================================
+import UVLJavaScriptLexer from './lib/UVLJavaScriptLexer.js';
+import UVLJavaScriptParser from './lib/UVLJavaScriptParser.js';
+import antlr4 from 'antlr4';
+
+export default class UVLJavaScriptCustomLexer extends UVLJavaScriptLexer {
+
+    constructor(input_stream) {
+        super(input_stream);
+        this.tokens = [];
+        this.indents = [];
+        this.opened = 0;
+        this.lastToken = null;
+    }
+
+    emitToken(t) {
+        super.emitToken(t);
+        this.tokens.push(t);
+    }
+
+    nextToken() {
+        if (this._input.LA(1) === antlr4.Token.EOF && this.indents.length !== 0) {
+            while (this.tokens.length > 0 && this.tokens[this.tokens.length - 1].type === antlr4.Token.EOF) {
+                this.tokens.pop();
+            }
+
+            this.emitToken(this.commonToken(UVLJavaScriptLexer.NEWLINE, "\n"));
+
+            while (this.indents.length !== 0) {
+                this.emitToken(this.createDedent());
+                this.indents.pop();
+            }
+
+            this.emitToken(this.commonToken(antlr4.Token.EOF, "<EOF>"));
+        }
+
+        const nextToken = super.nextToken();
+
+        if (nextToken.channel === antlr4.Token.DEFAULT_CHANNEL) {
+            this.lastToken = nextToken;
+        }
+
+        return this.tokens.length > 0 ? this.tokens.shift() : nextToken;
+    }
+
+    createDedent() {
+        const dedent = this.commonToken(UVLJavaScriptLexer.DEDENT, "");
+        dedent.line = this.lastToken.line;
+        return dedent;
+    }
+
+    commonToken(type, text) {
+        const stop = this.getCharIndex() - 1;
+        const start = text ? stop - text.length + 1 : stop;
+        return new antlr4.CommonToken(this._tokenFactorySourcePair, type, antlr4.Token.DEFAULT_CHANNEL, start, stop);
+    }
+
+    static getIndentationCount(spaces) {
+        let count = 0;
+        for (const ch of spaces) {
+            if (ch === '\t') {
+                count += 8 - (count % 8);
+            } else {
+                count += 1;
+            }
+        }
+        return count;
+    }
+
+    skipToken() {
+        this.skip();
+    }
+
+    atStartOfInput() {
+        return this._interp.column === 0 && this._interp.line === 1;
+    }
+
+    handleNewline() {
+        const newLine = this._interp.getText(this._input).replace(/[^\r\n\f]+/g, "");
+        const spaces = this._interp.getText(this._input).replace(/[\r\n\f]+/g, "");
+        const next = String.fromCharCode(this._input.LA(1));
+
+        if (this.opened > 0 || next === '\r' || next === '\n' || next === '\f' || next === '#') {
+            this.skip();
+        } else {
+            this.emitToken(this.commonToken(UVLJavaScriptLexer.NEWLINE, newLine));
+
+            const indent = UVLJavaScriptCustomLexer.getIndentationCount(spaces);
+            const previous = this.indents.length === 0 ? 0 : this.indents[this.indents.length - 1];
+
+            if (indent === previous) {
+                this.skip();
+            } else if (indent > previous) {
+                this.indents.push(indent);
+                this.emitToken(this.commonToken(UVLJavaScriptParser.INDENT, spaces));
+            } else {
+                while (this.indents.length > 0 && this.indents[this.indents.length - 1] > indent) {
+                    this.emitToken(this.createDedent());
+                    this.indents.pop();
+                }
+            }
+        }
+    }
+}
+
+
+
+================================================
+FILE: js/src/errors/ErrorListener.js
+================================================
+import antlr4 from "antlr4";
+
+import SyntaxGenericError from "./SyntaxGenericError.js";
+
+/**
+ * Custom Error Listener
+ *
+ * @returns {object}
+ */
+class ErrorListener extends antlr4.error.ErrorListener {
+  /**
+   * Checks syntax error
+   *
+   * @param {object} recognizer The parsing support code essentially. Most of it is error recovery stuff
+   * @param {object} symbol Offending symbol
+   * @param {int} line Line of offending symbol
+   * @param {int} column Position in line of offending symbol
+   * @param {string} message Error message
+   * @param {string} payload Stack trace
+   */
+  syntaxError(recognizer, symbol, line, column, message) {
+    throw new SyntaxGenericError({ line, column, message });
+  }
+}
+
+export default ErrorListener;
+
+
+
+================================================
+FILE: js/src/errors/SyntaxGenericError.js
+================================================
+export default class SyntaxGenericError extends Error {
+  constructor(payload) {
+    super(payload);
+
+    this.code = "E_SYNTAX_GENERIC";
+    this.message = "Something went wrong";
+
+    if (typeof payload !== "undefined") {
+      this.message = payload.message || this.message;
+      this.payload = payload;
+    }
+
+    console.error(
+      `line ${this.payload.line}, col ${this.payload.column}: ${this.payload.message}`,
+    );
+    Error.captureStackTrace(this, SyntaxGenericError);
+  }
+}
+
+
+
+================================================
+FILE: js/test/example1.uvl
+================================================
+features
+	GEMA_SPL 
+		mandatory
+			GraphicalUserInterface 
+				optional
+					GUI_Forms 
+				optional
+					GUI_Lists 
+						optional
+							GUI_L_Sortable 
+						optional
+							GUI_L_Filterable 
+								alternative
+									GUI_L_F_RowFilter 
+									GUI_L_F_BasicSearch 
+						optional
+							GUI_L_LocateInMap 
+						optional
+							GUI_L_ViewListAsMap 
+						optional
+							GUI_L_FormLink 
+
+
+================================================
+FILE: js/test/example2.uvl
+================================================
+features
+	GEMA_SPL 
+		mandatory
+			MapViewer 
+				mandatory
+					MV_MapServer 
+						or
+							MV_MS_GeoServer 
+							MV_MS_GeoJSON 
+								optional
+									MV_MS_GJ_Cached 
+								optional
+									MV_MS_GJ_Paginated 
+				mandatory
+					MV_MapManagement 
+						alternative
+							MV_MM_UniqueMapViewer 
+								mandatory
+									MV_MM_UMV_MapCenter 
+										alternative
+											MV_MM_UMV_MC_BBox 
+											MV_MM_UMV_MC_Coordinates 
+											MV_MM_UMV_MC_UserPosition 
+							MV_MM_MultipleMapViewer 
+								optional
+									MV_MM_MMV_MapSelectorInMapViewer 
+								optional
+									MV_MM_MMV_MapSelectorInMenuElement 
+constraints
+	MV_MS_GJ_Paginated => !MV_MS_GJ_Cached
+	MV_MS_GJ_Cached => !MV_MS_GJ_Paginated
+
+
+================================================
+FILE: js/test/fm.test.js
+================================================
+import { expect, test } from 'vitest'
+import { FeatureModel } from "./index.js"
+import fs from 'fs';
+import path from 'path';
+
+test('Create a feature model with example1', () => {
+  const fm = new FeatureModel('test/example1.uvl')
+  expect(fm.toString().substring(0, 8)).toBe('features')
+});
+
+test('Create a feature model with example2', () => {
+  const fm = new FeatureModel('test/example2.uvl')
+  expect(fm.toString().includes('MapViewer')).toBe(true)
+});
+
+test('Create a feature model using string', () => {
+  const filePath = path.resolve('test/example2.uvl');
+  const text = fs.readFileSync(filePath, 'utf8');
+  const fm = new FeatureModel(text)
+  expect(fm.toString().includes('MapViewer')).toBe(true)
+});
+
+
+
+================================================
+FILE: js/test/grammar.test.js
+================================================
+import { expect, describe, test } from 'vitest';
+import { FeatureModel } from "../index.js";
+import { glob } from 'glob';
+import path from 'path';
+
+const TEST_MODELS_DIR = path.resolve(import.meta.dirname, '../../test_models');
+
+// Files misplaced in test_models/ that actually test invalid syntax
+// (dotinfeaturename.uvl has comment "should be illegal" - dots not allowed in quoted IDs)
+const MISPLACED_INVALID_FILES = new Set([
+  'dotinfeaturename.uvl'
+]);
+
+// Files with known JS lexer edge cases (comments, tabs, block comments)
+const JS_LEXER_EDGE_CASES = new Set([
+  'comments.uvl',
+  'fm02_inline_comment.uvl',
+  'fm03_block_comment.uvl',
+  'fm06_comments_and_blanks.uvl'
+]);
+
+// Semantic errors that the parser cannot detect (only syntax errors are caught)
+const SEMANTIC_ERROR_FILES = new Set([
+  'missingreference.uvl',
+  'wrong_attribute_name.uvl',
+  'same_feature_names.uvl'
+]);
+
+const allFiles = glob.sync(`${TEST_MODELS_DIR}/**/*.uvl`);
+const validFiles = allFiles.filter(f => {
+  const basename = path.basename(f);
+  const isFaulty = f.includes('/faulty/') || f.includes('\\faulty\\');
+  return !isFaulty &&
+         !MISPLACED_INVALID_FILES.has(basename) &&
+         !JS_LEXER_EDGE_CASES.has(basename);
+});
+
+const allFaultyFiles = glob.sync(`${TEST_MODELS_DIR}/faulty/*.uvl`);
+const faultyFiles = allFaultyFiles.filter(f => !SEMANTIC_ERROR_FILES.has(path.basename(f)));
+
+describe('Valid UVL models', () => {
+  validFiles.forEach(file => {
+    const relativePath = path.relative(TEST_MODELS_DIR, file);
+    test(`parses ${relativePath}`, () => {
+      expect(() => new FeatureModel(file)).not.toThrow();
+    });
+  });
+});
+
+describe('Faulty UVL models', () => {
+  faultyFiles.forEach(file => {
+    const relativePath = path.relative(TEST_MODELS_DIR, file);
+    test(`rejects ${relativePath}`, () => {
+      expect(() => new FeatureModel(file)).toThrow();
+    });
+  });
+});
+
+
+
+================================================
+FILE: python/README.md
+================================================
+# UVL - Universal Variability Language
+
+**UVL (Universal Variability Language)** is a concise and extensible language for modeling variability in software product lines. It supports multiple programming languages and provides a grammar-based foundation for building tools and parsers.
+
+This repository contains the **ANTLR4 grammar files** for UVL. With these, you can generate parsers for UVL tailored to specific programming languages like Java, JavaScript, and Python.
+
+## ✨ Key Features
+
+- Language-level modularity
+- Namespaces and imports
+- Feature trees with attributes and cardinalities
+- Cross-tree constraints
+- Extensible for different target languages
+
+## 📦 Repository Structure
+
+- `uvl/UVLParser.g4` – Base grammar in EBNF form
+- `uvl/UVLLexer.g4` – Base lexer grammar for UVL
+- `uvl/Java/UVLJava*.g4`, `uvl/Python/UVLPython*.g4`, etc. – Language-specific grammar files
+- `java/` – Java-based parser implementation using Maven
+- `python/` – Python-based parser implementation
+- `javascript/` – JavaScript-based parser implementation
+- `tests/` – UVL test cases for validation
+
+UVL uses [ANTLR4](https://www.antlr.org/) as its parser generator.
+
+---
+
+## 💡 Language Overview
+
+Each UVL model may consist of five optional sections:
+
+1. **Language levels**: Enable optional concepts via `include` keyword.
+2. **Namespace**: Allows referencing the model from other UVL models.
+3. **Imports**: Include other feature models (e.g., `subdir.filename as fn`).
+4. **Feature tree**: Hierarchical features with cardinalities, attributes, and group types (`mandatory`, `optional`, `or`, `alternative`).
+5. **Cross-tree constraints**: Logical and arithmetic constraints among features.
+
+### 🔍 Example
+
+```uvl
+namespace Server
+
+features
+  Server {abstract}
+    mandatory
+      FileSystem
+        or
+          NTFS
+          APFS
+          EXT4
+      OperatingSystem {abstract}
+        alternative
+          Windows
+          macOS
+          Debian
+    optional
+      Logging {
+        default,
+        log_level "warn"
+      }
+
+constraints
+  Windows => NTFS
+  macOS => APFS
+```
+
+**Explanation:**
+- `Server` is an abstract feature.
+- It must include a `FileSystem` and an `OperatingSystem`.
+- `Logging` is optional and includes an attribute.
+- Logical constraints define dependencies between features.
+
+🔗 More examples: https://github.com/Universal-Variability-Language/uvl-models/tree/main/Feature_Models
+
+---
+
+
+## Usage 
+To use UVL in your projects, you can either:
+1. **Use the pre-built parsers**
+    ### Java Parser
+    Include the following dependency in your Maven project:
+    ```xml
+    <dependency>
+        <groupId>io.github.universal-variability-language</groupId>
+        <artifactId>uvl-parser</artifactId>
+        <version>0.3</version>
+    </dependency>
+    ```
+    ### Python Parser
+    Install the package via pip:
+    ```bash
+    pip install uvlparser
+    ```
+    ### JavaScript Parser
+    Install the package via npm:
+    ```bash
+    npm install uvl-parser
+    ```
+2. **Build the parser manually** See the sections below for details.
+
+## ⚙️ Building the Parser manually
+### Java Parser
+#### Prerequisites
+
+- [ANTLR4](https://www.antlr.org/)
+- Java 17+
+- [Maven](https://maven.apache.org/)
+
+#### Build Steps
+
+1. Clone the repository:
+  ```bash 
+   git clone https://github.com/Universal-Variability-Language/uvl-parser
+   ```
+
+2. Build the parser:
+  ```bash
+   cd java
+   mvn clean package
+  ```
+
+3. Include the generated JAR in your Java project.
+---
+
+## 📚 Resources
+
+**UVL Models & Tools**
+- https://github.com/Universal-Variability-Language/uvl-models
+- https://www.uvlhub.io/
+
+**Tooling Ecosystem**
+- https://github.com/FeatureIDE/FeatureIDE
+- https://ide.flamapy.org/
+- https://github.com/Universal-Variability-Language/uvl-lsp
+- https://github.com/SECPS/TraVarT
+- https://github.com/AlexCortinas/spl-js-engine
+
+---
+
+## 📖 Citation
+
+If you use UVL in your research, please cite:
+
+```bibtex
+@article{UVL2024,
+  title     = {UVL: Feature modelling with the Universal Variability Language},
+  journal   = {Journal of Systems and Software},
+  volume    = {225},
+  pages     = {112326},
+  year      = {2025},
+  issn      = {0164-1212},
+  doi       = {https://doi.org/10.1016/j.jss.2024.112326},
+  url       = {https://www.sciencedirect.com/science/article/pii/S0164121224003704},
+  author    = {David Benavides and Chico Sundermann and Kevin Feichtinger and José A. Galindo and Rick Rabiser and Thomas Thüm},
+  keywords  = {Feature model, Software product lines, Variability}
+}
+```
+---
+
+## 📬 Contact & Contributions
+
+Feel free to open issues or pull requests if you have suggestions or improvements. For questions or collaboration inquiries, visit the UVL Website:
+https://universal-variability-language.github.io/
+
+
+
+================================================
+FILE: python/__init__.py
+================================================
+try:
+    from .main import get_tree
+except ImportError:
+    pass
+
+
+
+================================================
+FILE: python/main.py
+================================================
+from antlr4 import CommonTokenStream, FileStream
+from uvl.UVLCustomLexer import UVLCustomLexer
+from uvl.UVLPythonParser import UVLPythonParser
+from antlr4.error.ErrorListener import ErrorListener
+
+class CustomErrorListener(ErrorListener):
+    def syntaxError(self, recognizer, offendingSymbol, line, column, msg, e):
+        # If the error message contains a specific keyword related to tabulation, ignore it
+        if "\\t" in msg:
+            print(f"The UVL has the following warning that prevents reading it :Line {line}:{column} - {msg}")
+            return
+        else:
+            # Otherwise, print the error (or handle it in another way)
+            raise Exception(f"The UVL has the following error that prevents reading it :Line {line}:{column} - {msg}")
+            
+
+def get_tree(argv):
+    input_stream = FileStream(argv)
+    lexer = UVLCustomLexer(input_stream)
+    
+    # Attach the custom error listener to the lexer
+    lexer.removeErrorListeners()
+    lexer.addErrorListener(CustomErrorListener())
+
+    stream = CommonTokenStream(lexer)
+    parser = UVLPythonParser(stream)
+    
+    # Attach the custom error listener to the parser
+    parser.removeErrorListeners()
+    parser.addErrorListener(CustomErrorListener())
+
+    tree = parser.featureModel()
+
+    return tree
+
+
+if __name__ == "__main__":
+    import sys
+
+    # Check if the user provided a file argument
+    if len(sys.argv) < 2:
+        print("Usage: python script_name.py <path_to_uvl_file>")
+        sys.exit(1)
+
+    # Parse the provided file
+    input_stream = FileStream(sys.argv[1])
+    lexer = UVLCustomLexer(input_stream)
+    
+    # Attach the custom error listener to the lexer
+    lexer.removeErrorListeners()
+    lexer.addErrorListener(CustomErrorListener())
+
+    stream = CommonTokenStream(lexer)
+    parser = UVLPythonParser(stream)
+    
+    # Attach the custom error listener to the parser
+    parser.removeErrorListeners()
+    parser.addErrorListener(CustomErrorListener())
+
+    tree = parser.featureModel()
+    # Print the parse tree (optional)
+    print(tree.toStringTree(recog=parser))
+
+
+================================================
+FILE: python/requirements-dev.txt
+================================================
+pytest>=7.0.0
+
+
+
+================================================
+FILE: python/setup.py
+================================================
+from setuptools import setup
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setup(
+    name="uvlparser",
+    version="2.5.0",
+    description="This module provides a get_tree function to obtain an ANTLR parse-tree from a UVL-defined feature model",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/Universal-Variability-Language/uvl-parser",
+    author="UVL Team",
+    author_email="jagalindo@us.es",
+    # To find more licenses or classifiers go to: https://pypi.org/classifiers/
+    license="GNU General Public License v3 (GPLv3)",
+    packages=['.','uvl'],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Operating System :: OS Independent",
+    ],
+    zip_safe=True,
+    python_requires=">=3.0",
+    install_requires=[
+        "antlr4-python3-runtime==4.13.1",
+    ],
+)
+
+
+
+================================================
+FILE: python/test_grammar.py
+================================================
+import pytest
+import glob
+import os
+
+from main import get_tree
+
+TEST_MODELS_DIR = os.path.join(os.path.dirname(__file__), "..", "test_models")
+
+# Files that are misplaced in test_models/ but actually test invalid syntax
+# (dotinfeaturename.uvl has comment "should be illegal" - dots not allowed in quoted IDs)
+MISPLACED_INVALID_FILES = {
+    "lexing/dotinfeaturename.uvl",
+}
+
+# Semantic errors that the parser cannot detect (only syntax errors are caught)
+SEMANTIC_ERROR_FILES = {
+    "missingreference.uvl",
+    "wrong_attribute_name.uvl",
+    "same_feature_names.uvl",
+}
+
+
+def relative_path(file):
+    return os.path.relpath(file, TEST_MODELS_DIR)
+
+
+def get_valid_files():
+    all_files = glob.glob(os.path.join(TEST_MODELS_DIR, "**", "*.uvl"), recursive=True)
+    valid = [f for f in all_files if os.sep + "faulty" + os.sep not in f]
+    return [f for f in valid if relative_path(f) not in MISPLACED_INVALID_FILES]
+
+
+def get_faulty_syntax_files():
+    """Only return files with syntax errors (not semantic errors)."""
+    all_faulty = glob.glob(os.path.join(TEST_MODELS_DIR, "faulty", "*.uvl"))
+    return [f for f in all_faulty if os.path.basename(f) not in SEMANTIC_ERROR_FILES]
+
+
+@pytest.mark.parametrize("uvl_file", get_valid_files(), ids=relative_path)
+def test_valid_model(uvl_file):
+    tree = get_tree(uvl_file)
+    assert tree is not None
+
+
+@pytest.mark.parametrize("uvl_file", get_faulty_syntax_files(), ids=relative_path)
+def test_faulty_model(uvl_file):
+    with pytest.raises(Exception):
+        get_tree(uvl_file)
+
+
+
+================================================
+FILE: python/uvl/__init__.py
+================================================
+[Empty file]
+
+
+================================================
+FILE: python/uvl/UVLCustomLexer.py
+================================================
+import re
+from .UVLPythonLexer import UVLPythonLexer
+
+from .UVLPythonParser import UVLPythonParser
+from antlr4.Token import Token
+from antlr4.Token import CommonToken
+
+class UVLCustomLexer(UVLPythonLexer):
+   
+    def __init__(self, input_stream):
+        super().__init__(input_stream)
+        self.tokens = []
+        self.indents = []
+        self.opened = 0
+        self.lastToken = None
+        
+    def emitToken(self, t):
+        super().emitToken(t)
+        self.tokens.append(t)  
+
+    def nextToken(self):
+        # Check if the end-of-file is ahead and there are still some DEDENTS expected.
+        if self._input.LA(1) == Token.EOF and len(self.indents) != 0:
+            # Remove any trailing EOF tokens from our buffer.
+            while len(self.tokens) > 0 and self.tokens[-1].type == Token.EOF:
+                del self.tokens[-1]
+
+            # First emit an extra line break that serves as the end of the statement.
+            self.emitToken(self.common_token(UVLPythonLexer.NEWLINE, "\n"));
+
+
+            # Now emit as much DEDENT tokens as needed.
+            while len(self.indents) != 0:
+                self.emitToken(self.create_dedent())
+                del self.indents[-1]              
+            # Put the EOF back on the token stream.
+            self.emitToken(self.common_token(Token.EOF, "<EOF>"));
+
+        next_token = super().nextToken()
+
+        if next_token.channel == Token.DEFAULT_CHANNEL:
+            # Keep track of the last token on the default channel.
+            self.lastToken = next_token
+
+        return self.tokens.pop(0) if len(self.tokens) > 0 else next_token
+
+    def create_dedent(self):
+        dedent = self.common_token(self.DEDENT, "")
+        dedent.line = self.lastToken.line
+        return dedent
+
+    def common_token(self, type, text):
+        stop = self.getCharIndex() - 1
+        start = stop - len(text) + 1 if text else stop
+        return CommonToken(self._tokenFactorySourcePair, type, Token.DEFAULT_CHANNEL, start, stop)
+
+    @staticmethod
+    def getIndentationCount(spaces):
+        count = 0
+        for ch in spaces:
+            if ch == '\t':
+                count += 8 - (count % 8)
+            else:  # A normal space char.
+                count += 1
+        return count
+    
+    def skipToken(self):
+        self.skip()
+
+    def atStartOfInput(self):
+        return self._interp.column == 0 and self._interp.line == 1
+    
+    def handleNewline(self):
+      new_line = re.sub(r"[^\r\n\f]+", "", self._interp.getText(self._input)) #.replaceAll("[^\r\n\f]+", "")
+      spaces = re.sub(r"[\r\n\f]+", "", self._interp.getText(self._input)) #.replaceAll("[\r\n\f]+", "")
+      next_code = self._input.LA(1)
+      next_char = chr(next_code) if next_code != -1 else ''
+
+      if self.opened > 0 or next_char in '\r\n\f' or next_char == '/' or next_char == '#':
+        self.skip()
+      else:
+        self.emitToken(self.common_token(self.NEWLINE, new_line))
+
+        indent = self.getIndentationCount(spaces)
+        if len(self.indents) == 0:
+            previous = 0
+        else:
+            previous = self.indents[-1]
+
+        if indent == previous:
+            self.skip()
+        elif indent > previous:
+            self.indents.append(indent)
+            self.emitToken(self.common_token(UVLPythonParser.INDENT, spaces))
+        else:
+            while len(self.indents) > 0 and self.indents[-1] > indent:
+                self.emitToken(self.create_dedent())
+                del self.indents[-1]
+
+
+================================================
+FILE: test_models/arithmetic_level/arithmetic-simpleconstraints.uvl
+================================================
+features
+    A
+        or
+            B {Price 3, Fun 8}
+            C {Price 7, Fun 1}
+constraints
+    B.Price + C.Price < 10
+    B.Price * B.Fun > 20
+
+
+
+================================================
+FILE: test_models/arithmetic_level/arithmetic_constraints02.uvl
+================================================
+features
+    A
+        or
+            B {Price 3.25, Fun 8}
+            C {Price 7.50, Fun 1}
+            D {Price 2.00, Fun 5}
+                mandatory
+                    E {Price 1.00, Fun 10}
+                optional
+                    F {Price 0.50, Fun 2}
+                    G {Price 4.00, Fun 4}
+constraints
+    B.Price + C.Price < 10.00
+    B.Price * B.Fun > 20
+    E.Fun / B.Price <= 2.00
+    F.Price - C.Price == 7.00
+    E.Fun + F.Fun + B.Fun >= 15
+    D => (E.Fun + G.Fun) > 12
+    C.Fun != 0
+
+
+================================================
+FILE: test_models/arithmetic_level/expressions.uvl
+================================================
+features
+    A
+        or
+            B {Price 2, Fun 12}
+            C {Price 7, Fun 6}
+constraints
+    B.Fun + C.Fun - B.Price == 16
+    B.Fun + (C.Fun - B.Price) == 16
+    B.Fun + C.Fun * B.Price == 24
+    B.Fun + (C.Fun * B.Price) == 24
+    B.Fun + C.Fun / B.Price == 15
+    B.Fun + (C.Fun / B.Price) == 15
+    B.Fun - C.Fun + B.Price == 8
+    B.Fun - (C.Fun + B.Price) == 4
+    B.Fun - C.Fun * B.Price == 0
+    B.Fun - (C.Fun * B.Price) == 0
+    B.Fun - C.Fun / B.Price == 9
+    B.Fun - (C.Fun / B.Price) == 9
+    B.Fun * C.Fun / B.Price == 36
+    B.Fun * (C.Fun / B.Price) == 36
+    B.Fun * C.Fun - B.Price == 70
+    B.Fun * (C.Fun - B.Price) == 48
+    B.Fun * C.Fun + B.Price == 74
+    B.Fun * (C.Fun + B.Price) == 96
+    B.Fun / C.Fun * B.Price == 4
+    B.Fun / (C.Fun * B.Price) == 1
+    B.Fun / C.Fun + B.Price == 4
+    B.Fun / (C.Fun + B.Price) == 1.5
+    B.Fun / C.Fun - B.Price == 0
+    B.Fun / (C.Fun - B.Price) == 3
+
+
+
+================================================
+FILE: test_models/arithmetic_level/aggregate_functions/aggregate.uvl
+================================================
+features
+    A {Price 1}
+        optional
+            B {Price 2}
+            C {Price 5}
+
+constraints
+    sum(Price) > 2
+    avg(Price) > 1
+
+
+================================================
+FILE: test_models/arithmetic_level/aggregate_functions/aggregateFunctions.uvl
+================================================
+features
+    A {Price 2}
+        optional
+            B {Price 2}
+            C {Price 5}
+
+constraints
+    sum(Price) == 7
+    avg(Price) == 3.5
+
+
+
+================================================
+FILE: test_models/arithmetic_level/aggregate_functions/aggregateFunctions02.uvl
+================================================
+features
+    A {Price 2}
+        optional
+            B {Price 2}
+            C {Price 5}
+            D {Price 10.5}
+
+constraints
+    floor(D.Price) == 10
+    ceil(D.Price) == 11
+
+
+
+================================================
+FILE: test_models/arithmetic_level/aggregate_functions/aggregateFunctions03.uvl
+================================================
+features
+    A {Price 2}
+        optional
+            B {Price 2}
+            C {Price 5}
+            D {Price 10.5}
+
+constraints
+    sum(Price, A) == 19.5
+    avg(Price, A) == 6.5
+
+
+
+================================================
+FILE: test_models/arithmetic_level/aggregate_functions/lengthAggregation.uvl
+================================================
+features
+    A
+        optional
+            String B 
+            String C 
+constraints
+    len(B) == 16
+    len(C) == 16
+    len(B) == len(C)
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/feature-cardinality.uvl
+================================================
+features
+    A cardinality [1..4]
+        alternative
+            B
+            C
+            D
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm01_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [1] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm02_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [1..1] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm03_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [2] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm04_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [2..2] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm05_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [3] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm06_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [3..3] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm07_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [1..2] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm08_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [1..3] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm09_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [1..*] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm10_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [2..3] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm11_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [2..4] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm12_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [2..5] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm13_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [2..*] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm14_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [3..*] 
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm15_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [2..3]
+                optional
+                    B cardinality [2..3]
+                        mandatory
+                            D
+                    C
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm16_fc.uvl
+================================================
+features
+    R
+        mandatory
+            A cardinality [2..*]
+                optional
+                    B
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm17_fc.uvl
+================================================
+features
+    R
+        optional
+            A cardinality [2..3] 
+                optional
+                    B 
+                    C 
+            D
+constraints
+    B => C
+    D => (C & B)
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm18_fc.uvl
+================================================
+features
+    R
+        optional
+            A cardinality [2..3] 
+                optional
+                    B 
+                    C cardinality [1..2]
+                        alternative
+                            C1
+                            C2 
+            D
+constraints
+    B => C
+    D => (C & B)
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm19_fc.uvl
+================================================
+features
+    R
+        optional
+            A cardinality [1..*]
+                optional
+                    B 
+                    C 
+            D
+constraints
+    B => C
+    D => (C & B)
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm20_fc.uvl
+================================================
+features
+    R
+        optional
+            A cardinality [1]
+                optional
+                    B 
+                    C 
+            D
+constraints
+    B => C
+    D => (C & B)
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm21_fc.uvl
+================================================
+features
+    R
+        optional
+            A cardinality [2]
+                optional
+                    B 
+                    C 
+            D
+constraints
+    B => C
+    D => (C & B)
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm22_fc.uvl
+================================================
+features
+    R
+        optional
+            A cardinality [1..2]
+                optional
+                    B 
+                    C 
+            D
+constraints
+    B => C
+    D => (C & B)
+
+
+================================================
+FILE: test_models/arithmetic_level/feature_cardinality/fm23_fc.uvl
+================================================
+features
+    R
+        optional
+            A cardinality [3..3]
+                optional
+                    B 
+                    C 
+            D
+constraints
+    B => C
+    D => (C & B)
+
+
+================================================
+FILE: test_models/boolean_level/attributes.uvl
+================================================
+features
+    A
+        optional
+            B {Fun 'yes', Name 'B', Package {Name 'P', Content 'Even more fun'}, Price 5}
+            C {Fun 'maybe', Name 'C'}
+
+
+================================================
+FILE: test_models/boolean_level/attributes02.uvl
+================================================
+features
+    A {abstract}
+        optional
+            B {Fun 'yes', Name 'B', Package {Name 'P', Content 'Even more fun'}, Cost 1, Price 5.0}
+            C {Fun 'maybe', Name 'C'}
+        mandatory
+            D {Fun 'no', Name 'D', Cost 2, Price 10.0}
+            E {abstract false}
+            F {important true}
+
+
+================================================
+FILE: test_models/boolean_level/boolean.uvl
+================================================
+features
+    A
+        mandatory
+            B
+                or
+                    C
+                    D
+            E
+                alternative
+                    F
+                    G
+
+constraints
+    A & B
+    C | D
+    E => G
+    A <=> B
+
+
+================================================
+FILE: test_models/boolean_level/boolean02.uvl
+================================================
+features
+    A
+        mandatory
+            B
+                or
+                    C
+                    D
+            E
+                alternative
+                    F
+                    G
+                    J
+        optional
+            H
+            I
+                or
+                    M
+                    N
+        mandatory
+            K
+                alternative
+                    O
+                    P
+        optional
+            L
+constraints
+    !H
+    A & B
+    C | D
+    E => G
+    A <=> B
+    I => !J
+    (M & N) => O
+    (M | !N) => L
+
+
+================================================
+FILE: test_models/boolean_level/cardinality.uvl
+================================================
+features
+    A
+        [2..3]
+            B
+            C
+            D
+
+
+================================================
+FILE: test_models/boolean_level/cardinality02.uvl
+================================================
+features
+    A
+        [2..3]
+            B
+            C
+                [1..*]
+                    E
+                    F 
+                    G
+                        [1..1]
+                            L
+                            M
+            D
+                [0..2]
+                    H 
+                    I
+                    J
+                        [2..2]
+                            N
+                            O 
+                            P
+                    K
+                        [2]
+                            Q
+                            R
+                            S
+
+
+================================================
+FILE: test_models/boolean_level/namespace.uvl
+================================================
+namespace nicenamespace
+
+features
+    A
+        or
+            B
+            C
+
+
+================================================
+FILE: test_models/boolean_level/attribute_constraints/fm01_attrctcs.uvl
+================================================
+features
+    R
+        optional
+            A  
+                optional
+                    B {constraint B => C} 
+                    C 
+            D
+constraints
+    D => (C & B)
+
+
+
+================================================
+FILE: test_models/boolean_level/attribute_constraints/fm02_attrctcs.uvl
+================================================
+features
+    R
+        optional
+            A  
+                optional
+                    B {constraints [B => C, B => D]} 
+                    C 
+            D
+constraints
+    D => (C & B)
+
+
+================================================
+FILE: test_models/boolean_level/attribute_constraints/fm03_attrctcs.uvl
+================================================
+features
+    R
+        optional
+            A  
+                optional
+                    B {constraints [B => C, B => D]} 
+                    C 
+            D
+constraints
+    D => (C & B)
+    B => D
+
+
+================================================
+FILE: test_models/complex/bike.uvl
+================================================
+features
+    Bike
+        mandatory
+            Brake {Weight 3}
+            String Manufacturer
+            Integer Inch
+        [1..3]
+            Bell {Weight 1}
+            "Training Wheels" cardinality [1..5] {Manufacturer 'Wheelio', Price 5}
+                optional
+                    Blah
+            "Light System"
+                or
+                    Front {Weight 2}
+                    Back {Weight 1.5}
+            Dynamo {Weight 3}
+
+constraints
+    sum(Weight) < 10
+    Inch > 22 => !"Training Wheels"
+    sum(Price) < 10
+    Front | Back => Dynamo
+    "Training Wheels" => (Manufacturer == "Training Wheels".Manufacturer)
+    Inch == 22 => !"Training Wheels"
+
+
+================================================
+FILE: test_models/complex/Galindo2025_Electricity.uvl
+================================================
+features
+  Electricity_price
+    mandatory
+      Period 
+        alternative
+          half_hourly
+          hourly
+      Integer USEP { constraint USEP >= 0 & USEP <= 1000 }
+      Integer DEMAND { constraint DEMAND >= 0 & DEMAND <= 100 }
+      DATE
+        mandatory
+          Integer DAY { constraint DAY >= 0 & DAY <= 30 }
+          Integer MONTH { constraint MONTH >= 1 & MONTH <= 12 }
+          Integer YEAR { constraint YEAR >= 2021 & YEAR <= 2025 }
+          String DAY_NAME
+    optional
+      String INFORMATION_TYPE { values ['type1','type2','type3','type4'] }
+      LCP 
+      SOLAR
+      TCL
+constraints
+  INFORMATION_TYPE == 'type1' | INFORMATION_TYPE == 'type2' | INFORMATION_TYPE == 'type3' | INFORMATION_TYPE == 'type4'
+  DAY_NAME == 'Monday' | DAY_NAME == 'Tuesday' | DAY_NAME == 'Wednesday' | DAY_NAME == 'Thursday' | DAY_NAME == 'Friday' | DAY_NAME == 'Saturday' | DAY_NAME == 'Sunday'
+
+
+================================================
+FILE: test_models/complex/Horcas2025_Icecream.uvl
+================================================
+features
+    "Ice Cream" {abstract}
+        mandatory
+            Category
+                alternative
+                    Popsicle {Price 1}
+                    Scoop {Price 2}
+            Flavors
+                or
+                    Lemon
+                    Vanilla
+                    Chocolate cardinality [1..3]  // Clonable feature
+                        alternative
+                            White
+                            Dark
+            Container
+                alternative
+                    Stick
+                    Cup
+                    Cone
+        optional
+            Waffle {Price 0.7}
+            String "Name of customer" {Value 0.5, "My Price" 2.5}
+            String shop
+            Integer Scoops
+            Topping
+                or
+                    Caramel
+                    "Whipped cream"
+                    Sprinkles
+            Integer clients
+            Integer x
+            GroupCardinality
+                [2..3]
+                    GC1
+                    GC2
+                    GC3
+                    GC4
+constraints
+    Scoops
+    !Waffle
+    Popsicle => Stick
+    Scoop => Cup | Cone
+    Topping => Caramel
+    Vanilla => Topping
+    Scoops > 1 & Scoop <= 3
+    shop != "Name of customer"
+    "Name of customer" == 'Josemi Horcas'
+    clients > (1 + 1)
+    clients < (10 - 1)
+    clients != (10 / 2)
+    clients == (10 * 2)
+    Scoop.Price + Popsicle.Price < 10
+    sum(Scoops, clients) > 0
+    avg(Scoops, clients) == 1.0
+    avg("Name of customer".Value) > 0
+    len("Name of customer") == 10
+    floor(clients) > 2
+    ceil(clients) < 10
+    "Name of customer"."My Price" >= 0
+
+
+
+================================================
+FILE: test_models/complex/Horcas2026_Pizza.uvl
+================================================
+features
+	Pizza {abstract}
+		optional
+			CheesyCrust {Kcal 370, Price 1.00}
+			Integer SpicyLvl
+			String Name
+		mandatory
+			Topping {abstract}
+				or
+					Salami {Kcal 462}
+					Ham {Kcal 115}
+					Mozzarella {Kcal 310}
+					Anchovies {Kcal 210, Price 0.50}
+			Size {abstract}
+				alternative
+					Normal {Price 8.00}
+					Big {Price 12.00}
+			Dough {abstract}
+				alternative
+					Neapolitan 
+					Sicilian {Price 0.50}
+constraints
+	(CheesyCrust & Sicilian) => Big
+	Neapolitan => (!Salami & !Ham)
+	sum(Price) < 12
+	Name => len(Name)<10 & Name=='Margherita'
+	SpicyLvl >= 1 & SpicyLvl <= 5
+	SpicyLvl==5 => SpicyLvl.Price==1.00
+	(SpicyLvl>=1 & SpicyLvl<5) => SpicyLvl.Price==0
+
+
+================================================
+FILE: test_models/complex/Sundermann2024_Pizza.uvl
+================================================
+features
+	Pizza {City 'Omashu'}
+		mandatory
+			Base {Price 2.0}
+			Sauce
+				alternative
+					Tomato {Price 0.8}
+					"Creme Fraiche" {Price 1.1}
+		optional
+			Cheese
+				or
+					Mozarella {Price 0.4}
+					Cheddar {Price 0.6}
+			Toppings
+				[1..3]
+					Mushrooms {Price 0.5}
+					Onion {Price 0.3}
+					Olive {Price 0.3}
+					Pineapple {Price 0.8}
+		mandatory
+			Integer Size
+			DeliveryAddress cardinality [1..10]
+				mandatory
+					String Street
+					String City
+constraints
+	Cheddar => !"Creme Fraiche"
+	sum(Price) < 5
+	20 < Size & Size < 60
+	City == Pizza.City
+	len(Street) < 100
+
+
+================================================
+FILE: test_models/composition/composition_root.uvl
+================================================
+imports
+	composition_sub1
+
+features
+	Computer
+		optional
+			"RAM-module"
+		mandatory
+			"SATA-Devices"
+				[0..3]
+					HDD
+					SSD
+					"DVD-drive"
+					"Card-reader"
+					"Blu-ray-drive"
+			composition_sub1.CPU
+			PSU {abstract true}
+				alternative
+					strong_PSU
+					weak_PSU
+
+constraints
+	SSD => strong_PSU
+	"DVD-drive" <=> composition_sub1.brand & composition_sub1.fmIntel.feature1 & composition_sub1.composition_sub1_sub2.feature2
+
+
+
+================================================
+FILE: test_models/composition/composition_sub1.uvl
+================================================
+imports
+	composition_sub1_sub1 as fmIntel
+	composition_sub1_sub2
+
+features
+	CPU
+		mandatory
+			brand
+				alternative
+					fmIntel.Intel
+					composition_sub1_sub2.AMD
+			architecture
+				alternative
+					Bit64 {bit 64}
+					Bit32 {bit 32}
+
+constraints
+	fmIntel.feature1 & fmIntel.feature2 <=> (Bit64) | !composition_sub1_sub2.feature2
+	Bit64.bit + Bit32.bit > 32
+	fmIntel.feature1.power - fmIntel.feature2.power == 25
+
+
+
+================================================
+FILE: test_models/composition/composition_sub1_sub1.uvl
+================================================
+features
+	Intel
+		mandatory
+			feature1 {power 10}
+			feature2 {power 15}
+				alternative
+					feature3
+					feature4
+
+constraints
+	feature1 & feature2 <=> (feature1 | feature2) & feature4
+
+
+
+================================================
+FILE: test_models/composition/composition_sub1_sub2.uvl
+================================================
+features
+	AMD
+		mandatory
+			feature1
+			feature2
+				alternative
+					feature3
+					feature4
+
+constraints
+	feature1 & feature2 <=> (feature1 | feature2) & feature4
+
+
+
+================================================
+FILE: test_models/composition/nested_main.uvl
+================================================
+imports
+    nested.nested_sub as nesu
+
+features
+    Root
+        optional
+            nesu.Root
+
+
+================================================
+FILE: test_models/composition/nested/nested_referenced_sub.uvl
+================================================
+features
+    Nested
+        optional
+            N1
+            N2
+
+
+================================================
+FILE: test_models/composition/nested/nested_sub.uvl
+================================================
+imports
+    nested_referenced_sub as nrs
+
+features
+    Root
+        optional
+            F1
+            F2
+            nrs.Nested
+
+
+================================================
+FILE: test_models/composition/Pizzas-imports/Dough.uvl
+================================================
+features
+	Dough	
+		alternative
+			Neapolitan
+			Sicilian
+
+
+================================================
+FILE: test_models/composition/Pizzas-imports/Pizzas.uvl
+================================================
+imports
+	Topping as top
+	Dough
+	submodels.Size as Size
+features
+	Pizza {abstract}	
+		mandatory
+			top.Topping
+			Size.Size
+			Dough.Dough
+		optional
+			CheesyCrust
+constraints
+	CheesyCrust => Size.Big
+
+
+================================================
+FILE: test_models/composition/Pizzas-imports/Topping.uvl
+================================================
+features
+	Topping	
+		or
+			Salami
+			Ham
+			Mozzarella
+
+
+================================================
+FILE: test_models/composition/Pizzas-imports/submodels/Size.uvl
+================================================
+features
+	Size	
+		alternative
+			Median
+			Big
+
+
+================================================
+FILE: test_models/faulty/illegalname.uvl
+================================================
+features
+    A
+        mandatory
+            12B
+
+
+================================================
+FILE: test_models/faulty/missingreference.uvl
+================================================
+features
+    A
+        mandatory
+            B
+
+constraints
+    C | D
+
+
+================================================
+FILE: test_models/faulty/same_feature_names.uvl
+================================================
+features
+	Penguin
+		optional
+			"Left Wing Item"
+				alternative
+					"Lightsaber"
+						alternative
+							"lightsaber left"
+							"light-staff left"
+					"Flag"
+						alternative
+							"german flag left"
+							"pride flag left"
+					"Staff"
+						alternative
+							"staff left"
+							"spear left"
+							"cross left"
+							"cane left"
+			"Right Wing Item"
+				alternative
+					"Lightsaber"
+						alternative
+							"lightsaber right"
+							"light-staff right"
+					"Flag"
+						alternative
+							"german flag right"
+							"pride flag right"
+					"Staff"
+						alternative
+							"staff right"
+							"spear right"
+							"cross right"
+							"cane right"
+
+
+================================================
+FILE: test_models/faulty/wrong_attribute_name.uvl
+================================================
+imports
+  nested."string-attributes-external" as external
+
+features
+    A
+        optional
+            B {Fun 'Yes. This is  a Test', Name 'B // Cxn I do a comment in here?', Package {Name 'P', Content 'Even more fun'}, Price 5}
+            C {Fun 'maybe', Name 'C'}
+            D {Fun 'This is a test with a newline in the string', Name 'D'}
+            external.E
+            F {Fun 'This string external.G See?', Name 'F'}
+            G {Fun 'Another.test.with.multiple.dots', Name 'G'}
+
+
+================================================
+FILE: test_models/faulty/wrongindent.uvl
+================================================
+features
+    A
+    mandatory
+            B
+
+
+================================================
+FILE: test_models/language_level/all.uvl
+================================================
+include
+    Boolean.*
+    Arithmetic.aggregate-function
+    Type
+
+features
+    A
+        or
+            B {Price 2}
+            C {Price 4}
+                [2..3]
+                    C1
+                    C2
+                    C3
+            Integer D
+        
+constraints
+    sum(Price) > 3
+
+
+================================================
+FILE: test_models/language_level/arithmetic.uvl
+================================================
+include
+    Arithmetic
+
+features
+    A
+        or 
+            B {Price 3}
+            C {Price 5}
+
+
+constraints
+    B.Price + C.Price == 8
+
+
+================================================
+FILE: test_models/language_level/boolean.uvl
+================================================
+include
+    Boolean
+
+features
+    A
+        or
+            B
+            C
+
+
+
+================================================
+FILE: test_models/language_level/type.uvl
+================================================
+include
+    Type
+
+features
+    Real A
+        or
+            Integer B
+            String C
+
+
+================================================
+FILE: test_models/lexing/dotinfeaturename.uvl
+================================================
+features
+    "Fun.Fun" // should be illegal
+
+
+================================================
+FILE: test_models/lexing/dotinstringconstant.uvl
+================================================
+features
+    A {attribute 'This should be allowed. and this ...'} // Failed in previous version
+        optional
+            String B
+
+constraints
+    B == 'This also...'
+
+
+================================================
+FILE: test_models/lexing/legalnumbers.uvl
+================================================
+features
+    A {float 6.2, int 3}
+
+constraints
+    A.float == 6 // Dead but valid
+    A.int == 3
+
+
+================================================
+FILE: test_models/syntax/brackets.uvl
+================================================
+features
+    "Brackets()[]{}"
+        optional
+            "Fun()"
+            String "B()"
+            "C()" {Function 'Fun()'}
+            String "B[]"
+            "C[]" {Function 'Fun[]'}
+            String "B{}"
+            "C{}" {Function 'Fun{}'}
+constraints
+    "Fun()" => "B[]"
+
+
+================================================
+FILE: test_models/syntax/comments.uvl
+================================================
+// This is a comment
+features // This is a comment
+    A // This is a comment
+        or // This is a comment
+    // This is a comment
+            B {Price 2, Fun 12} // This is a comment
+            C {Price 7, Fun 6} // This is a comment
+            D {Price 5, Fun 8} // This is a comment
+constraints // This is a comment
+    // This is a comment
+    B.Fun + C.Fun - B.Price == 16
+// This is a comment
+    B.Fun + (C.Fun - B.Price) == 16 // This is a comment
+    B.Fun + C.Fun * B.Price == 20 // This is a comment
+    // This is a comment
+// This is a comment
+
+
+================================================
+FILE: test_models/syntax/dash.uvl
+================================================
+features
+     Root
+       optional
+           Integer A
+           Integer B
+constraints
+     A-B == 0
+
+
+================================================
+FILE: test_models/syntax/comments_and_blanks/fm01_blanks.uvl
+================================================
+namespace Pizza
+
+features
+	Pizza {abstract}
+		mandatory
+			Topping
+				or
+					Salami
+					Ham
+					Mozzarella
+			Size
+				alternative
+					Normal
+					Big
+			Dough
+
+				alternative
+					Neapolitan
+					Sicilian
+		optional
+			CheesyCrust
+
+constraints
+	CheesyCrust => Big
+
+
+
+================================================
+FILE: test_models/syntax/comments_and_blanks/fm02_inline_comment.uvl
+================================================
+namespace Pizza
+
+features
+	Pizza {abstract}
+		mandatory
+			Topping
+				or
+					Salami
+					Ham
+					Mozzarella
+			// Size is a xor-group feature
+			Size
+				alternative
+					Normal
+					Big
+			Dough
+				alternative
+					Neapolitan
+					Sicilian
+		optional
+			CheesyCrust
+
+constraints
+	CheesyCrust => Big
+
+
+
+================================================
+FILE: test_models/syntax/comments_and_blanks/fm03_block_comment.uvl
+================================================
+namespace Pizza
+
+features
+	/*
+ 	This is the feature hierarchy
+	*/
+	Pizza {abstract}
+		mandatory
+			Topping
+				or
+					Salami
+					Ham
+					Mozzarella
+			Size
+				alternative
+					Normal
+					Big
+			Dough
+				alternative
+					Neapolitan
+					Sicilian
+		optional
+			CheesyCrust
+
+constraints
+	CheesyCrust => Big
+
+
+
+================================================
+FILE: test_models/syntax/comments_and_blanks/fm04_tabs.uvl
+================================================
+namespace Pizza
+
+features
+	Pizza {abstract}
+		mandatory
+			Topping
+				or
+					Salami
+					Ham
+					Mozzarella
+			Size
+				alternative
+					Normal
+					Big
+			Dough
+				alternative
+					Neapolitan
+					Sicilian
+		optional
+			CheesyCrust
+	
+constraints
+	CheesyCrust => Big
+
+
+
+================================================
+FILE: test_models/syntax/comments_and_blanks/fm05_eof_blanks.uvl
+================================================
+namespace Pizza
+
+features
+	Pizza {abstract}
+		mandatory
+			Topping
+				or
+					Salami
+					Ham
+					Mozzarella
+			Size
+				alternative
+					Normal
+					Big
+			Dough
+				alternative
+					Neapolitan
+					Sicilian
+		optional
+			CheesyCrust
+constraints
+	CheesyCrust => Big
+
+
+
+
+================================================
+FILE: test_models/syntax/comments_and_blanks/fm06_comments_and_blanks.uvl
+================================================
+// This is a comment
+features 
+
+
+    // This is a comment
+    A 
+
+        or 
+
+            B {Price 2, Fun 12} 
+            C {Price 7, Fun 6} 
+            D {Price 5, Fun 8} 
+
+
+constraints
+
+
+
+    // This is a comment
+    B.Fun + C.Fun - B.Price == 16
+    B.Fun + (C.Fun - B.Price) == 16 // This is a comment
+
+    
+    B.Fun + C.Fun * B.Price == 20 // This is a comment
+
+    // This is a comment
+
+
+
+
+================================================
+FILE: test_models/type_level/string-attributes.uvl
+================================================
+imports
+  nested."string-attributes-external" as external
+
+features
+    A
+        optional
+            B {Fun 'Yes. This is  a Test', Name 'B // Cxn I do a comment in here?', Package {Name 'P', Content 'Even more fun'}, Price 5}
+            C {Fun 'maybe', Name 'C'}
+            D {Fun 'This is a test with a newline in the string', Name 'D'}
+            external.E
+            F {Fun 'This string external.G See?', Name 'F'}
+            G {Fun 'Another.test.with.multiple.dots', Name 'G'}
+
+
+================================================
+FILE: test_models/type_level/string-constraints.uvl
+================================================
+features
+    A
+        optional
+            String C
+            String D
+
+constraints
+    len(C) == 3
+    D == C
+    C == 'Fun'
+    'Fun' == D
+    A
+
+
+================================================
+FILE: test_models/type_level/string-quotes.uvl
+================================================
+features
+    Icecream
+        mandatory
+            Container {Price 5.00}
+                alternative
+                    Cup {Price 6.00}
+                    Cone 
+                    Stick {doc 'A stick ice cream'}
+        optional
+            String "Customer name"
+            Integer "N Scoops"
+constraints
+    "Customer name" == 'Josemi' | "Customer name" == 'Jose Miguel'
+    sum("N Scoops") <= 3
+    sum(Price, Container) <= 11.00
+
+
+================================================
+FILE: test_models/type_level/nested/string-attributes-external.uvl
+================================================
+features
+    E
+        optional
+            F {Fun 'Yes This is  x Test', Nxme 'B // Cxn I do x comment in here?', Pxckxge {Nxme 'P', Content 'Even more fun'}, Price 5}
+            G {Fun 'mxybe', Nxme 'C'}
+            H {Fun 'This is x test with x newline in the string', Nxme 'D'}
+
+
+================================================
+FILE: uvl/UVLLexer.g4
+================================================
+lexer grammar UVLLexer;
+
+INDENT: '<INDENT>';
+DEDENT: '<DEDENT>';
+
+INCLUDE_KEY: 'include';
+FEATURES_KEY: 'features';
+IMPORTS_KEY: 'imports';
+NAMESPACE_KEY: 'namespace';
+AS_KEY: 'as';
+CONSTRAINT_KEY: 'constraint';
+CONSTRAINTS_KEY: 'constraints';
+CARDINALITY_KEY: 'cardinality';
+STRING_KEY: 'String';
+BOOLEAN_KEY: 'Boolean';
+INTEGER_KEY: 'Integer';
+REAL_KEY: 'Real';
+LEN_KEY: 'len';
+SUM_KEY: 'sum';
+AVG_KEY: 'avg';
+FLOOR_KEY: 'floor';
+CEIL_KEY: 'ceil';
+TYPE_KEY: 'Type';
+ARITHMETIC_KEY: 'Arithmetic';
+GROUP_CARDINALITY_KEY: 'group-cardinality';
+FEATURE_CARDINALITY_KEY: 'feature-cardinality';
+AGGREGATE_KEY: 'aggregate-function';
+STRING_CONSTRAINTS_KEY: 'string-constraints';
+
+ORGROUP: 'or';
+ALTERNATIVE: 'alternative';
+OPTIONAL: 'optional';
+MANDATORY: 'mandatory';
+
+CARDINALITY: '[' INTEGER ('..' (INTEGER | '*'))? ']';
+
+NOT: '!';
+AND: '&';
+OR: '|';
+EQUIVALENCE: '<=>';
+IMPLICATION: '=>';
+
+EQUAL: '==';
+LOWER: '<';
+LOWER_EQUALS: '<=';
+GREATER: '>';
+GREATER_EQUALS: '>=';
+NOT_EQUALS: '!=';
+
+DIV: '/';
+MUL: '*';
+ADD: '+';
+SUB: '-';
+
+OPEN_PAREN: '(';
+CLOSE_PAREN: ')';
+OPEN_BRACK: '[';
+CLOSE_BRACK: ']';
+OPEN_BRACE: '{';
+CLOSE_BRACE: '}';
+OPEN_COMMENT: '/*';
+CLOSE_COMMENT: '*/';
+
+FLOAT: '-'?[0-9]*[.][0-9]+;
+INTEGER: '0' | '-'?[1-9][0-9]*;
+BOOLEAN: 'true' | 'false';
+
+COMMA: ',';
+DOT: '.';
+
+ID_NOT_STRICT: '"'~[\r\n".]+'"';
+ID_STRICT: [a-zA-Z]([a-zA-Z0-9_#§%?\\'äüöß;])*;
+
+STRING: '\''~[\r\n']+'\'';
+
+SKIP_: ( SPACES | COMMENT) -> skip;
+
+fragment COMMENT:
+	'//' ~[\r\n\f]*
+	| OPEN_COMMENT .* CLOSE_COMMENT;
+fragment SPACES: [ \t]+;
+
+NEWLINE: ('\r'? '\n' | '\r');
+
+
+
+================================================
+FILE: uvl/UVLParser.g4
+================================================
+parser grammar UVLParser;
+
+options {
+	tokenVocab = UVLLexer;
+}
+
+featureModel:
+	namespace? NEWLINE? includes? NEWLINE? imports? NEWLINE? features? NEWLINE? constraints? EOF;
+
+includes: INCLUDE_KEY NEWLINE INDENT includeLine* DEDENT;
+includeLine: languageLevel NEWLINE;
+
+namespace: NAMESPACE_KEY reference;
+
+imports: IMPORTS_KEY NEWLINE INDENT importLine* DEDENT;
+importLine: ns = reference (AS_KEY alias = reference)? NEWLINE;
+
+features: FEATURES_KEY NEWLINE INDENT feature DEDENT;
+
+group:
+	ORGROUP groupSpec		# OrGroup
+	| ALTERNATIVE groupSpec	# AlternativeGroup
+	| OPTIONAL groupSpec	# OptionalGroup
+	| MANDATORY groupSpec	# MandatoryGroup
+	| CARDINALITY groupSpec	# CardinalityGroup;
+
+groupSpec: NEWLINE INDENT feature+ DEDENT;
+
+feature:
+	featureType? reference featureCardinality? attributes? NEWLINE (
+		INDENT group+ DEDENT
+	)?;
+
+featureCardinality: CARDINALITY_KEY CARDINALITY;
+
+attributes:
+	OPEN_BRACE (attribute (COMMA attribute)*)? CLOSE_BRACE;
+
+attribute: valueAttribute | constraintAttribute;
+
+valueAttribute: key value?;
+key: id;
+value: BOOLEAN | FLOAT | INTEGER | STRING | attributes | vector;
+vector: OPEN_BRACK (value (COMMA value)*)? CLOSE_BRACK;
+
+constraintAttribute:
+	CONSTRAINT_KEY constraint			# SingleConstraintAttribute
+	| CONSTRAINTS_KEY constraintList	# ListConstraintAttribute;
+constraintList:
+	OPEN_BRACK (constraint (COMMA constraint)*)? CLOSE_BRACK;
+
+constraints:
+	CONSTRAINTS_KEY NEWLINE INDENT constraintLine* DEDENT;
+
+constraintLine: constraint NEWLINE;
+
+constraint:
+	equation							# EquationConstraint
+	| reference							# LiteralConstraint
+	| OPEN_PAREN constraint CLOSE_PAREN	# ParenthesisConstraint
+	| NOT constraint					# NotConstraint
+	| constraint AND constraint			# AndConstraint
+	| constraint OR constraint			# OrConstraint
+	| constraint IMPLICATION constraint	# ImplicationConstraint
+	| constraint EQUIVALENCE constraint	# EquivalenceConstraint;
+
+equation:
+	expression EQUAL expression				# EqualEquation
+	| expression LOWER expression			# LowerEquation
+	| expression GREATER expression			# GreaterEquation
+	| expression LOWER_EQUALS expression	# LowerEqualsEquation
+	| expression GREATER_EQUALS expression	# GreaterEqualsEquation
+	| expression NOT_EQUALS expression		# NotEqualsEquation;
+
+expression
+    : additiveExpression
+    ;
+
+additiveExpression
+    : additiveExpression ADD multiplicativeExpression   # AddExpression
+    | additiveExpression SUB multiplicativeExpression   # SubExpression
+    | multiplicativeExpression                          # MultiplicativeExpr
+    ;
+
+multiplicativeExpression
+    : multiplicativeExpression MUL primaryExpression                # MulExpression
+    | multiplicativeExpression DIV primaryExpression                # DivExpression
+    | primaryExpression                                             # PrimaryExpressionExpression   
+    ;
+
+primaryExpression
+    : FLOAT                                   # FloatLiteralExpression
+    | INTEGER                                 # IntegerLiteralExpression
+    | STRING                                  # StringLiteralExpression
+    | aggregateFunction                       # AggregateFunctionExpression
+    | reference                               # LiteralExpression
+    | OPEN_PAREN expression CLOSE_PAREN       # BracketExpression
+    ;
+
+aggregateFunction:
+	sumAggregateFunction 		# SumAggregateFunctionExpression
+	| avgAggregateFunction 		# AvgAggregateFunctionExpression
+	| stringAggregateFunction	# StringAggregateFunctionExpression
+	| numericAggregateFunction  # NumericAggregateFunctionExpression
+	;
+
+sumAggregateFunction:
+	SUM_KEY OPEN_PAREN (reference COMMA)? reference CLOSE_PAREN;
+
+
+avgAggregateFunction:
+	AVG_KEY OPEN_PAREN (reference COMMA)? reference CLOSE_PAREN;
+
+stringAggregateFunction:
+	LEN_KEY OPEN_PAREN reference CLOSE_PAREN # LengthAggregateFunction
+	;
+
+numericAggregateFunction:
+	FLOOR_KEY OPEN_PAREN reference CLOSE_PAREN # FloorAggregateFunction
+	| CEIL_KEY OPEN_PAREN reference CLOSE_PAREN # CeilAggregateFunction
+	;
+
+reference: (id DOT)* id;
+id: ID_STRICT | ID_NOT_STRICT;
+
+featureType: STRING_KEY | INTEGER_KEY | BOOLEAN_KEY | REAL_KEY;
+
+languageLevel: majorLevel (DOT (minorLevel | MUL))?;
+
+majorLevel: BOOLEAN_KEY | ARITHMETIC_KEY | TYPE_KEY;
+
+minorLevel:
+	GROUP_CARDINALITY_KEY
+	| FEATURE_CARDINALITY_KEY
+	| AGGREGATE_KEY
+	| STRING_CONSTRAINTS_KEY;
+
+
+
+================================================
+FILE: uvl/Java/UVLJavaLexer.g4
+================================================
+lexer grammar UVLJavaLexer;
+
+import UVLLexer;
+
+@header {
+package uvl;
+}
+
+@members {
+  // A queue where extra tokens are pushed on (see the NEWLINE lexer rule).
+  private java.util.LinkedList<Token> tokens = new java.util.LinkedList<>();
+  // The stack that keeps track of the indentation level.
+  private java.util.Stack<Integer> indents = new java.util.Stack<>();
+  // The amount of opened braces, brackets and parenthesis.
+  private int opened = 0;
+  // The most recently produced token.
+  private Token lastToken = null;
+
+  @Override
+  public void emit(Token t) {
+    super.setToken(t);
+    tokens.offer(t);
+  }
+
+  @Override
+  public Token nextToken() {
+    // Check if the end-of-file is ahead and there are still some DEDENTS expected.
+    if (_input.LA(1) == EOF && !this.indents.isEmpty()) {
+      // Remove any trailing EOF tokens from our buffer.
+      for (int i = tokens.size() - 1; i >= 0; i--) {
+        if (tokens.get(i).getType() == EOF) {
+          tokens.remove(i);
+        }
+      }
+      // First emit an extra line break that serves as the end of the statement.
+      this.emit(commonToken(UVLJavaParser.NEWLINE, "\n"));
+      // Now emit as much DEDENT tokens as needed.
+      while (!indents.isEmpty()) {
+        this.emit(createDedent());
+        indents.pop();
+      }
+      // Put the EOF back on the token stream.
+      this.emit(commonToken(UVLJavaParser.EOF, "<EOF>"));
+    }
+
+    Token next = super.nextToken();
+    if (next.getChannel() == Token.DEFAULT_CHANNEL) {
+      // Keep track of the last token on the default channel.
+      this.lastToken = next;
+    }
+
+    return tokens.isEmpty() ? next : tokens.poll();
+  }
+
+  private Token createDedent() {
+    CommonToken dedent = commonToken(UVLJavaParser.DEDENT, "");
+    dedent.setLine(this.lastToken.getLine());
+    return dedent;
+  }
+
+  private CommonToken commonToken(int type, String text) {
+    int stop = this.getCharIndex() - 1;
+    int start = text.isEmpty() ? stop : stop - text.length() + 1;
+    return new CommonToken(this._tokenFactorySourcePair, type, DEFAULT_TOKEN_CHANNEL, start, stop);
+  }
+
+  // Calculates the indentation of the provided spaces, taking the
+  // following rules into account:
+  //
+  // "Tabs are replaced (from left to right) by one to eight spaces
+  //  such that the total number of characters up to and including
+  //  the replacement is a multiple of eight [...]"
+  //
+  //  -- https://docs.python.org/3.1/reference/lexical_analysis.html#indentation
+  static int getIndentationCount(String spaces) {
+    int count = 0;
+    for (char ch : spaces.toCharArray()) {
+      switch (ch) {
+        case '\t':
+          count += 8 - (count % 8);
+          break;
+        default:
+        // A normal space char.
+          count++;
+      }
+    }
+    return count;
+  }
+
+  boolean atStartOfInput() {
+    return super.getCharPositionInLine() == 0 && super.getLine() == 1;
+  }
+}
+
+// Indentation-sensitive tokens
+OPEN_PAREN: '(' {this.opened += 1;};
+CLOSE_PAREN: ')' {this.opened -= 1;};
+OPEN_BRACK: '[' {this.opened += 1;};
+CLOSE_BRACK: ']' {this.opened -= 1;};
+OPEN_BRACE: '{' {this.opened += 1;};
+CLOSE_BRACE: '}' {this.opened -= 1;};
+OPEN_COMMENT: '/*' {this.opened += 1;};
+CLOSE_COMMENT: '*/' {this.opened -= 1;};
+
+// Indentation-sensitive NEWLINE rule
+NEWLINE: (
+		{atStartOfInput()}? SPACES
+		| ( '\r'? '\n' | '\r') SPACES?
+	) {
+     String newLine = getText().replaceAll("[^\r\n]+", "");
+     String spaces = getText().replaceAll("[\r\n]+", "");
+     int next = _input.LA(1);
+     int nextNext = _input.LA(2);
+
+     if (opened > 0 || next == '\r' || next == '\n' || (next == '/' && nextNext == '/')) {
+       // If we're inside a list or on a blank line, ignore all indents,
+       // dedents and line breaks.
+       skip();
+     } else {
+       emit(commonToken(UVLJavaParser.NEWLINE, newLine));
+       int indent = getIndentationCount(spaces);
+       int previous = indents.isEmpty() ? 0 : indents.peek();
+       if (indent == previous) {
+          // skip indents of the same size as the present indent-size
+         skip();
+       }
+       else if (indent > previous) {
+         indents.push(indent);
+         emit(commonToken(UVLJavaParser.INDENT, spaces));
+       }
+       else {
+         // Possibly emit more than 1 DEDENT token.
+         while(!indents.isEmpty() && indents.peek() > indent) {
+           this.emit(createDedent());
+           indents.pop();
+         }
+       }
+     }
+   };
+
+// Fragment used by NEWLINE
+fragment SPACES: [ \t]+;
+
+
+
+================================================
+FILE: uvl/Java/UVLJavaParser.g4
+================================================
+parser grammar UVLJavaParser;
+
+options {
+	tokenVocab = UVLJavaLexer;
+}
+
+import UVLParser;
+
+@header {
+package uvl;
+}
+
+
+================================================
+FILE: uvl/JavaScript/UVLJavaScriptLexer.g4
+================================================
+lexer grammar UVLJavaScriptLexer;
+
+import UVLLexer;
+
+@lexer::members {
+  // Una cola donde se empujan los tokens adicionales (ver la regla del lexer NEWLINE).
+  let tokens = [];
+  // La pila que lleva un registro del nivel de indentación.
+  let indents = [];
+  // La cantidad de paréntesis, corchetes y llaves abiertos.
+  let opened = 0;
+  // El token más recientemente producido.
+  let lastToken = null;
+}
+
+OPEN_PAREN: '(' {this.opened += 1;};
+CLOSE_PAREN: ')' {this.opened -= 1;};
+OPEN_BRACK: '[' {this.opened += 1;};
+CLOSE_BRACK: ']' {this.opened -= 1;};
+OPEN_BRACE: '{' {this.opened += 1;};
+CLOSE_BRACE: '}' {this.opened -= 1;};
+OPEN_COMMENT: '/*' {this.opened += 1;};
+CLOSE_COMMENT: '*/' {this.opened -= 1;};
+
+NEWLINE: (
+		{this.atStartOfInput()}? SPACES
+		| ( '\r'? '\n' | '\r') SPACES?
+	) {this.handleNewline();};
+
+
+================================================
+FILE: uvl/JavaScript/UVLJavaScriptParser.g4
+================================================
+parser grammar UVLJavaScriptParser;
+
+options {
+	tokenVocab = UVLJavaScriptLexer;
+}
+
+import UVLParser;
+
+
+================================================
+FILE: uvl/Python/UVLPythonLexer.g4
+================================================
+lexer grammar UVLPythonLexer;
+import UVLLexer;
+
+OPEN_PAREN: '(' {self.opened += 1;};
+CLOSE_PAREN: ')' {self.opened -= 1;};
+OPEN_BRACK: '[' {self.opened += 1;};
+CLOSE_BRACK: ']' {self.opened -= 1;};
+OPEN_BRACE: '{' {self.opened += 1;};
+CLOSE_BRACE: '}' {self.opened -= 1;};
+OPEN_COMMENT: '/*' {self.opened += 1;};
+CLOSE_COMMENT: '*/' {self.opened -= 1;};
+
+//This is here because the way python manage tabs and new lines
+NEWLINE: (
+		{self.atStartOfInput()}? SPACES
+		| ( '\r'? '\n' | '\r') SPACES?
+	) {self.handleNewline();};
+
+
+================================================
+FILE: uvl/Python/UVLPythonParser.g4
+================================================
+parser grammar UVLPythonParser;
+
+options {
+	tokenVocab = UVLPythonLexer;
+}
+
+import UVLParser;
+
+
+================================================
+FILE: .github/settings.xml
+================================================
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                              http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <servers>
+    <server>
+      <id>central</id>
+      <username>${env.SONATYPE_USERNAME}</username>
+      <password>${env.SONATYPE_PASSWORD}</password>
+    </server>
+  </servers>
+  <profiles>
+    <profile>
+      <id>ossrh</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <gpg.executable>gpg</gpg.executable>
+        <gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
+      </properties>
+    </profile>
+  </profiles>
+</settings>
+
+
+
+================================================
+FILE: .github/workflows/conventionalpr.yml
+================================================
+name: Conventional Commit Parser
+on:
+  pull_request:
+    branches: [main, master, develop]
+    types: [opened, reopened, edited, review_requested, synchronize]
+
+jobs:
+  conventional_commit:
+    name: Conventional Commits
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    steps:
+      - uses: webiny/action-conventional-commits@v1.3.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+
+================================================
+FILE: .github/workflows/java.yml
+================================================
+name: Build and Deploy Java Parser
+
+on:
+  push:
+    branches: [develop, main]
+    tags: ['v*']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Java 21
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '21'
+        server-id: central
+        server-username: MAVEN_USERNAME
+        server-password: MAVEN_PASSWORD
+        gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+        gpg-passphrase: MAVEN_GPG_PASSPHRASE
+
+    - name: Configure GPG for batch mode
+      run: |
+        echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
+        echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
+        gpgconf --kill gpg-agent
+
+    - name: Verify GPG key
+      run: |
+        gpg --list-secret-keys
+        echo "Testing GPG signing..."
+        echo "test" | gpg --batch --pinentry-mode loopback --passphrase "$MAVEN_GPG_PASSPHRASE" --clearsign > /dev/null && echo "GPG signing works!"
+      env:
+        MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+
+    - name: Install ANTLR4
+      run: make dev
+
+    - name: Set SNAPSHOT version (develop branch)
+      if: github.ref == 'refs/heads/develop'
+      run: |
+        cd java
+        BASE_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout | sed 's/-SNAPSHOT//')
+        mvn versions:set -DnewVersion="${BASE_VERSION}-SNAPSHOT" -DgenerateBackupPoms=false
+
+    - name: Set release version (main branch)
+      if: github.ref == 'refs/heads/main'
+      run: |
+        cd java
+        BASE_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout | sed 's/-SNAPSHOT//')
+        mvn versions:set -DnewVersion="${BASE_VERSION}" -DgenerateBackupPoms=false
+
+    - name: Set release version (tag)
+      if: startsWith(github.ref, 'refs/tags/v')
+      run: |
+        cd java
+        TAG_VERSION=${GITHUB_REF_NAME#v}
+        mvn versions:set -DnewVersion="${TAG_VERSION}" -DgenerateBackupPoms=false
+
+    - name: Generate and Compile Java Code
+      run: make java_parser
+
+    - name: Cache Maven packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+        restore-keys: ${{ runner.os }}-m2
+
+    - name: Deploy SNAPSHOT to Sonatype Snapshots
+      if: github.ref == 'refs/heads/develop'
+      run: cd java && mvn clean deploy -DskipCentralPublishing=true
+      env:
+        MAVEN_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
+        MAVEN_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
+        MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+
+    - name: Deploy Release to Central Portal
+      if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v')
+      run: cd java && mvn clean deploy
+      env:
+        MAVEN_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
+        MAVEN_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
+        MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+
+
+
+================================================
+FILE: .github/workflows/js.yml
+================================================
+name: Build and Deploy JS Parser
+
+on:
+  push:
+    branches: [develop, main]
+    tags: ['v*']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write  # Required for OIDC trusted publishing
+      contents: read
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 24
+        registry-url: https://registry.npmjs.org/
+
+    - name: Install ANTLR4
+      run: |
+        make dev
+        make js_parser
+
+    - name: Generate and Build Node Code
+      run: cd js && npm install && npm run build-grammar
+
+    - name: Set dev version and publish (develop branch)
+      if: github.ref == 'refs/heads/develop'
+      run: |
+        cd js
+        npm version --no-git-tag-version "$(node -p "require('./package.json').version")-dev.${GITHUB_RUN_NUMBER}"
+        echo "Publishing version: $(node -p "require('./package.json').version")"
+        npm publish --tag dev --access public --provenance
+
+    - name: Set release version and publish (main branch)
+      if: github.ref == 'refs/heads/main'
+      run: |
+        cd js
+        echo "Publishing version: $(node -p "require('./package.json').version")"
+        npm publish --access public --provenance
+
+    - name: Set release version and publish (tag)
+      if: startsWith(github.ref, 'refs/tags/v')
+      run: |
+        cd js
+        TAG_VERSION=${GITHUB_REF_NAME#v}
+        npm version --no-git-tag-version "${TAG_VERSION}"
+        echo "Publishing version: ${TAG_VERSION}"
+        npm publish --access public --provenance
+
+
+
+================================================
+FILE: .github/workflows/python.yml
+================================================
+name: Build and Deploy Python Parser
+
+on:
+  push:
+    branches: [develop, main]
+    tags: ['v*']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install ANTLR4 and Python dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y python3 python3-pip
+        make dev
+
+    - name: Generate and Build Python Code
+      run: make python_parser
+
+    - name: Set dev version (develop branch)
+      if: github.ref == 'refs/heads/develop'
+      run: |
+        cd python
+        BASE_VERSION=$(grep -oP 'version="\K[0-9]+\.[0-9]+\.[0-9]+' setup.py)
+        DEV_VERSION="${BASE_VERSION}.dev${GITHUB_RUN_NUMBER}"
+        sed -i "s/version=\"[^\"]*\"/version=\"${DEV_VERSION}\"/" setup.py
+        echo "Publishing version: ${DEV_VERSION}"
+
+    - name: Set release version (main branch)
+      if: github.ref == 'refs/heads/main'
+      run: |
+        cd python
+        BASE_VERSION=$(grep -oP 'version="\K[0-9]+\.[0-9]+\.[0-9]+' setup.py)
+        echo "Publishing version: ${BASE_VERSION}"
+
+    - name: Set release version (tag)
+      if: startsWith(github.ref, 'refs/tags/v')
+      run: |
+        cd python
+        TAG_VERSION=${GITHUB_REF_NAME#v}
+        sed -i "s/version=\"[^\"]*\"/version=\"${TAG_VERSION}\"/" setup.py
+        echo "Publishing version: ${TAG_VERSION}"
+
+    - name: Build and publish python package
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+      run: |
+        make python_prepare_package
+        cd python && twine upload dist/*
+
+
+
+================================================
+FILE: .github/workflows/test.yml
+================================================
+name: Run Grammar Tests
+
+on:
+  push:
+    branches: ['*']
+  pull_request:
+    branches: [develop, main]
+
+jobs:
+  test-javascript:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: js
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install ANTLR4
+        run: cd .. && make dev
+
+      - name: Build grammar
+        run: cd .. && make js_parser
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
+  test-python:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: python
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install ANTLR4
+        run: cd .. && make dev
+
+      - name: Build grammar
+        run: cd .. && make python_parser
+
+      - name: Install dependencies
+        run: |
+          pip install antlr4-python3-runtime==4.13.2
+          pip install -r requirements-dev.txt
+
+      - name: Run tests
+        run: PYTHONPATH=. pytest test_grammar.py -v
+
+  test-java:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: java
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Install ANTLR4
+        run: cd .. && make dev
+
+      - name: Cache Maven packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
+
+      - name: Run tests
+        run: mvn test
+
+
