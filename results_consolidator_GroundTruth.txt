@@ -1,0 +1,104 @@
+UNION de fuentes en raw y luego consolidación:
+
+⚖️  Calculating consistency...
+No hay datos de Seed/Run para calcular consistencia.
+💎 Consolidating KB...
+    ✂️  Normalizing KB...
+    🔍 Deduplicating KB with threshold 0.92...
+    🧬 Clustering KB...
+💾 Saving KB to union_kb_consolidated.csv...
+📊 Report:
+    - Raw triplets: 3756
+    - Triplets after normalization: 3756
+    - Triplets after deduplication: 1066
+    - Triplets after clustering: 1036
+    - 📈 Consistency: Not available
+⏎                                                                                                                                                                                                                                                                                             
+
+Consolidación y luego UNIÓN:
+
+💾 Saving KB to union_kb_consolidated.csv...
+📊 Report:
+    - Raw triplets: 1260
+    - Triplets after normalization: 1260D
+    - Triplets after deduplication: 1030
+    - Triplets after clustering: 1022
+    - 📈 Consistency: Not available
+
+
+💾 Saving KB to ../resources/kb_uvl/ground_truth/GT-UVL-NotebookLM-All-Prompt1_consolidated.csv...
+📊 Report:
+    - Raw triplets: 1188
+    - Triplets after normalization: 1188
+    - Triplets after deduplication: 376
+    - Triplets after clustering: 369
+    - 📈 Consistency: 
+        - Macro: 0.5990075810463182
+        - Micro: 0.6262595926794433
+        - Avg_Triplets: 33.942857142857136
+        - Seed_Scores:
+            - UVL language: 0.6092601825325928
+            - Language extensions: 0.3395673237115612
+            - Feature tree: 0.5724048800661704
+            - Cross-tree constraints: 0.7062684868147858
+            - Boolean level: 0.5997178041173827
+            - Arithmetic level: 0.7255515173656109
+            - Type level: 0.6402828727161244
+
+💾 Saving KB to ../resources/kb_uvl/ground_truth/GT-UVL-NotebookLM-UVLWeb-Prompt1_consolidated.csv...
+📊 Report:
+    - Raw triplets: 731
+    - Triplets after normalization: 731
+    - Triplets after deduplication: 213
+    - Triplets after clustering: 206
+    - 📈 Consistency: 
+        - Macro: 0.6422661209120734
+        - Micro: 0.7048432192500808
+        - Avg_Triplets: 20.885714285714283
+        - Seed_Scores:
+            - UVL language: 0.9241258644993613
+            - Language extensions: 0.8700706136317654
+            - Feature tree: 0.7493772893772894
+            - Cross-tree constraints: 0.34022343957845547
+            - Boolean level: 0.49961205461205466
+            - Arithmetic level: 0.5434443341322186
+            - Type level: 0.5690092505533683
+
+ Saving KB to ../resources/kb_uvl/ground_truth/GT-UVL-NotebookLM-PaperUVL-Prompt1_consolidated.csv...
+📊 Report:
+    - Raw triplets: 1048
+    - Triplets after normalization: 1048
+    - Triplets after deduplication: 287
+    - Triplets after clustering: 284
+    - 📈 Consistency: 
+        - Macro: 0.7732984261646106
+        - Micro: 0.7509774017380627
+        - Avg_Triplets: 29.942857142857143
+        - Seed_Scores:
+            - UVL language: 0.8373681453239428
+            - Language extensions: 0.6025329676222102
+            - Feature tree: 0.7631515151515151
+            - Cross-tree constraints: 0.512045200450548
+            - Boolean level: 0.9332926332926332
+            - Arithmetic level: 0.7837461403590436
+            - Type level: 0.980952380952381
+
+💾 Saving KB to ../resources/kb_uvl/ground_truth/GT-UVL-NotebookLM-UVLParserRepo-Prompt1_consolidated.csv...
+📊 Report:
+    - Raw triplets: 789
+    - Triplets after normalization: 789
+    - Triplets after deduplication: 410
+    - Triplets after clustering: 401
+    - 📈 Consistency: 
+        - Macro: 0.3226349853761347
+        - Micro: 0.32599672522675033
+        - Avg_Triplets: 22.54285714285714
+        - Seed_Scores:
+            - UVL language: 0.39724248574990184
+            - Language extensions: 0.17447518957077782
+            - Feature tree: 0.5073260795034195
+            - Cross-tree constraints: 0.27345890742853074
+            - Boolean level: 0.23342354533408738
+            - Arithmetic level: 0.3107548668182083
+            - Type level: 0.3617638232280176
+

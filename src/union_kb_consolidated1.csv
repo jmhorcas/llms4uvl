@@ -1,0 +1,1037 @@
+Subject,Predicate,Object
+boolean level minor level,support,attribute
+boolean level minor level,logical operator include,&
+uvl,constraint operator,>=
+feature tree,support,mandatory group type
+cross-tree constraints,declare,attribute
+cross-tree constraints,use operator,!
+arithmetic level,enable,optional feature
+arithmetic core,be part of,arithmetic level
+major level,include,arithmetic
+predicate,include,<=
+cross-tree constraints,specify dependency base,string value
+uvl,be,uvl
+boolean level minor level,be use by,featureide
+type level conversion,be a,respective major level
+minor level,be,optional extension
+compose model constraint,reference feature,alias
+cross-tree constraints,use,string-constraints
+uvl,boolean level include,cardinality group type
+cross-tree constraints,support,parenthesis operation
+language level,provide,expressiveness need
+aggregate function,introduce,avg function
+feature tree,contain,thousand feature
+uvl,constraint operator,==
+cross-tree constraints,utilize,aggregate function
+cross-tree constraints,support,flooroperation
+import mechanism,apply submodel constraint,compose model
+language extension,include,type major level
+type level conversion,introduce,string feature
+group type,include,mandatory
+uvl,support,namespace
+uvl,allow,language-specific grammar files
+uvl,include,logical constraint
+arithmetic level,support,uvl
+predicate,use operator,<
+arithmetic level,include,sum function
+language extension,implement,major language level
+cross-tree constraints,allow,flooroperation
+test_models/type_level/,contain,string-attributes.uvl
+uvl,support,decomposition
+uvl,minor level extension,feature cardinality
+language extension,provide,string constraint
+cross-tree constraints,binary expression include,-
+boolean level minor level,support function,!
+uvl,author,thomas thüm
+feature,can have,feature cardinality
+cross-tree constraints,include,conjunction
+boolean level minor level,encode,sit problem
+uvl,section,import
+featuretype,can be,boolean value
+arithmetic level,include,comparison equation
+arithmetic level,include,arithmetic core
+uvl,grammar include,include
+uvl,allow,feature cardinality
+boolean level minor level,use,| operator
+cross-tree constraints,support,operation
+type level conversion,represent,smt problem
+feature tree,contain,feature unique name
+uvl,represent,component feature model
+cross-tree constraints,represent,feature relationship
+arithmetic operator,include,sub
+feature tree,support,attribute
+cross-tree constraints,include,disjunction
+arithmetic core,support,+
+uvl,have,import mechanism
+language extension,add,complex construct
+cross-tree constraints,predicate use operator,operator
+arithmetic.aggregate-function,extend,arithmetic level
+require relationship,imply,inclusion statement
+uvl,integrate,featureide
+uvl,support,submodel reference
+uvl,design goal include,simplicity
+feature tree,denote relationship feature group,indentation block
+type level conversion,support,string feature
+cross-tree constraints,follow,feature tree section model structure
+feature tree,include,optional feature
+group,main element,composition feature tree
+arithmetic level,enable,include keyword
+type level conversion,convert,arithmetic level
+cross-tree constraints cloned features,replace occurrence,clone feature
+cross-tree constraints,evaluate,true false
+feature tree,contain,feature arbitrary number group
+arithmetic level,be use by,travart
+language extension,support,wildcard symbol
+uvl,include,convert boolean level
+boolean level minor level,parse,clojure-based parser
+uvl,represent hierarchy,indentation block
+language extension,enable,expressiveness need
+feature tree,use group type,or
+uvl,arithmetic operator,-
+cross-tree constraints,compose model,reference feature namespace
+arithmetic level,support,construct numeric constraint
+language extension,allow,tailor model specific use case
+language level,be,optional extension
+feature tree,major,reference uvl model
+language extension,allow,representation different feature
+boolean level minor level,support,fm fact label
+valid configuration,satisfy,attach constraint
+arithmetic level,test model directory,test_models/arithmetic_level/
+boolean level minor level,be use by,flamapy
+uvl,core include,optional feature
+arithmetic core,use,/
+boolean level minor level,encapsulate,language construct
+boolean level minor level,logical operator include,<=>
+major level,include,type
+arithmetic level,include,great equal operator
+language level,be,uvl
+cross-tree constraints,restrict,number valid configuration
+type level conversion,occupie,language hierarchy
+uvl,grammar include,import
+uvl,structure,arithmetic level
+extension mechanism,maintain,simple base language
+type level conversion,transform,boolean feature attribute
+uvl,doi,10.1016/j.jss.2024.112326
+arithmetic level,minor level extension,group-cardinality
+uvl,constraint operator,>
+language extension,utilize,dot notation
+test_models/type_level/,contain,string-quotes.uvl
+cross-tree constraints,core language,exclude constraint attribute
+arithmetic level,include,sub operator
+predicate,use,operator
+cross-tree constraints,contain,constraint line
+language extension,include,respective major level
+boolean level minor level,be use by,nemo
+cross-tree constraints,predicate use operator,<=
+uvl,author,rick rabiser
+type level conversion,be,major language level
+cross-tree constraints,include,string aggregate function
+feature tree,utilize,indentation represent relationship
+language extension,be,extensible language
+type level conversion,contain,type core
+arithmetic level,support function,/
+feature cardinality,use syntax,minmax
+type level conversion,support,ceil function
+predicate,use operator,>=
+uvl,provide foundation,building parser
+cross-tree constraints,support function,&
+arithmetic operator,include,<
+language extension,use,dot separator
+binary expression,support,*
+cross-tree constraints,import submodel,compose model
+uvl,support,composition feature tree
+propositional logic operator,combine,predicate
+language extension,include,string-constraints
+uvl,integrate,flamapy
+uvl,author,josé a. galindo
+attribute aggregate,simplify,attribute constraint
+minor level,include,group-cardinality
+uvl,support,construct numeric constraint
+arithmetic level,include,ceil function
+cross-tree constraints,precede,eof
+predicate,specify dependency base,string value
+uvl,enable,model decomposition
+uvl,be,community-driven
+cross-tree constraints,support,literal reference
+standard arithmetic operation,include,*
+arithmetic level,support,float literal expression
+feature tree,follow,import section
+predicate,use operator,==
+uvl,govern,gnu less general public license version 3
+boolean level minor level,allow,true literal
+type level conversion,drop,string constraint
+type level conversion,contain test model,string-attributes-external.uvl
+boolean level minor level,support,implication operator
+arithmetic core,support,>
+uvl,support function,sum function
+arithmetic level,target,type level conversion
+uvl,support type,real
+include keyword,enable,minor level selection wildcard
+language extension,include,arithmetic level
+cross-tree constraints,support,avg function
+boolean level minor level,include,relationship
+language level,extend,respective major level
+uvl,be,extensible language
+uvl,support,multiple programming language
+uvl,integrate,nemo
+uvl,parse,java
+language level,include,respective major level
+cross-tree constraints,support,floor function
+type level conversion,support,flooroperation
+uvl,section,namespace
+optional group,be part of,convert boolean level
+valid configuration,satisfy,cross-tree constraints section
+uvl,support function,len
+cross-tree constraints,use,implication operator
+minor level,include,respective major level
+cross-tree constraints,can be,reference
+boolean level minor level,consist,boolean core level
+uvl,include concept,alternative
+submodel constraint,attach,arbitrary location feature tree
+uvl,tool support,uvl playground
+uvl,constraint operator,&
+cross-tree constraints,be,key feature uvl
+type level conversion,minor level extension,type numeric-constraints minor level
+language extension,ensure,tool compatibility
+logical constraint,define,dependencie feature
+feature tree,define,nmchildren parent-children relationships
+uvl,minor level extension,feature-cardinality
+uvl,support,mandatory relationship
+uvl,arithmetic operator,/
+language extension,encapsulate,language construct
+cross-tree constraints,consist,inclusion statement
+numeric operation,include,floor
+uvl,have,type major level
+language extension,use,conversion strategy level
+cross-tree constraints,support,sumaggregate
+cross-tree constraints,consist,reference
+arithmetic level,require process,sat encode
+cross-tree constraints,include,equivalence constraint
+boolean level minor level,use,sit solver backend
+arithmetic level,enable,construct numeric constraint
+uvl,base lexer grammar file,uvl/uvllexer.g4
+boolean level minor level,include,notconstraint
+type level conversion,provide,language construct
+uvl,have,convert boolean level
+uvl,keyword,include
+language level,group construct,construct specific reasoning engine
+uvl,use,tree-like structure
+language extension,be,optional section
+extension mechanism,add,sophisticated language property
+uvl,keyword,constraints keyword
+group cardinality,specifie,select nmchildren
+cross-tree constraints,allow,string comparison
+cross-tree constraints,type level include,string comparison
+cross-tree constraints,support function,<=>
+compose model constraint,reference feature,namespace
+boolean level minor level,support function,&
+arithmetic operator,include,>=
+uvl,support,attribute
+uvl,grammar include,namespace
+feature tree,identify,feature keyword
+arithmetic level,encode,smt instance
+feature tree,be,optional section uvl model
+uvl,be use for,tool integration
+type level conversion,test model,string-attributes.uvl
+uvl,use file extension,uvl
+boolean level minor level,use,! operator
+type level conversion,encapsulate,features non-boolean types
+type level conversion,enable,optional feature
+type level conversion,introduce,numeric feature
+uvl,core include,relationship
+predicate,use operator,>
+boolean level minor level,consist,group keyword
+uvl,be,textual language
+language extension,provide,language-level modularity
+type level conversion,contain,string-constraints
+submodel constraint,apply,compose model
+uvlparser,extend,core language uvl
+type level conversion,allow feature,deselecte
+arithmetic operator,include,==
+cross-tree constraints,arithmetic level,support arithmetic operator
+uvl,allow,attribute
+boolean level minor level,represent,cnf instance
+constraint expression,support,parenthesis operation
+cross-tree constraints,major,reference uvl model
+boolean level minor level,support,composition feature tree
+arithmetic level,provide function,avg function
+arithmetic core,support,-
+boolean level minor level,support,optional group
+boolean level minor level,group type include,or
+language extension,reside,language level section
+group type,include,feature cardinality
+arithmetic level,use,great equal operator
+term,include,reference variable
+cross-tree constraints,include,exclude
+uvl,design goal include,exchangeability
+propositional logic operator,include,not
+boolean level minor level,logical operator include,|
+cross-tree constraints,include,ceil function
+uvl,keyword,import
+uvl,constraint operator,<=
+uvl core language constraint,exclude,attribute constraint
+type level conversion,encapsulate,construct specific reasoning engine
+language level,use,include keyword
+group cardinality,concern,nmchildren parent-children relationships
+uvl,support,arbitrary propositional constraint feature
+cross-tree constraints,support,greater_equal operator
+uvl,aggregate function,floor
+uvl,aggregate function,sum function
+uvl,feature,attribute aggregate minor level
+cross-tree constraints,include,constant
+uvl,support,different feature type
+feature tree,represent,hierarchical structure variability model
+type level conversion,support,numeric feature
+uvl,constraint operator,<=>
+uvl,transform,ivml
+type level conversion,represent,cp problem
+boolean level minor level,support,propositional logic operator
+language level,comprise,minor level type level
+feature,can have,different feature type
+uvl,tool support,visual studio code extension
+uvl,aggregate function,len
+arithmetic level,support,aggregate function
+uvl,core include,mandatory
+arithmetic level,be use by,tool cp solver
+conversion strategy,translate,language extension
+propositional logic operator,include,implication
+type level conversion,allow,explicit boolean domain specification
+cross-tree constraints,allow,float literal expression
+cross-tree constraints,combine,predicate
+language extension,include,aggregate-function minor level
+type string-constraints,allow,string operation constraint
+group cardinality,enable,select n m feature group
+cross-tree constraints,use,propositional logic operator
+boolean variable,refer,boolean-attribute key
+attribute aggregate,include,sum function
+type level conversion,test model,string-quotes.uvl
+language extension,follow,hierarchical order
+uvl,dataset repository,uvlhub
+uvl,allow,tool-specific data storage attributes
+uvl,consist,composition feature tree
+feature tree,support,optional group
+boolean level minor level,support,group
+boolean level minor level,include,arithmetic level
+aggregate function,can take,feature second parameter
+boolean core,be,conversion target group cardinality
+cross-tree constraints,include,aggregate function
+arithmetic level,include,avg function
+cross-tree constraints,include,lenfunction
+arithmetic level,support,numeric constant
+uvl,section,cross-tree constraints section
+language level,encapsulate,language construct
+feature tree,represent hierarchy,indentation block
+cross-tree constraints,use,bracket
+type level conversion,keyword,type
+type string-constraints,include,string length operation
+uvl,tool support,antlr notation
+arithmetic level,allow,minor level selection wildcard
+arithmetic operator,include,>
+arithmetic level,include,floor function
+uvl,have,arithmetic level
+uvl,feature,cross-tree constraints section
+uvl,contain,relationship
+feature tree,decompose,subpart
+arithmetic level,use,addition operator
+language extension,enable,optional feature
+type string-constraints,support,len function
+uvl,purpose,unify language variability model
+arithmetic level,include,type major level
+uvl,support,aggregate function
+feature tree,utilize,keyword specify relationship
+boolean level minor level,be,simple base language
+language extension,introduce,additional construct
+boolean level minor level,encode,sit instance
+cross-tree constraints,define,logical dependency feature
+aggregate function,include,floor
+feature cardinality,allow,select single feature n m time
+arithmetic core,use,!=
+type level conversion,support,string comparison
+cross-tree constraints,support,attribute constraint
+cross-tree constraints,arithmetic level,numeric constraints feature attribute
+cross-tree constraints,be,component feature model
+uvl,use,import
+feature tree,represent hierarchy,nest
+uvl,open-source support tools,
+uvl,use,identifier protect quotation mark ambiguity
+arithmetic level,support,division
+featuretype,can be,integer
+uvl,feature,arithmetic core
+boolean level minor level,logical operator include,=>
+attribute aggregate,include,avg function
+uvl,represent,hierarchical structure variability model
+binary expression,support,/
+cross-tree constraints,allow,equality comparison
+comparison operator,include,lower
+arithmetic level,convert,boolean core level
+feature tree,support,group
+uvl,author,david benavides
+boolean level minor level,test model,test_models/boolean_level/
+language extension,extend,core language concept
+standard arithmetic operation,include,/
+group cardinality,specifie,select n m child
+uvl,extensible,different target language
+type level conversion,support,equality check string
+type level conversion,have,high hierarchy
+uvl,repository exchange,uvlhub
+uvl,keyword,namespace
+type level conversion,be,core language uvl
+cross-tree constraints,use,great equal operator
+uvl,be use for,educational instruction
+uvl,arithmetic level,attribute aggregate minor level
+cross-tree constraints,support function,|
+predicate,use operator,<=
+language extension,allow,vary type relationship
+language extension,consist,respective major level
+predicate,include,<
+boolean level minor level,consist,cardinality group type
+uvl,integrate,v4rdiac
+uvl,keyword,feature cardinality
+arithmetic level,support function,!=
+arithmetic level,support,arithmetic subtraction
+include mechanism,provide information,language level section
+feature tree,precede,cross-tree constraints section
+exclude relationship,be,cross-tree constraints section
+language level,represent,different feature type
+cross-tree constraints,store,separately tree structure
+language extension,enable,include keyword
+cross-tree constraints,use,sub operator
+attribute aggregate,allow,avgaggregate
+arithmetic core,use,<
+arithmetic level,support,multiplication
+uvl,support,type numeric-constraints minor level
+term,include,function
+uvl,grammar,antlr notation
+type level conversion,be,extension
+language extension,optional section,reference uvl model
+arithmetic core,support,attribute constraint
+cross-tree constraints,satisfy,configuration
+alternative group,be part of,convert boolean level
+group cardinality,be,boolean core level
+uvl,be,community effort
+boolean level minor level,be use by,variability
+uvl,grammar include,attribute
+arithmetic level,include,feature-cardinality
+uvl,be use for,tool interoperability
+language level,include,type
+uvl,type level include,type numeric-constraints minor level
+arithmetic level,include,multiplication operator
+feature,can have,featurecardinality
+extension mechanism,allow,arbitrary datum storage
+feature tree,contain,optional feature
+language extension,enable,major language level
+cross-tree constraints,include,attribute aggregate minor level
+feature tree,know,feature diagram
+feature tree,exist,cross-tree constraints section
+feature tree,utilize,keywords specify parent-child relationships
+cross-tree constraints,limit,propositional logic operator
+term,include,binary expression
+uvl,use,antlr4 grammar file
+uvl,include,construct numeric constraint
+cross-tree constraints,predicate use operator,!=
+cross-tree constraints,specify,variability model constraint
+type level conversion,associate directory,type_level/
+uvl,support,cardinality group type
+uvl,support function,avg function
+cross-tree constraints,support,arithmetic
+arithmetic level,include,division operator
+type level conversion,support,string value
+boolean level minor level,support,attribute constraint
+boolean core,include,cross-tree constraints section
+uvl,python parser package,uvlparser
+boolean level minor level,support,optional feature
+cross-tree constraints,boolean variable refer,boolean-attribute key
+uvl,allow,model decomposition
+uvl,constraint operator,|
+arithmetic level,support function,<
+boolean level minor level,low level,language hierarchy
+arithmetic level,allow,term resolve boolean
+uvl,support function,ceil
+feature tree,be,hierarchically arrange set feature
+boolean level minor level,be,major language level
+propositional logic operator,include,!
+uvl,support,attribute aggregate minor level
+arithmetic level,be,majorlevel
+uvl,be,common textual exchange format
+cross-tree constraints,involve,attribute
+arithmetic level,support,cross-tree constraints section
+uvl,result,modevar initiative
+uvl,minor level extension,attribute aggregate minor level
+uvl,keyword,real feature
+uvl,include,mandatory group type
+arithmetic operator,include,add
+arithmetic core,support,*
+feature tree,root feature include,configuration
+boolean level minor level,store,feature information
+string constraint,be,optional extension
+arithmetic level,support,sum function
+type level conversion,permit,string constraint
+numeric-constraints,allow,construct numeric constraint
+uvl,integrate,variability
+uvl,use group type,optional feature
+uvl,arithmetic level,arithmetic core
+uvl,use,namespace
+arithmetic level,group construct,construct specific reasoning engine
+cross-tree constraints,support,equivalence
+function constraint,include,floor
+predicate,include,>=
+boolean level minor level,support function,|
+uvl,support,string constraint
+arithmetic level,represent,smt problem
+arithmetic operator,include,<=
+arithmetic level,enable,division
+uvl,integrate,uvl
+boolean level minor level,extend,type major level
+cross-tree constraints,support,ceiloperation
+boolean level minor level,provide,language construct
+cross-tree constraints,support function,=>
+language extension,call,major language level
+cross-tree constraints,utilize,avg function
+cross-tree constraints,include,numeric operation
+cross-tree constraints,predicate use operator,<
+numeric operation,include,ceil
+cross-tree constraints,binary expression include,/
+arithmetic level,support,integer literal
+boolean level minor level,be use by,ddueruem
+uvl,feature,language-level modularity
+arithmetic level,support,travart
+cross-tree constraints,utilize,floor function
+minor level,include,feature-cardinality
+feature tree,support,optional feature
+cross-tree constraints,identify,constraints keyword
+arithmetic level,minor level extension,string-constraints
+arithmetic core,support,arithmetic
+type string-constraints,include,string comparison
+uvl,support,float feature
+cross-tree constraints,permit,parenthesis operation
+arithmetic core,use,+
+uvl,consist,optional section
+cross-tree constraints,allow,ceil function
+boolean level minor level,support,featureide
+feature tree,decompose,submodel reference
+cross-tree constraints,allow,string literal expression
+language extension,support,type major level
+arithmetic level,enable,arithmetic subtraction
+cross-tree constraints,consist,literal constraint
+language extension,accommodate,diverse modeling need
+uvl,represent,hierarchical order
+feature tree,contain,feature cardinality
+numeric-constraints,allow,floor
+boolean level minor level,allow inclusion,boolean* minor levels
+language extension,support,convert boolean level
+arithmetic level,enable,multiplication
+boolean core,be,level extension
+language extension,know,major language level
+uvl,tool support,java meta model
+uvl,include,arithmetic level
+uvl,design goal include,expressiveness need
+cross-tree constraints,support,multiplication
+boolean level minor level,include,composition feature tree
+arithmetic level,support function,>=
+require relationship,be,cross-tree constraints section
+language extension,allow,majorlevel.minorlevel pattern
+major level,include,boolean value
+arithmetic level,permit,numeric feature
+uvl,support,arithmetic core
+boolean level minor level,encode,cnf
+language extension,be,optional feature
+uvl,integrate,ddueruem
+uvl,constraint operator,=>
+boolean level minor level,include,arithmetic-level
+uvl,support type,boolean value
+boolean level minor level,support,cardinality group type
+arithmetic level,support function,+
+uvl,aggregate function,avg function
+uvl,java parser package,uvl-parser
+arithmetic operator,include,mul
+cross-tree constraints,declare,dedicated constraint section
+uvl,model,software product line
+language level,comprise,respective major level
+cross-tree constraints,define,dependencie feature
+boolean level minor level,support,propositional cross-tree constraints
+cross-tree constraints,reference,attribute
+uvl,feature,type numeric-constraints minor level
+boolean level minor level,automatically include,minor level type level
+type level conversion,support,v4rdiac
+contextual clone constraint,ensure,configurability clone
+cross-tree constraints,include,constraints keyword
+cross-tree constraints,interact,feature cardinality
+uvl,allow,reference uvl model
+uvl,aggregate function,ceil
+uvl,support,language extension
+uvl,use,line break end statement
+comparison operator,include,equal
+arithmetic level,support,addition
+uvl,support,boolean core level
+boolean level minor level,enable,optional feature
+uvl,support,string feature
+uvl,use group type,feature cardinality
+type level conversion,associate test file,string-attributes.uvl
+boolean level minor level,support,equivalence
+feature,can have,attribute
+aggregate function,be,optional extension arithmetic level
+uvl,be use for,knowledge sharing
+uvl,core include,or
+uvl,allow,language extension
+cross-tree constraints,predicate use operator,>=
+boolean level minor level,include,cross-tree constraints section
+boolean level minor level,support,flamapy
+uvl,be,extensibility
+predicate,include,>
+cross-tree constraints,consist,equationconstraint
+arithmetic level,encapsulate,language construct
+feature tree,contain,real feature
+language extension,allow,majorlevel.asterisk pattern
+feature,posses,unique name identifier
+feature attribute,contain,-line constraints
+aggregate function,include,average
+arithmetic core,use,>
+extension mechanism,use,feature attributes tool-specific data
+uvl,use,antlr notation
+language extension,enable,tailor language specification
+boolean level minor level,allow attribute,store feature information
+language extension,include,feature-cardinality minor level
+language extension,preserve,core language concept
+uvl,integrate,travart
+feature tree,support,cardinality group type
+import mechanism,support,composition feature tree
+cross-tree constraints,support,great equation
+cross-tree constraints,support,negation
+arithmetic level,include,feature cardinality
+uvl,section,composition feature tree
+uvl,use group type,alternative
+boolean level minor level,support,nemo
+language level,provide,optional feature
+test_models/type_level/,contain,string-constraints
+arithmetic level,introduce,numeric constraints feature attribute
+type level conversion,drop,string-constraints
+uvl,base grammar,uvlparser
+propositional logic operator,combine,boolean value
+cross-tree constraints,belong,boolean core level
+cross-tree constraints,allow,len function
+cross-tree constraints,include,require
+type level conversion,introduce,real feature
+group cardinality,specifie,nmchildren parent-children relationships
+uvl,include,alternative group type
+feature tree,allow,cardinality group type
+boolean level minor level,enable,include keyword
+cross-tree constraints,reference,feature unique name
+type level conversion,enable,include keyword
+uvl,provide,grammar-based foundation
+propositional logic operator,include,&
+feature tree,include,mandatory group type
+aggregate function,include,avg function
+feature tree,utilize,nest describe hierarchy
+boolean level minor level,include,equivalence constraint
+feature tree,be,reference uvl model
+uvl,aim,tool interoperability
+cross-tree constraints,support,lenoperation
+uvl,constraint operator,<
+boolean level minor level,use,<=> operator
+standard arithmetic operation,include,!=
+type level conversion,associate test file,string-quotes.uvl
+aggregate function,include,ceil
+arithmetic level,support function,>
+boolean level minor level,support function,<=>
+boolean level minor level,be use by,fm fact label
+cross-tree constraints,be part of,core language uvl
+uvl,development start,2018
+language extension,provide,expressive language feature
+boolean level minor level,classify,majorlevel
+language extension,support,arithmetic level
+arithmetic core,use,=
+uvl,minor level extension,aggregate-function
+type level conversion,support,uvl
+group type,include,or
+uvl,core include,cross-tree constraints section
+uvl,support,numeric constraints feature attribute
+feature,can have,feature arbitrary number group
+group cardinality,extend,convert boolean level
+feature tree,visualize,featureide representation
+language extension,group,construct specific reasoning engine
+language-level modularity,be,key feature
+type level conversion,allow,notconstraint
+uvl,provide,pre-built parsers javascript
+type level conversion,support,real feature
+cross-tree constraints,appear,singleconstraintattribute
+predicate,include,!=
+uvl,tool support,uvl.js
+cross-tree constraints,include,parenthesisconstraint
+uvl,core include,mandatory relationship
+conversion strategy,translate,high level construct low level
+language level,be,optional feature
+feature tree,be,key feature uvl
+uvl,maintain,consortium institution
+uvl,support,language-level modularity
+cross-tree constraints,contain,additive expression
+type level conversion,use,include keyword
+cross-tree constraints,support function,!
+cross-tree constraints,support,low equation
+uvl,support,composition
+type level conversion,test model,uvl
+uvl,contain,real feature
+uvl,store,cross-tree constraints section
+uvl,allow,attribute constraint
+aggregate function,include,sum function
+arithmetic level,enable,addition
+uvl,be,human-readable
+uvl,use,context-free grammar specification
+type level conversion,use,boolean domain default
+feature tree,include,attribute
+cross-tree constraints,impose,limitation feature
+cross-tree constraints,predicate use operator,>
+cross-tree constraints,interact feature cardinality,contextual clone constraint
+boolean level minor level,be use by,pure::variant
+arithmetic level,provide function,floor
+boolean level minor level,keyword,boolean value
+cross-tree constraints,support,addition
+uvl,feature,group cardinality minor level
+arithmetic level,support,additive expression
+standard arithmetic operation,include,<
+arithmetic core,support,/
+arithmetic level,provide,arithmetic core
+uvl,integrate,fm fact label
+predicate,specify dependency base,numerical value
+type level conversion,extend,arithmetic level
+uvl,serve,pivot language
+language level,include,wildcard symbol
+arithmetic core,use,-
+uvl,transform,pure::variant
+aggregate function,include,len
+boolean level minor level,support,negation
+boolean level minor level,use,=> operator
+arithmetic level,represent,cp problem
+arithmetic level,allow wildcard,arithmetic*
+uvl,allow,abstract feature
+propositional logic operator,include,and
+arithmetic level,include,construct numeric constraint
+cross-tree constraints,use,multiplication operator
+include keyword,enable,respective major level
+uvl,have,formal semantic
+include keyword,declare,language extension
+boolean level minor level,be,core language uvl
+featuretype,can be,real
+uvl,license,gnu less general public license version 3
+uvl,feature,boolean core level
+boolean level minor level,influence,configuration validity
+propositional logic operator,include,<=>
+cross-tree constraints,be,exclusion statement
+feature tree,specify,uvl
+cross-tree constraints,uvl core language limit,propositional logic operator
+boolean level minor level,parse,pre-built parsers python
+cross-tree constraints,include,reference variable
+feature,main element,composition feature tree
+cross-tree constraints,use,division operator
+language extension,provide information,language level section
+type level conversion,minor level extension,string-constraints
+cross-tree constraints,boolean variable refer,real feature
+include mechanism,allow user specify,language extension
+cross-tree constraints,use,boolean language level
+type level conversion,test model,test_models/type_level/ directory
+arithmetic level,support,attribute aggregate minor level
+aggregate function,convert,arithmetic core
+uvl,have,formal syntax
+cross-tree constraints,predicate connect,term
+uvl,have,java parser
+uvl,grammar include,group
+uvl,constraint operator,!
+arithmetic level,support function,-
+uvl,integrate,pure::variant
+cross-tree constraints,core language,propositional logic operator
+arithmetic level,categorize,majorlevel
+contextual clone constraint,create,feature cardinality
+cross-tree constraints,support,avgaggregate
+type level conversion,support,len function
+cross-tree constraints,support,aggregate function
+arithmetic level,support,avg function
+uvl,contain,cross-tree constraints section
+arithmetic level,encapsulate,arithmetic expression feature
+cross-tree constraints,define,arithmetic dependency feature
+type level conversion,contain,type numeric-constraints minor level
+language extension,provide,construct numeric constraint
+string operation,include,comparison string feature constraint
+cross-tree constraints,allow,feature reference
+uvl,support,feature cardinality
+uvl,structure,boolean core level
+arithmetic level,include,len function
+function constraint,include,avg function
+featuretype,can be,string value
+cross-tree constraints,use,arithmetic level
+arithmetic level,include,arithmetic.aggregate-function
+uvl,include,optional group
+uvl core language constraint,include,import
+arithmetic level,require process,process sit encode
+cross-tree constraints,exclude,attribute constraint
+cross-tree constraints,allow,aggregate function
+test_models/type_level/,contain,nested/string-attributes-external.uvl
+cross-tree constraints,function include,length
+include keyword,enable,minor level type level
+function constraint,include,ceil
+feature tree,introduce,features_key
+language extension,support,minor level selection wildcard
+uvl,support,numeric feature
+feature tree,component,component feature model
+uvl,enable,include keyword
+boolean variable,refer,feature unique name
+type level conversion,support,travart
+uvl,minor level extension,cardinality group type
+uvl,author,kevin feichtinger
+arithmetic level,use in,cross-tree constraints section
+cross-tree constraints,combine,boolean value
+uvl,grammar include,constraints keyword
+language extension,provide,construct type feature
+uvl,feature,import
+cross-tree constraints,compose model,alias
+cross-tree constraints,support,implication operator
+binary expression,support,+
+language extension,enhance,uvl expressiveness
+uvl,allow,cardinality group type
+type level conversion,introduce,different feature type
+uvl,support,conversion strategy level
+uvl,design goal include,extensibility
+predicate,connect,term
+arithmetic level,support function,<=
+cross-tree constraints,include,floor function
+boolean core,include,group
+aggregate function,introduce,sum function
+feature tree,include,alternative group type
+standard arithmetic operation,include,+
+feature cardinality,be,optional extension arithmetic level
+uvl,support,logical constraint
+cross-tree constraints,be,optional section uvl model
+cross-tree constraints,use,addition operator
+type level conversion,test model,string-constraints
+uvl,originate,modevar initiative
+cross-tree constraints,use,low operator
+type level conversion,associate test file,string-constraints
+cross-tree constraints,represent,domain constraint
+uvlparser,extend,uvl conversion strategy
+uvl,integrate,flama
+cross-tree constraints,mark,constraints keyword
+cross-tree constraints,consist,equivalence constraint
+cross-tree constraints,function include,average
+arithmetic operator,include,div
+function constraint,include,sum function
+boolean level minor level,group type include,optional feature
+language extension,include,boolean core level
+numeric-constraints,allow,ceil
+uvl,support,uvl
+uvl,support,relationship
+cross-tree constraints,can be,equality equation
+arithmetic level,support,arithmetic core
+feature tree,contain,alternative group type
+language extension,provide,construct cardinality
+numeric-constraints,be,minor level type level
+aggregate function,be,arithmetic level
+arithmetic.feature-cardinality,extend,arithmetic level
+boolean level minor level,be,optional extension
+arithmetic level,support,numerical feature attribute
+predicate,include,==
+function constraint,include,len
+uvl,include,core language concept
+uvl,support,type core
+feature tree,be,component feature model
+aggregate function,take,numeric feature
+feature tree,consist,real feature
+cross-tree constraints,include,notconstraint
+cross-tree constraints,allow,division
+uvl,model,variability
+feature tree,contain,nmchildren parent-children relationships
+uvl,type level include,type core
+cross-tree constraints,follow,feature tree section grammar
+feature tree,import,subtree
+uvl,have,antlr-based parser
+language extension,extend,core language uvl
+uvl,support type,integer
+include mechanism,ensure,tool compatibility
+uvl,parse,javascript
+cross-tree constraints,impact,configuration space
+arithmetic level,support,multiplication operator
+cross-tree constraints,involve,contextual clone constraint
+cross-tree constraints,support,arithmetic subtraction
+type level conversion,minor level extension,numeric-constraints
+term,include,constant
+boolean level minor level,exclude,attribute constraint
+type level conversion,allow,comparison string feature constraint
+boolean level minor level,support,namespace
+boolean level minor level,use,& operator
+language extension,translate,high level construct low level
+language level,represent,vary type relationship
+cross-tree constraints,be,core language concept
+boolean level minor level,support,feature cardinality
+uvl,pivot model,travart
+cross-tree constraints,allow,arithmetic subtraction
+uvl,support function,floor
+cross-tree constraints,include,function
+group type,include,optional feature
+arithmetic level,be,core language uvl
+feature tree,feature,unique name identifier
+boolean level minor level,logical operator include,!
+cross-tree constraints,type level,len function
+uvl,use,indentation block
+feature cardinality,enable,select feature multiple time
+propositional logic operator,include,|
+uvl,model,uvlhub
+uvl,minor level extension,group-cardinality
+uvl core language constraint,include,namespace
+arithmetic level,grow exponentially size,convert boolean level
+arithmetic level,support function,==
+cross-tree constraints,include,string operation constraint
+uvl,parse,python
+standard arithmetic operation,include,>
+type level conversion,support,string length operation
+uvl,section,major language level
+cross-tree constraints,function include,sum function
+language extension,include,minor level type level
+boolean level minor level,include,type major level
+feature tree,include,cardinality group type
+cross-tree constraints,include,binary expression
+type level conversion,include,type core
+cross-tree constraints,include,negation
+string constraint,drop,conversion
+cross-tree constraints,use,aggregate-function minor level
+uvl,keyword,as
+boolean level minor level,support,conjunction
+uvl,feature,namespace
+attribute aggregate,allow,sumaggregate
+arithmetic core,use,*
+cross-tree constraints,support,propositional logic operator
+boolean level minor level,support function,=>
+feature tree,be,tree-like structure
+uvl,use,nest describe hierarchy
+cross-tree constraints,binary expression include,+
+uvl,constraint operator,!=
+cross-tree constraints,consist,parenthesis operation
+boolean level minor level,limit constraint,propositional logic operator
+boolean level minor level,support,variability
+boolean level minor level,support,disjunction
+arithmetic level,include,arithmetic*
+uvl,use,complete keyword
+cross-tree constraints,contain,multiplicative expression
+uvl,design goal include,information hiding
+cross-tree constraints,consist,arbitrary propositional formulae
+arithmetic level,include,feature-cardinality minor level
+type level conversion,support,boolean feature type
+cross-tree constraints,be,arbitrary propositional constraint feature
+uvl,support type,string value
+boolean core,include,optional feature
+type level conversion,permit,string value
+boolean level minor level,support,uvl
+uvl,official website,https://universal-variability-language.github.io/
+arithmetic level,minor level extension,aggregate-function
+feature tree,support,feature cardinality
+uvl,maintain,uvlhub
+uvl,provide,pre-built parsers python
+cross-tree constraints,predicate use operator,==
+feature tree,include,optional group
+uvl,base lexer grammar file,uvllexer.g4
+standard arithmetic operation,include,=
+propositional logic operator,include,equivalence
+arithmetic level,support,multiplicative expression
+uvl,support,string-constraints
+language extension,include,group-cardinality minor level
+arithmetic level,be,major language level
+uvl,arithmetic operator,+
+language level,include,minor level type level
+comparison operator,include,great
+arithmetic level,support function,*
+boolean level minor level,extend,arithmetic level
+type level conversion,allow,floorconstraint
+uvl,be,concise
+type string-constraints,allow,string comparison
+cross-tree constraints,consist,operation
+feature cardinality,convert,arithmetic core
+minor level,include,aggregate-function
+arithmetic core,support,!=
+string operation,include,len
+uvl,type level include,string-constraints
+uvl core language constraint,limit,propositional logic operator
+arithmetic level,include,wildcard symbol
+cross-tree constraints,use,div operator
+uvl,support,import
+uvl,define,antlr4 grammar file
+boolean level minor level,include,boolean core level
+uvl,use group type,or
+type level conversion,enable,aggregate function
+uvl,provide foundation,building tool
+boolean level minor level,reason,sit solver backend
+type core,support,string feature
+binary expression,support,-
+import feature,reference,namespace
+feature,have,unique name identifier
+arithmetic level,be use by,tool smt solver
+cross-tree constraints,allow,integer literal
+comparison operator,include,greater_equal operator
+exclude relationship,denote,feature incompatibility
+arithmetic level,provide function,ceil
+cross-tree constraints,binary expression include,*
+uvl,feature,type core
+standard arithmetic operation,include,-
+propositional logic operator,include,=>
+arithmetic level,provide,language construct
+type string-constraints,allow,len
+uvl,include,import mechanism
+language extension,cover,sophisticated expression
+boolean level minor level,support,equivalence operator
+boolean level minor level,support,ddueruem
+cross-tree constraints,use,mul operator
+uvl,be,open-source
+uvl,author,chico sundermann
+language extension,organize,major language level
+uvl core language constraint,include,composition feature tree
+cross-tree constraints,support,equality equation
+feature tree,include,group
+type level conversion,introduce,string constraint
+cross-tree constraints,allow,great comparison
+arithmetic level,support,v4rdiac
+cross-tree constraints,define,arbitrary propositional constraint feature
+type level conversion,convert,convert boolean level
+uvl,provide,conversion strategy level
+uvl,have,base grammar ebnf form
+cross-tree constraints,use,equivalence operator
+boolean level minor level,be,majorlevel
+cross-tree constraints,evaluate,boolean value
+type level conversion,associate test file,uvl
+uvl,support,inclusion feature model
+arithmetic core,support,<
+feature tree,contain,hierarchical feature
+boolean level minor level,group type include,mandatory
+uvl,arithmetic operator,*
+boolean level minor level,include,group keyword
+group type,include,alternative
+arithmetic level,include,attribute aggregate minor level
+arithmetic level,provide function,sum function
+type level conversion,introduce,float feature
+uvl,structure,type major level
+cross-tree constraints,type level,string length operation
+uvl,provide,pre-built parsers java
+boolean level minor level,be,different feature type
+uvl,arithmetic level,feature cardinality
+boolean level minor level,support,mandatory relationship
+type level conversion,introduce,numeric operation
+uvl,be,unify language variability model
+aggregate function,consider attribute value,select feature
+cross-tree constraints,include,equationconstraint
+cross-tree constraints,support,ceil function
+arithmetic level,encode,cp instance
+arithmetic level,support,feature cardinality
+predicate,use operator,!=
+uvl core language constraint,include,cross-tree constraints section
+arithmetic level,provide function,len
+type level conversion,support,string constraint
+cross-tree constraints,handle,construct specific reasoning engine
+uvl,contain,composition feature tree
+string constraint,be,minor level type level
+feature tree,contain,attribute
+cross-tree constraints,allow,addition
+cross-tree constraints,use,greater_equal operator
+cross-tree constraints,define,arithmetic constraint feature
+language extension,enhance,expressiveness need
+cross-tree constraints,consist,logical constraint
+feature tree,require process,exactly root feature
+type level conversion,allow,configuration non-boolean values
+uvl,stand,uvl
+arithmetic level,support,numeric feature
+boolean level minor level,group feature,construct specific reasoning engine
+feature cardinality,be,arithmetic level
+feature tree,use,indentation block

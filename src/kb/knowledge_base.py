@@ -17,7 +17,7 @@ class KnowledgeBase:
         """Initialize an empty knowledge base."""
         self.triplets: list[Triplet] = []
         self.nlp = nlp
-        self._iterations_seeds: dict[str, dict[int, 'KnowledgeBase']] = {}
+        self.iterations_seeds: dict[str, dict[int, 'KnowledgeBase']] = {}
         
     def load_from_csv(self, file_path: str) -> None:
         """Load triplets from a CSV file that contains the columns named Subject, Predicate, and Object.
@@ -32,12 +32,12 @@ class KnowledgeBase:
                     seed = row['Seed']
                     run = int(row['Run'])
                     self.add_triplet(triplet)
-                    if seed not in self._iterations_seeds:
-                        self._iterations_seeds[seed] = {}
-                    if run not in self._iterations_seeds[seed]:
-                        self._iterations_seeds[seed][run] = KnowledgeBase(self.nlp)
+                    if seed not in self.iterations_seeds:
+                        self.iterations_seeds[seed] = {}
+                    if run not in self.iterations_seeds[seed]:
+                        self.iterations_seeds[seed][run] = KnowledgeBase(self.nlp)
                     
-                    self._iterations_seeds[seed][run].add_triplet(triplet)
+                    self.iterations_seeds[seed][run].add_triplet(triplet)
             else:
                 for row in reader:
                     triplet = process_triplet(row)
@@ -124,12 +124,12 @@ class KnowledgeBase:
 
     def calculate_consistency(self) -> dict[str, Any]:
         """Calcula la consistencia factual (Macro y Micro) de la KB."""
-        if not self._iterations_seeds:
+        if not self.iterations_seeds:
             print("No hay datos de Seed/Run para calcular consistencia.")
             return {}
 
         seed_scores = {}
-        for seed, runs_dict in self._iterations_seeds.items():
+        for seed, runs_dict in self.iterations_seeds.items():
             # Pasamos la lista de KBs de esa semilla (Run 1, Run 2...)
             # IMPORTANTE: Aquí se pasan SIN normalizar
             kbs_of_seed = list(runs_dict.values())
@@ -184,7 +184,7 @@ class KnowledgeBase:
         
         for seed, score in seed_scores.items():
             # Peso = promedio de tripletas en los runs de esta semilla
-            runs = self._iterations_seeds[seed].values()
+            runs = self.iterations_seeds[seed].values()
             avg_size = sum(len(kb) for kb in runs) / len(runs)
             
             weighted_sum += score * avg_size
