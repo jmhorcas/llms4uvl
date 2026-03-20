@@ -1,0 +1,43 @@
+namespace AIAssistant
+
+features
+    Model mandatory
+        GPT4o
+            attributes
+                cost 8
+                tokens "128k"
+        Gemini
+            attributes
+                cost 10
+                tokens "1M"
+        Claude
+            attributes
+                cost 9
+                tokens "200k"
+    Plan mandatory
+        Free
+            attributes
+                monthLimit 50
+        Premium
+            attributes
+                monthLimit 1000
+    Access mandatory
+        WebApp
+        API
+            attributes
+                cost 2
+    FineTuning optional
+        attributes
+            cost 5
+    Temperature optional
+        attributes
+            value integer [0, 5]
+    ImageGeneration optional
+    WebSearch optional
+
+constraints
+    (ImageGeneration requires (Model.GPT4o or Model.Gemini))
+    (API excludes WebSearch)
+    (FineTuning requires Plan.Premium)
+    (Plan.Premium requires FineTuning)
+    (sum(cost) < 15)

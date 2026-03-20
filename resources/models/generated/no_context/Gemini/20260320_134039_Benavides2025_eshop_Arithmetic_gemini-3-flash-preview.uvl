@@ -1,0 +1,31 @@
+namespace eShopModel
+
+features
+    eShop
+        mandatory
+            Catalogue
+            Security
+                alternative
+                    Standard {price 50}
+                    High {price 100}
+        optional
+            SEO
+            Payment
+                alternative
+                    BankTransfer {price 10, SEPA true}
+                    CreditCard {price 20}
+            Platform
+                [2..3]
+                    MobileApp
+                    Browser {URL "www.uvleshop.org"}
+                    DesktopApp
+
+constraints
+    // An eShop including Credit card must include High security support
+    CreditCard => High
+
+    // Bank Transfer and Mobile App are incompatible
+    BankTransfer => !MobileApp
+
+    // The overall sum in price of all selected features should be smaller than 200
+    sum(price) < 200

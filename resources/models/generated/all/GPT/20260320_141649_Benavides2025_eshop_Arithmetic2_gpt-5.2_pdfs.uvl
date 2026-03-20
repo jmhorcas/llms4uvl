@@ -1,0 +1,75 @@
+// eShop product line (UVL)
+
+features
+  eShop {
+    mandatory
+      Catalogue
+      Security
+
+    optional
+      SEO
+      Payment
+      Platform
+
+    // --- Security: exactly one option ---
+    Security {
+      alternative
+        Standard
+        High
+    }
+
+    // --- Payment: optional, but if selected exactly one option ---
+    Payment {
+      alternative
+        BankTransfer
+        CreditCard
+    }
+
+    // --- Platform: optional, but if selected choose 2..3 of the 3 options ---
+    Platform {
+      [2..3]
+        MobileApp
+        Browser
+        DesktopApp
+    }
+
+    // --- Catalogue: 1..5 instances (each adds price 30) ---
+    Catalogue {
+      [1..5]
+        CatalogueItem
+    }
+  }
+
+attributes
+  // numeric attribute
+  price : int
+
+  // boolean attribute
+  SEPA : boolean
+
+  // string attribute
+  URL : string
+
+  // attribute values
+  High.price = 100
+  Standard.price = 50
+
+  BankTransfer.price = 10
+  BankTransfer.SEPA = true
+
+  CreditCard.price = 20
+
+  Browser.URL = "www.uvleshop.org"
+
+  // each selected catalogue increases overall price by 30
+  CatalogueItem.price = 30
+
+constraints
+  // Credit card requires high security
+  CreditCard => High
+
+  // Bank transfer incompatible with mobile app
+  BankTransfer => !MobileApp
+
+  // overall sum of selected feature prices must be < 200
+  sum(price) < 200

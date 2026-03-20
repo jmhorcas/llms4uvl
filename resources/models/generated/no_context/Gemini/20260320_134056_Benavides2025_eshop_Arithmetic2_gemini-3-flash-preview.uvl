@@ -1,0 +1,38 @@
+namespace eShop
+
+features
+	eShop
+		mandatory
+			// The user can decide to have between one and five Catalogue features
+			// Each selected Catalogue increases price by 30
+			Catalogue [1..5] {price 30}
+			
+			Security
+				alternative
+					Standard {price 50}
+					High {price 100}
+		optional
+			SEO
+			
+			Payment
+				// Exactly one Payment option can be selected
+				alternative
+					BankTransfer {price 10, SEPA true}
+					CreditCard {price 20}
+			
+			Platform
+				// If Platform is selected, select between two and three children
+				cardinality [2..3]
+					MobileApp
+					Browser {URL 'www.uvleshop.org'}
+					DesktopApp
+
+constraints
+	// An eShop including Credit card must include High security support
+	CreditCard => High
+	
+	// Bank Transfer and Mobile App are incompatible
+	BankTransfer => !MobileApp
+	
+	// The overall sum in price of all selected features should be smaller than 200
+	sum(price) < 200

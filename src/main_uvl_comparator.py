@@ -117,6 +117,8 @@ def global_score(feature_similarity_score: float, constraint_similarity_score: f
     )
     
     return round(global_score, DECIMAL_PRECISION)
+
+
 def main(uvl_filepath1: str, uvl_filepath2: str) -> None:
     try:
         print('📥 Reading UVL model 1...')

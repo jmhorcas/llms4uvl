@@ -1,0 +1,57 @@
+features
+  Pizza {
+    Base
+    Sauce {
+      group one [1] {
+        Tomato
+        CremeFraiche
+      }
+    }
+    Cheese {
+      group some [1..*] {
+        Mozzarella
+        Cheddar
+      }
+    }
+    Toppings {
+      group oneToThree [1..3] {
+        Mushrooms
+        Onion
+        Olive
+        Pineapple
+      }
+    }
+    Delivery {
+      Addresses {
+        group multiple [1..10] {
+          Address {
+            Street
+            City
+          }
+        }
+      }
+    }
+    Size
+  }
+
+constraints
+  Cheddar requires not CremeFraiche
+  Price < 5
+  Size >= 20 and Size <= 60
+  City = "Omashu"
+  length(Street) <= 100
+
+attributes
+  Base.price 2.0
+  Tomato.price 0.8
+  CremeFraiche.price 1.1
+  Mozzarella.price 0.4
+  Cheddar.price 0.6
+  Mushrooms.price 0.5
+  Onion.price 0.3
+  Olive.price 0.3
+  Pineapple.price 0.8
+  Price = sum(selected("*.price"))
+  Size.type integer
+  Street.type string
+  City.type string

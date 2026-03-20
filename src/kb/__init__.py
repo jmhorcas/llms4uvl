@@ -4,6 +4,7 @@ from .knowledge_base import KnowledgeBase
 from .knowledge_comparator import KnowledgeComparator
 from .taxonomy_constructor import TaxonomyConstructor
 from .taxonomy_constructor_inverted import TaxonomyConstructorInverted
+from .uvl_comparator import UVLComparator
 
 
 __all__ = ['NaturalLanguageProcessor', 
@@ -11,4 +12,5 @@ __all__ = ['NaturalLanguageProcessor',
            'Triplet', 
            'KnowledgeComparator', 
            'TaxonomyConstructor', 
-           'TaxonomyConstructorInverted']
+           'TaxonomyConstructorInverted',
+           'UVLComparator']

@@ -1,0 +1,33 @@
+namespace eShop
+
+features
+	eShop {abstract}
+		mandatory
+			Catalogue {abstract}
+				cardinality [1..5]
+					Europe {Price 30}
+					NorthAmerica {Price 30}
+			Security {abstract}
+				alternative
+					Standard {Price 50}
+					High {Price 100}
+		optional
+			SEO {Price 40}
+			Payment {abstract}
+				alternative
+					BankTransfer {Price 10, SEPA true}
+					CreditCard {Price 20}
+			Platform {abstract}
+				[2..3]
+					MobileApp {Price 80}
+					Browser {Price 20, URL ""}
+					DesktopApp {Price 70}
+			ItemsInBasket
+				Integer
+
+constraints
+	CreditCard => High
+	!BankTransfer | !MobileApp
+	sum(Price, eShop) < 200
+	ItemsInBasket > 0
+	len(Browser.URL) <= 30

@@ -1,0 +1,70 @@
+features
+  eShop
+    mandatory
+      Catalogue
+      Security
+    optional
+      SEO
+      Payment
+      Platform
+
+  Security
+    alternative
+      Standard
+      High
+
+  Payment
+    alternative
+      BankTransfer
+      CreditCard
+
+  Platform
+    optional
+      MobileApp
+      Browser
+      DesktopApp
+
+constraints
+  // Platform selection constraints
+  Platform => (MobileApp or Browser or DesktopApp)
+  (MobileApp or Browser or DesktopApp) => Platform
+  count(MobileApp, Browser, DesktopApp) >= 2
+  count(MobileApp, Browser, DesktopApp) <= 3
+
+  // Cross-tree constraints
+  CreditCard => High
+  not (BankTransfer and MobileApp)
+  
+  // Price constraint
+  sum(price) < 200
+  
+  // Catalogue cardinality
+  count(Catalogue) >= 1
+  count(Catalogue) <= 5
+  
+  // Items in Basket constraint
+  ItemsInBasket > 0
+  
+  // Browser URL length constraint
+  length(Browser.URL) <= 30
+
+attributes
+  // Number attributes (price)
+  High.price 100
+  Standard.price 50
+  BankTransfer.price 10
+  SEO.price 40
+  CreditCard.price 20
+  DesktopApp.price 70
+  MobileApp.price 80
+  Browser.price 20
+  Catalogue.price 30
+  
+  // Boolean attribute
+  BankTransfer.SEPA true
+  
+  // String attribute
+  Browser.URL string
+
+  // Integer attribute
+  ItemsInBasket integer

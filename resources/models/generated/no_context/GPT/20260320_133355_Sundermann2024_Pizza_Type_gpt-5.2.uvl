@@ -1,0 +1,55 @@
+namespace pizza
+
+features
+  Pizza {
+    mandatory
+      Base { price = 2.0 }
+
+    mandatory
+      Sauce {
+        alternative
+          Tomato { price = 0.8 }
+          CremeFraiche { price = 1.1 }
+      }
+
+    optional
+      Cheese {
+        or
+          Mozzarella { price = 0.4 }
+          Cheddar { price = 0.6 }
+      }
+
+    optional
+      Toppings {
+        group [1..3]
+          Mushrooms { price = 0.5 }
+          Onion { price = 0.3 }
+          Olive { price = 0.3 }
+          Pineapple { price = 0.8 }
+      }
+
+    attributes
+      Size : int
+
+    optional
+      DeliveryAddresses [1..10] {
+        mandatory
+          Street { type = string }
+          City   { type = string }
+      }
+  }
+
+constraints
+  // Cheddar cannot be selected with Creme Fraiche
+  Cheddar => !CremeFraiche
+
+  // Size between 20 and 60
+  Pizza.Size >= 20
+  Pizza.Size <= 60
+
+  // Delivery location must be in Omashu; street length at most 100
+  DeliveryAddresses.City == "Omashu"
+  length(DeliveryAddresses.Street) <= 100
+
+  // Overall price must be smaller than 5
+  sum(price) < 5

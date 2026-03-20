@@ -1,0 +1,54 @@
+namespace PizzaModel
+
+features
+    Pizza
+        mandatory
+            Base {price 2.0}
+            Sauce
+                alternative
+                    Tomato {price 0.8}
+                    CremeFraiche {price 1.1}
+        optional
+            Cheese
+                or
+                    Mozzarella {price 0.4}
+                    Cheddar {price 0.6}
+            Toppings [1..3]
+                or
+                    Mushrooms {price 0.5}
+                    Onion {price 0.3}
+                    Olive {price 0.3}
+                    Pineapple {price 0.8}
+        
+        attributes
+            Integer size
+            
+        // Multi-feature for delivery addresses
+        DeliveryAddress [1..10]
+            mandatory
+                String street
+                String city
+
+constraints
+    // Cheddar cannot be selected with Creme Fraiche
+    Cheddar => !CremeFraiche
+
+    // Size constraints
+    size >= 20
+    size <= 60
+
+    // Delivery location constraints
+    DeliveryAddress.city == "Omashu"
+    length(DeliveryAddress.street) <= 100
+
+    // Overall price constraint
+    // We sum the price of the Base and any selected optional/alternative features
+    Base.price + 
+    (Tomato ? Tomato.price : 0) + 
+    (CremeFraiche ? CremeFraiche.price : 0) + 
+    (Mozzarella ? Mozzarella.price : 0) + 
+    (Cheddar ? Cheddar.price : 0) + 
+    (Mushrooms ? Mushrooms.price : 0) + 
+    (Onion ? Onion.price : 0) + 
+    (Olive ? Olive.price : 0) + 
+    (Pineapple ? Pineapple.price : 0) < 5.0

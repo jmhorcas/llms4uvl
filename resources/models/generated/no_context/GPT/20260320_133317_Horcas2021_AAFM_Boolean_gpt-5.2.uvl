@@ -1,0 +1,36 @@
+features
+  AAFMFramework {
+    mandatory
+      System
+    optional
+      Packages
+      Solvers
+
+    System {
+      alternative
+        Linux
+        Win
+    }
+
+    Packages {
+      optional
+        python_sat
+        pycosat
+        pyGlucose
+        pyPicosat
+    }
+
+    Solvers {
+      or
+        MiniSAT
+        PicoSAT
+        Glucose
+    }
+  }
+
+constraints
+  MiniSAT => python_sat;
+  PicoSAT => (pycosat | pyPicosat);
+  Glucose => (python_sat | pyGlucose);
+
+  Win => !pyPicosat;

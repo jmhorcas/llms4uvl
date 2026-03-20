@@ -1,0 +1,37 @@
+namespace AIAssistantProductLine
+
+features
+    AIAssistant
+        mandatory
+            Model
+                alternative
+                    GPT4o {cost 8, tokens "128k"}
+                    Gemini {cost 10, tokens "1M"}
+                    Claude {cost 9, tokens "200k"}
+            Plan
+                alternative
+                    Free {monthLimit 50}
+                    Premium {monthLimit 1000}
+            Access
+                or
+                    WebApp
+                    API {cost 2}
+        optional
+            FineTuning {cost 5}
+            Temperature {min 0, max 5}
+            ImageGeneration
+            WebSearch
+
+constraints
+    // Image generation is only supported when using GPT4o or Gemini
+    ImageGeneration => GPT4o | Gemini
+
+    // The API option cannot be combined with WebSearch
+    API => !WebSearch
+
+    // FineTuning is available if and only if the Premium plan is selected
+    FineTuning <=> Premium
+
+    // The overall sum of the costs of the selected features must remain below 15
+    // Note: Features not selected contribute 0 to the sum
+    (GPT4o.cost + Gemini.cost + Claude.cost + API.cost + FineTuning.cost) < 15

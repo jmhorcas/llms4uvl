@@ -1,0 +1,71 @@
+namespace eshop
+
+features
+  eShop {
+    mandatory
+      Catalogue [1..5] {
+        attributes
+          price : int = 30
+      }
+      Security {
+        alternative
+          Standard {
+            attributes
+              price : int = 50
+          }
+          High {
+            attributes
+              price : int = 100
+          }
+      }
+
+    optional
+      SEO {
+        attributes
+          price : int = 40
+      }
+
+      Payment {
+        alternative
+          BankTransfer {
+            attributes
+              price : int = 10
+              SEPA  : bool = true
+          }
+          CreditCard {
+            attributes
+              price : int = 20
+          }
+      }
+
+      Platform [2..3] {
+        or
+          MobileApp {
+            attributes
+              price : int = 80
+          }
+          Browser {
+            attributes
+              price : int = 20
+              URL   : string
+          }
+          DesktopApp {
+            attributes
+              price : int = 70
+          }
+      }
+
+      ItemsInBasket {
+        attributes
+          maxItems : int
+      }
+  }
+
+constraints
+  CreditCard => High
+  BankTransfer => !MobileApp
+
+  maxItems > 0
+  len(URL) <= 30
+
+  sum(price) < 200

@@ -1,0 +1,41 @@
+namespace eShop
+
+features
+    eShop
+        mandatory
+            // Cardinality [1..5] allows 1 to 5 instances of Catalogue
+            Catalogue [1..5] {price 30}
+            Security
+                alternative
+                    Standard {price 50}
+                    High {price 100}
+        optional
+            SEO {price 40}
+            Payment
+                alternative
+                    BankTransfer {price 10, SEPA true}
+                    CreditCard {price 20}
+            Platform [2..3] // Group cardinality: select between 2 and 3
+                optional
+                    MobileApp {price 80}
+                    Browser {price 20, URL ""}
+                    DesktopApp {price 70}
+            
+            ItemsInBasket {value 0} // Integer feature
+
+constraints
+    // Credit card requires High security
+    CreditCard => High
+    
+    // Bank Transfer and Mobile App are incompatible
+    BankTransfer => !MobileApp
+    
+    // Maximum items in basket must be higher than zero
+    ItemsInBasket.value > 0
+    
+    // Browser URL length constraint (using standard string length logic)
+    Browser.URL.length <= 30
+    
+    // The overall sum of prices of selected features must be less than 200
+    // Note: Catalogue price is multiplied by the number of instances selected
+    sum(attributes.price) < 200

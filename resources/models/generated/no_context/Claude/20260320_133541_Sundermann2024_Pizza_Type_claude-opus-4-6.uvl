@@ -1,0 +1,37 @@
+features
+	Pizza
+		mandatory
+			Base {Price 2.0}
+			Sauce
+				alternative
+					Tomato {Price 0.8}
+					"Creme Fraiche" {Price 1.1}
+			Size
+				Integer
+		optional
+			Cheese
+				or
+					Mozzarella {Price 0.4}
+					Cheddar {Price 0.6}
+			Toppings
+				[1..3]
+					Mushrooms {Price 0.5}
+					Onion {Price 0.3}
+					Olive {Price 0.3}
+					Pineapple {Price 0.8}
+			DeliveryAddresses
+				[1..10]
+					DeliveryAddress
+						mandatory
+							Street
+								String
+							City
+								String
+
+constraints
+	!Cheddar | !"Creme Fraiche"
+	Size >= 20
+	Size <= 60
+	Base.Price + Tomato.Price * Tomato + "Creme Fraiche".Price * "Creme Fraiche" + Mozzarella.Price * Mozzarella + Cheddar.Price * Cheddar + Mushrooms.Price * Mushrooms + Onion.Price * Onion + Olive.Price * Olive + Pineapple.Price * Pineapple < 5
+	City == "Omashu"
+	len(Street) <= 100

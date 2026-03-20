@@ -1,0 +1,28 @@
+include
+    Boolean.group-cardinality
+    Arithmetic.*
+
+features
+    eShop
+        mandatory
+            Catalogue
+            Security
+                alternative
+                    Standard {Price 50}
+                    High {Price 100}
+        optional
+            SEO
+            Payment
+                alternative
+                    "Bank Transfer" {Price 10, SEPA true}
+                    "Credit Card" {Price 20}
+            Platform
+                [2..3]
+                    "Mobile App"
+                    Browser {URL 'www.uvleshop.org'}
+                    "Desktop App"
+
+constraints
+    "Credit Card" => High
+    !("Bank Transfer" & "Mobile App")
+    sum(Price) < 200

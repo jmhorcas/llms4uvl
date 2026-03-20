@@ -1,0 +1,39 @@
+features
+  eShop {abstract}
+    mandatory
+      Catalogue {abstract} [1..5]
+        attributes
+          price : int = 30
+      Security {abstract}
+        alternative
+          Standard
+            attributes
+              price : int = 50
+          High
+            attributes
+              price : int = 100
+    optional
+      SEO
+      Payment {abstract}
+        alternative
+          BankTransfer
+            attributes
+              price : int = 10
+              SEPA  : bool = true
+          CreditCard
+            attributes
+              price : int = 20
+      Platform {abstract}
+        or [2..3]
+          MobileApp
+          Browser
+            attributes
+              URL : string = "www.uvleshop.org"
+          DesktopApp
+
+constraints
+  CreditCard => High
+  BankTransfer => !MobileApp
+
+  // total price of selected features must be < 200
+  sum(selectedFeatures.price) < 200

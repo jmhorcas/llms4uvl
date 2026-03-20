@@ -1,0 +1,28 @@
+features
+  eShop {
+    mandatory
+      Catalogue
+      Security {
+        alternative
+          Standard { attributes { price: 50; } }
+          High     { attributes { price: 100; } }
+      }
+
+    optional
+      SEO
+      Payment {
+        alternative
+          BankTransfer { attributes { price: 10; SEPA: true; } }
+          CreditCard   { attributes { price: 20; } }
+      }
+      Platform {
+        or [2..3]
+          MobileApp
+          Browser   { attributes { URL: "www.uvleshop.org"; } }
+          DesktopApp
+      }
+  }
+
+constraints
+  CreditCard => High;
+  BankTransfer => !MobileApp;

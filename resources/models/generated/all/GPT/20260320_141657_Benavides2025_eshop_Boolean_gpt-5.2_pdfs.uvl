@@ -1,0 +1,35 @@
+features
+  eShop
+    Catalogue
+    Security 1..1
+      Standard
+      High
+    SEO?
+    Payment 1..1
+      BankTransfer
+      CreditCard
+    Platform?
+      MobileApp?
+      Browser?
+
+constraints
+  CreditCard => High
+  BankTransfer => !MobileApp
+
+attributes
+  High {
+    price: 100
+  }
+  Standard {
+    price: 50
+  }
+  BankTransfer {
+    price: 10
+    SEPA: true
+  }
+  CreditCard {
+    price: 20
+  }
+  Browser {
+    URL: "www.uvleshop.org"
+  }

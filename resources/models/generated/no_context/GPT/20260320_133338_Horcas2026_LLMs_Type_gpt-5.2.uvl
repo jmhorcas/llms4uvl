@@ -1,0 +1,77 @@
+features
+  AIAssistant {
+    int totalCost;
+  }
+
+  mandatory
+    Model {
+      abstract;
+    }
+    Plan {
+      abstract;
+    }
+    Access {
+      abstract;
+    }
+
+  optional
+    FineTuning {
+      int cost = 5;
+    }
+    Temperature {
+      int value [0..5];
+    }
+    ImageGeneration
+    WebSearch
+
+  Model alternative
+    GPT4o {
+      int cost = 8;
+      string tokens = "128k";
+    }
+    Gemini {
+      int cost = 10;
+      string tokens = "1M";
+    }
+    Claude {
+      int cost = 9;
+      string tokens = "200k";
+    }
+
+  Plan alternative
+    Free {
+      int monthLimit = 50;
+      int cost = 0;
+    }
+    Premium {
+      int monthLimit = 1000;
+      int cost = 0;
+    }
+
+  Access or
+    WebApp {
+      int cost = 0;
+    }
+    API {
+      int cost = 2;
+    }
+
+constraints
+  // ImageGeneration only supported with GPT4o or Gemini
+  ImageGeneration => (GPT4o | Gemini);
+
+  // API cannot be combined with WebSearch
+  API => !WebSearch;
+
+  // FineTuning iff Premium
+  FineTuning <=> Premium;
+
+  // Total cost of selected features must be below 15
+  ( (GPT4o ? GPT4o.cost : 0)
+  + (Gemini ? Gemini.cost : 0)
+  + (Claude ? Claude.cost : 0)
+  + (API ? API.cost : 0)
+  + (FineTuning ? FineTuning.cost : 0)
+  + (Free ? Free.cost : 0)
+  + (Premium ? Premium.cost : 0)
+  ) < 15;

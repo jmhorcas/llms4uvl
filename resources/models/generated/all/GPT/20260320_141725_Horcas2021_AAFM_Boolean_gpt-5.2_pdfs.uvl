@@ -1,0 +1,15 @@
+features
+  AAFMFramework
+    System
+      (Linux | Win)
+    ?Packages
+      (python_sat | pycosat | pyGlucose | pyPicosat)+
+    ?Solvers
+      (MiniSAT | PicoSAT | Glucose)+
+
+constraints
+  MiniSAT -> python_sat
+  PicoSAT -> (pycosat | pyPicosat)
+  Glucose -> (python_sat | pyGlucose)
+
+  Win -> !pyPicosat

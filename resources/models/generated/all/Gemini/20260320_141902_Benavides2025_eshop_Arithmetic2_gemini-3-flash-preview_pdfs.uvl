@@ -1,0 +1,35 @@
+include
+    Boolean.group-cardinality
+    Arithmetic.*
+
+features
+    eShop
+        mandatory
+            // Feature cardinality allows 1 to 5 instances of Catalogue
+            Catalogue cardinality [1..5] {Price 30}
+            Security
+                alternative
+                    Standard {Price 50}
+                    High {Price 100}
+        optional
+            SEO
+            Payment
+                alternative
+                    "Bank Transfer" {Price 10, SEPA true}
+                    "Credit Card" {Price 20}
+            Platform
+                // Group cardinality: select between 2 and 3 children
+                [2..3]
+                    "Mobile App"
+                    Browser {URL 'www.uvleshop.org'}
+                    "Desktop App"
+
+constraints
+    // An eShop including Credit card must include High security support
+    "Credit Card" => High
+
+    // Bank Transfer and Mobile App are incompatible
+    !("Bank Transfer" & "Mobile App")
+
+    // The overall sum in price of all selected features must be < 200
+    sum(Price) < 200

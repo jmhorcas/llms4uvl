@@ -1,0 +1,29 @@
+namespace eShop
+
+features
+	eShop {Price == High.Price + Standard.Price + BankTransfer.Price + SEO.Price + CreditCard.Price + DesktopApp.Price + MobileApp.Price + Browser.Price + Catalogue.Price * Catalogue.Quantity}
+		mandatory
+			Catalogue {Integer Quantity [1..5], Integer Price 30}
+			Security
+				alternative
+					High {Integer Price 100}
+					Standard {Integer Price 50}
+		optional
+			SEO {Integer Price 40}
+			Payment
+				alternative
+					BankTransfer {Integer Price 10, Boolean SEPA true}
+					CreditCard {Integer Price 20}
+			Platform
+				[2..3]
+					MobileApp {Integer Price 80}
+					Browser {String URL, Integer Price 20}
+					DesktopApp {Integer Price 70}
+			ItemsInBasket {Integer Value [0..*]}
+
+constraints
+	CreditCard => High
+	!BankTransfer | !MobileApp
+	Price < 200
+	ItemsInBasket.Value > 0
+	len(Browser.URL) <= 30

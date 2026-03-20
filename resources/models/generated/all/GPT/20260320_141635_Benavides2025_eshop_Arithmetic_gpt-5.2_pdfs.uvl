@@ -1,0 +1,36 @@
+// eShop product line (UVL)
+
+features
+  eShop
+    mandatory
+      Catalogue
+      Security
+        alternative
+          Standard { price = 50 }
+          High     { price = 100 }
+    optional
+      SEO
+      Payment
+        alternative
+          BankTransfer { price = 10, SEPA = true }
+          CreditCard   { price = 20 }
+      Platform
+        or [2..3]
+          MobileApp
+          Browser { URL = "www.uvleshop.org" }
+          DesktopApp
+
+attributes
+  price : int
+  SEPA  : boolean
+  URL   : string
+
+constraints
+  // Credit card requires high security
+  CreditCard => High
+
+  // Bank transfer incompatible with mobile app
+  BankTransfer => !MobileApp
+
+  // Total price of selected features must be < 200
+  sum(price) < 200

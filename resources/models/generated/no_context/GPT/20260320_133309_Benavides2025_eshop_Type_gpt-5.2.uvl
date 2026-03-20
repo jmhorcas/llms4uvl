@@ -1,0 +1,75 @@
+features
+  eShop {
+    mandatory
+      Catalogue [1..5] {
+        attributes
+          price : int = 30
+      }
+      Security {
+        alternative
+          Standard {
+            attributes
+              price : int = 50
+          }
+          High {
+            attributes
+              price : int = 100
+          }
+      }
+
+    optional
+      SEO {
+        attributes
+          price : int = 40
+      }
+      Payment {
+        alternative
+          BankTransfer {
+            attributes
+              price : int = 10
+              SEPA  : boolean = true
+          }
+          CreditCard {
+            attributes
+              price : int = 20
+          }
+      }
+      Platform [2..3] {
+        optional
+          DesktopApp {
+            attributes
+              price : int = 70
+          }
+          MobileApp {
+            attributes
+              price : int = 80
+          }
+          Browser {
+            attributes
+              price : int = 20
+              URL   : string
+          }
+      }
+
+    optional
+      ItemsInBasket {
+        attributes
+          value : int
+      }
+  }
+
+constraints
+  // Credit card requires high security
+  CreditCard => High;
+
+  // Bank transfer incompatible with mobile app
+  !(BankTransfer && MobileApp);
+
+  // Items in basket must be > 0 if configured
+  ItemsInBasket => (ItemsInBasket.value > 0);
+
+  // Browser URL length constraint (only relevant if Browser selected)
+  Browser => (len(Browser.URL) <= 30);
+
+  // Total price of selected features must be < 200
+  (sum(price) < 200);

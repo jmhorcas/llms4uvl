@@ -1,0 +1,49 @@
+namespace eShop
+
+features
+    eShop
+        mandatory
+            Catalogue [1..5]
+            Security
+        optional
+            SEO
+            Payment
+            Platform
+
+    Security
+        alternative
+            Standard
+            High
+
+    Payment
+        alternative
+            BankTransfer
+            CreditCard
+
+    Platform
+        optional
+            MobileApp
+            Browser
+            DesktopApp
+
+constraints
+    // Platform selection constraints
+    (Platform implies (MobileApp or Browser or DesktopApp))
+    (Platform implies (count(MobileApp, Browser, DesktopApp) >= 2))
+    (Platform implies (count(MobileApp, Browser, DesktopApp) <= 3))
+    
+    // Cross-tree constraints
+    (CreditCard implies High)
+    not (BankTransfer and MobileApp)
+    
+    // Price constraint
+    sum(price) < 200
+
+attributes
+    Standard.price 50
+    High.price 100
+    BankTransfer.price 10
+    CreditCard.price 20
+    Browser.URL "www.uvleshop.org"
+    BankTransfer.SEPA true
+    Catalogue.price 30

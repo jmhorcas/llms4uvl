@@ -1,0 +1,41 @@
+namespace eshop
+
+features
+    eShop
+        mandatory
+            Catalogue
+            Security
+        optional
+            SEO
+            Payment
+            Platform
+    
+    Security
+        alternative
+            Standard
+            High
+    
+    Payment
+        alternative
+            "Bank Transfer"
+            "Credit Card"
+    
+    Platform
+        optional
+            "Mobile App"
+            Browser
+
+constraints
+    eShop => (Security = High) or (Security = Standard)
+    eShop => (Payment = "Bank Transfer") or (Payment = "Credit Card")
+    Platform => ("Mobile App" or Browser)
+    "Credit Card" => High
+    "Bank Transfer" => not "Mobile App"
+
+attributes
+    High price 100
+    Standard price 50
+    "Bank Transfer" price 10
+    "Bank Transfer" SEPA true
+    "Credit Card" price 20
+    Browser URL "www.uvleshop.org"

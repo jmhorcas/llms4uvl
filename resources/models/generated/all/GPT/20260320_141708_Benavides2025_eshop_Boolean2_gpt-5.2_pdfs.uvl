@@ -1,0 +1,32 @@
+// eShop product line (UVL)
+
+features
+  eShop
+    Catalogue;                 // mandatory
+    Security 1..1              // exactly one
+      Standard { price = 50 };
+      High     { price = 100 };
+
+    SEO?;                      // optional
+
+    Payment? 1..1              // if Payment is selected: exactly one option
+      BankTransfer { price = 10, SEPA = true };
+      CreditCard   { price = 20 };
+
+    Platform? 2..3              // if Platform is selected: choose 2..3 options
+      MobileApp;
+      Browser { URL = "www.uvleshop.org" };
+      DesktopApp;
+
+constraints
+  // Security is mandatory (redundant with Catalogue being mandatory by structure, but stated explicitly)
+  eShop => Security;
+
+  // Payment must be either BankTransfer or CreditCard, but not both
+  BankTransfer xor CreditCard;
+
+  // CreditCard requires High security
+  CreditCard => High;
+
+  // BankTransfer incompatible with MobileApp
+  BankTransfer => !MobileApp;
