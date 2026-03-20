@@ -1,5 +1,6 @@
 import argparse
 from multiprocessing import Process, Queue
+from contextlib import contextmanager
 
 from flamapy.metamodels.fm_metamodel.transformations import UVLReader
 from flamapy.metamodels.fm_metamodel.operations import FMLanguageLevel, MajorLevel

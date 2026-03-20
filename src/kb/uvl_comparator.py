@@ -1,6 +1,7 @@
 import io
 import sys
 import re
+import logging
 from pathlib import Path
 from contextlib import contextmanager
 from multiprocessing import Process, Queue
@@ -21,20 +22,19 @@ CONFIGURATIONS_TIMEOUT = 60  # Timeout in seconds for computing configurations
 DECIMAL_PRECISION = 4  # Decimal precision for similarity scores in the report
 
 
-@contextmanager
-def capture_stderr():
-    """Context manager to capture stderr output.
-    Usage:
-        with capture_stderr() as err:
-            # code that may print to stderr
-        error_output = err.getvalue()
-    """
-    old_stderr = sys.stderr
-    sys.stderr = io.StringIO()
-    try:
-        yield sys.stderr
-    finally:
-        sys.stderr = old_stderr
+class StderrErrorCapture(logging.Handler):
+    def __init__(self):
+        super().__init__(level=logging.ERROR)
+        self.error_lines = []
+
+    def emit(self, record):
+        self.error_lines.append(self.format(record))
+
+    def count(self) -> int:
+        return len(self.error_lines)
+
+    def reset(self):
+        self.error_lines = []
 
 
 class UVLComparator:
@@ -42,17 +42,19 @@ class UVLComparator:
     def __init__(self, original_model: str, generated_model: str) -> None:
         self.uvl_path1 = original_model
         self.uvl_path2 = generated_model
+        self._error_capture = StderrErrorCapture()
+        logging.getLogger().addHandler(self._error_capture)
 
     def _read_model(self, uvl_path: str) -> tuple[FeatureModel, int]:
         """Reads a UVL file and returns the feature model and the number of syntax errors."""
+        self._error_capture.reset()
+        fm_model = None
         try:
-            with capture_stderr() as err:
-                fm_model = UVLReader(uvl_path).transform()
-            return fm_model, 0
-        except Exception as e:
-            errors = err.getvalue()
-            error_lines = [l for l in errors.splitlines() if l.strip().startswith("ERROR:")]
-            return None, len(error_lines)
+            fm_model = UVLReader(uvl_path).transform()
+        except Exception:
+            pass
+        
+        return fm_model, self._error_capture.count()
 
     def compare(self) -> None:
         model1, syntax_errors1 = self._read_model(self.uvl_path1)
@@ -105,6 +107,9 @@ class UVLComparator:
                 recall_score = round(recall(configurations1, configurations2), DECIMAL_PRECISION)
                 f1_score_value = round(f1_score(precision_score, recall_score), DECIMAL_PRECISION)
                 global_similarity_score = global_score(feature_similarity_score, constraint_similarity_score, attribute_similarity_score, jaccard_similarity_score if jaccard_similarity_score is not None else 0.0)
+                num_configurations2 = len(configurations2) if configurations2 is not None else 0
+                if configurations2 is not None and num_configurations2 >= 1e6:
+                    num_configurations2 = int_to_scientific_notation(len(configurations2))
         results = {
                 'llm': llm,
                 'model': path2.stem,
@@ -113,10 +118,10 @@ class UVLComparator:
                 'syntax_errors': syntax_errors2,
                 'semantics_errors': semantics_errors2,
                 'language_level': language_level2,
-                'feature_similarity': feature_similarity_score,
-                'constraint_similarity': constraint_similarity_score,
-                'attribute_similarity': attribute_similarity_score,
-                'configurations_model2': int_to_scientific_notation(len(configurations2)) if configurations2 is not None else None,
+                'feature_similarity': round(feature_similarity_score, DECIMAL_PRECISION),
+                'constraint_similarity': round(constraint_similarity_score, DECIMAL_PRECISION),
+                'attribute_similarity': round(attribute_similarity_score, DECIMAL_PRECISION),
+                'configurations_model2': num_configurations2,
                 'jaccard_similarity': jaccard_similarity_score,
                 'precision': precision_score,
                 'recall': recall_score,
