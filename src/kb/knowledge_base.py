@@ -196,6 +196,39 @@ class KnowledgeBase:
             "Avg_Triplets": total_weight / len(seed_scores)
         }
 
+    def create_global_union_by_seed(self, source_dicts_list: list['KnowledgeBase']) -> dict[str, 'KnowledgeBase']:
+        """
+        source_dicts_list: [dict_paper, dict_web, dict_all]
+        Cada dict tiene la estructura: { 'Seed Name': { 1: KB, 2: KB, ... } }
+        Recibe los KB en raw.
+        """
+        global_union = {}
+
+        # 1. Identificamos todas las semillas que aparecen en CUALQUIERA de los dicts
+        # Esto evita que si una semilla solo está en 'Web', la ignoremos.
+        all_seeds = set()
+        for d in source_dicts_list:
+            all_seeds.update(d.iterations_seeds.keys())
+
+        for seed in all_seeds:
+            # Creamos una KB vacía que servirá de "bolsa" para esta semilla
+            seed_accumulator = KnowledgeBase(self.nlp)
+            
+            # 2. Recorremos cada fuente (Paper, Web, All...)
+            for source_dict in source_dicts_list:
+                if seed in source_dict.iterations_seeds:
+                    # 3. Recorremos cada una de las 5 ejecuciones (Runs)
+                    for run_id, kb in source_dict.iterations_seeds[seed].items():
+                        # IMPORTANTE: join_kb añade las tripletas, NO reemplaza la KB
+                        seed_accumulator.join_kb(kb)
+            # 4. Consolidación: Aquí es donde la magia ocurre
+            # Pasamos de 500 tripletas repetidas a las 50-100 "verdades" únicas
+            union_kb = seed_accumulator.consolidate()
+            
+            # Guardamos el resultado final consolidado para esta semilla
+            global_union[seed] = union_kb
+
+        return global_union
 
 def process_triplet(row: dict[str, Any]) -> Triplet:
     return Triplet(subject=row['Subject'], predicate=row['Predicate'], object=row['Object'])

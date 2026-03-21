@@ -47,7 +47,6 @@ def main(gt_kb_filepath: str, llm_kb_filepath: str, threshold: float) -> None:
     print(f'    - Hallucination Rate: {hallucination_rate:.4f}')
     print(f'    - Number of hallucinations: {len(hallucinations)}')
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Knowledge Comparator: Compare two knowledge bases.")
     parser.add_argument('gt_kb', type=_csv_file_path, help='Ground truth knowledge base CSV file path.')

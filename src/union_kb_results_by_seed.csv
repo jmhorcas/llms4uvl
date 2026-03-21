@@ -1,0 +1,6 @@
+resource,seed,triplets,precision,recall,f1_score,hallucination_rate,hallucinations
+GT-UVL-NotebookLM-All-Prompt1,UVL language,101,1.0,0.5568627450980392,0.7153652392947103,0.0,0
+GT-UVL-NotebookLM-All-Prompt1,Language extensions,41,1.0,0.4233576642335766,0.5948717948717949,0.0,0
+GT-UVL-NotebookLM-All-Prompt1,Feature tree,34,1.0,0.5833333333333334,0.7368421052631579,0.0,0
+GT-UVL-NotebookLM-All-Prompt1,Cross-tree constraints,66,0.9242424242424242,0.31716417910447764,0.47226523362783496,0.0757575757575758,5
+GT-UVL-NotebookLM-All-Prompt1,Boolean level,44,1.0,0.5321100917431193,0.6946107784431138,0.0,0
