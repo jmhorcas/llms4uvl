@@ -1,0 +1,378 @@
+Iteration,Seed,Run,Subject,Predicate,Object
+1,UVL language,1,UVL language,is abbreviated as,UVL
+1,UVL language,1,UVL language,stands for,Universal Variability Language
+1,UVL language,1,UVL language,is a,textual variability language
+1,UVL language,1,UVL language,is a,community effort
+1,UVL language,1,UVL language,is intended as,common textual exchange format
+1,UVL language,1,UVL language,is designed to be,human editable
+1,UVL language,1,UVL language,is designed to be,suitable for teaching
+1,UVL language,1,UVL language,was developed with,MODEVAR initiative
+1,UVL language,1,UVL language,provides,unified language for variability modeling
+1,UVL language,1,UVL language,supports,feature models
+1,UVL language,1,UVL language,provides,default library for parsing
+1,UVL language,1,UVL language,provides,default library for printing
+1,UVL language,1,UVL language,is integrated in,FeatureIDE
+1,UVL language,1,UVL language,is integrated in,TRAVART
+1,UVL language,1,UVL language,is used as,pivot language in TRAVART
+1,UVL language,1,UVL language,is specified using,context-free grammar
+1,UVL language,1,UVL language,uses,EBNF notation
+1,UVL language,1,UVL language,uses,nesting for hierarchy
+1,UVL language,1,UVL language,uses,complete keywords
+1,UVL language,1,UVL language,supports,alternative keyword
+1,UVL language,1,UVL language,supports,or keyword
+1,UVL language,1,UVL language,supports,optional keyword
+1,UVL language,1,UVL language,supports,mandatory keyword
+1,UVL language,1,UVL language,supports,cardinalities
+1,UVL language,1,UVL language,stores,cross-tree constraints separately
+1,UVL language,1,UVL language,supports,propositional logic constraints
+1,UVL language,1,UVL language,supports,abstract features
+1,UVL language,1,UVL language,supports,feature attributes
+1,UVL language,1,UVL language,supports,decomposition of feature models
+1,UVL language,1,UVL language,supports,composition of feature models
+1,UVL language,1,UVL language,uses,namespaces for composition
+1,UVL language,1,UVL language,has syntax similar to,Python
+1,UVL language,1,UVL language,has composition mechanism similar to,Java import system
+1,UVL language,1,UVL language,uses,sparse format
+1,UVL language,1,UVL language,requires,less space than XML
+1,UVL language,1,UVL language,supports,logical operator NOT
+1,UVL language,1,UVL language,supports,logical operator AND
+1,UVL language,1,UVL language,supports,logical operator OR
+1,UVL language,1,UVL language,supports,logical operator implies
+1,UVL language,1,UVL language,supports,logical operator equivalent
+1,UVL language,2,UVL language,stands for,Universal Variability Language
+1,UVL language,2,UVL language,is,textual variability language
+1,UVL language,2,UVL language,originated from,MODEVAR community effort
+1,UVL language,2,UVL language,intended as,common textual exchange format
+1,UVL language,2,UVL language,designed to be,human editable
+1,UVL language,2,UVL language,designed to be,suitable for teaching
+1,UVL language,2,UVL language,provides,default library
+1,UVL language,2,UVL language,integrated in,FeatureIDE
+1,UVL language,2,UVL language,integrated in,TRAVART
+1,UVL language,2,UVL language,uses,context-free grammar
+1,UVL language,2,UVL language,uses,EBNF notation
+1,UVL language,2,UVL language,uses,nesting for hierarchy
+1,UVL language,2,UVL language,uses,complete keywords
+1,UVL language,2,UVL language,supports,alternative group keyword
+1,UVL language,2,UVL language,supports,or group keyword
+1,UVL language,2,UVL language,supports,optional group keyword
+1,UVL language,2,UVL language,supports,mandatory group keyword
+1,UVL language,2,UVL language,supports,cardinalities
+1,UVL language,2,UVL language,stores,separate constraints
+1,UVL language,2,UVL language,supports,propositional logic
+1,UVL language,2,UVL language,supports,abstract features
+1,UVL language,2,UVL language,supports,feature attributes
+1,UVL language,2,UVL language,supports,decomposition
+1,UVL language,2,UVL language,supports,composition
+1,UVL language,2,UVL language,uses,namespaces
+1,UVL language,2,UVL language,uses,imports
+1,UVL language,2,UVL language,is,sparse format
+1,UVL language,2,UVL language,requires,less space than FeatureIDE XML
+1,UVL language,2,UVL language,scales to,real-world variability models
+1,UVL language,2,UVL language,aims to be,unified language
+1,UVL language,3,UVL language,is,textual variability language
+1,UVL language,3,UVL language,full name,Universal Variability Language
+1,UVL language,3,UVL language,developer,Chico Sundermann
+1,UVL language,3,UVL language,developer,Kevin Feichtinger
+1,UVL language,3,UVL language,developer,Dominik Engelhardt
+1,UVL language,3,UVL language,developer,Rick Rabiser
+1,UVL language,3,UVL language,developer,Thomas Thüm
+1,UVL language,3,UVL language,community context,MODEVAR initiative
+1,UVL language,3,UVL language,primary intention,common textual exchange format
+1,UVL language,3,UVL language,design goal,human editable
+1,UVL language,3,UVL language,design goal,suitable for teaching
+1,UVL language,3,UVL language,integration,FeatureIDE
+1,UVL language,3,UVL language,integration,TRAVART
+1,UVL language,3,UVL language,role in TRAVART,pivot language
+1,UVL language,3,UVL language,format type,sparse format
+1,UVL language,3,UVL language,specification format,context-free grammar
+1,UVL language,3,UVL language,specification notation,EBNF
+1,UVL language,3,UVL language,structure,nesting
+1,UVL language,3,UVL language,block definition,indentation
+1,UVL language,3,UVL language,statement ending,line-breaks
+1,UVL language,3,UVL language,group description mechanism,full-length keywords
+1,UVL language,3,UVL language,group description mechanism,cardinalities
+1,UVL language,3,UVL language,keyword,alternative
+1,UVL language,3,UVL language,keyword,or
+1,UVL language,3,UVL language,keyword,optional
+1,UVL language,3,UVL language,keyword,mandatory
+1,UVL language,3,UVL language,cardinality notation,[a..b]
+1,UVL language,3,UVL language,cardinality notation,[b]
+1,UVL language,3,UVL language,support,abstract features
+1,UVL language,3,UVL language,support,feature attributes
+1,UVL language,3,UVL language,support,default selections
+1,UVL language,3,UVL language,support,decomposition
+1,UVL language,3,UVL language,support,composition
+1,UVL language,3,UVL language,composition inspiration,Java packages
+1,UVL language,3,UVL language,composition inspiration,Java imports
+1,UVL language,3,UVL language,constraint location,separate from tree structure
+1,UVL language,3,UVL language,constraint language,propositional logic
+1,UVL language,3,UVL language,logical operator,!
+1,UVL language,3,UVL language,logical operator,&
+1,UVL language,3,UVL language,logical operator,|
+1,UVL language,3,UVL language,logical operator,=>
+1,UVL language,3,UVL language,logical operator,<=>
+1,UVL language,3,UVL language,availability,open-source
+1,UVL language,3,UVL language,tooling,parser library
+1,UVL language,3,UVL language,tooling,printer library
+1,UVL language,3,UVL language,asset,real-world variability model dataset
+1,UVL language,4,UVL language,stands for,Universal Variability Language
+1,UVL language,4,UVL language,is a,textual variability modeling language
+1,UVL language,4,UVL language,originated from,MODEVAR initiative
+1,UVL language,4,UVL language,developed through,community effort
+1,UVL language,4,UVL language,primary intent,common textual exchange format
+1,UVL language,4,UVL language,hierarchy specified using,nesting
+1,UVL language,4,UVL language,blocks defined by,indentation
+1,UVL language,4,UVL language,statement ending specified by,line-breaks
+1,UVL language,4,UVL language,uses,complete keywords
+1,UVL language,4,UVL language,supports,abstract features
+1,UVL language,4,UVL language,supports,feature attributes
+1,UVL language,4,UVL language,supports,default selections
+1,UVL language,4,UVL language,supports,decomposition
+1,UVL language,4,UVL language,supports,composition
+1,UVL language,4,UVL language,supports,cardinalities
+1,UVL language,4,UVL language,supports,group descriptors
+1,UVL language,4,UVL language,cross-tree constraints limited to,propositional logic
+1,UVL language,4,UVL language,specified with,context-free grammar
+1,UVL language,4,UVL language,specified using,EBNF notation
+1,UVL language,4,UVL language,provided with,default parser library
+1,UVL language,4,UVL language,integrated into,FeatureIDE
+1,UVL language,4,UVL language,integrated into,TRAVART
+1,UVL language,4,UVL language,provides,real-world variability model dataset
+1,UVL language,4,UVL language,composition mechanism inspired by,Java import system
+1,UVL language,4,UVL language,syntax similarity,Python
+1,UVL language,4,UVL language,scales to,real-world variability models
+1,UVL language,4,UVL language,stores,cross-tree constraints separately
+1,UVL language,4,UVL language,authors include,Chico Sundermann
+1,UVL language,4,UVL language,authors include,Kevin Feichtinger
+1,UVL language,4,UVL language,authors include,Dominik Engelhardt
+1,UVL language,4,UVL language,authors include,Rick Rabiser
+1,UVL language,4,UVL language,authors include,Thomas Thüm
+1,UVL language,4,UVL language,published at,SPLC 2021
+1,UVL language,5,UVL language,stands for,Universal Variability Language
+1,UVL language,5,UVL language,originated in,MODEVAR initiative
+1,UVL language,5,UVL language,is,unified variability modeling language
+1,UVL language,5,UVL language,is,community effort
+1,UVL language,5,UVL language,intended as,common textual exchange format
+1,UVL language,5,UVL language,is,open-source
+1,UVL language,5,UVL language,uses,nesting hierarchy
+1,UVL language,5,UVL language,uses,full-length keywords
+1,UVL language,5,UVL language,uses,indentation to define blocks
+1,UVL language,5,UVL language,uses,line-breaks to specify statement endings
+1,UVL language,5,UVL language,supports,abstract features
+1,UVL language,5,UVL language,supports,feature attributes
+1,UVL language,5,UVL language,supports,default selections
+1,UVL language,5,UVL language,supports,decomposition
+1,UVL language,5,UVL language,supports,composition
+1,UVL language,5,UVL language,supports,propositional logic constraints
+1,UVL language,5,UVL language,supports,cardinalities
+1,UVL language,5,UVL language,supports,group descriptors
+1,UVL language,5,UVL language,integrated into,FeatureIDE
+1,UVL language,5,UVL language,integrated into,TRAVART
+1,UVL language,5,UVL language,specified with,context-free grammar
+1,UVL language,5,UVL language,specified in,EBNF notation
+1,UVL language,5,UVL language,provides,default library
+1,UVL language,5,UVL language,scales to,real-world variability models
+1,UVL language,5,UVL language,includes,dataset of real-world models
+2,Language extensions,1,Language extensions,include,generic extension mechanism
+2,Language extensions,1,Language extensions,facilitate,tool-specific data storage
+2,Language extensions,1,Language extensions,facilitate,mapping to implementation artifacts
+2,Language extensions,1,Language extensions,utilize,feature attributes
+2,Language extensions,1,Language extensions,enable,storage of preferences
+2,Language extensions,1,Language extensions,enable,storage of layouting information
+2,Language extensions,1,Language extensions,allow,attaching data to elements
+2,Language extensions,1,Future language extensions,include,support for first-order-logic formulas
+2,Language extensions,1,Future language extensions,allow,use of quantifiers
+2,Language extensions,1,Future language extensions,allow,constraints on feature attributes
+2,Language extensions,2,Language extensions,simplify,storing tool-specific data
+2,Language extensions,2,Language extensions,simplify,storing arbitrary data
+2,Language extensions,2,Language extensions,store,preferences
+2,Language extensions,2,Language extensions,store,layouting information
+2,Language extensions,2,Language extensions,attach data to,elements
+2,Language extensions,2,Language extensions,are,generic
+2,Language extensions,2,Language extensions,use,feature attributes
+2,Language extensions,2,Language extensions,are part of,UVL scope
+2,Language extensions,2,Language extensions,were preferred by,the community
+2,Language extensions,2,Feature attributes,enable,variety of extensions
+2,Language extensions,2,Future language extensions,include,first-order-logic formulas
+2,Language extensions,2,First-order-logic formulas,allow,quantifiers
+2,Language extensions,2,First-order-logic formulas,allow,constraints on feature attributes
+2,Language extensions,2,UVL,implements,generic extension mechanism
+2,Language extensions,3,Language extensions,include,extension mechanism for arbitrary data
+2,Language extensions,3,Extension mechanism,allows,storage of tool-specific data
+2,Language extensions,3,Tool-specific data,includes,preferences
+2,Language extensions,3,Tool-specific data,includes,layouting information
+2,Language extensions,3,Feature attributes,serve as,extension mechanism
+2,Language extensions,3,Extension mechanism,simplifies,storage of tool-specific data
+2,Language extensions,3,UVL,supports,extension mechanism
+2,Language extensions,3,Extension mechanism,attaches,tool-specific data to elements
+2,Language extensions,3,UVL,has,future extensions considered
+2,Language extensions,3,Future extensions,include,first-order-logic formulas
+2,Language extensions,3,Future extensions,include,quantifiers
+2,Language extensions,3,Future extensions,include,constraints on feature attributes
+2,Language extensions,3,Future extensions,include,dedicated language for configurations
+2,Language extensions,3,Feature attributes,enable,variety of extensions
+2,Language extensions,3,Language extensions,supported by,flexible nature of feature attributes
+2,Language extensions,4,Language extensions,are part of,UVL scope
+2,Language extensions,4,Extension mechanism,enables storage of,arbitrary data
+2,Language extensions,4,Extension mechanism,simplifies storing,tool-specific data
+2,Language extensions,4,Extension mechanism,attaches,tool-specific data to elements
+2,Language extensions,4,Extension mechanism,stores,tool-specific data
+2,Language extensions,4,Tool-specific data,includes,preferences
+2,Language extensions,4,Tool-specific data,includes,layouting information
+2,Language extensions,4,UVL,implements extension mechanism via,feature attributes
+2,Language extensions,4,Feature attributes,store,tool-specific data
+2,Language extensions,4,Extension mechanism,was favored by,at least half of MODEVAR participants
+2,Language extensions,4,Extension mechanism,received zero,absolutely not votes
+2,Language extensions,4,Future UVL versions,may implement,designated mechanisms for extensions
+2,Language extensions,5,Language extensions,simplify storing,tool-specific data
+2,Language extensions,5,Language extensions,simplify storing,preferences
+2,Language extensions,5,Language extensions,simplify storing,layouting information
+2,Language extensions,5,Language extensions,attach,tool-specific data to elements
+2,Language extensions,5,Language extensions,use,feature attributes
+2,Language extensions,5,Language extensions,enable,variety of extensions
+2,Language extensions,5,Language extensions,represent,tool-specific data
+2,Language extensions,5,Language extensions,represent,mapping to implementation artifacts
+2,Language extensions,5,Language extensions,include,first-order-logic formulas
+2,Language extensions,5,Language extensions,include,quantifiers
+2,Language extensions,5,Language extensions,include,constraints on feature attributes
+3,Feature tree,1,Feature tree,is a component of,variability models
+3,Feature tree,1,Feature tree,defines,feature model hierarchy
+3,Feature tree,1,Feature tree,is specified by,nesting
+3,Feature tree,1,Feature tree,is defined in,indented blocks
+3,Feature tree,1,Feature tree,is separate from,cross-tree constraints
+3,Feature tree,1,Feature tree,expresses,parent-child relationships
+3,Feature tree,1,Feature tree,is represented by,features block
+3,Feature tree,1,Feature tree,has,tree structure
+3,Feature tree,1,Feature tree,is a component of,UVL
+3,Feature tree,1,Feature tree,is similar to,graphical feature-model notations
+3,Feature tree,1,Feature tree,contains,mandatory features
+3,Feature tree,1,Feature tree,contains,optional features
+3,Feature tree,1,Feature tree,contains,alternative groups
+3,Feature tree,1,Feature tree,contains,or groups
+3,Feature tree,1,Feature tree,contains,abstract features
+3,Feature tree,1,Feature tree,contains,feature attributes
+3,Feature tree,1,Feature tree,has,cross-tree constraints below it
+3,Feature tree,1,Feature tree,is described in,a block
+3,Feature tree,2,Feature tree,is described by,a block
+3,Feature tree,2,Feature tree,is separate from,cross-tree constraints
+3,Feature tree,2,Feature tree,is located above,cross-tree constraints
+3,Feature tree,2,Feature tree,is constrained by,cross-tree constraints
+3,Feature tree,2,Feature tree,is represented in,Universal Variability Language
+3,Feature tree,3,Feature tree,is part of,Feature models
+3,Feature tree,3,Feature tree,is separate from,Cross-tree constraints
+3,Feature tree,3,Feature tree,is described by,Blocks
+3,Feature tree,3,Feature tree,defines,Parent-child relationships
+3,Feature tree,3,Feature tree,has,Tree structure
+3,Feature tree,3,Feature tree,is visualized in,Feature diagrams
+3,Feature tree,4,Feature tree,is part of,Feature model
+3,Feature tree,4,Feature tree,is described by,Block
+3,Feature tree,4,Feature tree,precedes,Cross-tree constraints
+3,Feature tree,4,Feature tree,represents,Tree-hierarchy
+3,Feature tree,4,Feature tree,contains,Features
+3,Feature tree,5,Feature tree,is part of,Variability models
+3,Feature tree,5,Feature tree,specifies,Hierarchy
+3,Feature tree,5,Feature tree,defines,Parent-child relationships
+3,Feature tree,5,Feature tree,is represented by,Feature diagrams
+3,Feature tree,5,Feature tree,is separate from,Cross-tree constraints
+3,Feature tree,5,Feature tree,is described using,Nesting
+3,Feature tree,5,Feature tree,is described using,References
+3,Feature tree,5,Feature tree,contains,Mandatory features
+3,Feature tree,5,Feature tree,contains,Optional features
+3,Feature tree,5,Feature tree,contains,Alternative groups
+3,Feature tree,5,Feature tree,contains,Or groups
+3,Feature tree,5,Feature tree,contains,Abstract features
+3,Feature tree,5,Feature tree,contains,Concrete features
+3,Feature tree,5,Feature tree,can be decomposed into,Sub-models
+3,Feature tree,5,Feature tree,can be composed from,Sub-models
+3,Feature tree,5,Feature tree,can contain,Thousands of features
+4,Cross-tree constraints,1,Cross-tree constraints,specify,product line constraints
+4,Cross-tree constraints,1,Cross-tree constraints,indicate,feature requirements
+4,Cross-tree constraints,1,Cross-tree constraints,are stored separately from the tree structure in UVL,
+4,Cross-tree constraints,1,Cross-tree constraints,are stored below the feature tree block,
+4,Cross-tree constraints,1,Cross-tree constraints,are marked with a constraints keyword header in UVL,
+4,Cross-tree constraints,1,Cross-tree constraints,are limited to propositional logic in current UVL,
+4,Cross-tree constraints,1,Cross-tree constraints,do not use first-order logic in current UVL,
+4,Cross-tree constraints,1,Cross-tree constraints,support logical operator negation,
+4,Cross-tree constraints,1,Cross-tree constraints,support logical operator and,
+4,Cross-tree constraints,1,Cross-tree constraints,support logical operator or,
+4,Cross-tree constraints,1,Cross-tree constraints,support logical operator implication,
+4,Cross-tree constraints,1,Cross-tree constraints,support logical operator equivalence,
+4,Cross-tree constraints,1,Cross-tree constraints,support symbol !,
+4,Cross-tree constraints,1,Cross-tree constraints,support symbol &,
+4,Cross-tree constraints,1,Cross-tree constraints,support symbol |,
+4,Cross-tree constraints,1,Cross-tree constraints,support symbol =>,
+4,Cross-tree constraints,1,Cross-tree constraints,support symbol <=>,
+4,Cross-tree constraints,1,Cross-tree constraints,are stored in-line in some variability languages,
+4,Cross-tree constraints,1,Cross-tree constraints,are stored separately in some variability languages,
+4,Cross-tree constraints,1,Cross-tree constraints,may include first-order-logic formulas in the future,
+4,Cross-tree constraints,1,Cross-tree constraints,may be imposed on feature attributes in the future,
+4,Cross-tree constraints,2,Cross-tree constraints,specify,constraints of a product line
+4,Cross-tree constraints,2,Cross-tree constraints,indicate,requirements between features
+4,Cross-tree constraints,2,Cross-tree constraints,are visually represented,below the feature tree in diagrams
+4,Cross-tree constraints,2,Cross-tree constraints,are stored in-line,next to feature declarations in some languages
+4,Cross-tree constraints,2,Cross-tree constraints,are stored separately,below the feature tree block in some languages
+4,Cross-tree constraints,2,The community,favors,propositional constraints
+4,Cross-tree constraints,2,UVL,stores,cross-tree constraints separately from the tree structure
+4,Cross-tree constraints,2,UVL,identifies the constraint block with,the constraints keyword
+4,Cross-tree constraints,2,UVL,limits cross-tree constraints to,propositional logic
+4,Cross-tree constraints,2,UVL cross-tree constraints,support,the NOT operator
+4,Cross-tree constraints,2,UVL cross-tree constraints,support,the AND operator
+4,Cross-tree constraints,2,UVL cross-tree constraints,support,the OR operator
+4,Cross-tree constraints,2,UVL cross-tree constraints,support,the implication operator
+4,Cross-tree constraints,2,UVL cross-tree constraints,support,the equivalence operator
+4,Cross-tree constraints,2,UVL,separates cross-tree constraints similarly to,graphical notations
+4,Cross-tree constraints,2,Future UVL versions,may include,first-order-logic formulas for constraints
+4,Cross-tree constraints,2,Future UVL versions,may include,constraints on feature attributes
+4,Cross-tree constraints,3,Cross-tree constraints,specify,product line constraints
+4,Cross-tree constraints,3,Cross-tree constraints,indicate,feature requirements
+4,Cross-tree constraints,3,Cross-tree constraints,reside,below the feature tree
+4,Cross-tree constraints,3,Cross-tree constraints,are stored,separately in UVL
+4,Cross-tree constraints,3,Cross-tree constraints,identified by,constraints keyword header
+4,Cross-tree constraints,3,Cross-tree constraints,utilize,propositional logic
+4,Cross-tree constraints,3,Cross-tree constraints,support,negation operator !
+4,Cross-tree constraints,3,Cross-tree constraints,support,conjunction operator &
+4,Cross-tree constraints,3,Cross-tree constraints,support,disjunction operator |
+4,Cross-tree constraints,3,Cross-tree constraints,support,implication operator =>
+4,Cross-tree constraints,3,Cross-tree constraints,support,equivalence operator <=>
+4,Cross-tree constraints,3,Cross-tree constraints,reference,feature names
+4,Cross-tree constraints,3,Cross-tree constraints,reference,namespace aliases
+4,Cross-tree constraints,3,Cross-tree constraints,reached,3500 in evaluated real-world models
+4,Cross-tree constraints,3,Cross-tree constraints,may include,first-order-logic in future versions
+4,Cross-tree constraints,3,Cross-tree constraints,may include,quantifiers in future versions
+4,Cross-tree constraints,3,Cross-tree constraints,may impose,constraints on feature attributes in future versions
+4,Cross-tree constraints,4,Cross-tree constraints,specify,product line constraints
+4,Cross-tree constraints,4,Cross-tree constraints,indicate,feature requirements
+4,Cross-tree constraints,4,Cross-tree constraints,are stored,separately from the feature tree in UVL
+4,Cross-tree constraints,4,Cross-tree constraints,are placed,below the feature tree in UVL
+4,Cross-tree constraints,4,Cross-tree constraints,are marked with,the constraints keyword header in UVL
+4,Cross-tree constraints,4,Cross-tree constraints,are limited to,propositional logic in current UVL
+4,Cross-tree constraints,4,Cross-tree constraints,support,negation operator
+4,Cross-tree constraints,4,Cross-tree constraints,support,conjunction operator
+4,Cross-tree constraints,4,Cross-tree constraints,support,disjunction operator
+4,Cross-tree constraints,4,Cross-tree constraints,support,implication operator
+4,Cross-tree constraints,4,Cross-tree constraints,support,equivalence operator
+4,Cross-tree constraints,4,Cross-tree constraints,can be stored,in-line next to declarations of features
+4,Cross-tree constraints,4,Cross-tree constraints,can be stored,separately below the block describing the feature tree
+4,Cross-tree constraints,4,Cross-tree constraints,may include,first-order-logic formulas as future extension
+4,Cross-tree constraints,4,Cross-tree constraints,may include,quantifiers as future extension
+4,Cross-tree constraints,4,Cross-tree constraints,may impose,constraints on feature attributes as future extension
+4,Cross-tree constraints,5,Cross-tree constraints,specify,product line constraints
+4,Cross-tree constraints,5,Cross-tree constraints,indicate,feature requirements
+4,Cross-tree constraints,5,Cross-tree constraints,are stored,separately from the tree structure in UVL
+4,Cross-tree constraints,5,Cross-tree constraints,are stored,below the feature tree block
+4,Cross-tree constraints,5,Cross-tree constraints,are marked with,a constraints keyword header in UVL
+4,Cross-tree constraints,5,Cross-tree constraints,are limited to,propositional logic in UVL
+4,Cross-tree constraints,5,Cross-tree constraints,support,the ! operator
+4,Cross-tree constraints,5,Cross-tree constraints,support,the & operator
+4,Cross-tree constraints,5,Cross-tree constraints,support,the | operator
+4,Cross-tree constraints,5,Cross-tree constraints,support,the => operator
+4,Cross-tree constraints,5,Cross-tree constraints,support,the <=> operator
+4,Cross-tree constraints,5,Cross-tree constraints,can be stored,in-line in some variability languages
+4,Cross-tree constraints,5,Cross-tree constraints,can be stored,separately in some variability languages
+4,Cross-tree constraints,5,Cross-tree constraints,are regarded as,sufficient as propositional logic
+4,Cross-tree constraints,5,Cross-tree constraints,may support,first-order-logic formulas in future extensions
+4,Cross-tree constraints,5,Cross-tree constraints,may include,quantifiers in future extensions
+4,Cross-tree constraints,5,Cross-tree constraints,may be imposed on,feature attributes in future extensions
+5,Boolean level,1,,,
+6,Arithmetic level,1,,,
+7,Type level,1,,,
