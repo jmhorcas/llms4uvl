@@ -1,370 +1,371 @@
 Subject,Predicate,Object
-uvl,development start,2018
-uvl,allow,abstract feature
-uvl,design goal include,information hiding
-arithmetic level,support operator,-
-arithmetic level,support operator,<
-arithmetic level,require,process sit encode
-arithmetic level,require,sat encode
-feature tree,support,group
-feature tree,utilize,keyword specify relationship
-language level,represent,different feature type
-uvl,integrate,uvls
-core boolean level,be use by,featureide
-cross-tree constraints,handle,construct specific reasoning engine
-uvl,have,import mechanism
-type level,encapsulate,construct specific reasoning engine
-type level,include,type core
-uvl,use,tree-like structure
-language level,be,level extension
-uvl,feature,arithmetic core
-uvl,be,textual language
-aggregate function,include,sum
-uvl,support,attribute
-arithmetic level,include,-
-arithmetic level,encode,smt instance
-language extension,encapsulate,language construct
-uvl,use,identifier protect quotation mark ambiguity
-binary expression,support,-
-uvl,parse,python
-core boolean level,support operator,|
-feature tree,utilize,keywords specify parent-child relationships
-type level,introduce,different feature type
-import mechanism,apply submodel constraint,compose model
-core boolean level,be,conversion target group cardinality
-function constraint,include,ceil operation
-feature tree,support,group cardinality
-cross-tree constraints,impose,limitation feature
-cross-tree constraints,support operator,=>
+uvl,support,numeric feature attribute input
+arithmetic operation,convert,boolean core
 language extension,provide,expressive language feature
-uvl,support,string feature
-core boolean level,support operator,!
-type level,support,ceil operation
-predicate,use operator,==
-arithmetic level,be use by,tool cp solver
-uvl,arithmetic level include,arithmetic core
-feature,can have,attribute
-feature tree,utilize,nest describe hierarchy
-type level,minor level extension,numeric-constraints
-type level,introduce,numeric operation
-submodel constraint,apply,compose model
-cross-tree constraints,combine,predicate
-core boolean level,be,uvl core language
-extension mechanism,use,feature attributes tool-specific data
-term,include,constant
-type level,allow,configuration non-boolean values
-uvl,feature,type numeric-constraints
-uvl,be,concise
-submodel constraint,attach,arbitrary location feature tree
-type level,use,boolean domain default
-uvl,support,feature cardinality
-extension mechanism,allow,arbitrary datum storage
-feature attribute,contain,-line constraints
-language extension,extend,uvl core language
-aggregate function,convert,arithmetic core
-function constraint,include,floor
-uvl,support,uvls
-feature tree,contain,attribute
-aggregate function,be,arithmetic level
-feature tree,decompose,subpart
-arithmetic level,support,numeric constant
-string operation,include,len
-group cardinality,extend,core boolean level
-predicate,use operator,!=
-uvl,model available,uvlhub repository
-arithmetic core,support,constraint attribute
-core boolean level,allow attribute,store feature information
-core boolean level,parse,python-based parser
-uvl,type level include,type numeric-constraints
-uvl,support,import
-boolean variable,refer,feature
-uvl,support,group cardinality
-type level,extend,arithmetic level
-language extension,allow,tailor model specific use case
-language extension,enable,include keyword
-uvl,integrate,travart
-cross-tree constraints,restrict,number valid configuration
-arithmetic level,support,numerical feature attribute
-feature,main element,feature tree
-type level,support,string comparison
-feature tree,represent,hierarchical structure variability model
-uvl,be,community-driven
-numeric operation,include,ceil operation
-term,include,reference variable
-predicate,use operator,>
-type level,support,string feature
-uvl,be,open-source
-extension mechanism,add,sophisticated language property
-uvl,include,core boolean level
-type level,support,string length operation
-uvl,represent,hierarchical structure
-type level,support,v4rdiac
-uvl,include,arithmetic level
-uvl,arithmetic level include,feature cardinality
-term,include,function
-cross-tree constraints,be,component feature model
-core boolean level,low level,high position language hierarchy
-type level,introduce,string feature
-predicate,connect,term
-cross-tree constraints,support operator,&
-language extension,introduce,additional construct
-core boolean level,support,group
-uvl,allow,attribute
-feature tree,represent hierarchy,nest
-uvl,use,context-free grammar specification
-aggregate function,include,avg
-type level,support,feature
-uvl,support,numeric constraints feature attribute
-core boolean level,support operator,=>
-cross-tree constraints,evaluate,boolean constant
-uvl,minor level extension,feature cardinality
-arithmetic level,represent,smt problem
-feature cardinality,use syntax,minmax
-language extension,enhance,expressiveness
-arithmetic level,convert,core boolean level
-type level,support,uvls
-cross-tree constraints,represent,domain constraint
-core boolean level,be use by,pure::variant
-cross-tree constraints,store,separately tree structure
-language extension,preserve,core language
-type level,minor level extension,type numeric-constraints
-predicate,specify dependency base,numerical value
-arithmetic level,support operator,!=
-language extension,extend,core language
-require relationship,be,cross-tree constraint
-core boolean level,include,core boolean level
-uvl,store,cross-tree constraint
-uvl,feature,type core
-type string-constraints,allow,len
-uvl,core include,mandatory relationship
-language extension,group,construct specific reasoning engine
-type level,introduce,feature
-import mechanism,support,feature tree
-core boolean level,include,arithmetic level
-core boolean level,be use by,nemo
-feature tree,consist,feature
-core boolean level,consist,group cardinality
-arithmetic level,represent,cp problem
-uvl,boolean level include,group cardinality
-uvl,provide,conversion strategy level
-uvl,minor level extension,group cardinality
-include keyword,enable,minor level
-uvl,feature,core boolean level
-arithmetic level,support operator,*
-import feature,reference,namespace
-type level,occupie,high position language hierarchy
-uvl,allow,tool-specific data storage attributes
-arithmetic level,support operator,>
-uvl,integrate,fm fact label
-uvl,type level include,type core
-arithmetic level,support operator,>=
-uvl,feature,type string-constraints minor level
-minor level,include,respective major level
-uvl,integrate,ddueruem
-core boolean level,reason,sit solver backend
-term,include,binary expression
-uvl,maintain,consortium institution
-uvl,use,complete keyword
-cross-tree constraints,use,propositional logic
-arithmetic level,include,*
-arithmetic level,include,arithmetic core
-uvl,support,support language extension
-language extension,enhance,uvl expressiveness
-type string-constraints,allow,string comparison
-type level,support,integer feature
-feature tree,require,exactly root feature
-core boolean level,include,type level
-uvl,allow,group cardinality
-binary expression,support,*
-uvl,type level include,type string-constraints minor level
-uvl,maintain,uvlhub repository
-uvl,aim,tool interoperability
-uvl,license,gnu less general public license
-conversion strategy,translate,support language extension
-boolean variable,refer,boolean-attribute keys
-numeric-constraints,allow,ceil operation
-core boolean level,include,group keyword
-type level,introduce,integer feature
+boolean level,encapsulate,language construct
 type level,allow,explicit boolean domain specification
-uvl,feature,attribute aggregate minor level
-uvl,originate,modevar initiative
-core boolean level,parse,clojure-based parser
-type level,transform feature,boolean feature attribute
-core boolean level,support operator,&
-aggregate function,introduce,avg
-feature tree,know,feature diagram
-core boolean level,be use by,variability.dev
-string constraint,drop,conversion
-type level,support,floor
-uvl,support,string constraint
-feature,can have,arbitrary number group
-numeric-constraints,be,minor level
-uvl,support,decomposition
-exclude relationship,denote,feature incompatibility
-type level,be,language level
-arithmetic level,allow,minor level selection wildcard
-uvl,feature,group cardinality minor level
-feature,can have,feature cardinality
-core boolean level,extend,arithmetic level
-uvl,contain,cross-tree constraint
-feature cardinality,convert,arithmetic core
-numeric-constraints,allow,floor
-feature tree,contain,feature unique name
-uvl,arithmetic level include,attribute aggregate minor level
-feature cardinality,be,arithmetic level
-exclude relationship,be,cross-tree constraint
-arithmetic level,support operator,+
-feature tree,represent hierarchy,indentation
-arithmetic level,support operator,==
-uvl,integrate,flamapy
-feature tree,contain,arbitrary number group
-aggregate function,introduce,sum
-uvl,use,indentation
-arithmetic level,group construct,construct specific reasoning engine
-type level,minor level extension,type string-constraints minor level
-group cardinality,enable,select n m feature group
-require relationship,imply,inclusion statement
-feature tree,contain,feature cardinality
-aggregate function,take,numeric constraints feature attribute
-uvl,contain,alternative relationship
-uvl,design goal include,expressiveness
-aggregate function,consider attribute value,select feature
-uvl,parse,java
-core boolean level,consist,group keyword
-uvl,support,integer feature
-core boolean level,be use by,flamapy
-core boolean level,encapsulate,language construct
-predicate,use operator,<=
-arithmetic level,be use by,travart
-arithmetic level,include,+
-language level,provide,expressiveness
-include keyword,enable,respective major level
-core boolean level,extend,type level
-binary expression,support,+
-numeric operation,include,floor
-alternative group,be part of,core boolean level
-uvl,be,human-readable
-arithmetic level,be use by,tool smt solver
-core boolean level,encode,cnf
-feature tree,support,optional group
-uvl,contain,feature
-mandatory group,be part of,core boolean level
-uvl,support,conversion strategy level
-uvl,be,extensible
-string constraint,be,minor level
-uvl,allow,support language extension
-uvl,serve,pivot language
-uvl,allow,model decomposition
-uvl,parse,javascript
-valid configuration,satisfy,attach constraint
-core boolean level,use,sit solver backend
-type level,introduce,string constraint
-type level,encapsulate,features non-boolean types
-arithmetic core,be part of,arithmetic level
-uvl,allow,feature cardinality
-cross-tree constraints,support operator,<=>
-type level,drop,string-constraints conversion
-cross-tree constraints,mark,constraints keyword
-arithmetic core,support,standard arithmetic operation
-uvl,support,numeric constraint
-uvl,have,core boolean level
-uvl,have,arithmetic level
-language level,group construct,construct specific reasoning engine
-core boolean level,be use by,fm fact label
-uvl,use,namespace
-arithmetic level,support,uvls
-arithmetic level,support operator,<=
-core boolean level,be,level extension
-uvl,use,line break end statement
-core boolean level,be use by,ddueruem
-language extension,cover,sophisticated expression
-language extension,accommodate,diverse modeling need
-feature tree,utilize,indentation represent relationship
-uvl,use,nest describe hierarchy
-uvl,support,namespace
-core boolean level,be,language level
-core boolean level,consist,core boolean level
-uvl,support,float feature
-propositional operator,combine,predicate
-uvl,support,composition
-function constraint,include,len
-uvl,be,textual variability modeling language
-feature cardinality,enable,select feature multiple time
-function constraint,include,avg
-language level,extend,respective major level
-uvl,structure,core boolean level
-language level,encapsulate,language construct
-uvl,support,propositional logic
-uvl,structure,arithmetic level
-feature,have,unique identifier
-core boolean level,exclude,constraint attribute
-type level,support,travart
-uvl,have,type level
-uvl,use,antlr
-aggregate function,can take,feature second parameter
-feature tree,major,uvl model
-cross-tree constraints,major,uvl model
-arithmetic level,allow,term resolve boolean
-uvl,represent,feature
-feature,posses,unique identifier
-uvl,stand,uvl model
-uvl,use,import
-cross-tree constraints,support operator,|
-group cardinality,be,core boolean level
-uvl,include,import mechanism
-arithmetic level,include,type level
-language extension,know,language level
-arithmetic level,introduce,numeric constraints feature attribute
-predicate,use operator,<
-arithmetic level,encode,cp instance
-arithmetic level,target,type level
-uvl,design goal include,simplicity
-function constraint,include,sum
-feature tree,component,feature
-cross-tree constraints,support operator,!
-uvl,have,antlr-based parser
-propositional operator,combine,boolean constant
-arithmetic level,be,language level
-language extension,be,optional
-uvl,core include,cross-tree constraint
-uvl,minor level extension,attribute aggregate minor level
-feature tree,contain,parent-child relationships
-extension mechanism,maintain,simple base language
-core boolean level,group feature,construct specific reasoning engine
-uvl,be,common textual exchange format
-cross-tree constraints,consist,arbitrary propositional formulae
-core boolean level,support operator,<=>
-group,main element,feature tree
-cross-tree constraints,combine,boolean constant
-language level,be,uvl extension
-uvl,structure,type level
-arithmetic level,support operator,/
-include keyword,enable,minor level selection wildcard
-include keyword,declare,support language extension
-core boolean level,support,optional group
-arithmetic level,encapsulate,arithmetic expression feature
-language extension,add,complex construct
-language level,represent,vary relationship type
-language extension,enable,tailor language specification
+uvl,aim,tool interoperability
 predicate,use operator,>=
-type level,represent,smt problem
-core boolean level,support,mandatory relationship
-type level,convert,core boolean level
-type level,convert,arithmetic level
-arithmetic level,support,travart
-predicate,specify dependency base,string value
-uvl,integrate,pure::variant
-type level,minor level extension,string-constraints conversion
-uvl,integrate,v4rdiac
-type level,introduce,float feature
+boolean level,be,core language uvl
+language extension,encapsulate,language construct
+type level,support,string length operation
+language extension,be,optional
+uvl,have,minor level arithmetic level
+import feature,reference,namespace
+include keyword,enable,minor level selection wildcard
+extension mechanism,use,feature attributes tool-specific data
 uvl,core include,alternative relationship
-core boolean level,limit constraint,propositional logic
-uvl,integrate,featureide
-core boolean level,encode,sit instance
-arithmetic level,include,/
-arithmetic level,allow wildcard,arithmetic*
-core boolean level,support,propositional cross-tree constraints
-cross-tree constraints,consist,inclusion statement
+uvl,be,open-source
+uvl,support,string feature
+cross-tree constraints,mark,constraints keyword
+uvl,include,import mechanism
+arithmetic operation,group construct,reasoning engine
+alternative group,be part of,boolean level
+require relationship,be,cross-tree constraint
+arithmetic operation,support operator,>
+uvl,allow,group cardinality
+uvl,allow,tool-specific data storage attributes
+uvl,stand,uvl extension
+term,include,function
+boolean level,reason,sit solver
+string constraint,drop,conversion
+arithmetic operation,target,type level conversion
+uvl,design goal include,information hiding
+uvl,allow,model decomposition
+exclude relationship,be,cross-tree constraint
+uvl,provide,conversion strategy level
+type level,minor level extension,numeric-constraints
+feature attribute,contain,-line constraints
+type level,introduce,type feature
+language extension,extend,core language uvl
+type level,introduce,string constraint
+include keyword,enable,respective major level
+predicate,specify dependency base,numerical value
+boolean level,use,sit solver
+type level,be,language level
+boolean level,be use by,fm fact label
+type level,extend,minor level arithmetic level
+uvl,arithmetic level include,feature cardinality
+boolean level,be use by,ddueruem
+cross-tree constraints,represent,domain constraint
+arithmetic operation,support,numeric constant
+uvl,be,extensible
+feature tree,contain,parent-child relationships
+boolean level,be use by,featureide
+type level,encapsulate,features non-boolean types
+optional group,be part of,boolean level
+type string-constraints,allow,len
+feature tree,contain,feature attribute
+feature tree,utilize,indentation represent relationship
+uvl,be,textual language
+aggregate function,include,avg
+arithmetic operation,support operator,/
+uvl,support,group cardinality
+uvl,parse,java
 type level,represent,cp problem
-binary expression,support,/
+include keyword,enable,minor level type level
+boolean variable,refer,feature unique name
+boolean level,low level,high position language hierarchy
+feature tree,know,feature diagram
+uvl,support,float feature
+feature tree,require,exactly root feature
+feature,can have,feature cardinality
+boolean level,consist,group cardinality
+uvl,boolean level include,group cardinality
+uvl,be,common textual exchange format
+predicate,use operator,<
+type level,support,integer feature
+uvl,be,human-readable
+type level,introduce,integer feature
+feature tree,utilize,nest specify hierarchy
+uvl,support,propositional logic
+aggregate function,consider attribute value,select feature
+uvl,type level include,type string-constraints
+feature cardinality,enable,select feature multiple time
+uvl,allow,language extension
+uvl,feature,boolean core
+uvl,store,cross-tree constraint
+submodel,apply,compose model
+boolean level,support,optional relationship
+arithmetic operation,represent,cp problem
+arithmetic operation,support operator,<
+function constraint,include,avg
+feature,have,unique identifier
+type level,support,uvls
+group cardinality,enable,select n m feature group
+uvl,contain,alternative relationship
+boolean level,be use by,variability.dev
+language level,encapsulate,language construct
+arithmetic operation,include,type major level
+arithmetic operation,encode,smt instance
+arithmetic operation,encode,cp instance
+uvl,use,identifier protect quotation mark ambiguity
+predicate,specify dependency base,string value
+language extension,allow,tailor model tool limitation
+uvl,be,concise
+uvl,support,composition
+feature tree,utilize,keywords specify parent-child relationships
+feature,can have,feature attribute
+uvl,model available,uvlhub repository
+uvl,use,indentation block
+uvl,have,import mechanism
+cross-tree constraints,consist,inclusion statement
+uvl,license,gnu less general public license
+feature cardinality,use syntax,minmax
+uvl,maintain,uvlhub repository
+function constraint,include,len
+type level,support,floor
+type level,introduce,numeric feature attribute input
+language extension,enable,tailor language specification
+arithmetic operation,include,/
+boolean level,support,optional group
+arithmetic operation,include,arithmetic core
+feature,can have,feature arbitrary number group
+boolean level,encode,sit instance
+uvl,integrate,uvls
+boolean core,be,conversion target group cardinality
+uvl,include,boolean level
+arithmetic operation,encapsulate,arithmetic expression feature
+uvl,feature,arithmetic core
+arithmetic operation,require,process sit encode
+uvl,feature,type string-constraints
+arithmetic core,support,constraint attribute
+uvl,support,language extension
+predicate,use operator,>
+binary expression,support,-
+uvl,allow,feature attribute
+arithmetic operation,support,uvls
+type level,convert,boolean level
+uvl,core include,cross-tree constraint
+aggregate function,introduce,avg
+function constraint,include,ceil
+uvl,integrate,pure::variant
+extension mechanism,allow,arbitrary datum storage
+boolean level,be use by,flamapy
+type level,introduce,numeric operation
+uvl,arithmetic level include,attribute aggregate
 feature tree,be,hierarchically arrange set feature
+uvl,support,numeric constraint
+arithmetic operation,include,-
+boolean level,include,group keyword
+cross-tree constraints,consist,arbitrary propositional formulae
+boolean level,parse,python-based parser
+uvl,support,feature cardinality
+group cardinality,be,boolean level
+feature tree,contain,feature cardinality
+propositional operator,combine,boolean variable
+boolean level,be use by,nemo
+aggregate function,take,numeric feature attribute input
+language level,represent,type feature
+arithmetic operation,support,numeric feature attribute input
+cross-tree constraints,major,uvl model
+arithmetic operation,introduce,numeric feature attribute input
+uvl,use,antlr
+uvl,use,import
+type level,support,travart
+term,include,reference variable
+type level,minor level extension,string-constraints
+uvl,use,context-free grammar specification
+boolean level,parse,clojure-based parser
+arithmetic operation,allow wildcard,arithmetic*
+uvl,originate,modevar initiative
+uvl,support,import
+numeric-constraints,allow,ceil
+aggregate function,can take,feature second parameter
+arithmetic operation,support operator,!=
+feature tree,support,group cardinality
+import mechanism,support,composition feature tree
+boolean level,include,boolean core
+uvl,support,feature attribute
+cross-tree constraints,be,feature model
+uvl,use,nest specify hierarchy
+language level,be,uvl extension
+language level,group construct,reasoning engine
+cross-tree constraints,support operator,=>
+boolean level,include,type major level
+term,include,binary expression
+language extension,group,reasoning engine
+feature tree,support,group
+language extension,preserve,simple core language
+uvl,integrate,travart
+uvl,have,antlr-based parser
+arithmetic operation,require,sat encode
+feature tree,represent hierarchy,nest
+exclude relationship,denote,feature incompatibility
+feature tree,contain,feature arbitrary number group
+uvl,minor level extension,group cardinality
+language level,be,optional extension major level
+uvl,structure,boolean level
+aggregate function,convert,arithmetic core
+language extension,cover,sophisticated expression
+uvl,integrate,fm fact label
+type level,occupie,high position language hierarchy
+arithmetic operation,support,travart
+arithmetic operation,be,language level
+boolean level,support operator,<=>
+conversion strategy,translate,language extension
+uvl,be,textual variability modeling language
+boolean level,extend,type major level
+uvl,have,boolean level
+uvl,integrate,ddueruem
+uvl,contain,cross-tree constraint
+propositional operator,combine,predicate
+boolean level,encode,cnf
+binary expression,support,+
+uvl,type level include,type numeric-constraints minor level
+arithmetic operation,support operator,-
+uvl,integrate,featureide
+cross-tree constraints,support operator,&
+import mechanism,apply submodel constraint,compose model
+feature tree,utilize,keyword specify relationship
+arithmetic operation,allow,term resolve boolean
+boolean core,allow attribute,store feature information
+uvl,allow,feature cardinality
+aggregate function,include,sum
+arithmetic operation,include,+
+uvl,core include,optional relationship
+type level,drop,string-constraints conversion
+arithmetic operation,be use by,travart
+minor level,include,respective major level
+type level,support,string comparison
+language level,provide,additional expressiveness
+feature cardinality,convert,arithmetic core
+cross-tree constraints,support operator,!
+extension mechanism,maintain,simple core language
+uvl,feature,attribute aggregate
+feature tree,decompose,subpart
+cross-tree constraints,restrict,number valid configuration
+arithmetic operation,be use by,tool cp solver
+term,include,constant
+function constraint,include,sum
+uvl,minor level extension,attribute aggregate
+aggregate function,be,minor level arithmetic level
+feature tree,support,optional group
+boolean level,support operator,=>
+arithmetic operation,support operator,<=
+uvl,represent,hierarchical structure
+type level,support,string feature
+arithmetic core,support,standard arithmetic operation
+uvl,structure,minor level arithmetic level
+feature cardinality,be,minor level arithmetic level
+feature,posses,unique identifier
+type level,introduce,string feature
+uvl,feature,type numeric-constraints minor level
+cross-tree constraints,support operator,<=>
+uvl,contain,real feature
+binary expression,support,*
+boolean level,be,language level
+boolean level,limit constraint,propositional logic
+arithmetic operation,be use by,tool smt solver
+uvl,feature,group cardinality minor level
+group cardinality,extend,boolean level
+arithmetic operation,support operator,>=
+predicate,use operator,==
+boolean level,support,propositional cross-tree constraints
+uvl,use,namespace
+valid configuration,satisfy,attach constraint
+language extension,know,language level
+uvl,development start,2018
+uvl,minor level extension,feature cardinality
+predicate,use operator,!=
+type level,represent,smt problem
+boolean level,include,minor level arithmetic level
+language level,represent,vary relationship type
+feature tree,represent hierarchy,indentation block
+function constraint,include,floor
+boolean core,be,optional extension major level
+arithmetic operation,include,*
+uvl,integrate,v4rdiac
+uvl,support,namespace
+uvl,arithmetic level include,arithmetic core
+boolean level,support operator,&
+arithmetic operation,support operator,==
+language level,extend,respective major level
+uvl,use,tree-like structure
+uvl,structure,type major level
+type level,allow,configuration non-boolean values
+type level,include,type core
+cross-tree constraints,store,separately tree structure
+arithmetic operation,represent,smt problem
+cross-tree constraints,combine,boolean variable
+uvl,type level include,type core
+aggregate function,introduce,sum
+cross-tree constraints,impose,limitation feature
+language extension,add,complex construct
+uvl,use,line break end statement
+extension mechanism,add,sophisticated language property
+arithmetic operation,allow,minor level selection wildcard
+boolean level,group feature,reasoning engine
+uvl,support,string constraint
+arithmetic operation,support operator,+
+boolean variable,refer,boolean-attribute keys
+boolean level,extend,minor level arithmetic level
+feature tree,contain,feature unique name
+uvl,integrate,flamapy
+boolean level,support operator,!
+uvl,parse,python
+uvl,have,type major level
+boolean level,support operator,|
+uvl,include,minor level arithmetic level
+type level,encapsulate,reasoning engine
+numeric-constraints,allow,floor
+require relationship,imply,inclusion statement
+uvl,serve,pivot language
+feature,main element,composition feature tree
+language extension,accommodate,diverse modeling need
+type level,introduce,float feature
+boolean level,support,group
+type level,convert,minor level arithmetic level
+uvl,allow,abstract feature
+string operation,include,len
+uvl,maintain,consortium institution
+type level,support,real feature
+uvl,parse,javascript
+type level,introduce,real feature
+language extension,extend,simple core language
+boolean level,consist,group keyword
+language extension,enhance,additional expressiveness
+include keyword,declare,language extension
+uvl,design goal include,simplicity
+cross-tree constraints,evaluate,boolean level
+cross-tree constraints,use,propositional logic
+cross-tree constraints,handle,reasoning engine
+group,main element,composition feature tree
+type string-constraints,allow,string comparison
+uvl,feature,type core
+uvl,support,integer feature
+feature tree,consist,real feature
+language extension,enable,include keyword
+arithmetic operation,include,ceil
+numeric-constraints,be,minor level type level
+uvl,design goal include,additional expressiveness
+arithmetic operation,support operator,*
+type level,use,boolean domain default
+boolean level,consist,boolean core
+type level,support,ceil
+uvl,support,uvls
+type level,minor level extension,type string-constraints
+language extension,introduce,additional construct
+uvl,support,decomposition
+cross-tree constraints,combine,predicate
+string constraint,be,minor level type level
+feature tree,major,uvl model
+boolean level,be use by,pure::variant
+cross-tree constraints,support operator,|
+submodel,attach,arbitrary location feature tree
+language extension,enhance,uvl expressiveness
+feature tree,component,feature model
+arithmetic core,be part of,minor level arithmetic level
+predicate,use operator,<=
+uvl,represent,feature model
+uvl,support,conversion strategy level
+binary expression,support,/
+boolean core,exclude,constraint attribute
+type level,minor level extension,type numeric-constraints minor level
+type level,transform feature,boolean feature attribute
+type level,support,v4rdiac
+arithmetic operation,include,floor
+uvl,be,community-driven
+feature tree,represent,hierarchical structure variability model
+uvl,use,complete keyword
+predicate,connect,term

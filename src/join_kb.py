@@ -6,7 +6,7 @@ import os
 from kb import KnowledgeBase, TaxonomyConstructor, NaturalLanguageProcessor
 
 
-KBS_FOLDER = '../resources/kb_uvl/ground_truth/consolidated/'
+KBS_FOLDER = '../resources/kb_uvl/ground_truth/raw/'
 
 
 def get_csv_files(path):

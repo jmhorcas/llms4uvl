@@ -1,0 +1,79 @@
+Subject,Predicate,Object
+uvl,provide,modularity
+uvl,facilitate,interoperability tool
+language extension,enable,domain-specific features
+language extension,include,attribute definition
+language extension,include,arithmetic constraint
+uvl,support,optional feature
+uvl,support,modularity
+uvl,define,alternative group
+uvl,support,alternative group
+language extension,allow,new constraint
+uvl,create,modevar community
+language extension,enhance,feature modeling
+language extension,include,group type
+language extension,define,new syntax element
+uvl,promote,interoperability tool
+uvl,support,group type
+language extension,allow,multi-valued features
+language extension,allow,domain-specific annotations
+uvl,facilitate,variability
+uvl,support,cross-tree constraints
+uvl,be use in,software product line engineering
+uvl,define,optional feature
+uvl,be use for,feature modeling
+uvl,support,arithmetic constraint
+uvl,use,indentation-based syntax
+uvl,support,boolean constraint
+language extension,extend,core language feature
+language extension,provide,extensible
+uvl,allow,cardinality constraint
+language extension,support,custom attribute
+uvl,provide,interoperability tool
+language extension,support,complex constraint
+uvl,stand,uvl core
+uvl,provide,text-based syntax
+uvl,include,import
+uvl,support,group cardinality
+language extension,provide,additional semantic
+language extension,facilitate,domain-specific requirements
+language extension,enhance,core language feature
+language extension,provide,flexibility
+language extension,allow,custom metadata
+uvl,represent,software product line engineering
+uvl,be a,domain-specific language
+uvl,have,textual syntax
+language extension,facilitate,modularity
+language extension,be part of,uvl core
+language extension,enhance,expressiveness
+uvl,provide,exchange format
+language extension,permit,annotation feature
+language extension,enable,modularity
+language extension,support,cardinality constraint
+uvl,be,extensible
+language extension,define,constraint type
+language extension,include,constraint type
+uvl,support,hierarchical feature
+uvl,serve,exchange format
+uvl,allow,feature nesting
+uvl,support,feature modeling
+uvl,model,variability
+language extension,facilitate,interoperability tool
+language extension,allow,group type
+uvl,be a,community standard
+uvl,support,featureide
+uvl,represent,feature modeling
+uvl,support,feature attribute
+uvl,be a,domain specific language
+uvl,use,indentation-based nesting
+uvl,enable,interoperability tool
+uvl,support,hierarchical structure
+uvl,maintain,modevar community
+uvl,allow,import
+language extension,include,string constraint
+uvl,enable,model exchange
+uvl,support,cardinality constraint
+language extension,support,domain-specific requirements
+language extension,extend,uvl core
+language extension,define,uvl header
+uvl,be use for,variability

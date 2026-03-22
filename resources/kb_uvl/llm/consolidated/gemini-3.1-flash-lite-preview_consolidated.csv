@@ -1,0 +1,140 @@
+Subject,Predicate,Object
+feature tree,support,alternative group
+cross-tree constraints,allow,require relationship
+uvl,be,platform-independent
+feature tree,root,uvl metamodel
+arithmetic level,be a,uvl feature type
+cross-tree constraints,support,exclusion operator
+boolean level,support,logical expression
+uvl,support,feature
+feature tree,support,require relationship
+uvl,design,software product line
+uvl,support,numeric constraint
+feature tree,represent,commonality
+boolean level,enable,cross-tree constraints
+uvl,use,indentation hierarchy
+feature tree,define,hierarchical structure
+cross-tree constraints,support,equivalence operator
+type level,support,string
+uvl,support,language extension
+uvl,design,domain engineering
+language extension,extend,core uvl syntax
+uvl,be,tool agnostic
+uvl,use,textual syntax
+uvl,be a,variability modeling language
+arithmetic level,permit,real attribute
+arithmetic level,enable,variability
+type level,restrict,feature value
+language extension,improve,expressiveness uvl
+boolean level,define,feature constraint
+boolean level,use,operator
+arithmetic level,facilitate,mathematical expression
+boolean level,support,boolean
+type level,define,custom variability constraint
+language extension,allow,domain specific syntax
+language extension,support,cross tree constraint
+feature tree,represent,variability
+cross-tree constraints,support,logical expression
+uvl,enable,domain specific semantic
+type level,be part of,uvl attribute definition
+uvl,support,cross-tree constraints
+type level,support,feature datum type
+cross-tree constraints,be,core uvl syntax
+uvl,support,nest feature
+boolean level,allow,negation
+uvl,support,boolean constraint
+cross-tree constraints,allow,exclude relationship
+arithmetic level,enable,range definition
+uvl,be,standardized language
+boolean level,use,equivalence operator
+cross-tree constraints,be,define constraint block
+boolean level,define,feature selection status
+boolean level,allow,conjunction
+uvl,use,extension mechanism
+boolean level,be a,constraint type
+uvl,be,machine readable
+type level,categorize,feature type
+uvl,be,platform independent
+language extension,facilitate,integration external tool
+uvl,be,domain specific language
+uvl,promote,interoperability
+arithmetic level,enable,attribute
+uvl,base,feature
+uvl,support,optional feature
+language extension,enhance,modeling capability
+boolean level,allow,boolean constraint
+uvl,be,standardized splc
+uvl,replace,proprietary variability format
+type level,enable,attribute
+arithmetic level,allow,integer attribute
+feature tree,support,mandatory constraint
+type level,support,integer
+uvl,allow,domain specific attribute
+uvl,support,string constraint
+language extension,provide,specialized variability semantic
+type level,constrain,attribute
+language extension,improve,model expressiveness
+uvl,support,alternative group
+uvl,be,human readable
+cross-tree constraints,support,imply operator
+boolean level,enable,feature selection logic
+cross-tree constraints,define,dependencie feature
+uvl,integrate,external variability model
+boolean level,use,imply operator
+cross-tree constraints,restrict,feature selection status
+uvl,support,feature model annotation
+language extension,support,specialized variability semantic
+type level,support,boolean
+uvl,allow,constraint type
+cross-tree constraints,be a,uvl feature type
+uvl,support,group cardinality
+cross-tree constraints,use,propositional logic
+uvl,allow,attribute
+type level,define,data type attribute
+boolean level,be part of,uvl
+cross-tree constraints,support,mathematical expression
+language extension,facilitate,modular variability modeling
+arithmetic level,be part of,core uvl syntax
+feature tree,be part of,uvl metamodel
+boolean level,allow,disjunction
+language extension,allow,domain specific annotation
+feature tree,establishe,parent-child relationship
+type level,be part of,uvl metamodel
+cross-tree constraints,enable,non-hierarchical relationships
+uvl,support,cross tree constraint
+cross-tree constraints,restrict,valid feature configuration
+type level,be part of,core uvl syntax
+language extension,require,parser support
+feature tree,support,optional relationship
+uvl,permit,extension mechanism
+uvl,be,machine-readable
+uvl,be,tool-agnostic
+uvl,support,modular extension
+cross-tree constraints,reside,outside feature hierarchy
+feature tree,contain,constraint type
+feature tree,root,root feature
+uvl,be,standardize uvl community
+uvl,facilitate,cross tree constraint
+language extension,be,optional feature
+boolean level,define,feature selection logic
+uvl,support,user define type
+type level,support,real
+uvl,support,cardinality
+language extension,enable,custom variability constraint
+type level,be a,uvl feature type
+uvl,be,text-based
+type level,define,feature datum type
+arithmetic level,support,mathematical expression
+type level,enable,type checking
+boolean level,allow,boolean
+uvl,support,modular variability modeling
+uvl,support,hierarchical decomposition
+uvl,use,indentation base syntax
+arithmetic level,support,numeric constraint
+feature tree,contain,feature
+cross-tree constraints,use,boolean
+cross-tree constraints,restrict,feature model configuration space
+cross-tree constraints,impact,product configuration validity
+boolean level,support,propositional logic
+uvl,support,attribute
+feature tree,define,parent-child relationship

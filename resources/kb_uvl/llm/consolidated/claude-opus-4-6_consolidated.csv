@@ -1,0 +1,461 @@
+Subject,Predicate,Object
+cross-tree constraints,support,uvl grammar
+uvl,be use for,software product line variability modeling
+require constraint,mean,select feature mandate select feature
+boolean level,support,group cardinality
+boolean level,support,cross-tree constraints boolean logic
+boolean level,refer,level feature modeling feature select select
+boolean level,deal,binary variability decision
+boolean level,allow,propositional logic constraint
+uvl,propose,software product line community
+feature tree,define,indentation-based notation uvl
+uvl,support,group cardinality
+boolean level,enable,extended cross-tree constraints
+cross-tree constraints,relevant,product derivation
+uvl,translate,sit formula
+boolean level,define,basic feature hierarchy level
+boolean level,use,propositional logic formula
+cross-tree constraints,constrain,valid product configuration
+cross-tree constraints,lead,false optional feature
+feature tree,organize feature,parent-child relationships
+boolean level,be above,arithmetic level
+uvl,support,namespace declaration
+feature tree,can have,multiple level nest
+cross-tree constraints,represent,require constraint
+type level,builds_upon,arithmetic level
+language extension,relate,sat-level uvl
+uvl,enable,interoperability feature modeling tool
+boolean level,represent,basic level feature model uvl
+language extension,example include,feature cardinality
+boolean level,expressive,arithmetic level
+arithmetic level,be a,core concept uvl universal variability language
+boolean level,sufficient,feature model
+type level,allows_specification_of,specification attribute type feature
+feature tree,write uvl,cardinality-based feature groups
+feature tree,group type include,group cardinality
+boolean level,extend,set valid feature combinations cross-tree constraints
+cross-tree constraints,use operator,negation constraint
+type level,allow,specification attribute type feature
+uvl,have,modular structure import namespace
+exclude constraint,mean,select feature forbid select feature
+type level,is_defined_in,uvl type system
+uvl,support,uvls language server
+cross-tree constraints,express,complex dependency feature
+feature tree,group type include,group
+arithmetic level,enable,comparison arithmetic expression
+boolean level,represent feature,true false value
+language extension,relate,smt-level uvl
+uvl,support,uvl parser support
+uvl,support,arithmetic constraint extension
+feature tree,define,complex dependency feature
+language extension,maintain,common core syntax
+language extension,allow,add new construct base language
+cross-tree constraints,evaluate,valid product configuration
+uvl,present,splc conference
+cross-tree constraints,relate feature,different branch feature tree
+arithmetic level,extend,type level
+uvl,section call,constraint section
+uvl,evolve,early feature modeling notation
+type level,belongs_to,uvl language modularity level
+cross-tree constraints,can make,feature model analysis computationally hard
+uvl,support,boolean constraint
+uvl,root concept,root feature
+language extension,originally introduce,new feature attribute
+language extension,define,arithmetic-level constructs
+uvl,support,feature cardinality
+uvl,support,string attribute type
+uvl,example include,boolean level
+uvl,have,tree-shaped hierarchy
+uvl,example include,type level
+boolean level,support,propositional logic constraint
+language extension,allow,domain-specific customization
+uvl,section call,import
+language extension,define,separate language module
+uvl,be use in,valid product configuration
+feature tree,child feature represent,sub-features parent feature
+cross-tree constraints,encode,complex dependency feature
+cross-tree constraints,lead,dead feature
+uvl,support,sat-based analysis
+cross-tree constraints,support,propositional logic formula
+language extension,define,boolean-level constructs
+cross-tree constraints,be part of,feature model
+uvl,parsers available,rust
+cross-tree constraints,example exclude form,feature exclude feature b
+uvl,open source,specification
+language extension,specify,uvl grammar
+cross-tree constraints,represent,exclude constraint
+feature tree,be a,core concept variability modeling
+uvl,relate,splot format
+uvl,support,nest feature tree
+arithmetic level,support,addition operator
+boolean level,allow,extended cross-tree constraints
+language extension,identify,unique namespace identifier
+type level,add,type annotation feature attribute
+cross-tree constraints,use operator,logical
+boolean level,be part of,constraints section uvl model
+boolean level,extend,arithmetic level
+type level,is_below,cardinality level
+arithmetic level,extend,uvl type system
+uvl,extensible,language level
+feature tree,enforce,parent-child selection constraints
+uvl,parsers available,java
+uvl,support,uvlparser
+feature tree,support,group cardinalitie uvl
+arithmetic level,be use in,extended cross-tree constraints
+cross-tree constraints,cause,dead feature
+type level,enhance,expressiveness feature model
+uvl,section call,feature section
+feature tree,distinguish,extended cross-tree constraints
+feature tree,can be,serialize uvl textual format
+feature tree,organize,feature hierarchical decomposition
+uvl,replace need,xml-based variability formats
+boolean level,support,new feature attribute
+boolean level,support,exclude constraint
+cross-tree constraints,example syntax uvl,featurea => featureb
+arithmetic level,operate,numeric feature attribute reasoning
+boolean level,be use in,feature model
+feature tree,augment,extended cross-tree constraints
+uvl,have,language level
+cross-tree constraints,increase,expressiveness feature model
+type level,add,numeric constraint model feature model
+uvl,aim,exchange feature model tool
+feature tree,be use for,valid product configuration
+boolean level,represent,classical feature modeling constraint
+boolean level,compatible,sat-based analysis
+feature tree,imply,select feature mandate select feature
+language extension,allow,parsers report unsupported construct gracefully
+feature tree,be use in,feature model
+cross-tree constraints,go beyond,parent-child relationships
+language extension,combine,extension
+uvl,analysis,sit solver
+boolean level,support,feature tree modeling
+boolean level,represent,level constraint boolean logic uvl
+feature tree,contain,parent-child relationships
+boolean level,allow,boolean constraint
+arithmetic level,operate,real attribute type
+uvl,support,concrete feature
+type level,builds_upon,boolean level
+cross-tree constraints,cause,hide dependency feature
+cross-tree constraints,example syntax uvl,featurea <=> featureb
+feature tree,serialize,textual representation uvl
+cross-tree constraints,affect,number valid configuration
+uvl,parsers available,python
+language extension,define,type-level constructs
+feature tree,fundamental element,software product line community
+cross-tree constraints,translate,bdd representation
+type level,support,real attribute type
+language extension,enable,modular language design
+feature tree,leaf node represent,concrete selectable feature
+uvl,use,indentation-based notation uvl
+language extension,promote,separation concern
+boolean level,basic level,uvl language modularity level
+boolean level,support,false optional feature
+boolean level,belong,uvl
+uvl,file extension,uvl
+uvl,develop,modevar initiative
+feature tree,can be,extended cross-tree constraints
+feature tree,root feature represent,implicitly mandatory
+uvl,analysis,smt solver
+type level,is_below,cardinality level uvl hierarchy
+uvl,support,smt-based reasoning
+uvl,relate,modevar initiative
+type level,is_a,multiple expressiveness level uvl
+uvl,define,arithmetic level
+feature tree,be a,core concept uvl universal variability language
+arithmetic level,allow,boolean constraint
+feature tree,use,indentation-based notation uvl
+uvl,be use in,feature model
+uvl,support,abstract feature
+boolean level,support,alternative group
+uvl,support,namespace mechanism identification
+cross-tree constraints,express,propositional logic formula
+cross-tree constraints,replace complement,tree-based variability structure
+language extension,parse,uvl parser support
+language extension,specify,uvl type system
+uvl,be a,domain-specific language
+arithmetic level,enable,numeric feature attribute reasoning
+language extension,example include,numeric constraint
+boolean level,distinguish,arithmetic level
+boolean level,multiple level,uvl type system
+arithmetic level,support,subtraction operator
+uvl,have,textual syntax
+cross-tree constraints,be use in,software product line community
+cross-tree constraints,write uvl,constraints keyword
+arithmetic level,enable,aggregate function
+feature tree,group type include,optional group
+cross-tree constraints,represent,mutual exclusion
+boolean level,model,feature presence absence
+boolean level,correspond,propositional logic formula
+uvl,acronym,uvl
+cross-tree constraints,analysis,bdd-based approaches
+cross-tree constraints,cause,false-optional features
+language extension,declare,namespace section uvl model
+uvl,translate,smt formula
+feature tree,support,alternative xorgroup
+cross-tree constraints,define relationship,feature different subtree
+uvl,support,extended cross-tree constraints
+cross-tree constraints,encode,incompatibility relationship
+boolean level,use value,true false
+feature tree,represent,software product line variability modeling
+type level,relates_to,expressiveness feature model
+cross-tree constraints,place outside,basic feature hierarchy level
+arithmetic level,enable,numeric constraint model feature model
+feature tree,be a,hierarchical structure represent feature relationship software product line
+boolean level,be above,base level
+boolean level,support,mandatory feature
+boolean level,capture,alternative group
+feature tree,originally introduce,kang et alfoda methodology
+uvl,support,import mechanism
+language extension,originally introduce,type constraint extension
+boolean level,be one of,multiple expressiveness level uvl
+arithmetic level,belong,uvl language modularity level
+uvl,section call,feature model
+cross-tree constraints,reference,feature tree modeling
+feature tree,serve input,product configuration tool
+type level,relates_to,feature model
+boolean level,support,numeric constraint
+language extension,example include,type constraint extension
+cross-tree constraints,replace complement,tree constraint
+arithmetic level,support,avg function
+boolean level,basic level,core concept uvl universal variability language
+uvl,interoperable,dimacs format
+arithmetic level,be part of,uvl language modularity level
+feature tree,define,set valid feature combinations cross-tree constraints
+cross-tree constraints,increase,complexity feature model analysis
+boolean level,expressive,basic feature hierarchy level
+uvl,replace complement,xml-based feature model formats
+uvl,serve,exchange feature model tool
+cross-tree constraints,originally introduce,foda feature-oriented domain analysis
+feature tree,visualize,graphical diagram
+cross-tree constraints,example include,logical operator
+arithmetic level,build,new feature attribute
+language extension,declare,uvl file header
+feature tree,root feature represent,entire system product line
+boolean level,use operator,logical implication
+type level,extend,level constraint boolean logic uvl
+uvl,support,integer attribute
+boolean level,be part of,uvl language modularity level
+boolean level,capture,mandatory feature
+uvl,have,namespace declaration
+cross-tree constraints,originally introduce,foda method
+feature tree,be a,fundamental feature model
+type level,enable,specification attribute type feature
+uvl,have,versione specification
+boolean level,use operator,negation constraint
+boolean level,support,logical operator
+uvl,be use for,feature model
+feature tree,analysis,bdd-based reasoning engines
+boolean level,build,boolean attribute
+uvl,design,machine-processable
+feature tree,contain,sub-features parent feature
+language extension,support,backward compatibility base language
+type level,be above,boolean level
+uvl,interoperable,featureide xml format
+language extension,example include,aggregate-functions extension
+boolean level,use,boolean connective
+cross-tree constraints,example require form,feature require feature b
+language extension,facilitate,interoperability tool different capability
+feature tree,be use in,proprietary variability modeling format
+uvl,support,type constraint extension
+cross-tree constraints,example include,equivalence operator
+language extension,example include,constraint-level extensions
+language extension,example include,type-level extensions
+type level,define,data type feature attribute uvl
+uvl,design,human-readable
+type level,enable,non-boolean variability modeling
+language extension,maintain,backward compatibility base language
+feature tree,be a,tree-shaped hierarchy
+cross-tree constraints,express,constraints section uvl model
+arithmetic level,support,division operator
+language extension,example include,feature-cardinality extension
+arithmetic level,support,ceil function
+arithmetic level,support,multiplication operator
+feature tree,replace complement,constraint rule feature model
+uvl,relate,foda method
+uvl,grammar define,antlr
+uvl,support,type-level constraints
+feature tree,be part of,feature model
+boolean level,use,boolean constraint
+uvl,define,boolean level
+uvl,define,type level
+language extension,enable,optional language feature
+feature tree,encode uvl,feature section
+cross-tree constraints,involve,complex boolean expression uvl
+language extension,support,incremental language evolution
+feature tree,root feature represent,-level feature model
+boolean level,extend,base level uvl
+boolean level,example include,new feature attribute
+feature tree,represent,decomposition system feature
+arithmetic level,support,greater-operator
+uvl,support,new feature attribute
+boolean level,capture,structural variability
+feature tree,support,false optional feature
+cross-tree constraints,translate,sit formula
+boolean level,define constraint,constraints section uvl model
+feature tree,combine,extended cross-tree constraints
+uvl,have,formal grammar specification
+boolean level,distinguish,type level
+cross-tree constraints,relevant,automate configuration
+cross-tree constraints,appear,feature diagram additional edge annotation
+type level,belongs_to,uvl layered language architecture
+language extension,example include,numeric-constraints extension
+cross-tree constraints,complicate,automate analysis feature model
+feature tree,analysis,sit solver
+cross-tree constraints,support,constraint block uvl file
+uvl,support,equivalence constraint
+arithmetic level,support,floor function
+arithmetic level,allow,numeric feature attribute reasoning
+language extension,originally introduce,new feature type
+arithmetic level,be one of,uvl language modularity level
+uvl,represent,configuration space
+cross-tree constraints,concept,feature model
+uvl,support,false optional feature
+cross-tree constraints,specify,constraints section uvl model
+cross-tree constraints,type,require constraint
+boolean level,foundational,uvl language modularity level
+arithmetic level,build,type level
+cross-tree constraints,restrict,valid feature configuration
+uvl,support,boolean attribute
+language extension,increase,expressiveness feature model
+uvl,aim replace,proprietary variability modeling format
+uvl,design,tool-independent
+uvl,replace need,proprietary feature model format
+uvl,support,alternative group
+feature tree,represent,direct acyclic structure single root
+type level,provide,type annotation feature attribute
+type level,support,integer attribute
+type level,support,string attribute type
+boolean level,operate,boolean constraint
+language extension,example include,aggregate function
+language extension,distinguish,core concept uvl universal variability language
+feature tree,have a,root feature
+feature tree,support,mandatory feature
+cross-tree constraints,relevant,valid product configuration
+feature tree,be use in,domain engineering
+feature tree,relate,feature diagram
+language extension,example include,arithmetic constraint extension
+language extension,example include,string-constraints extension
+feature tree,declare,feature keyword uvl
+language extension,example include,string constraint extension
+boolean level,use operator,conjunction
+uvl,parse,uvl parser support
+uvl,relate,dimacs format
+arithmetic level,support,-operator
+type level,provide,type system variability model
+language extension,follow,plug-style architecture
+boolean level,default level,basic level feature model uvl
+feature tree,use indentation uvl express,parent-child nesting
+cross-tree constraints,place,constraint block uvl file
+cross-tree constraints,know,cross-tree dependencies
+uvl,have,level language complexity
+feature tree,declare,basic level feature model uvl
+uvl,support,mandatory feature
+language extension,example include,cardinality-based feature groups
+feature tree,contain,concrete feature
+boolean level,support constraint,logical operator
+uvl,support,include declaration
+arithmetic level,support,modulo operator
+boolean level,represent feature,boolean constraint
+cross-tree constraints,impact,configuration validity
+cross-tree constraints,represent,logical implication
+language extension,define,additional grammar rule
+feature tree,use,tree-based decomposition features
+feature tree,structure determine,valid feature configuration
+uvl,support,flamapy
+boolean level,example include,numeric constraint
+boolean level,use operator,disjunction
+language extension,example include,group-cardinality extension
+uvl,relate,featureide xml format
+boolean level,support,implication constraint
+uvl,interoperable,sxfm format
+type level,is_one_of,uvl language modularity level
+feature tree,contain,false optional feature
+boolean level,support,feature group
+type level,is_part_of,uvl language modularity level
+feature tree,contain,abstract feature
+uvl,support,implication constraint
+language extension,mechanism,core concept uvl universal variability language
+uvl,support,real attribute type
+uvl,facilitate,automate analysis feature model
+boolean level,concept,uvl
+feature tree,be a,direct acyclic structure single root
+uvl,support,feature group
+feature tree,contain,alternative group
+feature tree,relate,foda feature-oriented domain analysis
+feature tree,be use in,domain analysis
+uvl,root element,feature section
+feature tree,serialize,indentation-based notation uvl
+uvl,relate,feature-oriented software development
+cross-tree constraints,distinct,tree constraint
+uvl,have,modular structure
+feature tree,originally introduce,foda feature-oriented domain analysis
+boolean level,define constraint,constraint block uvl file
+cross-tree constraints,check,consistency
+uvl,support,negation constraint
+feature tree,be use in,application engineering
+language extension,example include,attribute-level extensions
+language extension,allow,optional language feature
+arithmetic level,support,sum function
+boolean level,multiple level,uvl language modularity level
+cross-tree constraints,analysis,sit solver
+uvl,interoperable,variability analysis
+arithmetic level,declare,include keyword uvl
+type level,support,boolean attribute
+uvl,serve,proprietary variability modeling format
+arithmetic level,support,great operator
+feature tree,contain,mandatory feature
+cross-tree constraints,affect,configuration space product line
+feature tree,leaf node represent,atomic feature
+language extension,follow,layered architecture approach
+boolean level,example include,type-level constraints
+uvl,host,github
+arithmetic level,enable,arithmetic expression feature constraint
+feature tree,capture,hierarchical variability product line
+boolean level,know,boolean level
+language extension,enable,tooling selectively support subset uvl
+uvl,use,antlr-based parser
+feature tree,internal node represent,abstract feature
+feature tree,define,structural constraint feature
+cross-tree constraints,encode,dependency relationship
+cross-tree constraints,example syntax uvl,!featurea | featureb
+cross-tree constraints,originally introduce,foda feature modeling method
+cross-tree constraints,analysis,computationally hard
+feature tree,leaf node represent,feature unique
+feature tree,specify,basic level feature model uvl
+feature tree,express,uvl grammar
+type level,constrain,attribute value specific datum type
+feature tree,define,configuration space product line
+uvl,example include,arithmetic level
+boolean level,solve,sit solver
+cross-tree constraints,express,core concept uvl universal variability language
+type level,constrain,attribute value type declaration
+uvl,support,basic feature hierarchy level
+language extension,be part of,uvl modular architecture
+arithmetic level,belong,uvl type system
+cross-tree constraints,represent,tree hierarchy
+feature tree,define,hierarchical variability product line
+uvl,develop,community standard
+uvl,be use in,variability analysis
+boolean level,use operator,equivalence
+boolean level,correspond,feature model
+uvl,support,import submodel
+type level,support,numeric feature attribute reasoning
+feature tree,child feature group,feature group
+arithmetic level,build,boolean level
+uvl,support,featureide
+arithmetic level,operate,integer attribute
+arithmetic level,support,equivalence operator
+boolean level,be above,type level
+feature tree,support,group
+boolean level,operate,feature reference
+cross-tree constraints,check,satisfiability
+language extension,support,boolean constraint
+language extension,relate,uvl language modularity level
+cross-tree constraints,affect,configuration space
+uvl,enable,interoperability variability tool
+language extension,use,namespace mechanism identification
+uvl,enable,exchange feature model tool
+language extension,support,tooling extensibility
+boolean level,be a,constraints section uvl model
+boolean level,use,binary decision variable
+feature tree,know,basic feature hierarchy level

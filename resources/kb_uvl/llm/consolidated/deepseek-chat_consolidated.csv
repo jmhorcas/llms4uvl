@@ -1,0 +1,383 @@
+Subject,Predicate,Object
+uvl,describe,academic publication
+uvl,use in,solver
+uvl,use in,body
+language extension,can be,mandatory
+uvl,use in,by
+uvl,use in,standard
+uvl,use in,state
+uvl,use,transformation
+type level,be above,feature level
+language extension,enable,dsl integration
+language extension,specify,grammar rule
+uvl,use in,example
+uvl,use in,date
+uvl,use in,tool
+language extension,require,tool support
+uvl,use in,new
+language extension,define,dsls
+uvl,use in,engine
+uvl,use in,webrtc
+uvl,use in,instance
+boolean level,representation,json
+language extension,can be,implement
+language extension,mechanism,language evolution
+uvl,use in,urierror
+uvl,use in,history
+uvl,use in,do
+language extension,relate,uvl meta-model
+uvl,use in,field
+uvl,use,software product line
+uvl,use in,case study
+uvl,use in,localstorage
+uvl,use in,svg
+uvl,use in,comparison operator
+language extension,enhance,expressiveness
+uvl,use in,break
+language extension,can be,domain-specific
+uvl,use in,default
+language extension,enable,domain-specific adaptations
+boolean level,be above,feature level
+uvl,use in,tutorial
+uvl,use in,report
+uvl,use in,list
+uvl,use in,environment
+uvl,implement,python
+boolean level,include,logical cross-tree constraints
+uvl,use in,performanceservertime
+uvl,use in,switch
+type level,specify,feature model header
+uvl,use in,indexeddb
+uvl,use in,converter
+uvl,use in,entry
+uvl,use in,expression
+boolean level,feature,optional
+uvl,use in,transformstream
+uvl,use in,performanceentry
+language extension,be part of,uvlextensibility mechanism
+uvl,use in,rangeerror
+type level,use,mandatory
+uvl,use in,table
+uvl,host,github
+uvl,use in,eventsource
+uvl,implement,javascript
+uvl,use in,tree
+uvl,use in,catch
+uvl,describe,technical report
+language extension,enable,customization
+uvl,use in,model
+boolean level,representation,xml
+boolean level,be above,arithmetic level
+uvl,use,reasoning
+language extension,can be,formalize
+type level,be a,modeling variability
+type level,be a,feature level
+uvl,use in,implement
+uvl,use in,webgl
+type level,be a,concept
+uvl,use in,var
+uvl,use in,formdata
+uvl,use in,performancemark
+uvl,use in,dissertation
+uvl,use in,iterator
+language extension,facilitate,tailor uvl
+uvl,use in,invocation
+uvl,use in,require
+type level,be a,uvl level
+boolean level,define,feature model structure
+uvl,use in,project
+uvl,use in,fetch
+uvl,use in,specification
+uvl,use in,stream
+type level,abstract,concrete syntax
+type level,precede,cardinality level
+type level,be a,uvl abstraction level
+boolean level,enable,configuration
+type level,distinct,feature level
+language extension,allow,add new construct
+boolean level,be for,configuration
+boolean level,represent,feature tree
+type level,use,concrete feature
+uvl,use in,domain
+uvl,use in,evalerror
+uvl,use in,format
+uvl,use in,from
+uvl,use in,tuples
+uvl,use in,industry
+uvl,use in,promise
+uvl,use in,error
+uvl,use in,for
+language extension,relate,uvl core
+uvl,standardize,uvl community
+uvl,use in,sequence
+uvl,use in,comment
+uvl,use in,abortcontroller
+type level,include,real type
+boolean level,specifie,require constraint
+language extension,allow,add new feature
+uvl,use in,method
+boolean level,be a,uvl abstraction level
+uvl,use in,operator
+uvl,use in,document
+boolean level,precede,arithmetic level
+uvl,use,product derivation
+type level,use,cardinality level
+boolean level,describe,uvlformal syntax
+uvl,use in,null
+uvl,use in,action
+uvl,use in,importer
+uvl,use in,sessionstorage
+uvl,use in,header
+uvl,use in,chart
+uvl,define,grammar rule
+uvl,use in,bytelengthqueuingstrategy
+uvl,use in,transformer
+uvl,describe,guide
+boolean level,include,custom constraint
+boolean level,be above,type level
+uvl,use in,module
+type level,describe,new feature type
+language extension,facilitate,custom constraint
+uvl,use,modeling variability
+boolean level,contain,require
+type level,be a,uvl feature type
+uvl,use in,journal
+uvl,use in,graph
+uvl,use in,attribute
+uvl,use in,nan
+uvl,use in,webassembly
+uvl,use in,service
+type level,be above,instance level
+type level,use,alternative
+uvl,use in,json
+uvl,use in,weakmap
+uvl,use in,window
+uvl,use in,matrix
+uvl,use in,symbol
+uvl,use in,navigator
+uvl,use in,platform
+uvl,use in,interpreter
+uvl,use in,yield
+boolean level,specifie,presence condition
+uvl,use in,if
+uvl,use in,weakset
+boolean level,specifie,alternative group
+uvl,use in,goto
+type level,use,new feature type
+uvl,use in,filereader
+uvl,use in,await
+uvl,use in,serializer
+uvl,use in,string type
+uvl,use in,math
+language extension,be part of,uvl meta model
+type level,use,abstract feature
+language extension,allow,custom syntax
+language extension,purpose,extend uvl
+uvl,part of,spl conqueror
+language extension,define,new constraint type
+uvl,part of,variability analysis tool
+uvl,use in,blob
+type level,define,allow type feature
+uvl,use in,element
+uvl,use in,branch
+uvl,use in,constant
+language extension,allow,new constraint type
+boolean level,be part of,uvllayere structure
+uvl,use,visualization
+uvl,use in,else
+uvl,use in,url
+uvl,use in,component
+language extension,use in,uvl core
+uvl,use in,property
+uvl,use,configuration
+uvl,use in,comparison
+uvl,use in,as
+uvl,use in,research
+uvl,use in,catalog
+type level,define,feature cardinality
+uvl,use in,paper
+uvl,use in,screen
+uvl,use in,return
+uvl,use in,annotation
+uvl,use in,async
+uvl,use in,operation
+uvl,use in,system
+uvl,use in,response
+boolean level,precede,type level
+uvl,use in,chapter
+uvl,use in,object
+uvl,use in,location
+language extension,require,meta-model extension
+uvl,use in,education
+language extension,define,new attribute type
+uvl,use in,throw
+uvl,use in,index
+boolean level,be above,attribute
+uvl,use in,performanceobserver
+uvl,use in,proxy
+uvl,use in,in
+uvl,use in,worker
+uvl,use in,procedure
+uvl,use in,event
+uvl,use in,xmlhttprequest
+uvl,use in,dictionary
+boolean level,representation,textual syntax
+language extension,integrate,uvl core
+language extension,support,feature model extension
+uvl,use in,translator
+language extension,can be,user-defined
+uvl,use in,condition
+uvl,use in,literal
+boolean level,define,feature model constraint
+type level,define,new feature type
+uvl,use in,undefined
+language extension,can be,validate
+uvl,use in,checker
+uvl,use in,metadata
+uvl,use in,boolean type
+uvl,use in,record
+uvl,use in,library
+language extension,be,optional
+uvl,use in,application
+boolean level,specifie,exclude constraint
+boolean level,use,boolean constraint
+uvl,use in,continue
+type level,include,mandatory
+boolean level,feature,alternative group
+uvl,use in,regexp
+uvl,use in,webaudio
+uvl,use in,class
+boolean level,represent,custom constraint
+uvl,use in,editor
+uvl,use in,function
+uvl,use in,diagram
+uvl,use in,package
+type level,use,optional
+uvl,use in,exporter
+uvl,use in,store
+language extension,be a,concept
+uvl,use in,workshop
+uvl,use in,key-value pairs
+language extension,define,new feature type
+type level,use,group level
+uvl,use in,file
+boolean level,contain,exclude statement
+boolean level,include,feature
+type level,describe,uvl abstraction level
+type level,represent,uvl xml format
+boolean level,include,alternative group
+uvl,use in,loop
+boolean level,feature,mandatory
+type level,use,or
+uvl,use in,urlsearchparams
+boolean level,use,boolean type
+uvl,use in,referenceerror
+uvl,use in,unary operator
+uvl,use in,validate
+uvl,use in,reflect
+uvl,use in,intl
+uvl,use in,ternary operator
+uvl,use in,book
+uvl,use in,to
+uvl,use in,map
+uvl,use in,while
+uvl,use in,compiler
+uvl,use in,framework
+type level,be above,group level
+boolean level,describe,uvl abstraction level
+uvl,use in,repository
+uvl,use in,transition
+uvl,use in,reference
+type level,include,enumeration type
+uvl,use in,websocket
+uvl,use in,processor
+boolean level,use,propositional formula
+type level,include,boolean type
+uvl,use in,extend
+language extension,define,new semantic check
+uvl,use in,label
+uvl,use in,delete
+uvl,use in,manual
+uvl,use in,variable
+language extension,allow,additional semantic
+uvl,use in,request
+uvl,use in,performancelayoutjank
+uvl,use in,abortsignal
+type level,represent,uvl json format
+type level,include,optional
+uvl,use in,finally
+type level,include,range type
+uvl,use in,deserializer
+uvl,implement,java
+,,
+uvl,use in,experiment
+uvl,use in,performancepainttime
+type level,include,or
+language extension,provide,flexibility
+language extension,define,new section type
+type level,be part of,uvl metamodel
+type level,include,integer type
+uvl,use in,let
+uvl,use in,performancelongtasktime
+uvl,use in,assignment operator
+uvl,use in,bitwise operator
+type level,be a,language level
+uvl,use in,infinity
+uvl,use in,database
+uvl,use in,textencoder
+uvl,use in,eval
+type level,include,alternative
+uvl,use in,serviceworker
+boolean level,operate,feature level
+uvl,use in,item
+uvl,use in,writablestream
+uvl,use in,parser
+uvl,use in,argument
+uvl,use in,countqueuingstrategy
+uvl,use in,these
+boolean level,be part of,uvl metamodel
+uvl,use in,proceeding
+uvl,use in,canvas
+uvl,use in,super
+uvl,use in,statement
+uvl,use in,definition
+uvl,use in,benchmark
+uvl,use in,array
+type level,use,primitive type
+type level,include,string type
+type level,distinct,group level
+uvl,use in,interface
+uvl,use in,directory
+uvl,use,analysis
+uvl,use in,declaration
+uvl,use in,typeof
+uvl,use in,performanceobserverentrylist
+uvl,use in,syntaxerror
+uvl,use in,webvr
+uvl,use in,instanceof
+uvl,use in,debugger
+language extension,define,uvlmeta-model
+uvl,use in,assignments
+uvl,use in,documentation
+type level,use,composite type
+uvl,use in,evaluation
+uvl,use in,sharedworker
+uvl,use in,console
+uvl,part of,vave
+uvl,use in,const
+uvl,use in,void
+uvl,use in,view
+uvl,use in,try
+uvl,use in,generator
+uvl,use in,apis
+language extension,define,grammar rule
+language extension,relate,uvl tooling
+uvl,use in,set
+uvl,use in,guide
+uvl,part of,featureide
+uvl,use in,conference
+uvl,use in,number
+uvl,use in,this
+uvl,use in,call
+uvl,use in,registry
+uvl,use in,article

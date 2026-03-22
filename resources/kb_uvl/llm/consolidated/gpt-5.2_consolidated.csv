@@ -1,0 +1,168 @@
+Subject,Predicate,Object
+uvl,file extension,uvl
+uvl,modeling construct,attribute
+feature tree,represent,modeling variability
+uvl,support,tree structure constraint
+feature tree,represent,feature name
+uvl,support,mandatory feature
+type level,relatesto,uvl constraint section
+uvl,abbreviation,uvl
+cross-tree constraints,use to,express exclusion
+feature tree,include,false optional feature
+cross-tree constraints,common form,require constraint
+uvl,type,modeling variability
+uvl,can be use for,feature model analysis
+uvl,support,string attribute
+uvl,can be use for,product line variability specification
+uvl,modeling construct,constraint block
+feature tree,be a,modeling variability
+cross-tree constraints,express,incompatibility feature
+uvl,syntax type,textual dsl
+uvl,represent,feature hierarchy
+cross-tree constraints,include,logical operator
+uvl,domain,software product line engineering
+feature tree,support,feature selection structure
+cross-tree constraints,cause,false optional feature
+uvl,purpose,modeling variability
+uvl,modeling construct,feature name
+,,
+uvl,represent,tree structure constraint
+uvl,support,cardinality base group
+uvl,can be use for,modeling variability
+type level,relatesto,type constraint
+uvl,integrate,featureide
+feature tree,capture,optional relationship
+feature tree,extend,tree structure constraint
+type level,relatesto,type checking
+cross-tree constraints,be part of,feature hierarchy
+cross-tree constraints,be use in,software product line engineering
+type level,usedfor,type variability model
+type level,usedfor,define type expression
+type level,distinguishe,type information feature structure
+cross-tree constraints,represent,propositional logic formula
+cross-tree constraints,uvl reference,feature name
+uvl,represent,feature name
+uvl,support,attribute
+feature tree,support,mandatory feature
+uvl,provide,textual syntax
+cross-tree constraints,know,feature model constraint
+type level,apply,feature name
+cross-tree constraints,restrict,configuration validity
+uvl,representation,textual syntax
+uvl,support,feature model analysis
+cross-tree constraints,represent,boolean constraint
+cross-tree constraints,check,satisfiability solve
+language extension,can be use for,tool specific annotation
+cross-tree constraints,know,exclude constraint
+cross-tree constraints,affect,configuration validity
+cross-tree constraints,cause,unsatisfiable feature model
+type level,include,primitive type
+feature tree,be use in,software product line engineering
+feature tree,root,root feature
+cross-tree constraints,uvl write,constraint block
+uvl,goal,tool interoperability
+cross-tree constraints,be part of,modeling variability
+language extension,can be use for,modeling variability
+cross-tree constraints,know,require constraint
+feature tree,include,mandatory feature
+cross-tree constraints,use to,encode domain knowledge
+uvl,represent,attribute
+uvl,support,feature group
+uvl,purpose,feature model type
+type level,apply,attribute
+language extension,add,additional syntax
+cross-tree constraints,analyze,consistency
+uvl,represent,constraint block
+feature tree,support,alternative group
+cross-tree constraints,analyze,dead feature
+cross-tree constraints,use to,express dependency
+type level,include,enumeration type
+language extension,can be use for,tool specific construct
+uvl,support,integer attribute
+type level,define,attribute
+feature tree,include,root feature
+feature tree,be use in,modeling variability
+uvl,represent,feature group
+uvl,domain,product line variability specification
+type level,usedfor,define type variable
+feature tree,be a,hierarchical model
+type level,relatesto,uvl attribute
+feature tree,have,child feature
+cross-tree constraints,check,modeling variability
+feature tree,define,parent child relationship feature
+type level,relatesto,type inference
+cross-tree constraints,be use in,feature model analysis
+type level,relatesto,uvl universal variability language
+feature tree,encode,alternative relationship
+uvl,domain,modeling variability
+type level,exampletype,real
+language extension,add,additional semantic
+feature tree,include,tree structure constraint
+type level,exampletype,integer
+cross-tree constraints,express,propositional logic formula
+language extension,enable,custom construct
+uvl,full name,uvl
+cross-tree constraints,complement,tree structure constraint
+cross-tree constraints,call,require
+uvl,design,tool interoperability
+type level,include,composite type
+feature tree,include,child feature
+cross-tree constraints,cause,dead feature
+uvl,goal,tool independent variability exchange
+feature tree,organize,feature hierarchy
+cross-tree constraints,express,boolean constraint
+feature tree,be use in,feature model analysis
+uvl,parse,uvl parser
+uvl,design,exchange format variability model
+uvl,support,exclude constraint
+cross-tree constraints,evaluate,feature selection structure
+uvl,support,false optional feature
+feature tree,support,configuration derivation
+feature tree,encode,feature selection structure
+cross-tree constraints,check,feature model analysis
+type level,isa,uvl type system concept
+uvl,goal,standardize variability modeling notation
+uvl,artifact type,textual dsl
+type level,exampletype,boolean
+type level,can be use for,uvl type system concept
+type level,relatesto,type system
+uvl,support,require constraint
+feature tree,relate,feature model analysis
+cross-tree constraints,uvl reference,exclude
+uvl,support,boolean
+feature tree,constrain,tree structure constraint
+type level,usedfor,define type feature attribute
+language extension,can be use for,domain specific construct
+cross-tree constraints,uvl reference,require
+type level,exampletype,string
+uvl,goal,standardize exchange format
+cross-tree constraints,relate,feature different branch
+uvl,support,enumeration attribute
+uvl universal variability language,concept,language extension
+feature tree,include,attribute
+uvl,use,boolean constraint
+feature tree,consist,feature name
+uvl,modeling construct,cardinality
+feature tree,represent,feature hierarchy
+cross-tree constraints,express,dependencie feature
+cross-tree constraints,distinct,tree structure constraint
+cross-tree constraints,uvl reference,boolean
+feature tree,encode,uvl
+language extension,enable,extend uvl semantic
+language extension,category,uvl
+cross-tree constraints,write,uvl constraint section
+uvl,model type,feature model analysis
+cross-tree constraints,analyze,false optional feature
+feature tree,represent,product line variability specification
+feature tree,support,false optional feature
+type level,relatesto,uvl type system concept
+uvl,support,alternative group
+feature tree,encode,optional relationship
+type level,relatesto,type hierarchy
+uvl,support,feature hierarchy
+feature tree,capture,alternative group
+type level,relatesto,feature model type
+feature tree,be a,hierarchical representation feature
+feature tree,include,feature group
+language extension,can be use for,domain specific variability construct
+feature tree,correspond,feature model analysis
