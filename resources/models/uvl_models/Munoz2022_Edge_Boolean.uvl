@@ -1,0 +1,25 @@
+features
+    Edge
+        or
+            Interface
+                or
+                    Mobile
+                        alternative
+                            "3G" {Cost 30}
+                            "4G" {Cost 40}
+                            "5G" {Cost 50}
+                    WiFi
+                    Ethernet {Cost 15}
+            Antenna
+                alternative
+                    Small {Cost 3}
+                    Normal {Cost 4}
+                    Large {Cost 5}
+            VNFs
+                or
+                    Monitor
+                    Encryption
+                    Firewall
+constraints
+    Ethernet => !Antenna
+            

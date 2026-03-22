@@ -1,0 +1,5 @@
+A Multifunctional system composed by a Printer and a Scanner.
+There are three possible type printers alternative (PrinterType): BWPrinter, ColorPrinter, and PhotoPrinter; and two type of scanners alternative (ScannerType): BWScanner and ColorScanner.
+The printer has between 1 and 4 Cartridge, each of them with a specific InkVolume specified by a integer feature.
+A printer can optionally have a GreenMode which is incompatible with the PhotoPrinter printer type.
+Both Printer and Scanner have a Resolution integer feature (PrinterResolution and ScannerResolution).

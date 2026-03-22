@@ -1,0 +1,5 @@
+An Edge system that comprises 3 different configurable network Interface (namely Mobile, WiFi and Ethernet),
+3 sizes of Antennas (Small, Normal, and Large), and 3 different Virtual Network Functions (VNFs) (namely Monitor, Firewall, Encryption). 
+The Mobile interface supports only one band: 3G, 4G, or 5G.
+Ethernet excludes Antenna, since it is a wired system.
+Features have a Cost attribute: 3G costs 30$, 4G costs 40$, 5G costs 75$, Ethernet costs 15$, the small antenna costs 3$, the normal antenna costs 4$, and the large antenna costs 5$.
