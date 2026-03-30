@@ -1,0 +1,22 @@
+```uvl
+features
+    MultifunctionalSystem
+        mandatory
+            Printer
+                alternative
+                    BWPrinter
+                    ColorPrinter
+                    PhotoPrinter
+                Cartridge cardinality [1..4]
+                    InkVolume {Integer 0}
+                optional
+                    GreenMode
+                PrinterResolution {Integer 0}
+            Scanner
+                alternative
+                    BWScanner
+                    ColorScanner
+                ScannerResolution {Integer 0}
+constraints
+    !(GreenMode & PhotoPrinter)
+```

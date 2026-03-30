@@ -1,0 +1,29 @@
+features
+	eShop
+		mandatory
+			Catalogue { price = 30 }
+			Security { abstract }
+				alternative
+					Standard { price = 50 }
+					High { price = 100 }
+		optional
+			SEO { price = 40 }
+			Payment { abstract }
+				alternative
+					BankTransfer { price = 10, SEPA = true }
+					CreditCard { price = 20 }
+			Platform { abstract }
+				[2..3]
+					MobileApp { price = 80 }
+					Browser : string { price = 20 }
+					DesktopApp { price = 70 }
+			ItemsInBasket : integer
+
+constraints
+	eShop => Catalogue
+	eShop => Security
+	CreditCard => High
+	BankTransfer => !MobileApp
+	ItemsInBasket > 0
+	len(Browser) <= 30
+	sum(price) < 200

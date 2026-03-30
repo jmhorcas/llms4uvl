@@ -1,0 +1,27 @@
+features
+	eShop
+		mandatory
+			Catalogue [1..5] {price 30}
+			Security
+				alternative
+					Standard {price 50}
+					High {price 100}
+		optional
+			SEO {price 40}
+			Payment
+				alternative
+					"Bank Transfer" {price 10, SEPA true}
+					"Credit card" {price 20}
+			Platform
+				or [2..3]
+					"Mobile App" {price 80}
+					Browser {price 20, string URL}
+					"Desktop App" {price 70}
+			"Items in Basket" {integer}
+
+constraints
+	"Credit card" => High
+	"Bank Transfer" => !"Mobile App"
+	sum(price) < 200
+	"Items in Basket" > 0
+	len(Browser.URL) <= 30

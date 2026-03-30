@@ -1,0 +1,25 @@
+features
+	mandatory eShop
+		mandatory Catalogue feature-cardinality [1..5] {price 30}
+		mandatory Security
+			alternative
+				mandatory Standard {price 50}
+				mandatory High {price 100}
+		optional SEO {price 40}
+		optional Payment
+			alternative
+				mandatory "Bank Transfer" {price 10, SEPA true}
+				mandatory "Credit Card" {price 20}
+		optional Platform
+			[2..3]
+				mandatory "Mobile App" {price 80}
+				String Browser {price 20}
+				mandatory "Desktop App" {price 70}
+		Integer "Items in Basket"
+
+constraints
+	"Credit Card" => High
+	!("Bank Transfer" & "Mobile App")
+	sum(price) < 200
+	"Items in Basket" > 0
+	len(Browser) <= 30

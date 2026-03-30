@@ -1,0 +1,32 @@
+include
+	Boolean.group-cardinality
+	Arithmetic.*
+	Type.*
+
+features
+	eShop
+		mandatory
+			Security
+				alternative
+					High {Price 100}
+					Standard {Price 50}
+			Catalogue cardinality [1..5] {Price 30}
+		optional
+			SEO {Price 40}
+			Payment
+				alternative
+					"Bank Transfer" {Price 10, SEPA true}
+					"Credit Card" {Price 20}
+			Platform
+				[2..3]
+					"Mobile App" {Price 80}
+					String Browser {Price 20}
+					"Desktop App" {Price 70}
+			Integer "Items in Basket"
+
+constraints
+	"Credit Card" => High
+	!("Bank Transfer" & "Mobile App")
+	sum(Price) < 200
+	"Items in Basket" > 0
+	len(Browser) < 30

@@ -1,0 +1,29 @@
+features
+	Edge
+		Interface
+			Mobile
+				band
+					3G
+					4G
+					5G
+			WiFi
+			Ethernet
+		Antenna
+			Small
+			Normal
+			Large
+		VNFs
+			Monitor
+			Firewall
+			Encryption
+constraints
+	Mobile => band
+	Ethernet => !Antenna
+attributes
+	3G.cost = 30
+	4G.cost = 40
+	5G.cost = 75
+	Ethernet.cost = 15
+	Small.cost = 3
+	Normal.cost = 4
+	Large.cost = 5

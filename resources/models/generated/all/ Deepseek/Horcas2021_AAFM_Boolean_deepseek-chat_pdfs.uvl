@@ -1,0 +1,28 @@
+```uvl
+features
+    AAFMFramework
+        mandatory
+            System
+        optional
+            Packages
+            Solvers
+                or
+                    MiniSAT
+                    PicoSAT
+                    Glucose
+        alternative
+            Linux
+            Win
+    Packages
+        or
+            "python-sat"
+            pycosat
+            pyGlucose
+            pyPicosat
+
+constraints
+    MiniSAT => "python-sat"
+    PicoSAT => (pycosat | pyPicosat)
+    Glucose => ("python-sat" | pyGlucose)
+    Win => !pyPicosat
+```

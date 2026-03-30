@@ -1,0 +1,26 @@
+features
+	Multifunctional
+		mandatory
+			Printer
+				mandatory
+					PrinterType
+						alternative
+							BWPrinter
+							ColorPrinter
+							PhotoPrinter
+					Cartridge [1..4]
+						mandatory
+							InkVolume {type integer}
+					PrinterResolution {type integer}
+				optional
+					GreenMode
+			Scanner
+				mandatory
+					ScannerType
+						alternative
+							BWScanner
+							ColorScanner
+					ScannerResolution {type integer}
+
+constraints
+	GreenMode => !PhotoPrinter

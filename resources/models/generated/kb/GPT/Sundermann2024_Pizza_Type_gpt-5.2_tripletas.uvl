@@ -1,0 +1,33 @@
+namespace Pizza
+
+features
+	Pizza
+		mandatory Base { price = 2.0 }
+		mandatory Sauce
+			alternative
+				Tomato { price = 0.8 }
+				CremeFraiche { price = 1.1 }
+		optional Cheese
+			or
+				Mozzarella { price = 0.4 }
+				Cheddar { price = 0.6 }
+		Toppings
+			cardinality [1..3]
+				Mushrooms { price = 0.5 }
+				Onion { price = 0.3 }
+				Olive { price = 0.3 }
+				Pineapple { price = 0.8 }
+		DeliveryAddresses
+			cardinality [1..10]
+				Address
+					mandatory Street : string
+					mandatory City : string
+		mandatory Size : integer
+
+constraints
+	!(Cheddar & CremeFraiche)
+	(Base.price + Tomato.price + CremeFraiche.price + Mozzarella.price + Cheddar.price + Mushrooms.price + Onion.price + Olive.price + Pineapple.price) < 5
+	Size >= 20
+	Size <= 60
+	City == "Omashu"
+	len(Street) <= 100

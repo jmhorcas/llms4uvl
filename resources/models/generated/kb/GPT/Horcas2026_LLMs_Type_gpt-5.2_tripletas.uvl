@@ -1,0 +1,31 @@
+namespace AIAssistant
+
+features
+	AI_Assistant
+		mandatory
+			Model
+				alternative
+					GPT4o { cost = 8, tokens = "128k" }
+					Gemini { cost = 10, tokens = "1M" }
+					Claude { cost = 9, tokens = "200k" }
+			Plan
+				alternative
+					Free { monthLimit = 50 }
+					Premium { monthLimit = 1000 }
+			Access
+				or
+					WebApp
+					API { cost = 2 }
+		optional
+			FineTuning { cost = 5 }
+			Temperature { value = 0 }
+			ImageGeneration
+			WebSearch
+
+constraints
+	(ImageGeneration => (GPT4o | Gemini))
+	(API => !WebSearch)
+	(FineTuning <=> Premium)
+	(Temperature.value >= 0)
+	(Temperature.value <= 5)
+	(sum(GPT4o.cost, Gemini.cost, Claude.cost, API.cost, FineTuning.cost) < 15)

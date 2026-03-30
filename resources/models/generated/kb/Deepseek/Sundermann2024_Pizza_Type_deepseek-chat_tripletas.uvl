@@ -1,0 +1,33 @@
+features
+	Pizza
+		mandatory Base
+		mandatory Sauce
+			alternative
+				Tomato
+				CremeFraiche
+		optional Cheese
+			or
+				Mozzarella
+				Cheddar
+		optional Toppings
+			cardinality [1..3]
+				Mushrooms
+				Onion
+				Olive
+				Pineapple
+		mandatory Size integer
+		mandatory Delivery
+			cardinality [1..10]
+				Street string
+				City string
+constraints
+	Cheddar => !CremeFraiche
+	len(Toppings) >= 1
+	len(Toppings) <= 3
+	len(Delivery) >= 1
+	len(Delivery) <= 10
+	Size >= 20
+	Size <= 60
+	City == "Omashu"
+	len(Street) <= 100
+	(2.0 + (Tomato ? 0.8 : 0) + (CremeFraiche ? 1.1 : 0) + (Mozzarella ? 0.4 : 0) + (Cheddar ? 0.6 : 0) + (Mushrooms ? 0.5 : 0) + (Onion ? 0.3 : 0) + (Olive ? 0.3 : 0) + (Pineapple ? 0.8 : 0)) < 5

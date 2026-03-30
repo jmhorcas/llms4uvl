@@ -1,0 +1,26 @@
+```uvl
+features
+Edge
+    mandatory
+        Interface
+            alternative
+                Mobile
+                    alternative
+                        3G {Cost 30}
+                        4G {Cost 40}
+                        5G {Cost 75}
+                WiFi
+                Ethernet {Cost 15}
+        Antenna
+            alternative
+                Small {Cost 3}
+                Normal {Cost 4}
+                Large {Cost 5}
+        VNF
+            or
+                Monitor
+                Firewall
+                Encryption
+constraints
+Ethernet => !Antenna
+```

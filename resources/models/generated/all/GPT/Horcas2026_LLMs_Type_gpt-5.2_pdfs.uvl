@@ -1,0 +1,27 @@
+features
+	mandatory AI_Assistant {cost 0}
+		mandatory Model
+			alternative
+				mandatory GPT4o {cost 8, tokens '128k'}
+				mandatory Gemini {cost 10, tokens '1M'}
+				mandatory Claude {cost 9, tokens '200k'}
+		mandatory Plan
+			alternative
+				mandatory Free {monthLimit 50}
+				mandatory Premium {monthLimit 1000}
+		mandatory Access {cost 0}
+			or
+				optional WebApp {cost 0}
+				optional API {cost 2}
+		optional FineTuning {cost 5}
+		optional Temperature {value 0}
+		optional ImageGeneration {cost 0}
+		optional WebSearch {cost 0}
+
+constraints
+	(ImageGeneration => (GPT4o | Gemini))
+	!(API & WebSearch)
+	(FineTuning <=> Premium)
+	(Temperature >= 0)
+	(Temperature <= 5)
+	(sum(cost) < 15)

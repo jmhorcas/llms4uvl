@@ -1,0 +1,27 @@
+features
+	eShop
+		mandatory Catalogue
+		mandatory Security
+			alternative
+				Standard
+				High
+		optional SEO
+		optional Payment
+			alternative
+				"Bank Transfer"
+				"Credit card"
+		optional Platform
+			or [2, 3]
+				"Mobile App"
+				Browser
+				"Desktop App"
+constraints
+	"Credit card" => High
+	!("Bank Transfer" & "Mobile App")
+attributes
+	Standard price 50
+	High price 100
+	"Bank Transfer" price 10
+	"Bank Transfer" SEPA true
+	"Credit card" price 20
+	Browser URL "www.uvleshop.org"

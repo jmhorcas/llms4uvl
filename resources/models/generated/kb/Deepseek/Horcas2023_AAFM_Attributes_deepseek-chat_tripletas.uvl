@@ -1,0 +1,34 @@
+features
+	AAFMFramework
+		mandatory System
+		optional Packages
+		optional Solvers
+		or
+			MiniSAT
+			PicoSAT
+			Glucose
+		alternative
+			Linux
+			Win
+	Packages
+		python-sat
+			attributes
+				UserRating = 243
+				LastUpdate = "Dec 4, 2021"
+		pycosat
+			attributes
+				UserRating = 158
+				LastUpdate = "Nov 9, 2017"
+		pyGlucose
+			attributes
+				UserRating = 1
+				LastUpdate = "Apr 14, 2019"
+		pyPicosat
+			attributes
+				UserRating = 2
+				LastUpdate = "Aug 1, 2017"
+constraints
+	MiniSAT => python-sat
+	PicoSAT => pycosat | pyPicosat
+	Glucose => python-sat | pyGlucose
+	Win => !pyPicosat

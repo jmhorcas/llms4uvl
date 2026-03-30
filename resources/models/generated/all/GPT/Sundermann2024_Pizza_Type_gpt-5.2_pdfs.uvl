@@ -1,0 +1,32 @@
+namespace Pizza
+
+features
+	Pizza {price 0.0}
+		mandatory Base {price 2.0}
+		mandatory Sauce
+			alternative
+				Tomato {price 0.8}
+				"Creme Fraiche" {price 1.1}
+		optional Cheese
+			or
+				Mozzarella {price 0.4}
+				Cheddar {price 0.6}
+		optional Toppings
+			[1..3]
+				Mushrooms {price 0.5}
+				Onion {price 0.3}
+				Olive {price 0.3}
+				Pineapple {price 0.8}
+		mandatory Size {value 20}
+		optional DeliveryAddresses
+			[1..10]
+				mandatory Street {value 'Main Street'}
+				mandatory City {value 'Omashu'}
+
+constraints
+	!("Creme Fraiche" & Cheddar)
+	(Base.price + Tomato.price + "Creme Fraiche".price + Mozzarella.price + Cheddar.price + Mushrooms.price + Onion.price + Olive.price + Pineapple.price) < 5
+	Size.value >= 20
+	Size.value <= 60
+	City.value == 'Omashu'
+	len(Street.value) <= 100

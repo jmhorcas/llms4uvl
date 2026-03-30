@@ -1,0 +1,25 @@
+features
+	EdgeSystem
+		mandatory NetworkInterface
+			alternative
+				Mobile
+					mandatory Band
+						alternative
+							"3G" {Cost 30}
+							"4G" {Cost 40}
+							"5G" {Cost 75}
+				WiFi
+				Ethernet {Cost 15}
+		optional Antenna
+			alternative
+				Small {Cost 3}
+				Normal {Cost 4}
+				Large {Cost 5}
+		mandatory VNFs
+			or
+				Monitor
+				Firewall
+				Encryption
+
+constraints
+	Ethernet => !Antenna

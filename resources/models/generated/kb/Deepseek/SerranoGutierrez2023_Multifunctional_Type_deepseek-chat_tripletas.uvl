@@ -1,0 +1,20 @@
+features
+	MultifunctionalSystem
+		Printer
+			PrinterType
+				alternative
+					BWPrinter
+					ColorPrinter
+					PhotoPrinter
+			Cartridge[1..4]
+				InkVolume integer
+			optional GreenMode
+			PrinterResolution integer
+		Scanner
+			ScannerType
+				alternative
+					BWScanner
+					ColorScanner
+			ScannerResolution integer
+constraints
+	GreenMode => !PhotoPrinter

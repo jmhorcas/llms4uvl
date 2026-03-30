@@ -1,0 +1,37 @@
+features
+	eShop
+		mandatory Catalogue[1..5]
+		mandatory Security
+			alternative
+				Standard
+				High
+		optional SEO
+		optional Payment
+			alternative
+				Bank Transfer
+				Credit Card
+		optional Platform
+			or
+				Mobile App
+				Browser
+				Desktop App
+
+constraints
+	Security => Catalogue
+	Platform => (Mobile App | Browser | Desktop App)
+	(Platform) ? (Mobile App | Browser | Desktop App)[2..3]
+	Credit Card => High
+	!(Bank Transfer & Mobile App)
+	price(High) = 100
+	price(Standard) = 50
+	price(Bank Transfer) = 10
+	SEPA(Bank Transfer) = true
+	price(SEO) = 40
+	price(Credit Card) = 20
+	price(Desktop App) = 70
+	price(Mobile App) = 80
+	price(Browser) = 20
+	sum(price) < 200
+	price(Catalogue) = 30
+	Items in Basket > 0
+	len(URL(Browser)) <= 30

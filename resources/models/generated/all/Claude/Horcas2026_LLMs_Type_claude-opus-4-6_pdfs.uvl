@@ -1,0 +1,33 @@
+```uvl
+include
+	Boolean
+	Arithmetic.aggregate-function
+
+features
+	AIAssistant
+		mandatory
+			Model
+				alternative
+					GPT4o {cost 8, tokens '128k'}
+					Gemini {cost 10, tokens '1M'}
+					Claude {cost 9, tokens '200k'}
+			Plan
+				alternative
+					Free {cost 0, monthLimit 50}
+					Premium {cost 0, monthLimit 1000}
+			Access
+				or
+					WebApp {cost 0}
+					API {cost 2}
+		optional
+			FineTuning {cost 5}
+			Integer Temperature
+			ImageGeneration {cost 0}
+			WebSearch {cost 0}
+
+constraints
+	ImageGeneration => (GPT4o | Gemini)
+	!(API & WebSearch)
+	FineTuning <=> Premium
+	sum(cost) < 15
+```

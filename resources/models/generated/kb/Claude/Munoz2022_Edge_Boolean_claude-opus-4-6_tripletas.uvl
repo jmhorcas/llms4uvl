@@ -1,0 +1,27 @@
+```uvl
+features
+	EdgeSystem
+		mandatory
+			NetworkInterface
+				or
+					Mobile
+						alternative
+							ThreeG {Cost 30}
+							FourG {Cost 40}
+							FiveG {Cost 75}
+					WiFi
+					Ethernet {Cost 15}
+			Antenna
+				alternative
+					Small {Cost 3}
+					Normal {Cost 4}
+					Large {Cost 5}
+			VNF
+				or
+					Monitor
+					Firewall
+					Encryption
+
+constraints
+	Ethernet => !Antenna
+```
