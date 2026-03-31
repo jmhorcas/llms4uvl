@@ -1,4 +1,3 @@
-```uvl
 features
 	AAFMFramework
 		mandatory
@@ -24,4 +23,3 @@ constraints
 	PicoSAT => pycosat | pyPicosat
 	Glucose => python_sat | pyGlucose
 	Win => !pyPicosat
-```

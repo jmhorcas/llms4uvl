@@ -1,4 +1,3 @@
-```uvl
 features
 	EdgeSystem
 		mandatory
@@ -24,4 +23,3 @@ features
 
 constraints
 	Ethernet => !Antenna
-```

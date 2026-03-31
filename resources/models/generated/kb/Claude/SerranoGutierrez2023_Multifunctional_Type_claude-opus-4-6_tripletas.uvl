@@ -1,4 +1,3 @@
-```uvl
 features
 	MultifunctionalSystem
 		mandatory
@@ -28,4 +27,3 @@ features
 
 constraints
 	GreenMode => !PhotoPrinter
-```

@@ -1,4 +1,3 @@
-```uvl
 features
 	eShop
 		mandatory
@@ -21,4 +20,3 @@ features
 constraints
 	"Credit Card" => High
 	!("Bank Transfer" & "Mobile App")
-```

@@ -1,4 +1,3 @@
-```uvl
 features
 Pizza
     mandatory
@@ -20,4 +19,3 @@ Pizza
 
 constraints
 CheesyCrust => Big
-```

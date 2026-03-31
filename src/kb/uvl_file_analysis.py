@@ -37,13 +37,13 @@ class StderrErrorCapture(logging.Handler):
         self.error_lines = []
 
 
-class UVLComparator:
+class UVLFileAnalysis:
 
-    def __init__(self, original_model: str, generated_model: str) -> None:
-        self.uvl_path1 = original_model
-        self.uvl_path2 = generated_model
+    def __init__(self, filepath: str) -> None:
+        self.filepath = filepath
         self._error_capture = StderrErrorCapture()
         logging.getLogger().addHandler(self._error_capture)
+        self.fm, self.num_syntax_errors = self._read_model(filepath)
 
     def _read_model(self, uvl_path: str) -> tuple[FeatureModel, int]:
         """Reads a UVL file and returns the feature model and the number of syntax errors."""
@@ -56,81 +56,10 @@ class UVLComparator:
         
         return fm_model, self._error_capture.count()
 
-    def compare(self) -> None:
-        model1, syntax_errors1 = self._read_model(self.uvl_path1)
-        model2, syntax_errors2 = self._read_model(self.uvl_path2)
-        levenshtein_metrics = get_normalized_metrics(self.uvl_path1, self.uvl_path2)
-        levenshtein_distance = levenshtein_metrics['distance']
-        levenshtein_similarity_ratio = round(levenshtein_metrics['similarity_ratio'], 2)
-        path2 = Path(self.uvl_path2)
-        llm = [x for x in ['GPT', 'Claude', 'Deepseek', 'Gemini'] if x in self.uvl_path2][0]
-        if model1 is None or model2 is None:
-            results = {
-                'llm': llm,
-                'model': path2.stem,
-                'levenshtein_distance': levenshtein_distance,
-                'levenshtein_similarity_ratio': levenshtein_similarity_ratio,
-                'syntax_errors': syntax_errors2,
-                'semantics_errors': None,
-                'language_level': None,
-                'feature_similarity': None,
-                'constraint_similarity': None,
-                'attribute_similarity': None,
-                'configurations_model2': None,
-                'jaccard_similarity': None,
-                'precision': None,
-                'recall': None,
-                'f1_score': None,
-                'global_similarity': None,
-            }
-            return results
-        else:
-            language_level1 = get_language_level(model1)
-            language_level2 = get_language_level(model2)
-            feature_similarity_score, features1, features2 = compare_features(model1, model2)
-            constraint_similarity_score, constraints1, constraints2 = compare_constraints(model1, model2)
-            attribute_similarity_score, attributes1, attributes2 = compare_attributes(model1, model2)
-            configurations1 = get_configurations(model1)
-            configurations2 = get_configurations(model2)
-            if configurations1 is None or configurations2 is None:
-                semantics_errors1 = 1
-                semantics_errors2 = 1
-                jaccard_similarity_score = None
-                precision_score = None
-                recall_score = None
-                f1_score_value = None
-                global_similarity_score = None
-            else:
-                semantics_errors1 = 0
-                semantics_errors2 = 0
-                jaccard_similarity_score = round(jaccard_similarity(configurations1, configurations2), DECIMAL_PRECISION)
-                precision_score = round(precision(configurations1, configurations2), DECIMAL_PRECISION)
-                recall_score = round(recall(configurations1, configurations2), DECIMAL_PRECISION)
-                f1_score_value = round(f1_score(precision_score, recall_score), DECIMAL_PRECISION)
-                global_similarity_score = global_score(feature_similarity_score, constraint_similarity_score, attribute_similarity_score, jaccard_similarity_score if jaccard_similarity_score is not None else 0.0)
-            num_configurations2 = len(configurations2) if configurations2 is not None else 0
-            if configurations2 is not None and num_configurations2 >= 1e6:
-                num_configurations2 = int_to_scientific_notation(len(configurations2))
-        results = {
-                'llm': llm,
-                'model': path2.stem,
-                'levenshtein_distance': levenshtein_distance,
-                'levenshtein_similarity_ratio': levenshtein_similarity_ratio,
-                'syntax_errors': syntax_errors2,
-                'semantics_errors': semantics_errors2,
-                'language_level': language_level2,
-                'feature_similarity': round(feature_similarity_score, DECIMAL_PRECISION),
-                'constraint_similarity': round(constraint_similarity_score, DECIMAL_PRECISION),
-                'attribute_similarity': round(attribute_similarity_score, DECIMAL_PRECISION),
-                'configurations_model2': num_configurations2,
-                'jaccard_similarity': jaccard_similarity_score,
-                'precision': precision_score,
-                'recall': recall_score,
-                'f1_score': f1_score_value,
-                'global_similarity': global_similarity_score,
-        }
-        return results
-
+    def number_of_lines(self) -> int:
+        with open(self.filepath, 'r', encoding='utf-8') as file:
+            return sum(1 for _ in file)
+    
     
 def get_language_level(fm: FeatureModel) -> str:
     language_level = _get_language_level(fm)

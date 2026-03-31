@@ -1,4 +1,3 @@
-```uvl
 include
 	Boolean.group-cardinality
 	Arithmetic.*
@@ -31,4 +30,3 @@ constraints
 	sum(Price) < 200
 	0 < "Items in Basket"
 	len(Browser) < 30
-```

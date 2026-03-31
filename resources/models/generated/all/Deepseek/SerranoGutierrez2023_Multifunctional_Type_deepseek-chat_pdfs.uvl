@@ -1,4 +1,3 @@
-```uvl
 features
     MultifunctionalSystem
         mandatory
@@ -19,4 +18,3 @@ features
                 ScannerResolution {Integer 0}
 constraints
     !(GreenMode & PhotoPrinter)
-```

@@ -1,15 +1,11 @@
-include
-    Boolean.group-cardinality
-    Arithmetic.*
-
 features
     eShop
         mandatory
-            Catalogue
             Security
                 alternative
-                    Standard {Price 50}
                     High {Price 100}
+                    Standard {Price 50}
+            Catalogue
         optional
             SEO
             Payment
@@ -18,11 +14,10 @@ features
                     "Credit Card" {Price 20}
             Platform
                 [2..3]
-                    "Mobile App"
-                    Browser {URL 'www.uvleshop.org'}
-                    "Desktop App"
-
+                "Desktop App"
+                "Mobile App"
+                Browser {URL 'www.uvleshop.org'}
 constraints
-    "Credit Card" => High
     !("Bank Transfer" & "Mobile App")
+    "Credit Card" => High
     sum(Price) < 200

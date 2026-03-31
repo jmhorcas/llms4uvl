@@ -1,4 +1,3 @@
-```uvl
 include
     Boolean.group-cardinality
     Arithmetic.aggregate-function
@@ -37,4 +36,3 @@ constraints
     Size < 60
     City == 'Omashu'
     len(Street) < 100
-```

@@ -1,4 +1,3 @@
-```uvl
 features
   AIAssistant
     mandatory
@@ -25,4 +24,3 @@ constraints
   !(API & WebSearch)
   FineTuning <=> Premium
   sum(cost) < 15
-```

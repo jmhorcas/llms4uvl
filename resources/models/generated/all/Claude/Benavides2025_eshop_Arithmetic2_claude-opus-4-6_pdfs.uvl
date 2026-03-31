@@ -1,4 +1,3 @@
-```uvl
 include
 	Boolean.group-cardinality
 	Arithmetic.aggregate-function
@@ -28,4 +27,3 @@ constraints
 	!("Bank Transfer" & "Mobile App")
 	"Credit Card" => High
 	sum(Price) < 200
-```
